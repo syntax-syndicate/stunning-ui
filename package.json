@@ -1,6 +1,6 @@
 {
-  "name": "nuxt3-starter",
-  "description": "A better nuxt3 starter template",
+  "name": "stunning.dev",
+  "description": "Create stunning websites that are visually appealing",
   "private": false,
   "scripts": {
     "dev": "nuxt dev --port 6636",
@@ -20,11 +20,15 @@
     "@unocss/reset": "^0.55.7",
     "@vueuse/nuxt": "^10.9.0",
     "nuxt": "^3.11.2",
+    "sass": "^1.77.1",
     "unplugin-icons": "^0.17.4",
     "unplugin-vue-components": "^0.25.2"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
     "pinia": "^2.1.7",
+    "tailwind-merge": "^2.3.0",
+    "typed.js": "^2.1.0",
     "vue-i18n": "^9.13.1"
   }
 }

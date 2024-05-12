@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     head: {
-      title: 'A Better Nuxt 3 Starter',
+      title: 'Create stunning websites that are visually appealing',
       link: [{ rel: 'icon', type: 'image/*', href: '/favicon.svg' }]
     }
   },

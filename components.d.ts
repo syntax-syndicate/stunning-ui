@@ -12,6 +12,7 @@ declare module 'vue' {
     'Carbon:logoTwitter': typeof import('~icons/carbon/logo-twitter')['default']
     'Carbon:moon': typeof import('~icons/carbon/moon')['default']
     'Carbon:sun': typeof import('~icons/carbon/sun')['default']
+    'Ri:twitterXLine': typeof import('~icons/ri/twitter-x-line')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     'SimpleIcons:nuxtdotjs': typeof import('~icons/simple-icons/nuxtdotjs')['default']
