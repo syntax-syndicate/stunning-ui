@@ -19,8 +19,6 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-import { isDark, toggleDark } from '@/composables/dark'
-</script>
+<script lang="ts" setup></script>
 
 <style></style>

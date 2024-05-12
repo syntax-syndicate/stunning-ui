@@ -58,6 +58,8 @@
 
 <script lang="ts" setup>
 import { isDark, toggleDark } from '@/composables/dark'
+
+toggleDark(true)
 </script>
 
 <style scoped></style>
