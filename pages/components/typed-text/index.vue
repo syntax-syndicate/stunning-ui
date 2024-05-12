@@ -2,9 +2,9 @@
   <NuxtLayout name="component">
     <div class="">
       <header class="space-y-2">
-        <h1 class="text-3xl text-primary">Morphing Gradient Animation</h1>
+        <h1 class="text-3xl text-primary">Typed Text</h1>
         <p class="text-secondary">
-          An elegant animation with a shifting background gradient.
+          Typically used to display dynamic text changes in the Hero Section.
         </p>
       </header>
       <main class="w-full mt-8">
@@ -17,7 +17,12 @@
             </p>
             <p>
               <TypedText
-                :words="['Designers', 'Devlopers', 'Creators']"
+                :words="[
+                  'Designers',
+                  'Developers',
+                  'Creators',
+                  'Indie Hackers'
+                ]"
                 class="ml-2 text-neon"
                 :typeSpeed="75"
               />
