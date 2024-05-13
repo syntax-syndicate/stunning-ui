@@ -10,10 +10,12 @@
           class="border border-neutral-800 relative w-full h-[200rem] rounded-2xl overflow-hidden"
         >
           <div class="flex flex-col h-full p-8">
-            <div className="pb-4 flex-center w-full text-sm text-white/30">
+            <div
+              className="pb-4 flex-center w-full text-sm text-white/30 h-[50vh]"
+            >
               Scroll down
             </div>
-            <TextReveal :text="paragraphPlaceholder" />
+            <BlurryTextReveal :text="paragraphPlaceholder" />
           </div>
         </div>
       </main>

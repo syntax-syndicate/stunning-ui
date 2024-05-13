@@ -32,11 +32,11 @@ const props = defineProps({
 })
 
 const textRef = ref(null)
-const pinText = ref()
+const revealText = ref()
 const words = props.text.split(' ')
 
 onMounted(() => {
-  pinText.value = ScrollTrigger.create({
+  revealText.value = ScrollTrigger.create({
     trigger: textRef.value,
     start: 'top top',
     pin: true
@@ -55,7 +55,7 @@ onMounted(() => {
 })
 
 onUnmounted(() => {
-  pinText.value.kill()
+  revealText.value.kill()
 })
 </script>
 
