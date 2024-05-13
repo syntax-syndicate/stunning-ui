@@ -1,71 +1,64 @@
 <template>
-  <div class="gradient-border">
+  <div :class="className">
     <slot />
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const className = cn(
+  'sui-gradient-border',
+  'w-full rounded-lg relative backdrop-blur-md',
+  'before:absolute before:left-0 before:top-0 before:h-full before:w-full before:z-[-1] before:p-0.5 before:rounded-lg',
+  '!before:[background-size:400%_auto] !before:[background-position:0_0] before:content-[""]',
+  '!hover:before:opacity-100 !hover:before:[background-position:-50%_0]'
+)
+</script>
 
 <style scoped>
-.gradient-border {
-  position: relative;
-  border-radius: 0.5rem;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  width: 100%;
+.sui-gradient-border {
+  --sui-gb-bg-color-light: #e2e2e2;
+  --sui-gb-bg-color-dark: #303030;
+  --sui-gb-from-color: #00dc82;
+  --sui-gb-via-color: #36e4da;
+  --sui-gb-to-color: #0047e1;
 }
+
 @media (prefers-color-scheme: light) {
-  .gradient-border {
+  .sui-gradient-border {
     background-color: rgba(255, 255, 255, 0.3);
   }
-  .gradient-border::before {
+  .sui-gradient-border::before {
     background: linear-gradient(
       90deg,
-      #e2e2e2 0%,
-      #e2e2e2 25%,
-      #00dc82 50%,
-      #36e4da 75%,
-      #0047e1 100%
+      var(--sui-gb-bg-color-light) 0%,
+      var(--sui-gb-bg-color-light) 25%,
+      var(--sui-gb-from-color) 50%,
+      var(--sui-gb-via-color) 75%,
+      var(--sui-gb-to-color) 100%
     );
   }
 }
 @media (prefers-color-scheme: dark) {
-  .gradient-border {
+  .sui-gradient-border {
     background-color: rgba(20, 20, 20, 0.3);
   }
-  .gradient-border::before {
+  .sui-gradient-border::before {
     background: linear-gradient(
       90deg,
-      #303030 0%,
-      #303030 25%,
-      #00dc82 50%,
-      #36e4da 75%,
-      #0047e1 100%
+      var(--sui-gb-bg-color-dark) 0%,
+      var(--sui-gb-bg-color-dark) 25%,
+      var(--sui-gb-from-color) 50%,
+      var(--sui-gb-via-color) 75%,
+      var(--sui-gb-to-color) 100%
     );
   }
 }
-.gradient-border::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 0.5rem;
-  padding: 2px;
-  width: 100%;
-  background-size: 400% auto;
-  background-position: 0 0;
-  opacity: 0.5;
+
+.sui-gradient-border::before {
   transition: background-position 0.3s ease-in-out, opacity 0.2s ease-in-out;
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
-  z-index: -1;
-}
-.gradient-border:hover::before {
-  background-position: -50% 0;
-  opacity: 1;
 }
 </style>

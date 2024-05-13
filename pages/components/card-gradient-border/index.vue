@@ -17,51 +17,86 @@
             <div class="grid grid-cols-12 gap-4">
               <GradientBorder class="col-span-8">
                 <div class="rounded p-4 flex flex-col gap-2">
+                  <ri:magic-line class="w-8 h-8" />
+
                   <h1 class="font-medium text-2xl">Hover me</h1>
 
-                  <p>{{ paragraphPlaceholder }}</p>
+                  <p class="line-clamp-5 text-secondary">
+                    {{ paragraphPlaceholder }}
+                  </p>
                 </div>
               </GradientBorder>
               <GradientBorder class="col-span-4">
                 <div class="rounded p-4 flex flex-col gap-2">
+                  <ri:stack-line class="w-8 h-8" />
+
                   <h1 class="font-medium text-2xl">Hover me</h1>
 
-                  <p>{{ paragraphPlaceholder }}</p>
+                  <p class="line-clamp-5 text-secondary">
+                    {{ paragraphPlaceholder }}
+                  </p>
                 </div>
               </GradientBorder>
               <GradientBorder class="col-span-4">
                 <div class="rounded p-4 flex flex-col gap-2">
+                  <ri:database-2-line class="w-8 h-8" />
+
                   <h1 class="font-medium text-2xl">Hover me</h1>
 
-                  <p>{{ paragraphPlaceholder }}</p>
+                  <p class="line-clamp-5 text-secondary">
+                    {{ paragraphPlaceholder }}
+                  </p>
                 </div>
               </GradientBorder>
               <GradientBorder class="col-span-4">
                 <div class="rounded p-4 flex flex-col gap-2">
+                  <ri:edit-2-line class="w-8 h-8" />
+
                   <h1 class="font-medium text-2xl">Hover me</h1>
 
-                  <p>{{ paragraphPlaceholder }}</p>
+                  <p class="line-clamp-5 text-secondary">
+                    {{ paragraphPlaceholder }}
+                  </p>
                 </div>
               </GradientBorder>
               <GradientBorder class="col-span-4">
                 <div class="rounded p-4 flex flex-col gap-2">
+                  <ri:search-line class="w-8 h-8" />
+
                   <h1 class="font-medium text-2xl">Hover me</h1>
 
-                  <p>{{ paragraphPlaceholder }}</p>
+                  <p class="line-clamp-5 text-secondary">
+                    {{ paragraphPlaceholder }}
+                  </p>
                 </div>
               </GradientBorder>
               <GradientBorder class="col-span-8">
                 <div class="rounded p-4 flex flex-col gap-2">
+                  <ri:cake-2-line class="w-8 h-8" />
+
                   <h1 class="font-medium text-2xl">Hover me</h1>
 
-                  <p>{{ paragraphPlaceholder }}</p>
+                  <p class="line-clamp-5 text-secondary">
+                    {{ paragraphPlaceholder }}
+                  </p>
                 </div>
               </GradientBorder>
-              <GradientBorder class="col-span-4">
+              <GradientBorder
+                class="col-span-4"
+                :style="{
+                  '--sui-gb-from-color': '#4fa',
+                  '--sui-gb-via-color': '#4af',
+                  '--sui-gb-to-color': '#f4a'
+                }"
+              >
                 <div class="rounded p-4 flex flex-col gap-2">
+                  <ri:vip-crown-line class="w-8 h-8" />
+
                   <h1 class="font-medium text-2xl">Hover me</h1>
 
-                  <p>{{ paragraphPlaceholder }}</p>
+                  <p class="line-clamp-5 text-secondary">
+                    {{ paragraphPlaceholder }}
+                  </p>
                 </div>
               </GradientBorder>
             </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="gradient-bg">
+  <div class="sui-morphing-gradient">
     <svg xmlns="http://www.w3.org/2000/svg">
       <defs>
         <filter id="point">
@@ -55,7 +55,7 @@ watch(
 </script>
 
 <style lang="scss">
-:root {
+.sui-morphing-gradient {
   --space: ;
   @supports (background: linear-gradient(in oklab, #000, #fff)) {
     --space: in oklab;
@@ -108,7 +108,7 @@ watch(
   }
 }
 
-.gradient-bg {
+.sui-morphing-gradient {
   width: 100%;
   height: 100%;
   position: absolute;
