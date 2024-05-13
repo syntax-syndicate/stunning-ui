@@ -99,11 +99,7 @@ const componentList = [
         path: '/components/typed-text',
         desc: 'Typically used to display dynamic text changes in the Hero Section.'
       },
-      {
-        name: 'Text Reveal',
-        path: '/components/text-reveal',
-        desc: 'Typically used to display dynamic text changes in the Hero Section.'
-      },
+
       {
         name: 'Collapsible Details',
         path: '/components/collapsible-details',
@@ -130,8 +126,13 @@ const componentList = [
         desc: 'Typically used to display dynamic text changes in the Hero Section.'
       },
       {
+        name: 'Card Gradient Border',
+        path: '/components/card-gradient-border',
+        desc: 'Typically used to display dynamic text changes in the Hero Section.'
+      },
+      {
         name: 'Card Animated Border',
-        path: '/components/collapsible-details',
+        path: '/components/card-animated-border',
         desc: 'Typically used to display dynamic text changes in the Hero Section.'
       },
       {
@@ -144,6 +145,11 @@ const componentList = [
   {
     category: 'Scroll Animation',
     components: [
+      {
+        name: 'Text Reveal',
+        path: '/components/text-reveal',
+        desc: 'Typically used to display dynamic text changes in the Hero Section.'
+      },
       {
         name: 'Blurry Text Reveal',
         path: '/components/blurry-text-reveal',

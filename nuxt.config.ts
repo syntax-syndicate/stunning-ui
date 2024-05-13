@@ -5,6 +5,7 @@ import IconsResolver from 'unplugin-icons/resolver'
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  ssr: false,
   app: {
     head: {
       title: 'Create stunning websites that are visually appealing',

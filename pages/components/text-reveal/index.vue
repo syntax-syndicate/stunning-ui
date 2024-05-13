@@ -7,11 +7,13 @@
       </header>
       <main class="w-full mt-8">
         <div
-          class="border border-neutral-800 relative w-full h-[200rem] rounded-2xl overflow-hidden"
+          class="border border-neutral-800 relative w-full h-[200vh] rounded-2xl"
         >
-          <div class="flex flex-col h-full p-8">
-            <div className="pb-4 flex-center w-full text-sm text-white/30">
-              Scroll down
+          <div class="flex flex-col p-8">
+            <div className="pb-4 flex justify-center w-full">
+              <span class="text-neon-wb text-2xl text-white/30">
+                On-Scroll Text Reveal
+              </span>
             </div>
             <TextReveal :text="paragraphPlaceholder" />
           </div>

@@ -12,10 +12,7 @@
 
 <script lang="ts" setup>
 import gsap from 'gsap'
-import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import TextSplitter from '~/utils/TextSplitter'
-
-gsap.registerPlugin(ScrollTrigger)
 
 const props = defineProps({
   text: {
@@ -29,12 +26,12 @@ const props = defineProps({
 })
 
 const textRef = ref(null)
-const blurryText = ref(null)
+const blurryText = ref<HTMLParagraphElement | null>(null)
 
 onMounted(() => {
-  const scroll = () => {
-    const splitter = new TextSplitter(blurryText.value, {
-      resizeCallback: () => scroll(),
+  const scroll = (e: HTMLParagraphElement) => {
+    const splitter = new TextSplitter(e, {
+      resizeCallback: () => scroll(e),
       splitTypeTypes: 'words,chars'
     })
 
@@ -60,7 +57,7 @@ onMounted(() => {
   }
 
   if (blurryText.value) {
-    scroll()
+    scroll(blurryText.value)
   }
 })
 

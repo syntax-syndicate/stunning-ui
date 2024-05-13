@@ -1,7 +1,7 @@
 <template>
   <div
     ref="textRef"
-    class="max-w-[60rem] h-[100vh] items-center flex justify-center"
+    class="max-w-[60rem] min-h-[100vh] items-center flex justify-center"
     :class="clasName"
   >
     <p class="font-semibold">
@@ -38,8 +38,7 @@ const words = props.text.split(' ')
 onMounted(() => {
   revealText.value = ScrollTrigger.create({
     trigger: textRef.value,
-    start: 'top top',
-    pin: true
+    start: 'top top'
   })
 
   gsap.to('.sui-text-reveal', {
