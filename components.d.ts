@@ -23,6 +23,9 @@ declare module 'vue' {
     'Ri:vipCrownLine': typeof import('~icons/ri/vip-crown-line')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    'SimpleIcons:greensock': typeof import('~icons/simple-icons/greensock')['default']
     'SimpleIcons:nuxtdotjs': typeof import('~icons/simple-icons/nuxtdotjs')['default']
+    'SimpleIcons:tailwindcss': typeof import('~icons/simple-icons/tailwindcss')['default']
+    'SimpleIcons:vuedotjs': typeof import('~icons/simple-icons/vuedotjs')['default']
   }
 }

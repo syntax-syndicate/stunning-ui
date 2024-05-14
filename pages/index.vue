@@ -15,6 +15,13 @@
         Stunning UI is a collection of interactive Tailwind CSS components built
         for React and Vue.js.
       </p>
+
+      <div class="stacks grid grid-cols-4 gap-8 mt-16">
+        <simple-icons:nuxtdotjs class="w-12 h-12" />
+        <simple-icons:vuedotjs class="w-12 h-12" />
+        <simple-icons:tailwindcss class="w-12 h-12" />
+        <simple-icons:greensock class="w-12 h-12" />
+      </div>
     </main>
   </div>
 </template>

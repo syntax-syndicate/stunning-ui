@@ -12,7 +12,7 @@
             class="absolute h-10 w-full bg-white/[0.2] -top-10 inset-x-0 rounded-full blur-xl"
           ></div>
           <div class="text-sm text-emerald-500 relative z-20">
-            <Logo class="w-6 h-6" />
+            <Logo class="w-7 h-7" />
           </div>
         </div>
         <div class="flex flex-col">
