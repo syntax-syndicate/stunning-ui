@@ -126,6 +126,11 @@ const componentList = [
         desc: 'Typically used to display dynamic text changes in the Hero Section.'
       },
       {
+        name: 'Glowy Spotlight Cards',
+        path: '/components/glowy-spotlight-cards',
+        desc: 'Typically used to display dynamic text changes in the Hero Section.'
+      },
+      {
         name: 'Card Gradient Border',
         path: '/components/card-gradient-border',
         desc: 'Typically used to display dynamic text changes in the Hero Section.'
@@ -152,6 +157,11 @@ const componentList = [
       },
       {
         name: 'Blurry Text Reveal',
+        path: '/components/blurry-text-reveal',
+        desc: 'Typically used to display dynamic text changes in the Hero Section.'
+      },
+      {
+        name: 'Sticky Stack Block',
         path: '/components/blurry-text-reveal',
         desc: 'Typically used to display dynamic text changes in the Hero Section.'
       }
