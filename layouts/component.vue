@@ -136,8 +136,8 @@ const componentList = [
         desc: 'Typically used to display dynamic text changes in the Hero Section.'
       },
       {
-        name: 'Card Animated Border',
-        path: '/components/card-animated-border',
+        name: 'Animated Gradient Border',
+        path: '/components/animated-gradient-border',
         desc: 'Typically used to display dynamic text changes in the Hero Section.'
       },
       {
