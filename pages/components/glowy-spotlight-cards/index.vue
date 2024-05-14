@@ -17,11 +17,7 @@
               Hover the card
             </span>
           </div>
-          <GlowCardWrapper
-            class="grid grid-cols-12 gap-4"
-            :hue="120"
-            :size="160"
-          >
+          <GlowCardWrapper class="grid grid-cols-12 gap-4">
             <GlowCard class="col-span-8 rounded-lg">
               <div class="rounded p-4 flex flex-col gap-2">
                 <ri:magic-line class="w-8 h-8" />
