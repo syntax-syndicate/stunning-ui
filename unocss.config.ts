@@ -16,7 +16,7 @@ export default defineConfig({
       'text-neon':
         'text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-emerald-700 dark:to-emerald-300',
       'text-neon-wb':
-        'text-transparent bg-clip-text bg-gradient-to-b from-white  to-neutral-800',
+        'text-transparent bg-clip-text bg-gradient-to-b from-white  to-neutral-700',
       'text-neon-p':
         'text-transparent bg-clip-text bg-gradient-to-b from-neutral-200 via-60%  via-neutral-400 to-neutral-600'
     }

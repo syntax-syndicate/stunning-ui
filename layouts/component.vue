@@ -17,9 +17,6 @@
               <div class="space-y-3 mb-3 lg:mb-6 -mx-1 lg:mx-0">
                 <NuxtLink href="/installation">Installation</NuxtLink>
               </div>
-              <div class="space-y-3 mb-3 lg:mb-6 -mx-1 lg:mx-0">
-                <NuxtLink href="/installation">Installation</NuxtLink>
-              </div>
             </div>
             <div class="h-[1px] w-full bg-neutral-800 my-8"></div>
             <nav class="relative space-y-6">
@@ -162,7 +159,7 @@ const componentList = [
       },
       {
         name: 'Sticky Stack Block',
-        path: '/components/blurry-text-reveal',
+        path: '/components/sticky-stack-block',
         desc: 'Typically used to display dynamic text changes in the Hero Section.'
       }
     ]
