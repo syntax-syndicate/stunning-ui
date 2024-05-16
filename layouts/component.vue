@@ -11,11 +11,18 @@
             class="hidden overflow-y-auto lg:block lg:max-h-[calc(100vh-var(--header-height))] lg:sticky lg:top-[--header-height] lg:px-4 lg:-mx-4"
           >
             <div class="relative">
-              <div class="space-y-3 mb-3 lg:mb-6 -mx-1 lg:mx-0">
-                <NuxtLink href="/getting-started">Getting Started</NuxtLink>
-              </div>
-              <div class="space-y-3 mb-3 lg:mb-6 -mx-1 lg:mx-0">
-                <NuxtLink href="/installation">Installation</NuxtLink>
+              <div class="space-y-4">
+                <NuxtLink
+                  href="/getting-started"
+                  class="flex gap-2 items-center"
+                >
+                  <ph:book-open-text-duotone class="w-5 h-5 text-emerald-500" />
+                  Getting Started</NuxtLink
+                >
+                <NuxtLink href="/installation" class="flex gap-2 items-center">
+                  <ph:notebook-duotone class="w-5 h-5 text-emerald-500" />
+                  Installation</NuxtLink
+                >
               </div>
             </div>
             <div class="h-[1px] w-full bg-neutral-800 my-8"></div>
@@ -55,116 +62,9 @@
 </template>
 
 <script setup lang="ts">
+import { componentList } from '@/utils/constants'
+
 const route = useRoute()
-
-const componentList = [
-  {
-    category: 'Background',
-    components: [
-      {
-        name: 'Morphing Gradient Animation',
-        path: '/components/morphing-gradient-animation',
-        desc: 'An elegant animation with a shifting background gradient.'
-      },
-      {
-        name: 'Meteor Grid Animation',
-        path: '/components/meteor-grid-animation',
-        desc: 'An elegant animation with a shifting background gradient.'
-      },
-      {
-        name: 'God Ray',
-        path: '/components/god-ray',
-        desc: 'Commonly used for the background in the Page header'
-      }
-    ]
-  },
-  {
-    category: 'Bento Grid',
-    components: [
-      {
-        name: 'Gravity Elements',
-        path: '/components/gravity-elements',
-        desc: 'An elegant animation with a shifting background gradient.'
-      }
-    ]
-  },
-  {
-    category: 'Paragraph',
-    components: [
-      {
-        name: 'Typed Text',
-        path: '/components/typed-text',
-        desc: 'Typically used to display dynamic text changes in the Hero Section.'
-      },
-
-      {
-        name: 'Collapsible Details',
-        path: '/components/collapsible-details',
-        desc: 'Typically used to display dynamic text changes in the Hero Section.'
-      },
-      {
-        name: 'Digital Animation',
-        path: '/components/digital-animation',
-        desc: 'Typically used to display dynamic text changes in the Hero Section.'
-      },
-      {
-        name: 'Streaming Text',
-        path: '/components/streaming-text',
-        desc: 'Typically used to display dynamic text changes in the Hero Section.'
-      }
-    ]
-  },
-  {
-    category: 'Card',
-    components: [
-      {
-        name: 'Card Spotlight',
-        path: '/components/card-spotlight',
-        desc: 'Typically used to display dynamic text changes in the Hero Section.'
-      },
-      {
-        name: 'Glowy Spotlight Cards',
-        path: '/components/glowy-spotlight-cards',
-        desc: 'Typically used to display dynamic text changes in the Hero Section.'
-      },
-      {
-        name: 'Card Gradient Border',
-        path: '/components/card-gradient-border',
-        desc: 'Typically used to display dynamic text changes in the Hero Section.'
-      },
-      {
-        name: 'Animated Gradient Border',
-        path: '/components/animated-gradient-border',
-        desc: 'Typically used to display dynamic text changes in the Hero Section.'
-      },
-      {
-        name: 'Marquee Card',
-        path: '/components/marquee-card',
-        desc: 'Typically used to display dynamic text changes in the Hero Section.'
-      }
-    ]
-  },
-  {
-    category: 'Scroll Animation',
-    components: [
-      {
-        name: 'Text Reveal',
-        path: '/components/text-reveal',
-        desc: 'Typically used to display dynamic text changes in the Hero Section.'
-      },
-      {
-        name: 'Blurry Text Reveal',
-        path: '/components/blurry-text-reveal',
-        desc: 'Typically used to display dynamic text changes in the Hero Section.'
-      },
-      {
-        name: 'Sticky Stack Block',
-        path: '/components/sticky-stack-block',
-        desc: 'Typically used to display dynamic text changes in the Hero Section.'
-      }
-    ]
-  }
-]
 
 console.log(route.path)
 </script>

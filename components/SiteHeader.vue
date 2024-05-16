@@ -51,7 +51,9 @@
           class="w-4 h-4 dark:text-white/60 hover:text-white"
         />
       </NuxtLink>
-      <GlowButton />
+      <ButtonGlowyBorder>
+        <span class="text-sm font-semibold">Sign in</span>
+      </ButtonGlowyBorder>
     </div>
   </header>
 </template>
