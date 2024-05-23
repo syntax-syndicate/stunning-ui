@@ -2,10 +2,10 @@
   <NuxtLayout name="component">
     <div class="">
       <header class="space-y-2">
-        <h1 class="text-3xl text-primary">Sticky Stack Block</h1>
+        <h1 class="text-3xl text-primary">Sticky Stack Blocks</h1>
         <p class="text-secondary-foreground">
           Sticky stack blocks are commonly used as visually fixed elements to
-          introduce key functions on a website while scrolling.
+          introduce key features on a website while scrolling.
         </p>
       </header>
       <main class="w-full mt-8">

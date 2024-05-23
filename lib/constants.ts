@@ -118,7 +118,7 @@ export const componentList = [
       },
       {
         name: 'Sticky Stack Block',
-        path: '/components/sticky-stack-block',
+        path: '/components/sticky-stack-blocks',
         desc: 'Typically used to display dynamic text changes in the Hero Section.',
         inspiration: ['https://www.superlist.com/', 'https://www.limitless.ai/']
       }
