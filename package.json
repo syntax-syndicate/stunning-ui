@@ -13,7 +13,7 @@
     "p:up": "pnpm up"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.208",
+    "@iconify/json": "^2.2.213",
     "@nuxt/devtools": "latest",
     "@nuxtjs/color-mode": "^3.4.1",
     "@nuxtjs/tailwindcss": "^6.12.0",
@@ -21,7 +21,7 @@
     "@types/lodash-es": "^4.17.12",
     "@vueuse/nuxt": "^10.9.0",
     "nuxt": "^3.11.2",
-    "sass": "^1.77.1",
+    "sass": "^1.77.2",
     "shadcn-nuxt": "^0.10.4",
     "typescript": "^5.4.5",
     "unplugin-icons": "^0.17.4",
