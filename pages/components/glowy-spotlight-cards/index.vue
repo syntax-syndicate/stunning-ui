@@ -3,14 +3,14 @@
     <div class="space-y-8">
       <header class="space-y-2">
         <h1 class="text-3xl text-primary">Glowy Spotlight Cards</h1>
-        <p class="text-secondary">
+        <p class="text-secondary-foreground">
           The glowing card effect is typically used to highlight feature cards
           when they are hovered over.
         </p>
       </header>
       <main class="w-full mt-8">
         <div
-          class="border border-neutral-800 relative w-full rounded-2xl overflow-hidden p-8"
+          class="border border-border relative w-full rounded-2xl overflow-hidden p-8"
         >
           <div className="pb-12 flex justify-center w-full">
             <span class="text-neon-wb text-2xl text-white/30">
@@ -100,11 +100,11 @@
       </main>
       <section class="space-y-2">
         <h1 class="text-xl text-primary">Usage</h1>
-        <p class="text-secondary"></p>
+        <p class="text-secondary-foreground"></p>
       </section>
       <section class="space-y-2">
         <h1 class="text-xl text-primary">Props</h1>
-        <p class="text-secondary"></p>
+        <p class="text-secondary-foreground"></p>
       </section>
     </div>
   </NuxtLayout>

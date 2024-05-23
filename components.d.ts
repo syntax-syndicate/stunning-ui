@@ -14,6 +14,8 @@ declare module 'vue' {
     'Carbon:sun': typeof import('~icons/carbon/sun')['default']
     'Ph:bookOpenTextDuotone': typeof import('~icons/ph/book-open-text-duotone')['default']
     'Ph:notebookDuotone': typeof import('~icons/ph/notebook-duotone')['default']
+    'RadixIcons:moon': typeof import('~icons/radix-icons/moon')['default']
+    'RadixIcons:sun': typeof import('~icons/radix-icons/sun')['default']
     'Ri:addLine': typeof import('~icons/ri/add-line')['default']
     'Ri:arrowRightLine': typeof import('~icons/ri/arrow-right-line')['default']
     'Ri:cake2Line': typeof import('~icons/ri/cake2-line')['default']

@@ -1,8 +1,5 @@
 {
-  "i18n-ally.localesPaths": [
-    "./locales"
-  ],
-  "i18n-ally.enabledParsers": [
-    "json"
-  ]
+  "i18n-ally.localesPaths": ["./locales"],
+  "i18n-ally.enabledParsers": ["json"],
+  "CodeGPT.apiKey": "OpenAI"
 }

@@ -10,7 +10,6 @@
 
 ## Features
 
-- 🎨 [@unocss/nuxt](https://unocss.dev/integrations/nuxt) - UnoCSS Instant On-demand Atomic CSS Engine
 - 🤹 [unplugin-icons](https://github.com/antfu/unplugin-icons) - Use icons from any iconsets
 - 🍍 [@pinia/nuxt](https://pinia.esm.dev/ssr/nuxt.html) - Using Pinia with Nuxt.js 3
 - 🛠️ [@vueuse/nuxt3](https://vueuse.org/nuxt/readme.html#vueuse-nuxt) - This is an add-on of VueUse, which provides better Nuxt integration auto-import capabilities.

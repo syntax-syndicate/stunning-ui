@@ -46,8 +46,8 @@ export const componentList = [
         desc: 'Typically used to display dynamic text changes in the Hero Section.'
       },
       {
-        name: 'Marquee Card',
-        path: '/components/marquee-card',
+        name: 'Marquee',
+        path: '/components/marquee',
         desc: 'Typically used to display dynamic text changes in the Hero Section.'
       }
     ]

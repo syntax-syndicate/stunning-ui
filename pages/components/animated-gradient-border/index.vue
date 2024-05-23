@@ -3,13 +3,13 @@
     <div class="">
       <header class="space-y-2">
         <h1 class="text-3xl text-primary">Animated Gradient Border</h1>
-        <p class="text-secondary">
+        <p class="text-secondary-foreground">
           The animated gradient card effect is typically used to highlight
           feature cards when they are hovered over.
         </p>
       </header>
       <main class="w-full mt-8">
-        <div class="border border-neutral-800 relative w-full rounded-2xl">
+        <div class="border border-border relative w-full rounded-2xl">
           <div class="flex flex-col p-8">
             <div className="pb-12 flex justify-center w-full">
               <span class="text-neon-wb text-2xl text-white/30">
@@ -24,7 +24,7 @@
 
                   <h1 class="font-medium text-2xl">Hover me</h1>
 
-                  <p class="line-clamp-5 text-secondary">
+                  <p class="line-clamp-5 text-secondary-foreground">
                     {{ paragraphPlaceholder }}
                   </p>
                 </div>
@@ -35,7 +35,7 @@
 
                   <h1 class="font-medium text-2xl">Hover me</h1>
 
-                  <p class="line-clamp-5 text-secondary">
+                  <p class="line-clamp-5 text-secondary-foreground">
                     {{ paragraphPlaceholder }}
                   </p>
                 </div>
@@ -46,7 +46,7 @@
 
                   <h1 class="font-medium text-2xl">Hover me</h1>
 
-                  <p class="line-clamp-5 text-secondary">
+                  <p class="line-clamp-5 text-secondary-foreground">
                     {{ paragraphPlaceholder }}
                   </p>
                 </div>
@@ -57,7 +57,7 @@
 
                   <h1 class="font-medium text-2xl">Hover me</h1>
 
-                  <p class="line-clamp-5 text-secondary">
+                  <p class="line-clamp-5 text-secondary-foreground">
                     {{ paragraphPlaceholder }}
                   </p>
                 </div>
@@ -68,7 +68,7 @@
 
                   <h1 class="font-medium text-2xl">Hover me</h1>
 
-                  <p class="line-clamp-5 text-secondary">
+                  <p class="line-clamp-5 text-secondary-foreground">
                     {{ paragraphPlaceholder }}
                   </p>
                 </div>
@@ -79,7 +79,7 @@
 
                   <h1 class="font-medium text-2xl">Hover me</h1>
 
-                  <p class="line-clamp-5 text-secondary">
+                  <p class="line-clamp-5 text-secondary-foreground">
                     {{ paragraphPlaceholder }}
                   </p>
                 </div>
@@ -97,7 +97,7 @@
 
                   <h1 class="font-medium text-2xl">Hover me</h1>
 
-                  <p class="line-clamp-5 text-secondary">
+                  <p class="line-clamp-5 text-secondary-foreground">
                     {{ paragraphPlaceholder }}
                   </p>
                 </div>

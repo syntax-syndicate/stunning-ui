@@ -3,7 +3,7 @@
     <ClientOnly>
       <SiteHeader />
     </ClientOnly>
-    <main class="container mx-auto max-w-screen-xl flex-center flex-col mt-40">
+    <main class="container mx-auto max-w-screen-2xl flex-center flex-col mt-40">
       <h1 class="text-black dark:text-white text-4xl">
         One purchase. Many components.
       </h1>

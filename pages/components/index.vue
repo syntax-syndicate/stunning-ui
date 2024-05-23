@@ -2,7 +2,7 @@
   <NuxtLayout name="component">
     <header class="flex flex-col gap-2">
       <h1 class="text-3xl">Components are building Blocks</h1>
-      <h2 class="text-secondary">
+      <h2 class="text-secondary-foreground">
         Boost your website development with our top Vue.js/React.js components,
         designed to enhance your stunning websites.
       </h2>
@@ -66,7 +66,7 @@
 </template>
 
 <script lang="ts" setup>
-import { componentList } from '@/utils/constants'
+import { componentList } from '@/lib/constants'
 
 import Demo1 from '@/assets/images/001.gif'
 import Demo2 from '@/assets/images/002.gif'

@@ -3,13 +3,13 @@
     <div class="">
       <header class="space-y-2">
         <h1 class="text-3xl text-primary">Typed Text</h1>
-        <p class="text-secondary">
+        <p class="text-secondary-foreground">
           Typically used to display dynamic text changes in the Hero Section.
         </p>
       </header>
       <main class="w-full mt-8">
         <div
-          class="border border-neutral-800 relative w-full h-80 rounded-2xl overflow-hidden"
+          class="border border-border relative w-full h-80 rounded-2xl overflow-hidden"
         >
           <div class="flex-center flex-col h-full text-5xl font-semibold">
             <p class="text-center">

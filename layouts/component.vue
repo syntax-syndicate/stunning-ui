@@ -1,10 +1,10 @@
 <template>
-  <div class="bg-neutral-950 w-full h-screen">
+  <div class="bg-background w-full h-screen">
     <ClientOnly>
       <SiteHeader />
     </ClientOnly>
 
-    <main class="container max-w-screen-xl my-12 mx-auto sm:rounded">
+    <main class="container max-w-screen-2xl my-12 mx-auto sm:rounded">
       <div class="flex flex-col lg:grid lg:grid-cols-12 lg:gap-8">
         <div class="lg:col-span-3">
           <aside
@@ -25,7 +25,7 @@
                 >
               </div>
             </div>
-            <div class="h-[1px] w-full bg-neutral-800 my-8"></div>
+            <Separator class="my-6" />
             <nav class="relative space-y-6">
               <template v-for="group in componentList">
                 <section>
@@ -40,7 +40,7 @@
                       :class="
                         route.path === item.path
                           ? 'text-emerald-500 font-semibold border-emerald-500'
-                          : 'text-secondary border-neutral-700'
+                          : 'text-muted-foreground border-border'
                       "
                     >
                       {{ item.name }}
@@ -62,7 +62,8 @@
 </template>
 
 <script setup lang="ts">
-import { componentList } from '@/utils/constants'
+import { Separator } from '@/components/ui/separator'
+import { componentList } from '@/lib/constants'
 
 const route = useRoute()
 

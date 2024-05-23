@@ -1,19 +1,10 @@
 <template>
-  <div>
-    <NuxtPage />
-  </div>
+  <NuxtPage />
 </template>
 
-<script setup lang="ts">
-import '@unocss/reset/tailwind-compat.css'
-</script>
+<script setup lang="ts"></script>
 
 <style>
-html,
-body {
-  @apply bg-neutral-950 text-primary;
-}
-
 html.lenis,
 html.lenis body {
   height: auto;
