@@ -45,7 +45,7 @@
                       </p>
                     </div>
                     <div
-                      class="w-1/2 bg-neutral-950/80 flex-center rounded-rt-2xl rounded-rb-2xl"
+                      class="w-1/2 bg-neutral-950/80 flex-center rounded-tr-2xl rounded-br-2xl"
                     >
                       <div class="w-64">
                         <div
@@ -69,7 +69,7 @@
                     class="h-full bg-gradient-to-br from-violet-700 to-violet-300 border-2 border-violet-600 rounded-2xl flex"
                   >
                     <div
-                      class="w-1/2 bg-neutral-950/80 flex-center rounded-lt-2xl rounded-lb-2xl"
+                      class="w-1/2 bg-neutral-950/80 flex-center rounded-tl-2xl rounded-bl-2xl"
                     >
                       <div class="w-64">
                         <div
@@ -111,7 +111,7 @@
                       </p>
                     </div>
                     <div
-                      class="w-1/2 bg-neutral-950/80 flex-center rounded-rt-2xl rounded-rb-2xl"
+                      class="w-1/2 bg-neutral-950/80 flex-center rounded-tr-2xl rounded-br-2xl"
                     >
                       <div class="w-64">
                         <div
@@ -135,7 +135,7 @@
                     class="h-full bg-gradient-to-br from-sky-700 to-sky-300 border border-sky-600 rounded-2xl flex"
                   >
                     <div
-                      class="w-1/2 bg-neutral-950/80 flex-center rounded-lt-2xl rounded-lb-2xl"
+                      class="w-1/2 bg-neutral-950/80 flex-center rounded-tl-2xl rounded-bl-2xl"
                     >
                       <div class="w-64">
                         <div
@@ -177,7 +177,7 @@
                       </p>
                     </div>
                     <div
-                      class="w-1/2 bg-neutral-950/80 flex-center rounded-rt-2xl rounded-rb-2xl"
+                      class="w-1/2 bg-neutral-950/80 flex-center rounded-tr-2xl rounded-br-2xl"
                     >
                       <div class="w-64">
                         <div
