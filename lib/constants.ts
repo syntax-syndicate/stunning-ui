@@ -2,7 +2,7 @@ export const paragraphPlaceholder = `Lorem ipsum dolor sit amet, consectetur adi
 
 export const componentList = [
   {
-    category: 'Background',
+    category: 'Backgrounds',
     desc: '',
     components: [
       {
@@ -78,7 +78,7 @@ export const componentList = [
     ]
   },
   {
-    category: 'Paragraph',
+    category: 'Paragraph/Text',
     components: [
       {
         name: 'Typed Text',

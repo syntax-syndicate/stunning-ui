@@ -107,4 +107,6 @@
   </NuxtLayout>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { paragraphPlaceholder } from '@/lib/constants'
+</script>

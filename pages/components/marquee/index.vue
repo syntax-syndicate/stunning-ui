@@ -3,7 +3,7 @@
     <div class="">
       <header class="space-y-2">
         <h1 class="text-3xl text-primary">Marquee</h1>
-        <p class="text-secondary-foreground">
+        <p class="text-muted-foreground">
           An infinite scrolling component that can be used to display text,
           images, or cards.
         </p>

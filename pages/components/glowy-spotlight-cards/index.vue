@@ -110,6 +110,11 @@
   </NuxtLayout>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import GlowCardWrapper from '~/components/GlowCardWrapper.vue'
+import GlowCard from '~/components/GlowCard.vue'
+
+import { paragraphPlaceholder } from '@/lib/constants'
+</script>
 
 <style scoped></style>

@@ -24,7 +24,7 @@
 
                   <h1 class="font-medium text-2xl">Hover me</h1>
 
-                  <p class="line-clamp-5 text-secondary-foreground">
+                  <p class="line-clamp-4 text-secondary-foreground">
                     {{ paragraphPlaceholder }}
                   </p>
                 </div>
@@ -35,7 +35,7 @@
 
                   <h1 class="font-medium text-2xl">Hover me</h1>
 
-                  <p class="line-clamp-5 text-secondary-foreground">
+                  <p class="line-clamp-4 text-secondary-foreground">
                     {{ paragraphPlaceholder }}
                   </p>
                 </div>
@@ -46,7 +46,7 @@
 
                   <h1 class="font-medium text-2xl">Hover me</h1>
 
-                  <p class="line-clamp-5 text-secondary-foreground">
+                  <p class="line-clamp-4 text-secondary-foreground">
                     {{ paragraphPlaceholder }}
                   </p>
                 </div>
@@ -57,7 +57,7 @@
 
                   <h1 class="font-medium text-2xl">Hover me</h1>
 
-                  <p class="line-clamp-5 text-secondary-foreground">
+                  <p class="line-clamp-4 text-secondary-foreground">
                     {{ paragraphPlaceholder }}
                   </p>
                 </div>
@@ -68,7 +68,7 @@
 
                   <h1 class="font-medium text-2xl">Hover me</h1>
 
-                  <p class="line-clamp-5 text-secondary-foreground">
+                  <p class="line-clamp-4 text-secondary-foreground">
                     {{ paragraphPlaceholder }}
                   </p>
                 </div>
@@ -79,7 +79,7 @@
 
                   <h1 class="font-medium text-2xl">Hover me</h1>
 
-                  <p class="line-clamp-5 text-secondary-foreground">
+                  <p class="line-clamp-4 text-secondary-foreground">
                     {{ paragraphPlaceholder }}
                   </p>
                 </div>
@@ -97,7 +97,7 @@
 
                   <h1 class="font-medium text-2xl">Hover me</h1>
 
-                  <p class="line-clamp-5 text-secondary-foreground">
+                  <p class="line-clamp-4 text-secondary-foreground">
                     {{ paragraphPlaceholder }}
                   </p>
                 </div>
@@ -110,4 +110,6 @@
   </NuxtLayout>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { paragraphPlaceholder } from '@/lib/constants'
+</script>

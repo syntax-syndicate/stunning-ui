@@ -5,12 +5,14 @@
 </template>
 
 <script lang="ts" setup>
+import { cn } from '~/lib/utils'
+
 const className = cn(
   'sui-gradient-border',
   'w-full rounded-lg relative backdrop-blur-md',
   'before:absolute before:left-0 before:top-0 before:h-full before:w-full before:z-[-1] before:p-0.5 before:rounded-lg',
-  '!before:[background-size:400%_auto] !before:[background-position:0_0] before:content-[""]',
-  '!hover:before:opacity-100 !hover:before:[background-position:-50%_0]'
+  'before:[background-size:400%_auto] before:[background-position:0_0] before:content-[""]',
+  'hover:before:opacity-100 hover:before:[background-position:-50%_0]'
 )
 </script>
 
@@ -23,11 +25,11 @@ const className = cn(
   --sui-gb-to-color: #0047e1;
 }
 
-@media (prefers-color-scheme: light) {
+.light {
   .sui-gradient-border {
     background-color: rgba(255, 255, 255, 0.3);
   }
-  .sui-gradient-border::before {
+  .sui-gradient-border:hover:before {
     background: linear-gradient(
       90deg,
       var(--sui-gb-bg-color-light) 0%,
@@ -36,9 +38,14 @@ const className = cn(
       var(--sui-gb-via-color) 75%,
       var(--sui-gb-to-color) 100%
     );
+    background-size: 400% auto;
+  }
+  .sui-gradient-border:hover:before {
+    opacity: 1;
+    background-position: -50% 0;
   }
 }
-@media (prefers-color-scheme: dark) {
+.dark {
   .sui-gradient-border {
     background-color: rgba(20, 20, 20, 0.3);
   }
@@ -51,6 +58,11 @@ const className = cn(
       var(--sui-gb-via-color) 75%,
       var(--sui-gb-to-color) 100%
     );
+    background-size: 400% auto;
+  }
+  .sui-gradient-border:hover:before {
+    opacity: 1;
+    background-position: -50% 0;
   }
 }
 
