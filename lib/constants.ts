@@ -36,8 +36,8 @@ export const componentList = [
         desc: 'Typically used to display dynamic text changes in the Hero Section.'
       },
       {
-        name: 'Card Gradient Border',
-        path: '/components/card-gradient-border',
+        name: 'Progressive Gradient Border',
+        path: '/components/progressive-gradient-border',
         desc: 'Typically used to display dynamic text changes in the Hero Section.'
       },
       {
