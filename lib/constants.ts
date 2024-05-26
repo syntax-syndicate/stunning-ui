@@ -59,6 +59,11 @@ export const componentList = [
         name: 'Gravity Elements',
         path: '/components/gravity-elements',
         desc: 'An elegant animation with a shifting background gradient.'
+      },
+      {
+        name: 'Smart Layout',
+        path: '/components/smart-layout',
+        desc: 'An elegant animation with a shifting background gradient.'
       }
     ]
   },

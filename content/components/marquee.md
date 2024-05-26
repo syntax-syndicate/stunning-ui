@@ -41,6 +41,8 @@ module.exports = {
 
 ### Copy the source code
 
+`/components/stunning/Marquee.vue`
+
 <CollapseCodeWrapper>
 
 ```vue

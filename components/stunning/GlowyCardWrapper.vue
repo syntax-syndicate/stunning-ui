@@ -5,17 +5,22 @@
 </template>
 
 <script lang="ts" setup>
-const {
-  hue = 120,
-  size = 200,
-  border = 2,
-  radius = 10
-} = defineProps<{
-  hue: number
-  size: number
-  border: number
-  radius: number
-}>()
+const props = withDefaults(
+  defineProps<{
+    hue: number
+    size: number
+    border: number
+    radius: number
+  }>(),
+  {
+    hue: 120,
+    size: 200,
+    border: 2,
+    radius: 10
+  }
+)
+
+const { hue, size, border, radius } = toRefs(props)
 
 const glowCardWrapper = ref<HTMLElement | null>(null)
 

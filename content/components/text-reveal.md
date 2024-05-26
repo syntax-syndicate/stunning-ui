@@ -23,7 +23,7 @@ bun i gsap
 
 ### Copy the source code
 
-`/components/TextReveal.vue`
+`/components/stunning/TextReveal.vue`
 
 <CollapseCodeWrapper>
 
