@@ -40,7 +40,7 @@ const props = defineProps({
   },
   repeat: {
     type: Number,
-    default: 4
+    default: 1
   }
 })
 </script>

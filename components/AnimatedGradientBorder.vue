@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts" setup>
-import { cn } from '~/lib/utils'
+import { cn } from '@/lib/utils'
 
 const className = cn('sui-animated-gradient-border')
 </script>

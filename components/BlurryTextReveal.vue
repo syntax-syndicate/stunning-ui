@@ -12,7 +12,7 @@
 
 <script lang="ts" setup>
 import gsap from 'gsap'
-import TextSplitter from '~/lib/TextSplitter'
+import TextSplitter from '@/lib/TextSplitter'
 
 const props = defineProps({
   text: {

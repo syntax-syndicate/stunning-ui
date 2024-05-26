@@ -14,10 +14,12 @@
   },
   "devDependencies": {
     "@iconify/json": "^2.2.213",
+    "@nuxt/content": "^2.12.1",
     "@nuxt/devtools": "latest",
     "@nuxtjs/color-mode": "^3.4.1",
     "@nuxtjs/tailwindcss": "^6.12.0",
     "@pinia/nuxt": "^0.4.11",
+    "@tailwindcss/typography": "^0.5.13",
     "@types/lodash-es": "^4.17.12",
     "@vueuse/nuxt": "^10.9.0",
     "nuxt": "^3.11.2",
@@ -41,6 +43,7 @@
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
     "typed.js": "^2.1.0",
-    "vue-i18n": "^9.13.1"
+    "vue-i18n": "^9.13.1",
+    "vue-sonner": "^1.1.2"
   }
 }

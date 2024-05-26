@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     }
   },
   modules: [
+    '@nuxt/content',
     '@pinia/nuxt',
     'unplugin-icons/nuxt',
     '@vueuse/nuxt',
@@ -33,6 +34,18 @@ export default defineNuxtConfig({
      * @default "./components/ui"
      */
     componentDir: './components/ui'
+  },
+  content: {
+    highlight: {
+      theme: 'vitesse-dark'
+    }
+  },
+  components: {
+    global: true,
+    dirs: ['@/components']
+  },
+  build: {
+    transpile: ['vue-sonner']
   },
   vite: {
     plugins: [
