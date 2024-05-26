@@ -29,9 +29,6 @@
     <div
       class="flex flex-1 items-center justify-end gap-2 sm:gap-4 md:justify-end"
     >
-      <ButtonGlowyBorder>
-        <span class="text-sm font-semibold">Sign in</span>
-      </ButtonGlowyBorder>
       <NuxtLink href="https://twitter.com/robert_shaw_x" target="_blank">
         <ri:twitter-x-line
           class="w-4 h-4 dark:text-white/60 hover:text-white"

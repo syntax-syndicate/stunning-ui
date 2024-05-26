@@ -1,6 +1,9 @@
-# Typed Text
-
-Typically used to display dynamic text changes in the Hero Section.
+---
+navigation.title: Typed Text
+title: Typed Text
+description: Typically used to display dynamic text changes in the Hero Section.
+category: paragraph, headline, text
+---
 
 ## Preview
 

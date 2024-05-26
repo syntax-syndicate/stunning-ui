@@ -6,13 +6,16 @@
           Scroll-driven Text Reveal
         </span>
       </div>
-      <TextReveal :text="paragraphPlaceholder" />
+      <TextReveal :text="text" />
     </main>
   </NuxtLayout>
 </template>
 
 <script lang="ts" setup>
-import { paragraphPlaceholder } from '@/lib/constants'
+import TextReveal from '@/components/stunning/TextReveal.vue'
+
+const text =
+  'Stunning UI is Designed for Developers、Designers、Creators、Indie Hackers'
 </script>
 
 <style scoped></style>

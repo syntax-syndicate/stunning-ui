@@ -1,6 +1,9 @@
-# Marquee
-
-An infinite scrolling component that can be used to display text, images, or cards.
+---
+navigation.title: Marquee
+title: Marquee
+description: An infinite scrolling component that can be used to display text, images, or cards.
+category: text, cards, testimonials
+---
 
 ## Preview
 

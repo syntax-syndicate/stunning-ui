@@ -66,6 +66,8 @@
 </template>
 
 <script lang="ts" setup>
+import Marquee from '@/components/stunning/Marquee.vue'
+
 const reviews = [
   {
     name: 'Jack',

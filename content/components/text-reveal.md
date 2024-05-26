@@ -1,6 +1,9 @@
-# Text Reveal
-
-Scroll-driven text reveal, a text appearance effect activates as you scroll through the content.
+---
+navigation.title: Text Reveal
+title: Text Reveal
+description: Scroll-driven text reveal, a text appearance effect activates as you scroll through the content.
+category: scroll, features
+---
 
 ## Preview
 
@@ -70,6 +73,7 @@ onMounted(() => {
   })
 
   gsap.to('.sui-text-reveal', {
+    pin: true,
     opacity: 1,
     stagger: 1,
     scrollTrigger: {

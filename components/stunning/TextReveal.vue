@@ -45,6 +45,7 @@ onMounted(() => {
     opacity: 1,
     stagger: 1,
     scrollTrigger: {
+      pin: true,
       scrub: true,
       trigger: textRef.value,
       start: 'top',

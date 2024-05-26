@@ -18,7 +18,7 @@
 </template>
 
 <script lang="ts" setup>
-import { paragraphPlaceholder } from '@/lib/constants'
+import TypedText from '@/components/stunning/TypedText.vue'
 </script>
 
 <style scoped></style>
