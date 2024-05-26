@@ -4,15 +4,13 @@ Scroll-driven text reveal, a text appearance effect activates as you scroll thro
 
 ## Preview
 
-<!-- <Playground url="https://stunning-dev.vercel.app/components/text-reveal"></Playground> -->
-
 <Playground url="/playground/text-reveal"></Playground>
 
 ## Installation
 
 ### Prerequisites
 
-This component requires the package GSAP.
+This component requires the package [GSAP](https://gsap.com/).
 
 ```bash
 pnpm i gsap

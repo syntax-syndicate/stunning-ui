@@ -1,5 +1,5 @@
 <template>
-  <span class="sui-typed-text" ref="typedElement"></span>
+  <span class="sui-typed-text" ref="typedElement" v-bind="$attrs"></span>
 </template>
 
 <script setup>
@@ -30,11 +30,11 @@ onMounted(() => {
 
 onUnmounted(() => {
   if (typed.value) {
-    // typed.value?.destory()
+    typed.value?.destory()
     typed.value = null
     typedElement.value = null
   }
 })
 </script>
 
-<style></style>
+<style scoped></style>

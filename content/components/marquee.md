@@ -4,8 +4,6 @@ An infinite scrolling component that can be used to display text, images, or car
 
 ## Preview
 
-<!-- <Playground url="https://stunning-dev.vercel.app/components/text-reveal"></Playground> -->
-
 <Playground url="/playground/marquee"></Playground>
 
 ## Installation
