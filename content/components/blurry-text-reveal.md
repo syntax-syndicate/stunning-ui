@@ -1,3 +1,50 @@
+---
+navigation.title: Blurry Text Reveal
+title: Blurry Text Reveal
+description: Scroll-driven blurry text reveal, a text appearance effect activates as you scroll through the content.
+category: scroll, headline, features
+---
+
+## Preview
+
+<Playground url="/playground/blurry-text-reveal"></Playground>
+
+## Installation
+
+### Prerequisites
+
+This component requires the package [GSAP](https://gsap.com/).
+
+```bash
+pnpm i gsap
+# or
+bun i gsap
+```
+
+### Copy the source code
+
+`/components/stunning/BlurryTextReveal.vue`
+
+<CollapseCodeWrapper>
+
+```vue
+<template>
+  <div
+    ref="textRef"
+    class="max-w-[60rem] min-h-[100vh] items-center flex justify-center"
+    :class="clasName"
+  >
+    <p class="font-semibold">
+      <template v-for="(word, index) in words" :key="index">
+        <span class="opacity-30 sui-text-reveal">
+          {{ `${word} ` }}
+        </span>
+      </template>
+    </p>
+  </div>
+</template>
+
+<script lang="ts" setup>
 <template>
   <div
     ref="textRef"
@@ -14,7 +61,7 @@
 import gsap from 'gsap'
 import TextSplitter from '@/lib/TextSplitter'
 
-const props = defineProps({
+defineProps({
   text: {
     type: String,
     required: true
@@ -60,10 +107,25 @@ onMounted(() => {
     scroll(blurryText.value)
   }
 })
-
-onUnmounted(() => {
-  // revealText.value.kill()
-})
 </script>
 
 <style scoped></style>
+```
+
+</CollapseCodeWrapper>
+
+## Usage
+
+```vue
+<BlurryTextReveal :text="paragraphPlaceholder" />
+```
+
+## Props
+
+| Prop | Type   | Description                      | Default |
+| :--- | :----- | :------------------------------- | :------ |
+| text | String | the text to do the animation for | ""      |
+
+## Inspiration
+
+-
