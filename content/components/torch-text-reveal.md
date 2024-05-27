@@ -1,7 +1,7 @@
 ---
 navigation.title: Torch Text Reveal
 title: Torch Text Reveal
-description: Torch text reveal, a text appearance effect activates as you scroll through the content.
+description: Torch text reveal, a text effect to highlight the headline.
 category: text, features
 ---
 
@@ -22,16 +22,19 @@ module.exports = {
     extend: {
       keyframes: {
         torch: {
-          from: {
-            backgroundPosition: '-100% 0'
+          '0%': {
+            backgroundPosition: '-200% 0'
           },
-          to: {
+          '50%': {
             backgroundPosition: '200% 0'
+          },
+          '100%': {
+            backgroundPosition: '-200% 0'
           }
         }
       },
       animation: {
-        torch: 'torch 3.3s infinite'
+        torch: 'torch 5s linear infinite'
       }
     }
   }

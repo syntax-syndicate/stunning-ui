@@ -83,11 +83,14 @@ module.exports = {
           to: { transform: 'translateY(calc(-100% - var(--gap)))' }
         },
         torch: {
-          from: {
-            backgroundPosition: '-100% 0'
+          '0%': {
+            backgroundPosition: '-200% 0'
           },
-          to: {
+          '50%': {
             backgroundPosition: '200% 0'
+          },
+          '100%': {
+            backgroundPosition: '-200% 0'
           }
         }
       },
@@ -98,7 +101,7 @@ module.exports = {
         'collapsible-up': 'collapsible-up 0.2s ease-in-out',
         marquee: 'marquee var(--duration) linear infinite',
         'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
-        torch: 'torch 3.3s infinite'
+        torch: 'torch 5s linear infinite'
       }
     }
   },
