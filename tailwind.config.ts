@@ -81,6 +81,14 @@ module.exports = {
         'marquee-vertical': {
           from: { transform: 'translateY(0)' },
           to: { transform: 'translateY(calc(-100% - var(--gap)))' }
+        },
+        torch: {
+          from: {
+            backgroundPosition: '-100% 0'
+          },
+          to: {
+            backgroundPosition: '200% 0'
+          }
         }
       },
       animation: {
@@ -89,7 +97,8 @@ module.exports = {
         'collapsible-down': 'collapsible-down 0.2s ease-in-out',
         'collapsible-up': 'collapsible-up 0.2s ease-in-out',
         marquee: 'marquee var(--duration) linear infinite',
-        'marquee-vertical': 'marquee-vertical var(--duration) linear infinite'
+        'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
+        torch: 'torch 3.3s infinite'
       }
     }
   },

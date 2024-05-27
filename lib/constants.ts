@@ -26,6 +26,11 @@ export const componentList = [
     category: 'Card Animation',
     components: [
       {
+        name: 'Marquee',
+        path: '/components/marquee',
+        desc: 'Typically used to display dynamic text changes in the Hero Section.'
+      },
+      {
         name: 'Card Spotlight',
         path: '/components/card-spotlight',
         desc: 'Typically used to display dynamic text changes in the Hero Section.'
@@ -43,11 +48,6 @@ export const componentList = [
       {
         name: 'Animated Gradient Border',
         path: '/components/animated-gradient-border',
-        desc: 'Typically used to display dynamic text changes in the Hero Section.'
-      },
-      {
-        name: 'Marquee',
-        path: '/components/marquee',
         desc: 'Typically used to display dynamic text changes in the Hero Section.'
       }
     ]
@@ -90,7 +90,11 @@ export const componentList = [
         path: '/components/typed-text',
         desc: 'Typically used to display dynamic text changes in the Hero Section.'
       },
-
+      {
+        name: 'Torch Text Reveal',
+        path: '/components/torch-text-reveal',
+        desc: 'Typically used to display dynamic text changes in the Hero Section.'
+      },
       {
         name: 'Collapsible Details',
         path: '/components/collapsible-details',
