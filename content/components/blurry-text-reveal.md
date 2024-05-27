@@ -117,7 +117,14 @@ onMounted(() => {
 ## Usage
 
 ```vue
-<BlurryTextReveal :text="paragraphPlaceholder" />
+<template>
+  <section
+    class="max-w-[60rem] min-h-[100vh] flex items-center justify-center flex-col gap-16"
+  >
+    <div>Feature 1</div>
+    <BlurryTextReveal :text="text1" />
+  </section>
+</template>
 ```
 
 ## Props

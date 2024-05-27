@@ -3,8 +3,16 @@
     <iframe
       v-if="reflash"
       :src="url"
-      class="w-full aspect-video rounded-lg"
-      :class="colorMode.preference === 'dark' ? 'dark' : 'light'"
+      class="w-full rounded-lg"
+      :class="{
+        'aspect-[16/9]': aspect === '16/9',
+        'aspect-[4/3]': aspect === '4/3',
+        'aspect-[3/4]': aspect === '3/4',
+        'aspect-[9/16]': aspect === '9/16',
+        'aspect-[1/1]': aspect === '1/1',
+        dark: colorMode.preference === 'dark',
+        light: colorMode.preference === 'light'
+      }"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
@@ -14,7 +22,11 @@
 <script lang="ts">
 export default {
   props: {
-    url: String
+    url: String,
+    aspect: {
+      type: String,
+      default: '16/9'
+    }
   },
   fetchOnServer: false
 }

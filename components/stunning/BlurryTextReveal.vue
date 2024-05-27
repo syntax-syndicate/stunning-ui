@@ -1,9 +1,5 @@
 <template>
-  <div
-    ref="textRef"
-    class="max-w-[60rem] min-h-[100vh] items-center flex justify-center"
-    :class="clasName"
-  >
+  <div ref="textRef" class="flex justify-center items-center" :class="clasName">
     <p class="font-semibold sui-blurry-text" ref="blurryText">
       {{ text }}
     </p>
