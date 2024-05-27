@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container">
+  <div class="main-container relative flex h-screen w-screen">
     <div class="jumbo"></div>
   </div>
 </template>
@@ -7,6 +7,27 @@
 <script lang="ts" setup></script>
 
 <style scoped>
+.main-container {
+  --sui-ray-bg: #fff;
+  --stripes: repeating-linear-gradient(
+    100deg,
+    var(--sui-ray-bg) 0%,
+    var(--sui-ray-bg) 7%,
+    transparent 10%,
+    transparent 12%,
+    var(--sui-ray-bg) 16%
+  );
+  --rainbow: repeating-linear-gradient(
+    100deg,
+    #60a5fa 10%,
+    #e879f9 15%,
+    #60a5fa 20%,
+    #5eead4 25%,
+    #60a5fa 30%
+  );
+  transition: background-color 0.3s;
+}
+
 @keyframes jumbo {
   from {
     background-position: 50% 50%, 50% 50%;
@@ -18,22 +39,6 @@
 }
 
 .jumbo {
-  --stripes: repeating-linear-gradient(
-    100deg,
-    #fff 0%,
-    #fff 7%,
-    transparent 10%,
-    transparent 12%,
-    #fff 16%
-  );
-  --rainbow: repeating-linear-gradient(
-    100deg,
-    #60a5fa 10%,
-    #e879f9 15%,
-    #60a5fa 20%,
-    #5eead4 25%,
-    #60a5fa 30%
-  );
   background-image: var(--stripes), var(--rainbow);
   background-size: 300%, 200%;
   background-position: 50% 50%, 50% 50%;
@@ -57,16 +62,5 @@
   animation: jumbo 60s linear infinite;
   background-attachment: fixed;
   mix-blend-mode: difference;
-}
-
-.main-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  transition: background-color 0.3s;
 }
 </style>
