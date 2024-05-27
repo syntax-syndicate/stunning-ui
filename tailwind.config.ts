@@ -92,6 +92,11 @@ module.exports = {
           '100%': {
             backgroundPosition: '-200% 0'
           }
+        },
+        'spin-slow': {
+          '100%': {
+            transform: 'rotate(1turn)'
+          }
         }
       },
       animation: {
@@ -101,7 +106,8 @@ module.exports = {
         'collapsible-up': 'collapsible-up 0.2s ease-in-out',
         marquee: 'marquee var(--duration) linear infinite',
         'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
-        torch: 'torch 5s linear infinite'
+        torch: 'torch 5s linear infinite',
+        'spin-slow': 'spin-slow 5s linear infinite'
       }
     }
   },

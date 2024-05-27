@@ -23,7 +23,7 @@ bun i typed.js
 
 ### Copy the source code
 
-`/components/TextReveal.vue`
+`/components/stunning/TextReveal.vue`
 
 <CollapseCodeWrapper>
 
@@ -76,11 +76,13 @@ onUnmounted(() => {
 ## Usage
 
 ```vue
-<TypedText
-  class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-emerald-700 dark:to-emerald-300"
-  :words="['Designers', 'Developers', 'Creators', 'Indie Hackers']"
-  :typeSpeed="75"
-/>
+<template>
+  <TypedText
+    class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-emerald-700 dark:to-emerald-300"
+    :words="['Designers', 'Developers', 'Creators', 'Indie Hackers']"
+    :typeSpeed="75"
+  />
+</template>
 ```
 
 ## Props

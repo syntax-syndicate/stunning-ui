@@ -71,8 +71,8 @@ export const componentList = [
     category: 'Button Animation',
     components: [
       {
-        name: 'Glowy Border Animation',
-        path: '/components/button-glowy-border-animation',
+        name: 'Glowy Border',
+        path: '/components/glowy-border-button',
         desc: 'An elegant animation with a shifting background gradient.'
       },
       {
