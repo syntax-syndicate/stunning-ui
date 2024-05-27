@@ -6,13 +6,13 @@ export const componentList = [
     desc: '',
     components: [
       {
-        name: 'Morphing Gradient Animation',
-        path: '/components/morphing-gradient-animation',
+        name: 'Morphing Gradient',
+        path: '/components/morphing-gradient',
         desc: 'An elegant animation with a shifting background gradient.'
       },
       {
-        name: 'Meteor Grid Animation',
-        path: '/components/meteor-grid-animation',
+        name: 'Meteor Grid',
+        path: '/components/meteor-grid',
         desc: 'An elegant animation with a shifting background gradient.'
       },
       {
