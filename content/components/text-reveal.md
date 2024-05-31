@@ -98,7 +98,9 @@ onUnmounted(() => {
 ## Usage
 
 ```vue
-<TextReveal :text="paragraphPlaceholder" />
+<template>
+  <TextReveal :text="paragraphPlaceholder" />
+</template>
 ```
 
 ## Props
