@@ -1,7 +1,7 @@
 <template>
   <svg
     aria-hidden="true"
-    class="pointer-events-none absolute inset-0 h-full w-full"
+    class="pointer-events-none absolute inset-0 h-full w-full fill-neutral-400/80"
     v-bind="$attrs"
   >
     <defs>

@@ -19,7 +19,7 @@ category: background, hero, pattern
     :cx="1"
     :cy="1"
     :cr="1"
-    class="fill-neutral-400/80 [mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)]"
+    class="[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)]"
   />
 </template>
 ```
