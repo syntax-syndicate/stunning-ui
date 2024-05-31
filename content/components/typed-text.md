@@ -94,4 +94,4 @@ onUnmounted(() => {
 
 ## Inspiration
 
-- [https://forwardemail.net/en](https://forwardemail.net/en)
+- [https://circle.so/](https://circle.so/)

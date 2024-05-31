@@ -6,7 +6,7 @@
         href="/"
       >
         <div
-          class="relative h-8 w-8 md:h-6 md:w-6 bg-black border border-border text-white flex items-center justify-center rounded-md text-sm antialiased"
+          class="relative h-8 w-8 md:h-6 md:w-6 bg-background text-white flex items-center justify-center rounded-md text-sm antialiased"
         >
           <div class="text-sm text-emerald-500 relative z-20">
             <Logo class="w-7 h-7" />

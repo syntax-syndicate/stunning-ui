@@ -53,7 +53,7 @@
                     <NuxtLink
                       v-for="item in group.components"
                       :href="item.path"
-                      class="border-l pl-4 py-1"
+                      class="border-l pl-4 py-1 hover:text-emerald-600 dark:hover:text-emerald-300"
                       :class="
                         route.path === item.path
                           ? 'text-emerald-500 font-semibold border-emerald-500'

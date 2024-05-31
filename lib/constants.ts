@@ -19,6 +19,16 @@ export const componentList = [
         name: 'God Ray',
         path: '/components/god-ray',
         desc: 'Commonly used for the background in the Page header'
+      },
+      {
+        name: 'Dot Pattern',
+        path: '/components/dot-pattern',
+        desc: 'Commonly used for the background in the Page header'
+      },
+      {
+        name: 'Grid Pattern',
+        path: '/components/grid-pattern',
+        desc: 'Commonly used for the background in the Page header'
       }
     ]
   },
@@ -76,8 +86,8 @@ export const componentList = [
         desc: 'An elegant animation with a shifting background gradient.'
       },
       {
-        name: 'Rotating Border Gradient',
-        path: '/components/button-rotating-border-gradient-animation',
+        name: 'Rotating Gradient Border',
+        path: '/components/rotating-gradient-border-button',
         desc: 'An elegant animation with a shifting background gradient.'
       }
     ]
@@ -93,11 +103,6 @@ export const componentList = [
       {
         name: 'Torch Text Reveal',
         path: '/components/torch-text-reveal',
-        desc: 'Typically used to display dynamic text changes in the Hero Section.'
-      },
-      {
-        name: 'Collapsible Details',
-        path: '/components/collapsible-details',
         desc: 'Typically used to display dynamic text changes in the Hero Section.'
       },
       {
