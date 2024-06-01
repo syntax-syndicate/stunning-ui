@@ -33,6 +33,16 @@ export const componentList = [
     ]
   },
   {
+    category: 'Frame',
+    components: [
+      {
+        name: 'Neon Frame',
+        path: '/components/neon-frame',
+        desc: 'Typically used to display dynamic text changes in the Hero Section.'
+      }
+    ]
+  },
+  {
     category: 'Card Animation',
     components: [
       {
@@ -41,8 +51,8 @@ export const componentList = [
         desc: 'Typically used to display dynamic text changes in the Hero Section.'
       },
       {
-        name: 'Card Spotlight',
-        path: '/components/card-spotlight',
+        name: 'Spotlight Card',
+        path: '/components/spotlight-card',
         desc: 'Typically used to display dynamic text changes in the Hero Section.'
       },
       {
