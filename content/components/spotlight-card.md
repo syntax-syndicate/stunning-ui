@@ -1,7 +1,7 @@
 ---
 navigation.title: Spotlight Card
 title: Spotlight Card
-description: Typically used to display dynamic text changes in the Hero Section.
+description: A spotlight effect that follows the cursor and guides users' attention.
 category: card, feature, overview, hover
 ---
 
