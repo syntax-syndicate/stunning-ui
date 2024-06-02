@@ -54,12 +54,9 @@
 <script lang="ts" setup>
 import SpotlightCard from '~/components/stunning/SpotlightCard.vue'
 import { paragraphPlaceholder } from '~/lib/constants'
+import { useDarkmode } from '~/composables/useDarkmode'
 
-const colorMode = useColorMode()
-
-const isDark = computed(() => {
-  return colorMode.preference === 'dark'
-})
+const { isDark } = useDarkmode()
 
 const spotColor = computed(() => {
   return isDark.value ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.05)'

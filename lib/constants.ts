@@ -26,6 +26,11 @@ export const componentList = [
         desc: 'Commonly used for the background in the Page header'
       },
       {
+        name: 'Particles Effect',
+        path: '/components/particles-effect',
+        desc: 'Commonly used for the background in the Page header'
+      },
+      {
         name: 'Dot Pattern',
         path: '/components/dot-pattern',
         desc: 'Commonly used for the background in the Page header'

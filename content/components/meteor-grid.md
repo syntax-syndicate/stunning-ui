@@ -112,9 +112,9 @@ const starClasses = computed(() => {
       bgClass="from-indigo-500/60 via-indigo-300/10 [animation-delay:740ms]"
     />
     <Meteor
-      class="left-[180px]"
-      starClass="from-indigo-300/10 via-indigo-500 to-indigo-900/80 dark:to-indigo-200 shadow-indigo-500/50"
-      bgClass="from-indigo-500/60 via-indigo-300/10"
+      class="left-[300px]"
+      starClass="from-violet-300/10 via-violet-500 to-violet-900/80 dark:to-violet-200 shadow-violet-500/50"
+      bgClass="from-violet-500/60 via-violet-300/10"
     />
   </MeteorGrid>
 </template>

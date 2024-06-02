@@ -23,9 +23,16 @@ declare module 'vue' {
     'Ri:vipCrownLine': typeof import('~icons/ri/vip-crown-line')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    'SimpleIcons:facebook': typeof import('~icons/simple-icons/facebook')['default']
+    'SimpleIcons:github': typeof import('~icons/simple-icons/github')['default']
     'SimpleIcons:greensock': typeof import('~icons/simple-icons/greensock')['default']
+    'SimpleIcons:instagram': typeof import('~icons/simple-icons/instagram')['default']
     'SimpleIcons:nuxtdotjs': typeof import('~icons/simple-icons/nuxtdotjs')['default']
+    'SimpleIcons:producthunt': typeof import('~icons/simple-icons/producthunt')['default']
     'SimpleIcons:tailwindcss': typeof import('~icons/simple-icons/tailwindcss')['default']
+    'SimpleIcons:twitter': typeof import('~icons/simple-icons/twitter')['default']
+    'SimpleIcons:twitterX': typeof import('~icons/simple-icons/twitter-x')['default']
     'SimpleIcons:vuedotjs': typeof import('~icons/simple-icons/vuedotjs')['default']
+    'SimpleIcons:x': typeof import('~icons/simple-icons/x')['default']
   }
 }
