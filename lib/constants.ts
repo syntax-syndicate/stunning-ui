@@ -11,6 +11,11 @@ export const componentList = [
         desc: 'An elegant animation with a shifting background gradient.'
       },
       {
+        name: 'Night Sky',
+        path: '/components/night-sky',
+        desc: 'Typically used to display dynamic text changes in the Hero Section.'
+      },
+      {
         name: 'Meteor Grid',
         path: '/components/meteor-grid',
         desc: 'An elegant animation with a shifting background gradient.'

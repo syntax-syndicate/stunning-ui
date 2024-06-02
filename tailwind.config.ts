@@ -57,6 +57,9 @@ module.exports = {
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)'
       },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(50% 50%, var(--tw-gradient-stops))'
+      },
       keyframes: {
         'accordion-down': {
           from: { height: 0 },
@@ -97,6 +100,13 @@ module.exports = {
           '100%': {
             transform: 'rotate(1turn)'
           }
+        },
+        falldown: {
+          to: {
+            transform: 'translate3d(0px, 1024px, 0px)',
+            opacity: '0',
+            'animation-timing-function': 'cubic-bezier(.57,.41,.83,.28)'
+          }
         }
       },
       animation: {
@@ -107,7 +117,8 @@ module.exports = {
         marquee: 'marquee var(--duration) linear infinite',
         'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
         torch: 'torch 5s linear infinite',
-        'spin-slow': 'spin-slow 5s linear infinite'
+        'spin-slow': 'spin-slow 5s linear infinite',
+        falldown: 'falldown 3s infinite'
       }
     }
   },

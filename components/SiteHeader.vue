@@ -21,6 +21,9 @@
       <Button variant="link" @click="navigateTo('/components')">
         Components
       </Button>
+      <Button variant="link" @click="navigateTo('/templates')">
+        Templates
+      </Button>
       <Button variant="link" @click="navigateTo('/pricing')"> Pricing </Button>
       <Button variant="link" @click="navigateTo('/components')">
         Roadmap

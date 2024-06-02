@@ -22,7 +22,6 @@ This component consists of two parts，`GlowyCardWrapper` + `GlowyCard`
 <CollapseCodeWrapper>
 
 ```vue
-<!-- /components/stunning/GlowyCardWrapper.vue -->
 <template>
   <main class="sui-glow-card-wrapper" ref="glowCardWrapper">
     <slot />
@@ -152,7 +151,6 @@ onMounted(() => {
 <CollapseCodeWrapper>
 
 ```vue
-<!-- /components/stunning/GlowyCard.vue -->
 <template>
   <section class="sui-glow-card" data-glow>
     <div data-glow></div>

@@ -52,8 +52,8 @@
 </template>
 
 <script lang="ts" setup>
-import GlowyCardWrapper from '~/components/stunning/GlowyCardWrapper.vue'
-import GlowyCard from '~/components/stunning/GlowyCard.vue'
+import GlowyCardWrapper from '~/components/stunning/GlowyCard/GlowyCardWrapper.vue'
+import GlowyCard from '~/components/stunning/GlowyCard/GlowyCard.vue'
 import { paragraphPlaceholder } from '~/lib/constants'
 </script>
 

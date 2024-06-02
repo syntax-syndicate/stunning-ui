@@ -3,7 +3,9 @@
     <div :class="cn('relative overflow-hidden my-6 rounded-md')">
       <CollapsibleContent
         forceMount
-        :class="cn('overflow-hidden', !isOpened && 'max-h-[18rem]')"
+        :class="
+          cn('overflow-hidden min-h-[18rem]', !isOpened && 'max-h-[18rem]')
+        "
       >
         <div
           :class="

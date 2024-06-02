@@ -107,7 +107,7 @@ console.log(route.path)
 }
 
 .prose :where(p code) {
-  @apply bg-neutral-800/80 text-muted-foreground p-1 rounded-md;
+  @apply bg-neutral-200/50 dark:bg-neutral-800/80 text-muted-foreground p-1 rounded-md;
 }
 
 .prose
