@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { addClass, removeClass } from '@/lib/dom'
+import { addClass, removeClass } from '~/lib/dom'
 
 export default defineComponent({
   name: 'CollapseTransition',

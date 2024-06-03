@@ -81,7 +81,7 @@
 
 <script setup lang="ts">
 import { Separator } from '@/components/ui/separator'
-import { componentList } from '@/lib/constants'
+import { componentList } from '~/lib/constants'
 import PageHeader from '~/components/content/PageHeader.vue'
 
 const route = useRoute()

@@ -195,7 +195,7 @@
 <script lang="ts" setup>
 import StickyStackBlock from '@/components/stunning/StickyStackBlock.vue'
 
-import { paragraphPlaceholder } from '@/lib/constants'
+import { paragraphPlaceholder } from '~/lib/constants'
 </script>
 
 <style scoped></style>

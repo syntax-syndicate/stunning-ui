@@ -11,8 +11,8 @@ export const componentList = [
         desc: 'An elegant animation with a shifting background gradient.'
       },
       {
-        name: 'Night Sky',
-        path: '/components/night-sky',
+        name: 'Parallax Stars',
+        path: '/components/parallax-stars',
         desc: 'Typically used to display dynamic text changes in the Hero Section.'
       },
       {

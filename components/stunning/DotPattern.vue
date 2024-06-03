@@ -22,7 +22,7 @@
 </template>
 
 <script lang="ts" setup>
-import { randomId } from '@/lib/utils'
+import { randomId } from '~/lib/utils'
 
 withDefaults(
   defineProps<{

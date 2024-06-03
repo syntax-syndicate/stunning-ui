@@ -107,6 +107,14 @@ module.exports = {
             opacity: '0',
             'animation-timing-function': 'cubic-bezier(.57,.41,.83,.28)'
           }
+        },
+        raiseup: {
+          from: {
+            transform: 'translateY(0px)'
+          },
+          to: {
+            transform: 'translateY(-3840px)'
+          }
         }
       },
       animation: {
@@ -118,7 +126,8 @@ module.exports = {
         'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
         torch: 'torch 5s linear infinite',
         'spin-slow': 'spin-slow 5s linear infinite',
-        falldown: 'falldown 3s infinite'
+        falldown: 'falldown 3s infinite',
+        raiseup: 'raiseup 1000s linear infinite'
       }
     }
   },
