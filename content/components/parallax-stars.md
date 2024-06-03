@@ -5,6 +5,8 @@ description: A rising star shines especially bright in the night.
 category: background, hero
 ---
 
+This component can be used as a background, letting stars fill your page.
+
 ## Preview
 
 <Playground url="/playground/parallax-stars"></Playground>
@@ -13,7 +15,30 @@ category: background, hero
 
 ### Prerequisites
 
-This component can be used as a background, letting stars fill your page.
+This component requires animation to be added in the `tailwind.config.ts` file for Tailwind CSS.
+
+```ts
+// tailwind.config.ts
+module.exports = {
+  theme: {
+    extend: {
+      keyframes: {
+        risingstar: {
+          from: {
+            transform: 'translateY(0px)'
+          },
+          to: {
+            transform: 'translateY(-3840px)'
+          }
+        }
+      },
+      animation: {
+        risingstar: 'risingstar 1000s linear infinite'
+      }
+    }
+  }
+}
+```
 
 ### Copy the source code
 
@@ -29,15 +54,15 @@ Setup the grid pattern background, background size `60px`
     class="parallax-stars absolute inset-0 overflow-hidden w-screen h-[45vh] bg-gradient-to-b from-20% to-80%"
   >
     <div
-      class="parallax-stars__small animate-raiseup [animation-duration:333s] w-px h-px bg-transparent after:content-[''] after:absolute after:top-[2048px] after:w-px after:h-px after:bg-transparent"
+      class="parallax-stars__small animate-risingstar [animation-duration:333s] w-px h-px bg-transparent after:content-[''] after:absolute after:top-[2048px] after:w-px after:h-px after:bg-transparent"
       :style="`box-shadow: ${smallStars.join(',')}`"
     />
     <div
-      class="parallax-stars__medium animate-raiseup [animation-duration:666s] w-[2px] h-[2px] bg-transparent after:content-[''] after:absolute after:top-[2048px] after:w-[2px] after:h-[2px] after:bg-transparent"
+      class="parallax-stars__medium animate-risingstar [animation-duration:666s] w-[2px] h-[2px] bg-transparent after:content-[''] after:absolute after:top-[2048px] after:w-[2px] after:h-[2px] after:bg-transparent"
       :style="`box-shadow: ${mediumStars.join(',')}`"
     />
     <div
-      class="parallax-stars__large animate-raiseup [animation-duration:999s] w-[3px] h-[3px] bg-transparent after:content-[''] after:absolute after:top-[2048px] after:w-[3px] after:h-[3px] after:bg-transparent"
+      class="parallax-stars__large animate-risingstar [animation-duration:999s] w-[3px] h-[3px] bg-transparent after:content-[''] after:absolute after:top-[2048px] after:w-[3px] after:h-[3px] after:bg-transparent"
       :style="`box-shadow: ${largeStars.join(',')}`"
     />
   </div>

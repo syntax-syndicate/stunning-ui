@@ -108,7 +108,7 @@ module.exports = {
             'animation-timing-function': 'cubic-bezier(.57,.41,.83,.28)'
           }
         },
-        raiseup: {
+        risingstar: {
           from: {
             transform: 'translateY(0px)'
           },
@@ -127,7 +127,7 @@ module.exports = {
         torch: 'torch 5s linear infinite',
         'spin-slow': 'spin-slow 5s linear infinite',
         falldown: 'falldown 3s infinite',
-        raiseup: 'raiseup 1000s linear infinite'
+        risingstar: 'risingstar 1000s linear infinite'
       }
     }
   },
