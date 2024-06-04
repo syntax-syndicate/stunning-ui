@@ -43,11 +43,16 @@ export const componentList = [
     ]
   },
   {
-    category: 'Frame',
+    category: 'Wireframe',
     components: [
       {
         name: 'Neon Frame',
         path: '/components/neon-frame',
+        desc: 'Typically used to display dynamic text changes in the Hero Section.'
+      },
+      {
+        name: 'Glowy Divider',
+        path: '/components/glowy-divider',
         desc: 'Typically used to display dynamic text changes in the Hero Section.'
       }
     ]
