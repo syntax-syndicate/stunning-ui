@@ -1,7 +1,7 @@
 ---
 navigation.title: Glare Line Frame
 title: Glare Line Frame
-description: Typically used to display dynamic text changes in the Hero Section.
+description: The double top border effect makes your card stand out.
 category: card, features
 ---
 

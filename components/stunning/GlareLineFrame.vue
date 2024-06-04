@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group relative flex min-h-screen flex-col justify-center overflow-hidden bg-neutral-950 py-6 text-neutral-50 sm:py-12"
+    class="group relative overflow-hidden bg-neutral-950 text-neutral-50 sm:rounded-lg lg:rounded-3xl"
   >
     <div
       class="relative bg-neutral-50/5 p-2 shadow-xl outline outline-1 -outline-offset-1 outline-neutral-50/5 sm:mx-auto sm:rounded-lg lg:rounded-3xl"

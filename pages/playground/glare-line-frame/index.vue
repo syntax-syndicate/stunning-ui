@@ -1,6 +1,8 @@
 <template>
-  <main class="w-screen h-screen flex items-center justify-center">
-    <GlareLineFrame class="bg-white dark:bg-neutral-950">
+  <main
+    class="w-screen h-screen flex items-center justify-center bg-neutral-950"
+  >
+    <GlareLineFrame>
       <a
         class="relative z-10 flex w-full cursor-pointer flex-col items-start gap-8"
         href="https://onetab.group"
