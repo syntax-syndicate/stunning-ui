@@ -111,8 +111,8 @@ export const componentList = [
         desc: 'An elegant animation with a shifting background gradient.'
       },
       {
-        name: 'Rotating Gradient Border',
-        path: '/components/rotating-gradient-border-button',
+        name: 'Gradient Border',
+        path: '/components/gradient-border-button',
         desc: 'An elegant animation with a shifting background gradient.'
       }
     ]

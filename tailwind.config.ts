@@ -58,7 +58,8 @@ module.exports = {
         sm: 'calc(var(--radius) - 4px)'
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(50% 50%, var(--tw-gradient-stops))'
+        'gradient-radial': 'radial-gradient(50% 50%, var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(var(--tw-gradient-stops))'
       },
       keyframes: {
         'accordion-down': {

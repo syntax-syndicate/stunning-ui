@@ -95,7 +95,7 @@
   }
 
   .text-neon-p {
-    @apply text-transparent bg-clip-text bg-gradient-to-b from-neutral-200 via-60%  via-neutral-400 to-neutral-600;
+    @apply text-transparent bg-clip-text bg-gradient-to-b from-neutral-200 via-60% via-neutral-400 to-neutral-600;
   }
 }
 
