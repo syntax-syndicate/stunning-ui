@@ -1,17 +1,17 @@
 <template>
   <div
-    class="parallax-stars absolute inset-0 overflow-hidden w-screen h-[45vh] bg-gradient-to-b from-20% to-80%"
+    class="rising-stars absolute inset-0 overflow-hidden w-screen h-[45vh] bg-gradient-to-b from-20% to-80%"
   >
     <div
-      class="parallax-stars__small animate-risingstar [animation-duration:333s] w-px h-px bg-transparent after:content-[''] after:absolute after:top-[2048px] after:w-px after:h-px after:bg-transparent"
+      class="rising-stars__small animate-risingstar [animation-duration:333s] w-px h-px bg-transparent after:content-[''] after:absolute after:top-[2048px] after:w-px after:h-px after:bg-transparent"
       :style="`box-shadow: ${smallStars.join(',')}`"
     />
     <div
-      class="parallax-stars__medium animate-risingstar [animation-duration:666s] w-[2px] h-[2px] bg-transparent after:content-[''] after:absolute after:top-[2048px] after:w-[2px] after:h-[2px] after:bg-transparent"
+      class="rising-stars__medium animate-risingstar [animation-duration:666s] w-[2px] h-[2px] bg-transparent after:content-[''] after:absolute after:top-[2048px] after:w-[2px] after:h-[2px] after:bg-transparent"
       :style="`box-shadow: ${mediumStars.join(',')}`"
     />
     <div
-      class="parallax-stars__large animate-risingstar [animation-duration:999s] w-[3px] h-[3px] bg-transparent after:content-[''] after:absolute after:top-[2048px] after:w-[3px] after:h-[3px] after:bg-transparent"
+      class="rising-stars__large animate-risingstar [animation-duration:999s] w-[3px] h-[3px] bg-transparent after:content-[''] after:absolute after:top-[2048px] after:w-[3px] after:h-[3px] after:bg-transparent"
       :style="`box-shadow: ${largeStars.join(',')}`"
     />
   </div>

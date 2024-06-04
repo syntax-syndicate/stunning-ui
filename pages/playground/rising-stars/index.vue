@@ -4,15 +4,15 @@
       <p
         className="z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-primary-foreground dark:text-white"
       >
-        Parallax Stars
+        Rising Stars
       </p>
     </div>
-    <ParallaxStars class="from-neutral-950 to-neutral-900" />
+    <RisingStars class="from-neutral-950 to-neutral-900" />
   </main>
 </template>
 
 <script lang="ts" setup>
-import ParallaxStars from '@/components/stunning/ParallaxStars.vue'
+import RisingStars from '@/components/stunning/RisingStars.vue'
 </script>
 
 <style scoped></style>
