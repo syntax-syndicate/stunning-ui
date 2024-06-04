@@ -8,7 +8,7 @@
 
 <style scoped>
 .main-container {
-  --sui-ray-bg: #fff;
+  --sui-ray-bg: rgba(255, 255, 255, 0.3);
   --stripes: repeating-linear-gradient(
     100deg,
     var(--sui-ray-bg) 0%,
