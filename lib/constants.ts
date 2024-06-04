@@ -118,7 +118,7 @@ export const componentList = [
     ]
   },
   {
-    category: 'Paragraph/Text',
+    category: 'Typography',
     components: [
       {
         name: 'Typed Text',

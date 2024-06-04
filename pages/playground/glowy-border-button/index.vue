@@ -5,22 +5,16 @@
         <span>Sign in</span>
       </GlowyBorderButton>
 
-      <GlowyBorderButton color="#a4f">
+      <GlowyBorderButton color="#0ea5e9">
         <span>Sign in</span>
       </GlowyBorderButton>
-      <GlowyBorderButton color="#f4a">
+      <GlowyBorderButton color="#10b981">
         <span>Sign in</span>
       </GlowyBorderButton>
-      <GlowyBorderButton color="#4af">
+      <GlowyBorderButton color="#8b5cf6">
         <span>Sign in</span>
       </GlowyBorderButton>
-      <GlowyBorderButton color="#4fa">
-        <span>Sign in</span>
-      </GlowyBorderButton>
-      <GlowyBorderButton color="#af4">
-        <span>Sign in</span>
-      </GlowyBorderButton>
-      <GlowyBorderButton color="#fa4">
+      <GlowyBorderButton color="#eab308">
         <span>Sign in</span>
       </GlowyBorderButton>
     </main>
