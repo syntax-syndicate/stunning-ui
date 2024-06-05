@@ -11,7 +11,7 @@
       class="absolute -left-[1.5px] -top-[1.5px] z-[-1] h-[calc(100%+2.5px)] w-[calc(100%+2.5px)] overflow-hidden rounded-lg"
     >
       <div
-        class="animate-spin-slow blur absolute left-[-12.5%] top-[-40px] aspect-square h-auto w-[125%]"
+        class="animate-spin [animation-duration:5s] blur absolute left-[-12.5%] top-[-40px] aspect-square h-auto w-[125%]"
         :style="{
           background: conicGraident
         }"

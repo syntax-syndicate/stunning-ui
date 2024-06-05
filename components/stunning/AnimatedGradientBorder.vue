@@ -23,31 +23,14 @@ const className = cn('sui-animated-gradient-border')
 .sui-animated-gradient-border {
   --bg: hsl(0 0% 0%);
   --angle: 0;
-  --sui-gb-bg-color-light: #e2e2e2;
-  --sui-gb-bg-color-dark: #303030;
+  --sui-gb-bg-color-light: #fafafa;
+  --sui-gb-bg-color-dark: #141414;
   --sui-gb-from-color: #00dc82;
   --sui-gb-via1-color: #bb36e4;
   --sui-gb-via2-color: #dae10b;
   --sui-gb-to-color: #0047e1;
   animation: rotate-gradient calc(var(--border-speed, 2) * 1s) infinite linear;
   animation-play-state: paused;
-}
-
-.sui-animated-gradient-border {
-  --gradient: hsla(0, 0%, 98%, 0.1);
-}
-
-.sui-animated-gradient-border:hover {
-  animation-play-state: running;
-  --gradient: conic-gradient(
-    from calc(180deg + var(--angle)) at 50% 70%,
-    hsla(0, 0%, 98%, 1) 0deg,
-    var(--sui-gb-from-color) 72.0000010728836deg,
-    var(--sui-gb-via1-color) 144.0000021457672deg,
-    var(--sui-gb-via2-color) 216.00000858306885deg,
-    var(--sui-gb-to-color) 288.0000042915344deg,
-    hsla(0, 0%, 98%, 1) 1turn
-  );
 }
 
 .card:last-of-type:hover {
@@ -62,7 +45,6 @@ const className = cn('sui-animated-gradient-border')
 }
 
 .card {
-  color: hsl(0 0% 92%);
   background: linear-gradient(var(--bg), var(--bg)) padding-box,
     var(--gradient) border-box;
   border: calc(var(--border-width, 2) * 1px) solid transparent;
@@ -81,6 +63,48 @@ const className = cn('sui-animated-gradient-border')
   background: hsl(0 0% 0%);
   opacity: var(--alpha, 0.5);
   transition: opacity 0.2s;
+}
+
+.light {
+  .card {
+    --bg: var(--sui-gb-bg-color-light);
+  }
+  .sui-animated-gradient-border {
+    --gradient: hsla(0, 0%, 8%, 0.12);
+  }
+  .sui-animated-gradient-border:hover {
+    animation-play-state: running;
+    --gradient: conic-gradient(
+      from calc(180deg + var(--angle)) at 50% 70%,
+      hsla(0, 0%, 98%, 1) 0deg,
+      var(--sui-gb-from-color) 72.0000010728836deg,
+      var(--sui-gb-via1-color) 144.0000021457672deg,
+      var(--sui-gb-via2-color) 216.00000858306885deg,
+      var(--sui-gb-to-color) 288.0000042915344deg,
+      hsla(0, 0%, 98%, 1) 1turn
+    );
+  }
+}
+
+.dark {
+  .card {
+    --bg: var(--sui-gb-bg-color-dark);
+  }
+  .sui-animated-gradient-border {
+    --gradient: hsla(0, 0%, 98%, 0.1);
+  }
+  .sui-animated-gradient-border:hover {
+    animation-play-state: running;
+    --gradient: conic-gradient(
+      from calc(180deg + var(--angle)) at 50% 70%,
+      hsla(0, 0%, 98%, 1) 0deg,
+      var(--sui-gb-from-color) 72.0000010728836deg,
+      var(--sui-gb-via1-color) 144.0000021457672deg,
+      var(--sui-gb-via2-color) 216.00000858306885deg,
+      var(--sui-gb-to-color) 288.0000042915344deg,
+      hsla(0, 0%, 98%, 1) 1turn
+    );
+  }
 }
 
 @keyframes rotate-gradient {

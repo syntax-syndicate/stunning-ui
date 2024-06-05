@@ -21,28 +21,6 @@ pnpm i colord
 bun i colord
 ```
 
-This component requires animation to be added in the `tailwind.config.ts` file for Tailwind CSS.
-
-```ts
-// tailwind.config.ts
-module.exports = {
-  theme: {
-    extend: {
-      keyframes: {
-        'spin-slow': {
-          '100%': {
-            transform: 'rotate(1turn)'
-          }
-        }
-      },
-      animation: {
-        'spin-slow': 'spin-slow 5s linear infinite'
-      }
-    }
-  }
-}
-```
-
 ### Copy the source code
 
 `/components/stunning/GlowyBorderButton.vue`
@@ -61,7 +39,7 @@ module.exports = {
         class="absolute -left-[1.5px] -top-[1.5px] z-[-1] h-[calc(100%+2.5px)] w-[calc(100%+2.5px)] overflow-hidden rounded-lg"
       >
         <div
-          class="animate-spin-slow absolute left-[-12.5%] top-[-40px] aspect-square h-auto w-[125%]"
+          class="animate-spin [animation-duration:5s] absolute left-[-12.5%] top-[-40px] aspect-square h-auto w-[125%]"
           :style="{
             backgroundImage: conicGraident
           }"

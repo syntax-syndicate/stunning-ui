@@ -27,9 +27,9 @@ const className = cn(
 
 .light {
   .sui-gradient-border {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(245, 245, 245, 0.3);
   }
-  .sui-gradient-border:hover:before {
+  .sui-gradient-border:before {
     background: linear-gradient(
       90deg,
       var(--sui-gb-bg-color-light) 0%,

@@ -163,3 +163,42 @@ export const componentList = [
     ]
   }
 ]
+
+export const reviews = [
+  {
+    name: 'Matt',
+    username: '@Matt',
+    body: "I've never seen anything like this before. It's stunning. I love it.",
+    img: 'https://avatar.vercel.sh/Matt'
+  },
+  {
+    name: 'Justin',
+    username: '@Justin',
+    body: 'I create a stunning website in a matter of hours. I love it.',
+    img: 'https://avatar.vercel.sh/Justin'
+  },
+  {
+    name: 'Sarah',
+    username: '@Sarah',
+    body: "It save my time. I'm speechless. This is amazing.",
+    img: 'https://avatar.vercel.sh/Sarah'
+  },
+  {
+    name: 'Jude',
+    username: '@jude',
+    body: "It's a beast, exactly what I was looking for.",
+    img: 'https://avatar.vercel.sh/jude'
+  },
+  {
+    name: 'Emma',
+    username: '@Emma',
+    body: 'Stunning UI has been an absolute game changer.',
+    img: 'https://avatar.vercel.sh/Emma'
+  },
+  {
+    name: 'Jamie',
+    username: '@Jamie',
+    body: 'I Gracefully exited. Thanks for the stunning components.',
+    img: 'https://avatar.vercel.sh/Jamie'
+  }
+]

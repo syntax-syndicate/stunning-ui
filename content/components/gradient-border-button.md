@@ -22,16 +22,6 @@ module.exports = {
     extend: {
       backgroundImage: {
         'gradient-conic': 'conic-gradient(var(--tw-gradient-stops))'
-      },
-      keyframes: {
-        'spin-slow': {
-          '100%': {
-            transform: 'rotate(1turn)'
-          }
-        }
-      },
-      animation: {
-        'spin-slow': 'spin-slow 5s linear infinite'
       }
     }
   }
@@ -57,7 +47,7 @@ module.exports = {
     <div
       :class="
         cn(
-          'absolute inset-[-1000%] animate-spin-slow blur bg-gradient-conic',
+          'absolute inset-[-1000%] animate-spin [animation-duration:5s] blur bg-gradient-conic',
           gradientColor
         )
       "

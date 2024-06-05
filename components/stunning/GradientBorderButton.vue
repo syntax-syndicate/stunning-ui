@@ -10,7 +10,7 @@
     <div
       :class="
         cn(
-          'absolute inset-[-1000%] animate-spin-slow blur bg-gradient-conic',
+          'absolute inset-[-1000%] animate-spin [animation-duration:5s] blur bg-gradient-conic',
           gradientColor
         )
       "

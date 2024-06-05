@@ -97,11 +97,6 @@ module.exports = {
             backgroundPosition: '-200% 0'
           }
         },
-        'spin-slow': {
-          '100%': {
-            transform: 'rotate(1turn)'
-          }
-        },
         falldown: {
           to: {
             transform: 'translate3d(0px, 1024px, 0px)',
@@ -126,7 +121,6 @@ module.exports = {
         marquee: 'marquee var(--duration) linear infinite',
         'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
         torch: 'torch 5s linear infinite',
-        'spin-slow': 'spin-slow 5s linear infinite',
         falldown: 'falldown 3s infinite',
         risingstar: 'risingstar 1000s linear infinite'
       }
