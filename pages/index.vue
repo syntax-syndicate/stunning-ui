@@ -14,15 +14,31 @@
       </p>
 
       <div class="mt-8">
-        <Button @click="navigateTo('/components')"> Browser Components </Button>
+        <Button @click="navigateTo('/components')"> Browse Components </Button>
         <Button variant="ghost"> Getting Started </Button>
       </div>
 
-      <div class="stacks grid grid-cols-4 gap-8 mt-16">
-        <simple-icons:nuxtdotjs class="w-10 h-10" />
-        <simple-icons:vuedotjs class="w-10 h-10" />
-        <simple-icons:tailwindcss class="w-10 h-10" />
-        <simple-icons:greensock class="w-10 h-10" />
+      <div class="stacks grid grid-cols-5 gap-8 mt-16">
+        <div class="flex items-center gap-2 text-muted-foreground">
+          <simple-icons:nuxtdotjs class="w-8 h-8" />
+          <span>Nuxt 3</span>
+        </div>
+        <div class="flex items-center gap-2 text-muted-foreground">
+          <simple-icons:vuedotjs class="w-8 h-8" />
+          <span>Vue 3</span>
+        </div>
+        <div class="flex items-center gap-2 text-muted-foreground">
+          <simple-icons:vuedotjs class="w-8 h-8" />
+          <span>Shadcn Vue</span>
+        </div>
+        <div class="flex items-center gap-2 text-muted-foreground">
+          <simple-icons:tailwindcss class="w-8 h-8" />
+          <span>TailwindCSS</span>
+        </div>
+        <div class="flex items-center gap-2 text-muted-foreground">
+          <simple-icons:greensock class="w-8 h-8" />
+          <span>GSAP</span>
+        </div>
       </div>
     </main>
   </div>

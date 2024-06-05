@@ -6,32 +6,39 @@ export const componentList = [
     desc: '',
     components: [
       {
-        name: 'Morphing Gradient',
-        path: '/components/morphing-gradient'
+        name: 'Particles Effect',
+        path: '/components/particles-effect',
+        status: 'finished'
       },
       {
         name: 'Rising Stars',
-        path: '/components/rising-stars'
+        path: '/components/rising-stars',
+        status: 'finished'
+      },
+      {
+        name: 'Morphing Gradient',
+        path: '/components/morphing-gradient',
+        status: 'finished'
       },
       {
         name: 'Meteor Grid',
-        path: '/components/meteor-grid'
+        path: '/components/meteor-grid',
+        status: 'finished'
       },
       {
         name: 'God Ray',
-        path: '/components/god-ray'
-      },
-      {
-        name: 'Particles Effect',
-        path: '/components/particles-effect'
+        path: '/components/god-ray',
+        status: 'finished'
       },
       {
         name: 'Dot Pattern',
-        path: '/components/dot-pattern'
+        path: '/components/dot-pattern',
+        status: 'finished'
       },
       {
         name: 'Grid Pattern',
-        path: '/components/grid-pattern'
+        path: '/components/grid-pattern',
+        status: 'finished'
       }
     ]
   },
@@ -40,15 +47,18 @@ export const componentList = [
     components: [
       {
         name: 'Glare Line Frame',
-        path: '/components/glare-line-frame'
+        path: '/components/glare-line-frame',
+        status: 'finished'
       },
       {
         name: 'Neon Frame',
-        path: '/components/neon-frame'
+        path: '/components/neon-frame',
+        status: 'upcoming'
       },
       {
         name: 'Glowy Divider',
-        path: '/components/glowy-divider'
+        path: '/components/glowy-divider',
+        status: 'finished'
       }
     ]
   },
@@ -57,23 +67,28 @@ export const componentList = [
     components: [
       {
         name: 'Confetti',
-        path: '/components/confetti'
+        path: '/components/confetti',
+        status: 'upcoming'
       },
       {
         name: 'Dock',
-        path: '/components/dock'
+        path: '/components/dock',
+        status: 'upcoming'
       },
       {
         name: 'Cursor Effect',
-        path: '/components/cursor-effect'
+        path: '/components/cursor-effect',
+        status: 'upcoming'
       },
       {
         name: '3D Parallax Card',
-        path: '/components/3d-parallax-card'
+        path: '/components/3d-parallax-card',
+        status: 'upcoming'
       },
       {
         name: 'Gravity Elements',
-        path: '/components/gravity-elements'
+        path: '/components/gravity-elements',
+        status: 'upcoming'
       }
     ]
   },
@@ -82,23 +97,28 @@ export const componentList = [
     components: [
       {
         name: 'Marquee',
-        path: '/components/marquee'
+        path: '/components/marquee',
+        status: 'finished'
       },
       {
         name: 'Spotlight Card',
-        path: '/components/spotlight-card'
+        path: '/components/spotlight-card',
+        status: 'finished'
       },
       {
         name: 'Glowy Spotlight Cards',
-        path: '/components/glowy-spotlight-cards'
+        path: '/components/glowy-spotlight-cards',
+        status: 'finished'
       },
       {
         name: 'Progressive Gradient Border',
-        path: '/components/progressive-gradient-border'
+        path: '/components/progressive-gradient-border',
+        status: 'finished'
       },
       {
         name: 'Animated Gradient Border',
-        path: '/components/animated-gradient-border'
+        path: '/components/animated-gradient-border',
+        status: 'finished'
       }
     ]
   },
@@ -107,7 +127,8 @@ export const componentList = [
     components: [
       {
         name: 'Smart Layout',
-        path: '/components/smart-layout'
+        path: '/components/smart-layout',
+        status: 'upcoming'
       }
     ]
   },
@@ -116,11 +137,13 @@ export const componentList = [
     components: [
       {
         name: 'Glowy Border',
-        path: '/components/glowy-border-button'
+        path: '/components/glowy-border-button',
+        status: 'finished'
       },
       {
         name: 'Gradient Border',
-        path: '/components/gradient-border-button'
+        path: '/components/gradient-border-button',
+        status: 'finished'
       }
     ]
   },
@@ -129,15 +152,23 @@ export const componentList = [
     components: [
       {
         name: 'Text Reveal',
-        path: '/components/text-reveal'
+        path: '/components/text-reveal',
+        status: 'finished'
       },
       {
         name: 'Blurry Text Reveal',
-        path: '/components/blurry-text-reveal'
+        path: '/components/blurry-text-reveal',
+        status: 'finished'
       },
       {
         name: 'Sticky Stack Block',
-        path: '/components/sticky-stack-blocks'
+        path: '/components/sticky-stack-blocks',
+        status: 'finished'
+      },
+      {
+        name: 'Skewed Reveal',
+        path: '/components/skewed-reveal',
+        status: 'upcoming'
       }
     ]
   },
@@ -146,19 +177,23 @@ export const componentList = [
     components: [
       {
         name: 'Typed Text',
-        path: '/components/typed-text'
+        path: '/components/typed-text',
+        status: 'finished'
       },
       {
         name: 'Torch Text Reveal',
-        path: '/components/torch-text-reveal'
+        path: '/components/torch-text-reveal',
+        status: 'finished'
       },
       {
         name: 'Digital Animation',
-        path: '/components/digital-animation'
+        path: '/components/digital-animation',
+        status: 'upcoming'
       },
       {
         name: 'Streaming Text',
-        path: '/components/streaming-text'
+        path: '/components/streaming-text',
+        status: 'upcoming'
       }
     ]
   }

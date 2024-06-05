@@ -4,7 +4,7 @@
       <SiteHeader />
     </ClientOnly>
 
-    <main class="container max-w-screen-2xl my-12 mx-auto sm:rounded">
+    <main class="container max-w-screen-2xl py-12 mx-auto sm:rounded">
       <div class="flex flex-col lg:grid lg:grid-cols-12 lg:gap-8">
         <div class="lg:col-span-3">
           <aside
@@ -17,24 +17,24 @@
                   class="flex gap-2 items-center group"
                 >
                   <div
-                    class="rounded-md p-1 inline-flex ring-inset ring-1 bg-neutral-100/50 dark:bg-neutral-800/50 ring-neutral-300 dark:ring-neutral-700 group-hover:bg-emerald-600/50 group-hover:ring-emerald-600"
+                    class="rounded-md p-1 inline-flex ring-inset ring-1 bg-neutral-100/50 dark:bg-neutral-800/50 ring-neutral-300 dark:ring-neutral-700 group-hover:bg-emerald-800/50 group-hover:ring-emerald-600"
                   >
-                    <ph:book-open-text-duotone
-                      class="w-4 h-4 text-emerald-500"
+                    <ph:rocket-launch-duotone
+                      class="w-5 h-5 text-emerald-500"
                     />
                   </div>
                   <span class="group-hover:text-emerald-500">
-                    Getting Started</span
-                  >
+                    Getting Started
+                  </span>
                 </NuxtLink>
                 <NuxtLink
                   href="/getting-started"
                   class="flex gap-2 items-center group"
                 >
                   <div
-                    class="rounded-md p-1 inline-flex ring-inset ring-1 bg-neutral-100/50 dark:bg-neutral-800/50 ring-neutral-300 dark:ring-neutral-700 group-hover:bg-emerald-600/50 group-hover:ring-emerald-600"
+                    class="rounded-md p-1 inline-flex ring-inset ring-1 bg-neutral-100/50 dark:bg-neutral-800/50 ring-neutral-300 dark:ring-neutral-700 group-hover:bg-emerald-800/50 group-hover:ring-emerald-600"
                   >
-                    <ph:notebook-duotone class="w-4 h-4 text-emerald-500" />
+                    <ph:notebook-duotone class="w-5 h-5 text-emerald-500" />
                   </div>
                   <span class="group-hover:text-emerald-500">
                     Installation</span
@@ -60,7 +60,14 @@
                           : 'text-muted-foreground border-border'
                       "
                     >
-                      {{ item.name }}
+                      <span>{{ item.name }}</span>
+                      <Badge
+                        v-if="item.status !== 'finished'"
+                        class="ml-2 border-emerald-500/50 font-400 text-emerald-500"
+                        size="sm"
+                        variant="outline"
+                        >{{ item.status }}</Badge
+                      >
                     </NuxtLink>
                   </div>
                 </section>

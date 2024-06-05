@@ -7,4 +7,4 @@ category: background, hero
 
 ## Preview
 
-<Playground url="/playground/god-ray"></Playground>
+<Playground url="/playground/god-ray" aspect="1/1"></Playground>

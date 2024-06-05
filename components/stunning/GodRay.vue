@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container relative flex h-screen w-screen">
+  <div class="god-ray relative flex h-screen w-screen">
     <div class="jumbo"></div>
   </div>
 </template>
@@ -7,8 +7,8 @@
 <script lang="ts" setup></script>
 
 <style scoped>
-.main-container {
-  --sui-ray-bg: rgba(255, 255, 255, 0.3);
+.god-ray {
+  --sui-ray-bg: #ffffff;
   --stripes: repeating-linear-gradient(
     100deg,
     var(--sui-ray-bg) 0%,
@@ -25,6 +25,15 @@
     #5eead4 25%,
     #60a5fa 30%
   );
+  --aurora: repeating-linear-gradient(
+    100deg,
+    #3b82f6 10%,
+    #a5b4fc 15%,
+    #93c5fd 20%,
+    #ddd6fe 25%,
+    #60a5fa 30%
+  );
+  background-color: var(--sui-ray-bg);
   transition: background-color 0.3s;
 }
 
@@ -46,10 +55,10 @@
   mask-image: radial-gradient(ellipse at 100% 0%, black 40%, transparent 70%);
   pointer-events: none;
   position: absolute;
-  top: -10px;
-  right: -10px;
-  bottom: -10px;
-  left: -10px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   opacity: 0.5;
 }
 
@@ -62,5 +71,15 @@
   animation: jumbo 60s linear infinite;
   background-attachment: fixed;
   mix-blend-mode: difference;
+}
+
+.dark .god-ray {
+  --sui-ray-bg: rgba(0, 0, 0, 1);
+}
+
+.dark .jumbo,
+.dark .jumbo::after {
+  background-image: var(--stripes), var(--aurora);
+  filter: blur(12px) invert(10%);
 }
 </style>

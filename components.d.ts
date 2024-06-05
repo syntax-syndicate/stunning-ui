@@ -9,6 +9,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     'Ph:bookOpenTextDuotone': typeof import('~icons/ph/book-open-text-duotone')['default']
     'Ph:notebookDuotone': typeof import('~icons/ph/notebook-duotone')['default']
+    'Ph:rocketLaunchDuotone': typeof import('~icons/ph/rocket-launch-duotone')['default']
     'RadixIcons:copy': typeof import('~icons/radix-icons/copy')['default']
     'RadixIcons:moon': typeof import('~icons/radix-icons/moon')['default']
     'RadixIcons:sun': typeof import('~icons/radix-icons/sun')['default']
