@@ -21,7 +21,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-conic': 'conic-gradient(var(--tw-gradient-stops))'
+        'gradient-conic':
+          'conic-gradient(var(--conic-position, from 45deg), var(--tw-gradient-stops))'
       }
     }
   }

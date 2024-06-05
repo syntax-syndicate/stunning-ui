@@ -89,6 +89,11 @@ export const componentList = [
         name: 'Gravity Elements',
         path: '/components/gravity-elements',
         status: 'upcoming'
+      },
+      {
+        name: 'Light Bar',
+        path: '/components/light-bar',
+        status: 'finished'
       }
     ]
   },
@@ -144,6 +149,11 @@ export const componentList = [
         name: 'Gradient Border',
         path: '/components/gradient-border-button',
         status: 'finished'
+      },
+      {
+        name: 'Glass Border',
+        path: '/components/glass-border-button',
+        status: 'upcoming'
       }
     ]
   },

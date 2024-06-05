@@ -59,7 +59,8 @@ module.exports = {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(50% 50%, var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(var(--tw-gradient-stops))'
+        'gradient-conic':
+          'conic-gradient(var(--conic-position, from 45deg), var(--tw-gradient-stops))'
       },
       keyframes: {
         'accordion-down': {
