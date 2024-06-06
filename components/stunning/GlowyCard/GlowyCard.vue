@@ -22,7 +22,6 @@
 .sui-glow-card {
   position: relative;
   border-radius: calc(var(--radius) * 1px);
-  box-shadow: 0 1rem 2rem -1rem black;
   backdrop-filter: blur(calc(var(--cardblur, 5) * 1px));
 }
 

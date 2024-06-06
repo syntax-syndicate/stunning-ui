@@ -17,7 +17,7 @@
                   class="flex gap-2 items-center group"
                 >
                   <div
-                    class="rounded-md p-1 inline-flex ring-inset ring-1 bg-neutral-100/50 dark:bg-neutral-800/50 ring-neutral-300 dark:ring-neutral-700 group-hover:bg-emerald-800/50 group-hover:ring-emerald-600"
+                    class="rounded-md p-1 inline-flex ring-inset ring-1 bg-neutral-50/50 dark:bg-neutral-800/50 ring-neutral-300 dark:ring-neutral-700 group-hover:dark:bg-emerald-800/50 group-hover:ring-emerald-300 group-hover:dark:ring-emerald-600"
                   >
                     <ph:rocket-launch-duotone
                       class="w-5 h-5 text-emerald-500"
@@ -32,7 +32,7 @@
                   class="flex gap-2 items-center group"
                 >
                   <div
-                    class="rounded-md p-1 inline-flex ring-inset ring-1 bg-neutral-100/50 dark:bg-neutral-800/50 ring-neutral-300 dark:ring-neutral-700 group-hover:bg-emerald-800/50 group-hover:ring-emerald-600"
+                    class="rounded-md p-1 inline-flex ring-inset ring-1 bg-neutral-50/50 dark:bg-neutral-800/50 ring-neutral-300 dark:ring-neutral-700 group-hover:dark:bg-emerald-800/50 group-hover:ring-emerald-300 group-hover:dark:ring-emerald-600"
                   >
                     <ph:notebook-duotone class="w-5 h-5 text-emerald-500" />
                   </div>

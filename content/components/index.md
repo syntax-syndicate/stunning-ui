@@ -5,4 +5,4 @@ description: 'Boost your website development with our top Vue.js components, des
 category: components
 ---
 
-# Components are building Blocks
+<ComponentGallery />
