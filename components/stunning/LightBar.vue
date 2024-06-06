@@ -6,12 +6,20 @@
       class="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0"
     >
       <div
-        class="absolute inset-auto right-1/2 h-56 w-[30rem] bg-gradient-conic from-emerald-500 via-black to-transparent text-white [--conic-position:from_70deg_at_center_top]"
+        class="absolute inset-auto right-1/2 h-56 bg-gradient-conic from-emerald-500 via-black to-transparent text-white [--conic-position:from_70deg_at_center_top]"
         :style="leftStyle"
+        v-motion
+        :initial="{ width: '320px' }"
+        :enter="{ width: '480px' }"
+        :duration="1600"
       />
       <div
-        class="absolute inset-auto left-1/2 h-56 w-[30rem] bg-gradient-conic from-transparent via-black to-emerald-500 text-white [--conic-position:from_290deg_at_center_top]"
+        class="absolute inset-auto left-1/2 h-56 bg-gradient-conic from-transparent via-black to-emerald-500 text-white [--conic-position:from_290deg_at_center_top]"
         :style="rightStyle"
+        v-motion
+        :initial="{ width: '320px' }"
+        :enter="{ width: '480px' }"
+        :duration="1600"
       />
       <div
         class="absolute top-1/2 h-48 w-full translate-y-12 scale-x-150 bg-black blur-2xl"
@@ -28,8 +36,11 @@
         :style="bottomStyle"
       />
       <div
-        class="absolute inset-auto z-50 h-0.5 w-[30rem] -translate-y-[7rem] blur-sm"
+        class="absolute inset-auto z-50 h-0.5 -translate-y-[7rem] blur-sm"
         :style="bottomStyle"
+        :initial="{ width: '320px' }"
+        :enter="{ width: '480px' }"
+        :duration="1600"
       />
 
       <div

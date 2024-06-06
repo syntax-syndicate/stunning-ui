@@ -26,6 +26,11 @@ export const componentList = [
         status: 'finished'
       },
       {
+        name: 'Tyndall Effect',
+        path: '/components/tyndall-effect',
+        status: 'finished'
+      },
+      {
         name: 'God Ray',
         path: '/components/god-ray',
         status: 'finished'
@@ -66,6 +71,11 @@ export const componentList = [
     category: 'Micro Interactions',
     components: [
       {
+        name: 'Light Bar',
+        path: '/components/light-bar',
+        status: 'finished'
+      },
+      {
         name: 'Confetti',
         path: '/components/confetti',
         status: 'upcoming'
@@ -89,11 +99,6 @@ export const componentList = [
         name: 'Gravity Elements',
         path: '/components/gravity-elements',
         status: 'upcoming'
-      },
-      {
-        name: 'Light Bar',
-        path: '/components/light-bar',
-        status: 'finished'
       }
     ]
   },
