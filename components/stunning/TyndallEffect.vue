@@ -41,7 +41,7 @@
   --sui-tyndall-effect-bg-fourth-color: rgb(0, 0, 0);
   --sui-tyndall-effect-streak-color: #00e1ff;
   background: radial-gradient(
-    144% 64% at 10% 36%,
+    102% 64% at 1% 48%,
     var(--sui-tyndall-effect-bg-first-color) 0%,
     var(--sui-tyndall-effect-bg-second-color) 54%,
     var(--sui-tyndall-effect-bg-third-color) 72%,

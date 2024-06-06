@@ -1,12 +1,12 @@
 <template>
-  <main class="w-full h-full">
+  <main class="w-full h-full bg-black">
     <TyndallEffect
       :style="{
-        '--sui-tyndall-effect-bg-first-color': '#34d399',
+        '--sui-tyndall-effect-bg-first-color': '#10b981',
         '--sui-tyndall-effect-bg-second-color': '#065f46',
-        '--sui-tyndall-effect-bg-third-color': '#1665342e',
+        '--sui-tyndall-effect-bg-third-color': 'rgb(12, 95, 70, .80)',
         '--sui-tyndall-effect-bg-fourth-color': 'rgb(0, 0, 0)',
-        '--sui-tyndall-effect-streak-color': '#99f6e4'
+        '--sui-tyndall-effect-streak-color': '#a5f3fc'
       }"
     >
       <div

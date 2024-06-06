@@ -1,5 +1,5 @@
 <template>
-  <main class="w-full h-full">
+  <main class="w-full h-full bg-black">
     <TyndallEffect>
       <div
         class="absolute top-48 left-1/2 -translate-x-1/2 transform w-full flex flex-col items-center px-5"
