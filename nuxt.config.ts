@@ -37,8 +37,12 @@ export default defineNuxtConfig({
     componentDir: './components/ui'
   },
   content: {
+    documentDriven: true,
     highlight: {
-      theme: 'vitesse-dark'
+      theme: {
+        default: 'vitesse-light',
+        dark: 'vitesse-dark'
+      }
     }
   },
   components: {

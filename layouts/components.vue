@@ -102,7 +102,7 @@ console.log(route.path)
 }
 
 .prose :where(pre) {
-  @apply bg-neutral-900/80 p-6 my-0 border dark:border-neutral-700/80 rounded-lg;
+  @apply bg-neutral-50/80 dark:bg-neutral-950/80 p-6 my-0 border dark:border-neutral-700/80 rounded-lg;
 }
 
 .prose :where(h2 a) {
