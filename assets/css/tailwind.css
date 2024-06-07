@@ -116,4 +116,14 @@
   .bg-grid {
     @apply bg-left-top bg-repeat bg-white dark:bg-neutral-950/80 bg-[linear-gradient(to_right,#8080802e_1px,transparent_1px),linear-gradient(to_bottom,#8080802e_1px,transparent_1px)];
   }
+
+  .step {
+    counter-increment: step;
+  }
+
+  .step:before {
+    @apply absolute w-9 h-9 bg-muted rounded-full font-mono font-medium text-center text-base inline-flex items-center justify-center -indent-px border-4 border-background;
+    @apply -ml-[50px] -mt-1;
+    content: counter(step);
+  }
 }

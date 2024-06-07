@@ -7,9 +7,42 @@ category: paragraph, headline, text
 
 ## Preview
 
+::code-group
+
+::div{label="Preview"}
 <Playground url="/playground/typed-text"></Playground>
+::
+
+```vue [Code]
+<template>
+  <main class="w-full flex flex-col px-8 py-16 h-full">
+    <div class="flex-center flex-col h-full text-5xl font-semibold">
+      <p class="text-center">
+        <span class="text-neon">Stunning UI</span> is designed for
+      </p>
+      <p>
+        <TypedText
+          :words="['Designers', 'Developers', 'Creators', 'Indie Hackers']"
+          class="ml-2 text-neon"
+          :typeSpeed="75"
+        />
+      </p>
+    </div>
+  </main>
+</template>
+
+<script lang="ts" setup>
+import TypedText from '@/components/stunning/TypedText.vue'
+</script>
+
+<style scoped></style>
+```
+
+::
 
 ## Installation
+
+::steps
 
 ### Prerequisites
 
@@ -72,18 +105,7 @@ onUnmounted(() => {
 ```
 
 </CollapseCodeWrapper>
-
-## Usage
-
-```vue
-<template>
-  <TypedText
-    class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-emerald-700 dark:to-emerald-300"
-    :words="['Designers', 'Developers', 'Creators', 'Indie Hackers']"
-    :typeSpeed="75"
-  />
-</template>
-```
+::
 
 ## Props
 
