@@ -66,7 +66,7 @@
       :key="`${i}${label(slot.props)}`"
       :value="label(slot.props)"
       class="mt-0"
-      :class="[padded && ($slots.default?.()[activeTabIndex]?.type as any).tag !== 'pre' && 'p-0']"
+      :class="[padded && ($slots.default?.()[activeTabIndex]?.type as any).tag !== 'pre' && 'p-0', label(slot.props) === 'Code' ? 'w-full overflow-auto max-h-[56.25vw]' : '']"
     >
       <component :is="slot" :in-group="true" />
     </div>

@@ -5,11 +5,39 @@ description: Scroll-driven text reveal, a text appearance effect activates as yo
 category: scroll, features
 ---
 
-## Preview
+::code-group
 
+::div{label="Preview"}
 <Playground url="/playground/text-reveal"></Playground>
+::
+
+```vue [Code]
+<template>
+  <main class="w-full my-16 flex flex-col px-8 py-16 h-[200vh]">
+    <div className="pb-4 flex justify-center w-full">
+      <span class="text-neon-wb text-2xl text-white/30">
+        Scroll-driven Text Reveal
+      </span>
+    </div>
+    <TextReveal :text="text" />
+  </main>
+</template>
+
+<script lang="ts" setup>
+import TextReveal from '@/components/stunning/TextReveal.vue'
+
+const text =
+  'Stunning UI is Designed for Developers、Designers、Creators、Indie Hackers'
+</script>
+
+<style scoped></style>
+```
+
+::
 
 ## Installation
+
+::steps
 
 ### Prerequisites
 
@@ -95,13 +123,7 @@ onUnmounted(() => {
 
 </CollapseCodeWrapper>
 
-## Usage
-
-```vue
-<template>
-  <TextReveal :text="paragraphPlaceholder" />
-</template>
-```
+::
 
 ## Props
 

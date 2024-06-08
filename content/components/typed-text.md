@@ -5,8 +5,6 @@ description: Typically used to display dynamic text changes in the Hero Section.
 category: paragraph, headline, text
 ---
 
-## Preview
-
 ::code-group
 
 ::div{label="Preview"}
