@@ -5,11 +5,31 @@ description: Torch text reveal, a text effect to highlight the headline.
 category: text, features
 ---
 
-## Preview
+::code-group
 
+::div{label="Preview"}
 <Playground url="/playground/torch-text-reveal"></Playground>
+::
+
+```vue [Code]
+<template>
+  <main class="w-full h-full flex flex-col justify-center items-center px-8">
+    <TorchTextReveal> Stunning UI is Awesome </TorchTextReveal>
+  </main>
+</template>
+
+<script lang="ts" setup>
+import TorchTextReveal from '@/components/stunning/TorchTextReveal.vue'
+</script>
+
+<style scoped></style>
+```
+
+::
 
 ## Installation
+
+::steps
 
 ### Prerequisites
 
@@ -45,7 +65,7 @@ module.exports = {
 
 `/components/stunning/TorchTextReveal.vue`
 
-<CollapseCodeWrapper>
+::CodeCollapse
 
 ```vue
 <template>
@@ -63,15 +83,9 @@ module.exports = {
 <style scoped></style>
 ```
 
-</CollapseCodeWrapper>
+::
 
-## Usage
-
-```vue
-<template>
-  <TorchTextReveal> Stunning UI is Awesome </TorchTextReveal>
-</template>
-```
+::
 
 ## Props
 

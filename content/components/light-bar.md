@@ -85,7 +85,7 @@ export const formatThemeColors = (color: ColorType) => {
 
 `/components/stunning/LightBar.vue`
 
-<CollapseCodeWrapper>
+::CodeCollapse
 
 ```vue
 <template>
@@ -167,7 +167,7 @@ const rightStyle = computed(() => {
 <style scoped></style>
 ```
 
-</CollapseCodeWrapper>
+::
 
 ::
 

@@ -56,7 +56,7 @@ bun i typed.js
 
 `/components/stunning/TextReveal.vue`
 
-<CollapseCodeWrapper>
+::CodeCollapse
 
 ```vue
 <!-- /components/TypedText.vue -->
@@ -102,7 +102,8 @@ onUnmounted(() => {
 <style scoped></style>
 ```
 
-</CollapseCodeWrapper>
+::
+
 ::
 
 ## Props

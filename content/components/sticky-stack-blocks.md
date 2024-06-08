@@ -5,17 +5,61 @@ description: Sticky stack blocks are commonly used as visually fixed elements to
 category: scroll, blocks, features
 ---
 
-## Preview
+::code-group
 
+::div{label="Preview"}
 <Playground url="/playground/sticky-stack-blocks" aspect="1/1"></Playground>
+::
+
+```vue [Code]
+<template>
+  <StickyStackBlock :maxHeight="80">
+    <template v-slot:card>
+      <div
+        class="h-full bg-gradient-to-br from-emerald-700 to-emerald-300 border-2 border-emerald-600 rounded-2xl flex"
+      >
+        <div class="w-1/2 p-16 flex gap-2 justify-center flex-col">
+          <ri:magic-line class="w-8 h-8" />
+
+          <h1 class="font-medium text-2xl">Section 1</h1>
+
+          <p class="line-clamp-5 text-secondary-foreground">
+            {{ paragraphPlaceholder }}
+          </p>
+        </div>
+        <div
+          class="w-1/2 bg-neutral-950/80 flex-center rounded-tr-2xl rounded-br-2xl"
+        >
+          <div class="w-64">
+            <div
+              class="relative flex flex-col h-full space-y-5 overflow-hidden rounded-2xl bg-white/5 p-8 shadow-xl shadow-black/5"
+            >
+              <div class="h-24 rounded-lg bg-white/5"></div>
+              <div class="space-y-3">
+                <div class="h-3 w-3/5 rounded-lg bg-white/5"></div>
+                <div class="h-3 w-4/5 rounded-lg bg-white/10"></div>
+                <div class="h-3 w-2/5 rounded-lg bg-white/5"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+  </StickyStackBlock>
+</template>
+```
+
+::
 
 ## Installation
+
+::steps
 
 ### Copy the source code
 
 `/components/stunning/StickyStackBlock.vue`
 
-<CollapseCodeWrapper>
+::CodeCollapse
 
 ```vue
 <template>
@@ -66,47 +110,9 @@ watch(
 </style>
 ```
 
-</CollapseCodeWrapper>
+::
 
-## Usage
-
-```vue
-<template>
-  <StickyStackBlock :maxHeight="80">
-    <template v-slot:card>
-      <div
-        class="h-full bg-gradient-to-br from-emerald-700 to-emerald-300 border-2 border-emerald-600 rounded-2xl flex"
-      >
-        <div class="w-1/2 p-16 flex gap-2 justify-center flex-col">
-          <ri:magic-line class="w-8 h-8" />
-
-          <h1 class="font-medium text-2xl">Section 1</h1>
-
-          <p class="line-clamp-5 text-secondary-foreground">
-            {{ paragraphPlaceholder }}
-          </p>
-        </div>
-        <div
-          class="w-1/2 bg-neutral-950/80 flex-center rounded-tr-2xl rounded-br-2xl"
-        >
-          <div class="w-64">
-            <div
-              class="relative flex flex-col h-full space-y-5 overflow-hidden rounded-2xl bg-white/5 p-8 shadow-xl shadow-black/5"
-            >
-              <div class="h-24 rounded-lg bg-white/5"></div>
-              <div class="space-y-3">
-                <div class="h-3 w-3/5 rounded-lg bg-white/5"></div>
-                <div class="h-3 w-4/5 rounded-lg bg-white/10"></div>
-                <div class="h-3 w-2/5 rounded-lg bg-white/5"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </template>
-  </StickyStackBlock>
-</template>
-```
+::
 
 ## Props
 

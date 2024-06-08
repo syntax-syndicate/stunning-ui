@@ -5,13 +5,13 @@ description: A background grid pattern made with SVGs, fully customizable using 
 category: background, hero, pattern
 ---
 
-## Preview
+::code-group
 
+::div{label="Preview"}
 <Playground url="/playground/grid-pattern"></Playground>
+::
 
-## Usage
-
-```vue
+```vue [Code]
 <template>
   <GridPattern
     :width="20"
@@ -22,6 +22,8 @@ category: background, hero, pattern
   />
 </template>
 ```
+
+::
 
 ## Props
 

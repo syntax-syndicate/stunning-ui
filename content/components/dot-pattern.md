@@ -5,13 +5,13 @@ description: A background dot pattern made with SVGs, fully customizable using T
 category: background, hero, pattern
 ---
 
-## Preview
+::code-group
 
+::div{label="Preview"}
 <Playground url="/playground/dot-pattern"></Playground>
+::
 
-## Usage
-
-```vue
+```vue [Code]
 <template>
   <DotPattern
     :width="20"
@@ -23,6 +23,8 @@ category: background, hero, pattern
   />
 </template>
 ```
+
+::
 
 ## Props
 

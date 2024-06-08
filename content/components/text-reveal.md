@@ -53,7 +53,7 @@ bun i gsap
 
 `/components/stunning/TextReveal.vue`
 
-<CollapseCodeWrapper>
+::CodeCollapse
 
 ```vue
 <!-- /components/TextReveal.vue -->
@@ -121,7 +121,7 @@ onUnmounted(() => {
 <style scoped></style>
 ```
 
-</CollapseCodeWrapper>
+::
 
 ::
 

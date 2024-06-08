@@ -160,7 +160,7 @@ module.exports = {
 
 `/components/stunning/Marquee.vue`
 
-<CollapseCodeWrapper>
+::CodeCollapse
 
 ```vue
 <!-- /components/Marquee.vue -->
@@ -214,7 +214,7 @@ const props = defineProps({
 <style scoped></style>
 ```
 
-</CollapseCodeWrapper>
+::
 
 ::
 

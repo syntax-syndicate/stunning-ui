@@ -21,7 +21,7 @@
       <div
         :class="
           cn(
-            'absolute w-full flex items-center justify-center bg-gradient-to-b from-neutral-50/30 dark:from-background/10 to-background to-90% p-2 inset-x-0 bottom-0 h-12 '
+            'absolute w-full flex items-center justify-center bg-gradient-to-b from-neutral-50/30 dark:from-neutral-950/30 dark:to-black to-white to-90% p-2 inset-x-0 bottom-0 h-20'
           )
         "
       >
@@ -32,9 +32,10 @@
         </CollapsibleTrigger>
       </div>
       <div class="absolute right-4 top-4">
-        <Button size="icon" variant="ghost" @click="handleCopy">
-          <radix-icons:copy class="h-4 w-4" />
-        </Button>
+        <CodeCopy
+          v-if="$slots.default?.()[0]?.props?.code"
+          :code="$slots.default?.()[0]?.props?.code"
+        />
       </div>
     </div>
   </Collapsible>
@@ -42,20 +43,16 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
+
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger
 } from '@/components/ui/collapsible'
-import { cn } from '~/lib/utils'
 import Button from '@/components/ui/button/Button.vue'
+import { cn } from '~/lib/utils'
 
-const { $toast } = useNuxtApp()
 const isOpened = ref(false)
-
-const handleCopy = () => {
-  $toast.success('Copied!')
-}
 </script>
 
 <style scoped></style>

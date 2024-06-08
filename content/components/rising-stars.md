@@ -1,17 +1,42 @@
 ---
 navigation.title: Rising Stars
 title: Rising Stars
-description: A rising star shines especially bright in the night.
+description: A rising star shines especially bright in the night, this component can be used as a background, letting stars fill your page.
 category: background, hero
 ---
 
-This component can be used as a background, letting stars fill your page.
+::code-group
 
-## Preview
-
+::div{label="Preview"}
 <Playground url="/playground/rising-stars"></Playground>
+::
+
+```vue [Code]
+<template>
+  <main class="w-screen h-screen bg-neutral-900">
+    <div class="absolute flex h-full w-full items-center justify-center">
+      <p
+        className="z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-primary-foreground dark:text-white"
+      >
+        Rising Stars
+      </p>
+    </div>
+    <RisingStars class="from-neutral-950 to-neutral-900" />
+  </main>
+</template>
+
+<script lang="ts" setup>
+import RisingStars from '@/components/stunning/RisingStars.vue'
+</script>
+
+<style scoped></style>
+```
+
+::
 
 ## Installation
+
+::steps
 
 ### Prerequisites
 
@@ -46,7 +71,7 @@ Setup the grid pattern background, background size `60px`
 
 `/components/stunning/ParallaxStars.vue`
 
-<CollapseCodeWrapper>
+::CodeCollapse
 
 ```vue
 <template>
@@ -106,23 +131,9 @@ const largeStars = Array.from({ length: size.value / 4 }, () => {
 <style scoped></style>
 ```
 
-</CollapseCodeWrapper>
+::
 
-## Usage
-
-```vue
-<template>
-  <main class="w-screen h-screen bg-neutral-900">
-    <RisingStars class="from-neutral-950 to-neutral-900" />
-  </main>
-</template>
-
-<script lang="ts" setup>
-import RisingStars from '@/components/stunning/RisingStars.vue'
-</script>
-
-<style scoped></style>
-```
+::
 
 ## Props
 

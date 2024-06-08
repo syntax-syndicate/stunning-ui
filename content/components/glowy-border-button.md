@@ -5,11 +5,45 @@ description: Typically used to display dynamic text changes in the Hero Section.
 category: button, cta
 ---
 
-## Preview
+::code-group
 
+::div{label="Preview"}
 <Playground url="/playground/glowy-border-button"></Playground>
+::
+
+```vue [Code]
+<template>
+  <main class="w-full h-full flex justify-center items-center gap-8">
+    <GlowyBorderButton>
+      <span>Sign in</span>
+    </GlowyBorderButton>
+    <GlowyBorderButton color="#0ea5e9">
+      <span>Sign in</span>
+    </GlowyBorderButton>
+    <GlowyBorderButton color="#10b981">
+      <span>Sign in</span>
+    </GlowyBorderButton>
+    <GlowyBorderButton color="#8b5cf6">
+      <span>Sign in</span>
+    </GlowyBorderButton>
+    <GlowyBorderButton color="#eab308">
+      <span>Sign in</span>
+    </GlowyBorderButton>
+  </main>
+</template>
+
+<script lang="ts" setup>
+import GlowyBorderButton from '~/components/stunning/GlowyBorderButton.vue'
+</script>
+
+<style scoped></style>
+```
+
+::
 
 ## Installation
+
+::steps
 
 ### Prerequisites
 
@@ -25,7 +59,7 @@ bun i colord
 
 `/components/stunning/GlowyBorderButton.vue`
 
-<CollapseCodeWrapper>
+::CodeCollapse
 
 ```vue
 <template>
@@ -77,17 +111,9 @@ const conicGraident = computed(() => {
 <style scoped></style>
 ```
 
-</CollapseCodeWrapper>
+::
 
-## Usage
-
-```vue
-<template>
-  <GlowyBorderButton>
-    <span>Sign in</span>
-  </GlowyBorderButton>
-</template>
-```
+::
 
 ## Props
 

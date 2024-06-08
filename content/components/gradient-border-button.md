@@ -5,11 +5,49 @@ description: Typically used to display dynamic text changes in the Hero Section.
 category: button, cta
 ---
 
-## Preview
+::code-group
 
+::div{label="Preview"}
 <Playground url="/playground/gradient-border-button"></Playground>
+::
+
+```vue [Code]
+<template>
+  <main class="w-full h-full flex justify-center items-center gap-8">
+    <GradientBorderButton> Click me </GradientBorderButton>
+    <GradientBorderButton
+      gradientColor="from-violet-700 via-indigo-500 to-violet-300"
+    >
+      Click me
+    </GradientBorderButton>
+    <GradientBorderButton
+      gradientColor="from-purple-700 via-red-500 to-amber-400"
+    >
+      Click me
+    </GradientBorderButton>
+    <GradientBorderButton
+      gradientColor="from-pink-300 via-purple-300 to-indigo-400"
+    >
+      Click me
+    </GradientBorderButton>
+    <GradientBorderButton gradientColor="from-sky-400 via-rose-400 to-lime-400">
+      Click me
+    </GradientBorderButton>
+  </main>
+</template>
+
+<script lang="ts" setup>
+import GradientBorderButton from '@/components/stunning/GradientBorderButton.vue'
+</script>
+
+<style scoped></style>
+```
+
+::
 
 ## Installation
+
+::steps
 
 ### Prerequisites
 
@@ -33,7 +71,7 @@ module.exports = {
 
 `/components/stunning/GradientBorderButton.vue`
 
-<CollapseCodeWrapper>
+::CodeCollapse
 
 ```vue
 <template>
@@ -83,7 +121,9 @@ withDefaults(defineProps<{ gradientColor?: string }>(), {
 <style scoped></style>
 ```
 
-</CollapseCodeWrapper>
+::
+
+::
 
 ## Usage
 

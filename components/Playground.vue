@@ -3,7 +3,7 @@
     <iframe
       v-if="reflash"
       :src="url"
-      class="w-full rounded-lg"
+      class="w-full"
       :class="{
         'aspect-[16/9]': aspect === '16/9',
         'aspect-[4/3]': aspect === '4/3',
