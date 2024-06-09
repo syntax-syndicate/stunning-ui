@@ -175,17 +175,29 @@ const rightStyle = computed(() => {
 
 ### Themes
 
-```vue
+::code-group
+
+::div{label="Preview"}
+<Playground url="/playground/light-bar/WithTheme"></Playground>
+::
+
+```vue [Code]
 <template>
   <LightBar theme="pink" />
 </template>
 ```
 
-<Playground url="/playground/light-bar-theme" ></Playground>
+::
 
 ### With Paticles Effect
 
-```vue
+::code-group
+
+::div{label="Preview"}
+<Playground url="/playground/light-bar/WithParticles"></Playground>
+::
+
+```vue [Code]
 <template>
   <LightBar />
   <ParticlesEffect
@@ -195,7 +207,7 @@ const rightStyle = computed(() => {
 </template>
 ```
 
-<Playground url="/playground/light-bar-paticles" ></Playground>
+::
 
 ## Inspiration
 
