@@ -1,18 +1,31 @@
 <template>
   <main
-    class="w-screen h-screen bg-gradient-to-b from-emerald-950 to-emerald-500 dark:from-neutral-950 dark:to-neutral-800 flex justify-center items-center"
+    class="w-screen h-screen flex flex-col bg-gradient-to-b from-emerald-950 to-emerald-500"
   >
-    <GlassBorderButton class="z-10"> Start for free </GlassBorderButton>
-    <ParticlesStarEffect
-      :density="32"
-      class="absolute z-0 inset-x-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[160px] w-[160px] [mask-image:radial-gradient(50%_50%,white,transparent_85%)]"
-    />
+    <div
+      class="absolute top-32 left-1/2 -translate-x-1/2 transform w-full flex flex-col items-center px-5"
+    >
+      <p
+        class="rounded-full border border-white/50 px-4 py-1 text-xs font-bold uppercase tracking-widest text-white opacity-50"
+      >
+        New Version 1.0
+      </p>
+
+      <h1
+        class="mt-8 bg-gradient-to-br from-emerald-300/90 via-emerald-50 to-emerald-300/90 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-6xl"
+      >
+        Stunning UI is a better way <br />
+        to build websites
+      </h1>
+    </div>
+    <div class="absolute left-1/2 -translate-x-1/2 bottom-48">
+      <GlassBorderButton class="z-10 w-40"> Start for free </GlassBorderButton>
+    </div>
   </main>
 </template>
 
 <script lang="ts" setup>
 import GlassBorderButton from '@/components/stunning/GlassBorderButton.vue'
-import ParticlesStarEffect from '@/components/stunning/ParticlesStarEffect.vue'
 </script>
 
 <style scoped></style>

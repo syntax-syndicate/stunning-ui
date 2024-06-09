@@ -26,23 +26,28 @@
       :class="
         cn(
           'z-10 inline-flex h-full w-full cursor-pointer items-center justify-center rounded-xl px-8 py-1 font-medium',
-          'bg-gradient-to-t from-neutral-50 dark:from-neutral-800 to-white dark:to-black text-neutral-950 dark:text-neutral-300 backdrop-blur-3xl',
-          'dark:group-hover:from-neutral-700 dark:group-hover:to-neutral-950 group-hover:from-neutral-50 group-hover:to-white'
+          'bg-gradient-to-t from-neutral-100/90  to-neutral-50 backdrop-blur-2xl',
+          'group-hover:from-neutral-200/90 group-hover:to-neutral-50'
         )
       "
     >
       <div
-        class="flex items-center justify-center gap-2 transition-transform duration-100 text-neutral-950 dark:text-white ease-in-out group-hover:scale-105"
+        class="flex items-center justify-center gap-2 transition-transform duration-100 text-neutral-950 ease-in-out group-hover:scale-105"
       >
         <slot />
       </div>
     </div>
+    <ParticlesStarEffect
+      :density="32"
+      class="absolute z-0 inset-x-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[160px] w-[160px] [mask-image:radial-gradient(50%_50%,white,transparent_85%)]"
+    />
   </div>
 </template>
 
 <script lang="ts" setup>
 import { colord } from 'colord'
 import { cn } from '~/lib/utils'
+import ParticlesStarEffect from '@/components/stunning/ParticlesStarEffect.vue'
 
 const props = withDefaults(
   defineProps<{
@@ -52,7 +57,7 @@ const props = withDefaults(
 )
 
 const conicGraident = computed(() => {
-  const alphaColor = colord(props.color).alpha(0.1).toRgbString()
+  const alphaColor = colord(props.color).alpha(0.12).toRgbString()
   return `conic-gradient(from 90deg at 50% 50%, ${alphaColor} 0, ${alphaColor} 10%, ${props.color} 20%, ${alphaColor} 30%, ${alphaColor} 60%, ${props.color} 70%, ${alphaColor} 80%, ${alphaColor} 100%)`
   // return `conic-gradient(from 30deg at 50% 50%, transparent 330deg, rgb(255, 255, 255) 330deg, transparent 345deg)`
 })
