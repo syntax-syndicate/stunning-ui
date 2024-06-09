@@ -158,7 +158,7 @@ export const componentList = [
       {
         name: 'Glass Border',
         path: '/components/glass-border-button',
-        status: 'upcoming'
+        status: 'finished'
       }
     ]
   },

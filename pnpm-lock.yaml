@@ -14,6 +14,12 @@ importers:
       '@tsparticles/engine':
         specifier: ^3.4.0
         version: 3.4.0
+      '@tsparticles/preset-stars':
+        specifier: ^3.1.0
+        version: 3.1.0
+      '@tsparticles/shape-star':
+        specifier: ^3.4.0
+        version: 3.4.0
       '@tsparticles/slim':
         specifier: ^3.4.0
         version: 3.4.0
@@ -1135,6 +1141,9 @@ packages:
 
   '@tsparticles/plugin-easing-quad@3.4.0':
     resolution: {integrity: sha512-JgZDeoES8ONrt+pKdDRrUkTKJRfjgRpTlLgr2KqqadI+lSOQIw/QJuXfCu25/47wJLcPUxP1melclp6X/IhNog==}
+
+  '@tsparticles/preset-stars@3.1.0':
+    resolution: {integrity: sha512-fRXJ9fIUhLPFs23SbeRh+gaSRM5K8yNkh9YArbHHZG0HINVbNQa4U8yyMTHILGME5g9Pi2MlF9VeucjhPqm/Gg==}
 
   '@tsparticles/shape-circle@3.4.0':
     resolution: {integrity: sha512-X1ynt8h7bO+xep12Vkxeo2fImbKzLMEZr0qY3vKZzhHcy0/lxoo505pwyVL2+V98eZNOu9fmQM7vlIt/0FGTcg==}
@@ -6067,6 +6076,11 @@ snapshots:
 
   '@tsparticles/plugin-easing-quad@3.4.0':
     dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/preset-stars@3.1.0':
+    dependencies:
+      '@tsparticles/basic': 3.4.0
       '@tsparticles/engine': 3.4.0
 
   '@tsparticles/shape-circle@3.4.0':
