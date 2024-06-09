@@ -163,7 +163,6 @@ module.exports = {
 ::CodeCollapse
 
 ```vue
-<!-- /components/Marquee.vue -->
 <template>
   <div
     v-bind="props"
@@ -225,7 +224,7 @@ const props = defineProps({
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/playground/marquee-vertical"></Playground>
+<Playground url="/playground/marquee/WithVertical"></Playground>
 ::
 
 ```vue [Code]
