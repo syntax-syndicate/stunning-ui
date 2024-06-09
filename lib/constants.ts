@@ -78,7 +78,7 @@ export const componentList = [
       {
         name: 'Confetti',
         path: '/components/confetti',
-        status: 'upcoming'
+        status: 'finished'
       },
       {
         name: 'Dock',

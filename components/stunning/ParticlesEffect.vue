@@ -3,9 +3,15 @@
 </template>
 
 <script setup lang="ts">
-import { tsParticles } from '@tsparticles/engine'
+import {
+  tsParticles,
+  type Container,
+  type ISourceOptions
+} from '@tsparticles/engine'
 import { loadSlim } from '@tsparticles/slim'
 import { onMounted, onUnmounted } from 'vue'
+
+let container: Container | undefined = undefined
 
 const props = defineProps({
   id: {
@@ -32,6 +38,10 @@ const props = defineProps({
     type: Number,
     required: false
   },
+  minOpacity: {
+    type: Number,
+    default: 1
+  },
   opacity: {
     type: Number,
     default: 1
@@ -54,7 +64,7 @@ const props = defineProps({
   }
 })
 
-const defaultOptions = {
+const defaultOptions: ISourceOptions = {
   background: {
     color: {
       value: props.background
@@ -101,8 +111,6 @@ const defaultOptions = {
   },
   detectRetina: true
 }
-
-var container
 
 const loadParticles = async () => {
   //

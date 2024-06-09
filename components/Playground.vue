@@ -10,6 +10,7 @@
         'aspect-[3/4]': aspect === '3/4',
         'aspect-[9/16]': aspect === '9/16',
         'aspect-[1/1]': aspect === '1/1',
+        'aspect-[5/2]': aspect === '5/2',
         dark: colorMode.preference === 'dark',
         light: colorMode.preference === 'light'
       }"
