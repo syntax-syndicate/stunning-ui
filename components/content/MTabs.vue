@@ -51,7 +51,7 @@
             {{ label(slot.props) }}
           </div>
         </div>
-        <CodeCopy
+        <CopyButton
           v-if="$slots.default?.()[activeTabIndex]?.props?.code"
           class="self-center ml-auto mr-3 pl-2"
           :code="$slots.default?.()[activeTabIndex]?.props?.code"
@@ -80,7 +80,7 @@ import Tabs from '../ui/tabs/Tabs.vue'
 import TabsList from '../ui/tabs/TabsList.vue'
 import TabsContent from '../ui/tabs/TabsContent.vue'
 import TabsTrigger from '../ui/tabs/TabsTrigger.vue'
-import CodeCopy from './CodeCopy.vue'
+import CopyButton from './CopyButton.vue'
 
 withDefaults(
   defineProps<{

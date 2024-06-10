@@ -88,9 +88,13 @@ import ParticlesEffect from '@/components/stunning/ParticlesEffect.vue'
 
 This component requires the package [typed.js](https://github.com/mattboldt/typed.js).
 
+::CodeWrapper
+
 ```bash
-pnpm i @tsparticles/react @tsparticles/slim
+pnpm i @tsparticles/engine @tsparticles/slim
 ```
+
+::
 
 ### Copy the source code
 

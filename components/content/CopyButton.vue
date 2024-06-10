@@ -1,5 +1,5 @@
 <template>
-  <span>
+  <span ref="checkIconRef">
     <Transition name="fade" mode="out-in">
       <lucide:copy
         v-if="copied === false"
@@ -22,13 +22,15 @@ const props = defineProps<{
 }>()
 
 const { copy } = useClipboard({ source: props.code })
-const copied = ref(false)
-function copyCode() {
-  copy(props.code).then(() => {
-    copied.value = true
-  })
-}
+
 const checkIconRef = ref<HTMLElement>()
+const copied = ref(false)
+
+const copyCode = async () => {
+  await copy(props.code)
+  copied.value = true
+}
+
 onClickOutside(checkIconRef, () => {
   copied.value = false
 })
