@@ -35,13 +35,15 @@
         </Button>
       </nav>
       <div
-        class="flex flex-1 items-center justify-end gap-2 sm:gap-4 md:justify-end"
+        class="flex flex-1 items-center justify-end gap-2 sm:gap-2 md:justify-end"
       >
-        <NuxtLink href="https://twitter.com/robert_shaw_x" target="_blank">
-          <ri:twitter-x-line
-            class="w-4 h-4 dark:text-white/60 hover:text-white"
-          />
-        </NuxtLink>
+        <Button
+          variant="ghost"
+          size="icon"
+          @click="navigateTo('https://x.com/robert_shaw_x')"
+        >
+          <ri:twitter-x-line class="h-[1.2rem] w-[1.2rem]" />
+        </Button>
         <ToggleDarkmode />
       </div>
     </div>

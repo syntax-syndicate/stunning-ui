@@ -28,7 +28,7 @@
                   </span>
                 </NuxtLink>
                 <NuxtLink
-                  href="/getting-started"
+                  href="/installation"
                   class="flex gap-2 items-center group"
                 >
                   <div

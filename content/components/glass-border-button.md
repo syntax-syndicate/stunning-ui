@@ -53,7 +53,7 @@ import GlassBorderButton from '@/components/stunning/GlassBorderButton.vue'
 
 ### Prerequisites
 
-This component need to install the package: [canvas-confetti](https://github.com/catdad/canvas-confetti)
+This component need to install the package:
 
 ```bash
 pnpm i -S @tsparticles/preset-stars @tsparticles/shape-star colord

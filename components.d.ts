@@ -7,6 +7,10 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Icon: typeof import('~icons/ic/on')['default']
+    'Lucide:arrowUpRight': typeof import('~icons/lucide/arrow-up-right')['default']
+    'Lucide:check': typeof import('~icons/lucide/check')['default']
+    'Lucide:copy': typeof import('~icons/lucide/copy')['default']
     'Ph:bookOpenTextDuotone': typeof import('~icons/ph/book-open-text-duotone')['default']
     'Ph:notebookDuotone': typeof import('~icons/ph/notebook-duotone')['default']
     'Ph:rocketLaunchDuotone': typeof import('~icons/ph/rocket-launch-duotone')['default']
@@ -16,7 +20,9 @@ declare module 'vue' {
     'Ri:arrowRightLine': typeof import('~icons/ri/arrow-right-line')['default']
     'Ri:cake2Line': typeof import('~icons/ri/cake2-line')['default']
     'Ri:database2Line': typeof import('~icons/ri/database2-line')['default']
+    'Ri:discordLine': typeof import('~icons/ri/discord-line')['default']
     'Ri:edit2Line': typeof import('~icons/ri/edit2-line')['default']
+    'Ri:githubLine': typeof import('~icons/ri/github-line')['default']
     'Ri:magicLine': typeof import('~icons/ri/magic-line')['default']
     'Ri:searchLine': typeof import('~icons/ri/search-line')['default']
     'Ri:stackLine': typeof import('~icons/ri/stack-line')['default']

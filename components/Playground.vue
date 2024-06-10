@@ -1,5 +1,7 @@
 <template>
-  <div class="blocks-playground border dark:border-neutral-700 rounded-lg mt-4">
+  <div
+    class="blocks-playground border dark:border-neutral-700 rounded-bl-lg rounded-br-lg mt-4 overflow-hidden"
+  >
     <iframe
       v-if="reflash"
       :src="url"
