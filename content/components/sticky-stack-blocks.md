@@ -53,7 +53,7 @@ category: scroll, blocks, features
 
 ## Installation
 
-::steps
+::MSteps
 
 ### Copy the source code
 

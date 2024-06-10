@@ -57,7 +57,7 @@ import GlareLineFrame from '@/components/stunning/GlareLineFrame.vue'
 
 ## Installation
 
-::steps
+::MSteps
 
 ### Copy the source code
 

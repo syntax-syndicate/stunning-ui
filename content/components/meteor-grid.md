@@ -80,7 +80,7 @@ import Meteor from '~/components/stunning/MeteorGrid/Meteor.vue'
 
 ## Installation
 
-::steps
+::MSteps
 
 ### Prerequisites
 

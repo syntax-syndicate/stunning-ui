@@ -82,7 +82,7 @@ import ParticlesEffect from '@/components/stunning/ParticlesEffect.vue'
 
 ## Installation
 
-::steps
+::MSteps
 
 ### Prerequisites
 

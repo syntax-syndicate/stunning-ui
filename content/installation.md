@@ -5,7 +5,7 @@ description: Install and configure Stunning UI Components
 category: ''
 ---
 
-::steps
+::MSteps
 
 ### Overview
 

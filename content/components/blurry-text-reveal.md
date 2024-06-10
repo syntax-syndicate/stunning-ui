@@ -52,7 +52,7 @@ const text2 =
 
 ## Installation
 
-::steps
+::MSteps
 
 ### Prerequisites
 

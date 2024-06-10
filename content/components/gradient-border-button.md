@@ -47,7 +47,7 @@ import GradientBorderButton from '@/components/stunning/GradientBorderButton.vue
 
 ## Installation
 
-::steps
+::MSteps
 
 ### Prerequisites
 

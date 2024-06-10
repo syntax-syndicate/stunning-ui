@@ -40,7 +40,7 @@ import TypedText from '@/components/stunning/TypedText.vue'
 
 ## Installation
 
-::steps
+::MSteps
 
 ### Prerequisites
 

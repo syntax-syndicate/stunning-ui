@@ -29,7 +29,7 @@ import TorchTextReveal from '@/components/stunning/TorchTextReveal.vue'
 
 ## Installation
 
-::steps
+::MSteps
 
 ### Prerequisites
 

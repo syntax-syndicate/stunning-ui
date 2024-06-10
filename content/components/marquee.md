@@ -126,7 +126,7 @@ const secondRow = reviews.slice(reviews.length / 2)
 
 ## Installation
 
-::steps
+::MSteps
 
 ### Prerequisites
 

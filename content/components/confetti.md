@@ -38,7 +38,7 @@ const handleClick = () => {
 
 ## Installation
 
-::steps
+::MSteps
 
 ### Prerequisites
 

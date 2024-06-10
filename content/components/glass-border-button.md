@@ -49,7 +49,7 @@ import GlassBorderButton from '@/components/stunning/GlassBorderButton.vue'
 
 ## Installation
 
-::steps
+::MSteps
 
 ### Prerequisites
 

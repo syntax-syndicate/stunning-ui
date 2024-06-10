@@ -36,7 +36,7 @@ import RisingStars from '@/components/stunning/RisingStars.vue'
 
 ## Installation
 
-::steps
+::MSteps
 
 ### Prerequisites
 

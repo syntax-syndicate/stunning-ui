@@ -31,7 +31,7 @@ category: card, feature, overview, hover
 
 ## Installation
 
-::steps
+::MSteps
 
 ### Copy the source code
 

@@ -76,7 +76,7 @@ import { paragraphPlaceholder } from '~/lib/constants'
 
 ## Installation
 
-::steps
+::MSteps
 
 ### Prerequisites
 

@@ -46,7 +46,7 @@ import LightBar from '@/components/stunning/LightBar.vue'
 
 ## Installation
 
-::steps
+::MSteps
 
 ### Prerequisites
 

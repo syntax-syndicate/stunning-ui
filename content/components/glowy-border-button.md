@@ -43,7 +43,7 @@ import GlowyBorderButton from '~/components/stunning/GlowyBorderButton.vue'
 
 ## Installation
 
-::steps
+::MSteps
 
 ### Prerequisites
 
