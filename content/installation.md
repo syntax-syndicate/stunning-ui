@@ -17,11 +17,17 @@ While Stunning UI Components seamlessly integrate with the shadcn ecosystem buil
 
 To get stared, ensure you have the following dependencies installed:
 
+::CodeWrapper
+
 ```bash
 pnpm i -D tailwindcss clsx tailwind-merge
 ```
 
+::
+
 Next, integrate the utility function by add the follwing code to your project:
+
+::CodeWrapper
 
 ```ts
 import { type ClassValue, clsx } from 'clsx'
@@ -31,6 +37,8 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 ```
+
+::
 
 ### Component installation
 

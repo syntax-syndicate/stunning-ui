@@ -10,7 +10,10 @@
     >
       <slot />
     </div>
-    <div class="absolute right-4 top-1/2 -translate-y-1/2">
+    <div
+      class="absolute right-6"
+      :class="newLines > 1 ? 'top-6' : 'top-1/2 -translate-y-1/2'"
+    >
       <CopyButton
         v-if="$slots.default?.()[0]?.props?.code"
         :code="$slots.default?.()[0]?.props?.code"
@@ -22,6 +25,14 @@
 <script lang="ts" setup>
 import { cn } from '~/lib/utils'
 import CopyButton from './CopyButton.vue'
+
+const slots = useSlots()
+
+const code = computed(() => slots.default?.()[0]?.props?.code)
+
+const newLines = computed(() => {
+  return (code.value.match(/\n/g) || []).length
+})
 </script>
 
 <style scoped></style>
