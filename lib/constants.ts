@@ -214,6 +214,100 @@ export const componentList = [
   }
 ]
 
+export const blockList = [
+  {
+    category: 'Landing Page',
+    desc: '',
+    components: [
+      {
+        name: 'Banner',
+        path: '/blocks/banner',
+        status: 'processing'
+      },
+      {
+        name: 'Navigation',
+        path: '/blocks/navigation',
+        status: 'upcoming'
+      },
+      {
+        name: 'Hero',
+        path: '/blocks/hero',
+        status: 'upcoming'
+      },
+      {
+        name: 'Badge',
+        path: '/blocks/hero',
+        status: 'upcoming'
+      },
+      {
+        name: 'Features',
+        path: '/blocks/features',
+        status: 'upcoming'
+      },
+      {
+        name: 'Logo Cloud',
+        path: '/blocks/Logo Cloud',
+        status: 'upcoming'
+      },
+      {
+        name: 'Testimonials',
+        path: '/blocks/testimonials',
+        status: 'upcoming'
+      },
+      {
+        name: 'FAQ',
+        path: '/blocks/faq',
+        status: 'upcoming'
+      },
+      {
+        name: 'CTA',
+        path: '/blocks/call-to-action',
+        status: 'upcoming'
+      },
+      {
+        name: 'Team',
+        path: '/blocks/team',
+        status: 'upcoming'
+      },
+      {
+        name: 'Pricing',
+        path: '/blocks/pricing',
+        status: 'upcoming'
+      },
+      {
+        name: 'Footer',
+        path: '/blocks/footer',
+        status: 'upcoming'
+      },
+      {
+        name: 'Hero',
+        path: '/blocks/hero',
+        status: 'upcoming'
+      },
+      {
+        name: 'Hero',
+        path: '/blocks/hero',
+        status: 'upcoming'
+      }
+    ]
+  },
+  {
+    category: 'Portfolio',
+    components: [
+      {
+        name: 'Link',
+        path: '/blocks/link',
+        status: 'upcoming'
+      },
+      {
+        name: 'Bookmark Card',
+        path: '/blocks/bookmark-card',
+        status: 'upcoming'
+      }
+    ]
+  }
+]
+
 export const reviews = [
   {
     name: 'Matt',

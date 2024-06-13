@@ -125,7 +125,7 @@ importers:
         version: 5.4.5
       unplugin-icons:
         specifier: ^0.17.4
-        version: 0.17.4(@vue/compiler-sfc@3.4.27)
+        version: 0.17.4(@vue/compiler-sfc@3.4.27)(vue-template-compiler@2.7.16)
       unplugin-vue-components:
         specifier: ^0.25.2
         version: 0.25.2(@babel/parser@7.24.6)(@nuxt/kit@3.11.2(rollup@4.18.0))(rollup@4.18.0)(vue@3.4.27(typescript@5.4.5))
@@ -2003,6 +2003,9 @@ packages:
       drizzle-orm:
         optional: true
 
+  de-indent@1.0.2:
+    resolution: {integrity: sha512-e/1zu3xH5MQryN2zdVaF0OrdNLUbvWxzMbi+iNA6Bky7l1RoP8a2fIbRocyHclXt/arDrrR6lL3TqFD9pMQTsg==}
+
   debug@2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
     peerDependencies:
@@ -2473,6 +2476,10 @@ packages:
 
   hastscript@8.0.0:
     resolution: {integrity: sha512-dMOtzCEd3ABUeSIISmrETiKuyydk1w0pa+gE/uormcTpSYuaNJPbX1NU3JLyscSLjwAQM8bWMhhIlnCqnRvDTw==}
+
+  he@1.2.0:
+    resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
+    hasBin: true
 
   hey-listen@1.0.8:
     resolution: {integrity: sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==}
@@ -4637,6 +4644,9 @@ packages:
 
   vue-sonner@1.1.2:
     resolution: {integrity: sha512-yg4f5s0a3oiiI7cNvO0Dajux1Y7s04lxww3vnQtnwQawJ3KqaKA9RIRMdI9wGTosRGIOwgYFniFRGl4+IuKPZw==}
+
+  vue-template-compiler@2.7.16:
+    resolution: {integrity: sha512-AYbUWAJHLGGQM7+cNTELw+KsOG9nl2CnSv467WobS5Cv9uk3wFcnr1Etsz2sEIHEZvw1U+o9mRlEO6QbZvUPGQ==}
 
   vue-virtual-scroller@2.0.0-beta.8:
     resolution: {integrity: sha512-b8/f5NQ5nIEBRTNi6GcPItE4s7kxNHw2AIHLtDp+2QvqdTjVN0FgONwX9cr53jWRgnu+HRLPaWDOR2JPI5MTfQ==}
@@ -7170,6 +7180,9 @@ snapshots:
 
   db0@0.1.4: {}
 
+  de-indent@1.0.2:
+    optional: true
+
   debug@2.6.9:
     dependencies:
       ms: 2.0.0
@@ -7685,6 +7698,9 @@ snapshots:
       hast-util-parse-selector: 4.0.0
       property-information: 6.5.0
       space-separated-tokens: 2.0.2
+
+  he@1.2.0:
+    optional: true
 
   hey-listen@1.0.8: {}
 
@@ -10125,7 +10141,7 @@ snapshots:
       - rollup
       - supports-color
 
-  unplugin-icons@0.17.4(@vue/compiler-sfc@3.4.27):
+  unplugin-icons@0.17.4(@vue/compiler-sfc@3.4.27)(vue-template-compiler@2.7.16):
     dependencies:
       '@antfu/install-pkg': 0.1.1
       '@antfu/utils': 0.7.8
@@ -10136,6 +10152,7 @@ snapshots:
       unplugin: 1.10.1
     optionalDependencies:
       '@vue/compiler-sfc': 3.4.27
+      vue-template-compiler: 2.7.16
     transitivePeerDependencies:
       - supports-color
 
@@ -10408,6 +10425,12 @@ snapshots:
       vue: 3.4.27(typescript@5.4.5)
 
   vue-sonner@1.1.2: {}
+
+  vue-template-compiler@2.7.16:
+    dependencies:
+      de-indent: 1.0.2
+      he: 1.2.0
+    optional: true
 
   vue-virtual-scroller@2.0.0-beta.8(vue@3.4.27(typescript@5.4.5)):
     dependencies:

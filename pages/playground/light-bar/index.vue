@@ -8,7 +8,7 @@
       <p
         class="rounded-full border border-white/50 px-4 py-1 text-xs font-bold uppercase tracking-widest text-white opacity-50"
       >
-        New Version 2.0
+        New Version 1.0
       </p>
 
       <h1

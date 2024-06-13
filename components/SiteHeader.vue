@@ -27,6 +27,7 @@
         <Button variant="link" @click="navigateTo('/templates')">
           Templates
         </Button>
+        <Button variant="link" @click="navigateTo('/blocks')"> Blocks </Button>
         <Button variant="link" @click="navigateTo('/pricing')">
           Pricing
         </Button>
@@ -43,6 +44,13 @@
           @click="navigateTo('https://x.com/robert_shaw_x')"
         >
           <ri:twitter-x-line class="h-[1.2rem] w-[1.2rem]" />
+        </Button>
+        <Button
+          variant="ghost"
+          size="icon"
+          @click="navigateTo('https://github.com/xiaoluoboding')"
+        >
+          <ri:github-fill class="h-6 w-6" />
         </Button>
         <ToggleDarkmode />
       </div>
