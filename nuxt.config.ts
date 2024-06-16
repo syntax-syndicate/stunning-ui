@@ -16,11 +16,12 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@pinia/nuxt',
     'unplugin-icons/nuxt',
-    '@vueuse/nuxt',
     'shadcn-nuxt',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
-    '@vueuse/motion/nuxt'
+    '@vueuse/nuxt',
+    '@vueuse/motion/nuxt',
+    'nuxt-icon'
   ],
   colorMode: {
     classSuffix: ''

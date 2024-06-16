@@ -8,6 +8,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     Icon: typeof import('~icons/ic/on')['default']
+    Iconify: typeof import('~icons/ic/onify')['default']
     'Lucide:arrowUpRight': typeof import('~icons/lucide/arrow-up-right')['default']
     'Lucide:check': typeof import('~icons/lucide/check')['default']
     'Lucide:copy': typeof import('~icons/lucide/copy')['default']

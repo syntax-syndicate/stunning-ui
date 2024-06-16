@@ -62,7 +62,7 @@
                     >
                       <span>{{ item.name }}</span>
                       <Badge
-                        v-if="item.status === 'processing'"
+                        v-if="item.status === 'building'"
                         class="ml-2 border-cyan-500/50 font-400 text-cyan-500"
                         size="sm"
                         variant="outline"

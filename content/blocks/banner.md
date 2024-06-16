@@ -2,7 +2,7 @@
 navigation.title: Banner
 title: Banner
 description: A banner on a landing page is a prominent section that captures attention with key information and a call to action to engage visitors.
-category: banner, cta
+category: banner, button, link, cta
 ---
 
 ## Default
@@ -157,4 +157,10 @@ import Banner from '@/components/blocks/banner/Banner.vue'
 <style scoped></style>
 ```
 
+::
+
+---
+
+::MAlert{type=info icon=lucide:lightbulb}
+More coming soon, stay tuned.
 ::

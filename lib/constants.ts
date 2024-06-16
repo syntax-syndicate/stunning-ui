@@ -1,3 +1,14 @@
+import CloudFlare from '@/assets/svgs/cloudflare.svg'
+import Discord from '@/assets/svgs/discord.svg'
+import Netlify from '@/assets/svgs/netlify.svg'
+import Nuxt from '@/assets/svgs/nuxt.svg'
+import OpenAI from '@/assets/svgs/openai.svg'
+import StabilityAI from '@/assets/svgs/stability-ai.svg'
+import Supabase from '@/assets/svgs/supabase.svg'
+import Vercel from '@/assets/svgs/vercel.svg'
+import WorkOS from '@/assets/svgs/workos.svg'
+import Zapier from '@/assets/svgs/zapier.svg'
+
 export const paragraphPlaceholder = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis eget neque sed pulvinar. Morbi fermentum ultricies pretium. Aliquam erat volutpat. Donec at dictum lorem, non tincidunt eros. Nam vehicula augue et magna tincidunt placerat. Integer turpis urna, ultricies et pharetra ac, rutrum mollis leo.`
 
 export const componentList = [
@@ -196,6 +207,11 @@ export const componentList = [
         status: 'finished'
       },
       {
+        name: 'Shiny Text',
+        path: '/components/shiny-text',
+        status: 'finished'
+      },
+      {
         name: 'Torch Text Reveal',
         path: '/components/torch-text-reveal',
         status: 'finished'
@@ -222,7 +238,7 @@ export const blockList = [
       {
         name: 'Banner',
         path: '/blocks/banner',
-        status: 'processing'
+        status: 'building'
       },
       {
         name: 'Navigation',
@@ -235,8 +251,8 @@ export const blockList = [
         status: 'upcoming'
       },
       {
-        name: 'Badge',
-        path: '/blocks/hero',
+        name: 'Callout',
+        path: '/blocks/callout',
         status: 'upcoming'
       },
       {
@@ -246,8 +262,8 @@ export const blockList = [
       },
       {
         name: 'Logo Cloud',
-        path: '/blocks/Logo Cloud',
-        status: 'upcoming'
+        path: '/blocks/logo-cloud',
+        status: 'building'
       },
       {
         name: 'Testimonials',
@@ -257,7 +273,7 @@ export const blockList = [
       {
         name: 'FAQ',
         path: '/blocks/faq',
-        status: 'upcoming'
+        status: 'building'
       },
       {
         name: 'CTA',
@@ -277,16 +293,6 @@ export const blockList = [
       {
         name: 'Footer',
         path: '/blocks/footer',
-        status: 'upcoming'
-      },
-      {
-        name: 'Hero',
-        path: '/blocks/hero',
-        status: 'upcoming'
-      },
-      {
-        name: 'Hero',
-        path: '/blocks/hero',
         status: 'upcoming'
       }
     ]
@@ -344,5 +350,53 @@ export const reviews = [
     username: '@Jamie',
     body: 'I Gracefully exited. Thanks for the stunning components.',
     img: 'https://avatar.vercel.sh/Jamie'
+  }
+]
+
+export const logos = [
+  { name: 'CloudFlare', src: CloudFlare },
+  { name: 'Discord', src: Discord },
+  { name: 'Netlify', src: Netlify },
+  { name: 'Nuxt', src: Nuxt },
+  { name: 'OpenAI', src: OpenAI },
+  { name: 'StabilityAI', src: StabilityAI },
+  { name: 'Supabase', src: Supabase },
+  { name: 'Vercel', src: Vercel },
+  { name: 'WorkOS', src: WorkOS },
+  { name: 'Zapier', src: Zapier }
+]
+
+export interface FAQItem {
+  question: string
+  answer: string
+  value: string
+}
+
+export const FAQList: FAQItem[] = [
+  {
+    question: 'Why copy/paste and not packaged as a dependency?',
+    answer: `The idea behind this is to give you ownership and control over the code, allowing you to decide how the components are built and styled.
+
+Start with some sensible defaults, then customize the components to your needs.
+
+One of the drawback of packaging the components in an npm package is that the style is coupled with the implementation. The design of your components should be separate from their implementation.`,
+    value: 'item-1'
+  },
+  {
+    question: 'Do you plan to publish it as an npm package?',
+    answer: 'No. I have no plans to publish it as an npm package.',
+    value: 'item-2'
+  },
+  {
+    question: 'Which frameworks are supported?',
+    answer:
+      'You can use any framework that supports React/Vue. Next.js, Astro, Remix, Gatsby, Nuxt.js etc.',
+    value: 'item-3'
+  },
+  {
+    question: 'Can I use these components in my project?',
+    answer: `Yes. Free to use components for personal and commercial projects. No attribution required.
+      But hey, let me know if you do. I'd love to see what you build.`,
+    value: 'item-4'
   }
 ]

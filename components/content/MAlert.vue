@@ -1,26 +1,68 @@
 <template>
-  <div class="alert info">
-    <div class="alert-content">
-      <slot />
-    </div>
-  </div>
+  <Alert
+    class="[&:not(:first-child)]:mt-5 transition-all"
+    :class="[variantTypeClass[type], to && 'cursor-pointer hover:bg-muted/50']"
+    @click="handleClickAlert"
+  >
+    <Iconify v-if="icon && title" :name="icon" size="16" />
+    <AlertTitle v-if="title" class="font-semibold">
+      {{ title }}
+    </AlertTitle>
+    <AlertDescription>
+      <div class="flex flex-row space-x-2">
+        <Iconify
+          v-if="icon && !title"
+          :name="icon"
+          size="16"
+          class="self-center mb-[2px] min-w-5"
+        />
+        <span class="[&_p]:my-0 transition-all" :class="[to && 'pr-3']">
+          <slot />
+        </span>
+      </div>
+      <Iconify
+        name="lucide:arrow-up-right"
+        v-if="to"
+        class="absolute right-4 top-4"
+      />
+    </AlertDescription>
+  </Alert>
 </template>
 
-<style scoped>
-.alert {
-  @apply border border-sky-500/50;
-  @apply my-8 py-1 px-5 rounded-lg;
+<script setup lang="ts">
+import Iconify from '../Iconify.vue'
+
+const props = withDefaults(
+  defineProps<{
+    title?: string
+    icon?: string
+    type?: 'default' | 'info' | 'warning' | 'success' | 'danger'
+    to?: string
+    target?: string
+  }>(),
+  {
+    type: 'default'
+  }
+)
+
+const variantTypeClass = {
+  default: '',
+  info: 'border-sky-600 text-sky-600 [&>svg]:text-sky-600',
+  warning: 'border-amber-600 text-amber-600 [&>svg]:text-amber-600',
+  success: 'border-green-600 text-green-600 [&>svg]:text-green-600',
+  danger: 'border-red-600 text-red-600 [&>svg]:text-red-600'
 }
 
-.info {
-  @apply bg-sky-200 dark:bg-sky-700/50;
+function handleClickAlert() {
+  if (props.to) {
+    if (props.target) {
+      navigateTo(props.to, {
+        external: true,
+        open: { target: props.target }
+      })
+    } else {
+      navigateTo(props.to, { external: true })
+    }
+  }
 }
-
-.info p {
-  @apply text-sky-800 dark:text-sky-300;
-}
-
-.alert-content p {
-  @apply m-0;
-}
-</style>
+</script>
