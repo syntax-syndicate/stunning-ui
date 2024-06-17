@@ -5,12 +5,40 @@ description: A highlighted area designed to draw attention to important informat
 category: callout
 ---
 
-## Default
+## Shimmer Style
 
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/callout"></Playground>
+<Playground url="/landing/callout" aspect="5/1"></Playground>
+::
+
+```vue [Code]
+
+```
+
+::
+
+## Gradient Border Style
+
+::code-group
+
+::div{label="Preview"}
+<Playground url="/landing/callout/CalloutGradientBorderStyle" aspect="5/1"></Playground>
+::
+
+```vue [Code]
+
+```
+
+::
+
+## Button In Badge
+
+::code-group
+
+::div{label="Preview"}
+<Playground url="/landing/callout/CalloutButtonInBadge" aspect="5/1"></Playground>
 ::
 
 ```vue [Code]

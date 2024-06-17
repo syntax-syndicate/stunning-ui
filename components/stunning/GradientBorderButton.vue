@@ -25,7 +25,7 @@
       "
     >
       <span
-        class="transition-transform duration-100 ease-in-out group-hover:scale-105"
+        class="flex items-center transition-transform duration-100 ease-in-out group-hover:scale-105"
       >
         <slot />
       </span>

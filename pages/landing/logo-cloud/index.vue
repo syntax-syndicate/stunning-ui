@@ -1,7 +1,7 @@
 <template>
-  <NuxtLayout name="playground">
+  <NuxtLayout name="playground" class="bg-dots">
     <div
-      class="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background py-20 md:dark:shadow-xl"
+      class="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg py-20 md:dark:shadow-xl"
     >
       <div className="font-medium text-muted-foreground mb-10">
         Join over 1,000 startups and start to maximize your productivity.

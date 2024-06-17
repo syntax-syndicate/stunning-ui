@@ -258,7 +258,7 @@ export const blockList = [
       {
         name: 'Callout',
         path: '/blocks/callout',
-        status: 'upcoming'
+        status: 'building'
       },
       {
         name: 'Features',
@@ -283,7 +283,7 @@ export const blockList = [
       {
         name: 'CTA',
         path: '/blocks/call-to-action',
-        status: 'upcoming'
+        status: 'building'
       },
       {
         name: 'Team',

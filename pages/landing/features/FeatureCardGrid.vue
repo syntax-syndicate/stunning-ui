@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="playground">
+  <NuxtLayout name="playground" class="bg-dots">
     <section
       class="relative mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex flex-col py-20"
     >
