@@ -121,6 +121,9 @@
     @apply w-full h-full bg-transparent bg-[linear-gradient(rgba(255,255,255,0.3)_2px,transparent_2px),linear-gradient(90deg,rgba(255,255,255,0.3)_2px,transparent_2px),linear-gradient(rgba(255,255,255,0.3)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.3)_1px,rgba(0,0,0,0)_1px)] bg-[150px_150px,150px_150px,30px_30px,30px_30px] rounded-none before:bg-[radial-gradient(50%_50%_at_50%_50%,rgba(84,84,84,0)_0%,rgb(0,0,0)_100%)] before:flex-none before:h-full before:overflow-hidden before:absolute before:w-full before:left-0 before:top-0;
   }
 
+  .bg-radial-card {
+    @apply z-[3] content-[''] absolute w-full h-full pointer-events-none shadow-[0_-20px_64px_-24px_#e2e8ff1f_inset] bg-[radial-gradient(120.05%_100%_at_50%_0%,rgba(122,235,255,0)_60%,rgba(122,235,255,0.08)_100%)] rounded-[inherit] left-0 top-0;
+  }
   .step {
     counter-increment: step;
   }

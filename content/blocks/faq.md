@@ -67,7 +67,7 @@ import { FAQList } from '~/lib/constants'
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/faq/Cross"></Playground>
+<Playground url="/landing/faq/FAQCross"></Playground>
 ::
 
 ```vue [Code]

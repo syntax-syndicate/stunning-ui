@@ -207,8 +207,8 @@ export const componentList = [
         status: 'finished'
       },
       {
-        name: 'Shiny Text',
-        path: '/components/shiny-text',
+        name: 'Shimmer Text',
+        path: '/components/shimmer-text',
         status: 'finished'
       },
       {
@@ -288,7 +288,7 @@ export const blockList = [
       {
         name: 'Pricing',
         path: '/blocks/pricing',
-        status: 'upcoming'
+        status: 'building'
       },
       {
         name: 'Footer',

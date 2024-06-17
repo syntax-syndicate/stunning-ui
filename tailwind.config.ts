@@ -1,5 +1,6 @@
 const animate = require('tailwindcss-animate')
 const typography = require('@tailwindcss/typography')
+const colors = require('tailwindcss/colors')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -49,7 +50,8 @@ module.exports = {
         card: {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))'
-        }
+        },
+        brand: colors.emerald
       },
       borderRadius: {
         xl: 'calc(var(--radius) + 4px)',
@@ -112,6 +114,14 @@ module.exports = {
           to: {
             transform: 'translateY(-3840px)'
           }
+        },
+        shimmer: {
+          '0%, 90%, 100%': {
+            'background-position': 'calc(-100% - var(--shimmer-width)) 0'
+          },
+          '30%, 60%': {
+            'background-position': 'calc(100% + var(--shimmer-width)) 0'
+          }
         }
       },
       animation: {
@@ -123,7 +133,8 @@ module.exports = {
         'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
         torch: 'torch 5s linear infinite',
         falldown: 'falldown 3s infinite',
-        risingstar: 'risingstar 1000s linear infinite'
+        risingstar: 'risingstar 1000s linear infinite',
+        shimmer: 'shimmer 8s infinite'
       }
     }
   },

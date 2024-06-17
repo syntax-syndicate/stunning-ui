@@ -44,7 +44,7 @@ import Banner from '@/components/blocks/banner/Banner.vue'
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/banner/Gradient" aspect="5/1"></Playground>
+<Playground url="/landing/banner/BannerGradient" aspect="5/1"></Playground>
 ::
 
 ```vue [Code]
@@ -78,7 +78,7 @@ import Banner from '@/components/blocks/banner/Banner.vue'
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/banner/GlowyPulse" aspect="5/1"></Playground>
+<Playground url="/landing/banner/BannerGlowyPulse" aspect="5/1"></Playground>
 ::
 
 ```vue [Code]
@@ -121,7 +121,7 @@ import Banner from '@/components/blocks/banner/Banner.vue'
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/banner/Spotlight" aspect="5/1"></Playground>
+<Playground url="/landing/banner/BannerSpotlight" aspect="5/1"></Playground>
 ::
 
 ```vue [Code]
@@ -151,6 +151,40 @@ import Banner from '@/components/blocks/banner/Banner.vue'
 
 <script lang="ts" setup>
 import { cn } from '~/lib/utils'
+import Banner from '@/components/blocks/banner/Banner.vue'
+</script>
+
+<style scoped></style>
+```
+
+::
+
+## Marquee
+
+::code-group
+
+::div{label="Preview"}
+<Playground url="/landing/banner/BannerMarquee" aspect="5/1"></Playground>
+::
+
+```vue [Code]
+<template>
+  <main class="w-full h-full">
+    <Banner class="bg-emerald-300 dark:bg-emerald-500">
+      <div>
+        Stunning UI 1.0 is here. Create stunning website that stand out!
+      </div>
+      <div>
+        <Button size="xs" class="gap-2">
+          <ri:sparkling-2-line />
+          <span>Getting Started</span>
+        </Button>
+      </div>
+    </Banner>
+  </main>
+</template>
+
+<script lang="ts" setup>
 import Banner from '@/components/blocks/banner/Banner.vue'
 </script>
 

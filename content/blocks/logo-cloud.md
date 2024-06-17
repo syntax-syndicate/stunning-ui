@@ -53,7 +53,7 @@ import { logos } from '~/lib/constants'
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/logo-cloud/marquee" aspect="5/2"></Playground>
+<Playground url="/landing/logo-cloud/LogoCloudMarquee" aspect="5/2"></Playground>
 ::
 
 ```vue [Code]
