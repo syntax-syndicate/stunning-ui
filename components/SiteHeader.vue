@@ -15,8 +15,9 @@
               <Logo class="w-6 h-6" />
             </div>
           </div>
-          <div class="flex flex-col">
-            <h1 class="text-primary text-2xl">Stunning UI</h1>
+          <div class="flex items-center gap-2">
+            <h1 class="text-primary text-xl">Stylish UI</h1>
+            <Badge variant="brand">beta</Badge>
           </div>
         </a>
       </div>

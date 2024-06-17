@@ -10,7 +10,21 @@ category: features, product
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/features"></Playground>
+<Playground url="/landing/features" aspect="1/1"></Playground>
+::
+
+```vue [Code]
+
+```
+
+::
+
+## Card Grid
+
+::code-group
+
+::div{label="Preview"}
+<Playground url="/landing/features/FeatureCardGrid" aspect="1/1"></Playground>
 ::
 
 ```vue [Code]

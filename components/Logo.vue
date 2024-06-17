@@ -5,11 +5,11 @@
     viewBox="0 0 200 200"
     width="128"
     height="128"
-    class="coolshapes-vue star-10"
+    class="coolshapes-vue star-1"
   >
-    <g clipPath="url(#cs_clip_1_star-10)">
+    <g clipPath="url(#cs_clip_1_star-1)">
       <mask
-        id="cs_mask_1_star-10"
+        id="cs_mask_1_star-1"
         style="mask-type: alpha"
         width="200"
         height="200"
@@ -19,60 +19,68 @@
       >
         <path
           fill="#fff"
-          d="M91.317 6.8l.028-.098c2.483-8.71 14.826-8.71 17.31 0l.027.098.083.293a122 122 0 0084.142 84.142l.293.082.098.028c8.709 2.484 8.709 14.826 0 17.31a5.593 5.593 0 01-.098.028l-.293.082c-40.751 11.541-72.602 43.391-84.142 84.142l-.083.293-.027.098c-2.484 8.709-14.827 8.709-17.31 0a21.647 21.647 0 01-.028-.098l-.082-.293a122.002 122.002 0 00-84.143-84.142l-.292-.082-.098-.028c-8.71-2.484-8.71-14.826 0-17.31l.098-.028.292-.082A122 122 0 0091.235 7.093l.082-.293z"
+          fill-rule="evenodd"
+          d="M200 100C200 44.772 155.228 0 100 0S0 44.772 0 100s44.772 100 100 100 100-44.772 100-100zm-85.203-14.798c8.22 8.22 20.701 9.967 45.664 13.462L170 100l-9.539 1.335c-24.963 3.495-37.444 5.242-45.664 13.462-8.219 8.22-9.967 20.701-13.462 45.664L100 170l-1.335-9.539c-3.495-24.963-5.243-37.444-13.462-45.664-8.22-8.22-20.701-9.967-45.664-13.462L30 100l9.539-1.336c24.963-3.495 37.444-5.242 45.664-13.462 8.22-8.22 9.967-20.7 13.462-45.663L100 30l1.335 9.538c3.495 24.963 5.243 37.445 13.462 45.664z"
+          clip-rule="evenodd"
         ></path>
       </mask>
-      <g mask="url(#cs_mask_1_star-10)">
+      <g mask="url(#cs_mask_1_star-1)">
         <path fill="#fff" d="M200 0H0v200h200V0z"></path>
-        <path
-          fill="url(#paint0_radial_748_4283)"
-          d="M200 0H0v200h200V0z"
-        ></path>
-        <path
-          fill="url(#paint1_radial_748_4283)"
-          d="M200 0H0v200h200V0z"
-        ></path>
+        <path fill="#FFF9C5" fill-opacity="0.44" d="M200 0H0v200h200V0z"></path>
+        <g filter="url(#filter0_f_748_4325)">
+          <path
+            fill="#00F0FF"
+            fill-opacity="0.85"
+            d="M158 22H15v108h143V22z"
+          ></path>
+          <path fill="#FF58E4" d="M209 101H52v116h157V101z"></path>
+          <ellipse
+            cx="156"
+            cy="80"
+            fill="#FFE500"
+            fill-opacity="0.79"
+            rx="83"
+            ry="57"
+          ></ellipse>
+        </g>
       </g>
     </g>
     <defs>
-      <radialGradient
-        id="paint0_radial_748_4283"
-        cx="0"
-        cy="0"
-        r="1"
-        gradientTransform="rotate(116.694 71.023 87.946) scale(199.234)"
-        gradientUnits="userSpaceOnUse"
+      <filter
+        id="filter0_f_748_4325"
+        width="344"
+        height="315"
+        x="-45"
+        y="-38"
+        color-interpolation-filters="sRGB"
+        filterUnits="userSpaceOnUse"
       >
-        <stop stop-color="#1BC47D"></stop>
-        <stop offset="1" stop-color="#5eead4" stop-opacity="0"></stop>
-      </radialGradient>
-      <radialGradient
-        id="paint1_radial_748_4283"
-        cx="0"
-        cy="0"
-        r="1"
-        gradientTransform="rotate(-20.037 348.972 -25.908) scale(135.715)"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop stop-color="#00C5DF"></stop>
-        <stop offset="0.461" stop-color="#00C5DF" stop-opacity="0.84"></stop>
-        <stop offset="1" stop-color="#1BC47D" stop-opacity="0"></stop>
-      </radialGradient>
-      <clipPath id="cs_clip_1_star-10">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feBlend
+          in="SourceGraphic"
+          in2="BackgroundImageFix"
+          result="shape"
+        ></feBlend>
+        <feGaussianBlur
+          result="effect1_foregroundBlur_748_4325"
+          stdDeviation="30"
+        ></feGaussianBlur>
+      </filter>
+      <clipPath id="cs_clip_1_star-1">
         <path fill="#fff" d="M0 0H200V200H0z"></path>
       </clipPath>
     </defs>
-    <g style="mix-blend-mode: overlay" mask="url(#cs_mask_1_star-10)">
+    <g style="mix-blend-mode: overlay" mask="url(#cs_mask_1_star-1)">
       <path
         fill="gray"
         stroke="transparent"
         d="M200 0H0v200h200V0z"
-        filter="url(#cs_noise_1_star-10)"
+        filter="url(#cs_noise_1_star-1)"
       ></path>
     </g>
     <defs>
       <filter
-        id="cs_noise_1_star-10"
+        id="cs_noise_1_star-1"
         width="100%"
         height="100%"
         x="0%"

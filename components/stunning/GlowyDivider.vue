@@ -1,12 +1,12 @@
 <template>
-  <div class="relative py-32 w-full">
+  <div class="relative w-full py-24">
     <div
       class="absolute left-0 h-full w-full"
       :class="
         cn(
           direction === 'bottom'
-            ? 'top-1/2 dark:bg-[radial-gradient(35%_128px_at_50%_0%,theme(backgroundColor.white/8%),transparent)] bg-[radial-gradient(35%_128px_at_50%_0%,theme(backgroundColor.neutral[950]/5%),transparent)]'
-            : '-top-1/2 dark:bg-[radial-gradient(35%_128px_at_50%_100%,theme(backgroundColor.white/8%),transparent)] bg-[radial-gradient(35%_128px_at_50%_100%,theme(backgroundColor.neutral[950]/5%),transparent)]'
+            ? 'top-1/2 dark:bg-[radial-gradient(35%_96px_at_50%_0%,theme(backgroundColor.white/8%),transparent)] bg-[radial-gradient(35%_96px_at_50%_0%,theme(backgroundColor.neutral[950]/5%),transparent)]'
+            : '-top-1/2 dark:bg-[radial-gradient(35%_96px_at_50%_100%,theme(backgroundColor.white/8%),transparent)] bg-[radial-gradient(35%_96px_at_50%_100%,theme(backgroundColor.neutral[950]/5%),transparent)]'
         )
       "
     ></div>

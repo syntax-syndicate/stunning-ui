@@ -32,6 +32,11 @@ export const componentList = [
         status: 'finished'
       },
       {
+        name: 'Noise Gradient',
+        path: '/components/noise-gradient',
+        status: 'upcoming'
+      },
+      {
         name: 'Meteor Grid',
         path: '/components/meteor-grid',
         status: 'finished'
@@ -258,7 +263,7 @@ export const blockList = [
       {
         name: 'Features',
         path: '/blocks/features',
-        status: 'upcoming'
+        status: 'building'
       },
       {
         name: 'Logo Cloud',
