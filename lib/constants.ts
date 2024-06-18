@@ -248,7 +248,7 @@ export const blockList = [
       {
         name: 'Navigation',
         path: '/blocks/navigation',
-        status: 'upcoming'
+        status: 'building'
       },
       {
         name: 'Hero',
