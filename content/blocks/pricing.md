@@ -5,7 +5,7 @@ description: A section that outlines the cost of products or services, often inc
 category: pricing, card
 ---
 
-## Default
+## Minimal
 
 ::code-group
 

@@ -5,7 +5,7 @@ description: A section introducing the key members of the organization with brie
 category: team, card
 ---
 
-## Default
+## Minimal
 
 ::code-group
 

@@ -125,26 +125,6 @@ withDefaults(defineProps<{ gradientColor?: string }>(), {
 
 ::
 
-## Usage
-
-### Default
-
-```vue
-<template>
-  <GradientBorderButton> Sign in </GradientBorderButton>
-</template>
-```
-
-### Change Graident Color
-
-```vue
-<template>
-  <GradientBorderButton gradientColor="from-sky-400 via-rose-400 to-lime-400">
-    Sign in
-  </GradientBorderButton>
-</template>
-```
-
 ## Props
 
 | Prop          | Type   | Description                                           | Default                                    |

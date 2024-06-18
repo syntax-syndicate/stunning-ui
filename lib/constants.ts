@@ -286,11 +286,6 @@ export const blockList = [
         status: 'building'
       },
       {
-        name: 'Team',
-        path: '/blocks/team',
-        status: 'upcoming'
-      },
-      {
         name: 'Pricing',
         path: '/blocks/pricing',
         status: 'building'
@@ -298,6 +293,11 @@ export const blockList = [
       {
         name: 'Footer',
         path: '/blocks/footer',
+        status: 'upcoming'
+      },
+      {
+        name: 'Team',
+        path: '/blocks/team',
         status: 'upcoming'
       },
       {
@@ -331,7 +331,7 @@ export const reviews = [
   {
     name: 'Jude',
     username: '@jude',
-    body: "It's a beast, exactly what I was looking for.",
+    body: "It's a beast, absolutly loving it, exactly what I was looking for.",
     img: 'https://avatar.vercel.sh/jude'
   },
   {

@@ -5,7 +5,7 @@ description: A banner on a landing page is a prominent section that captures att
 category: banner, button, link, cta
 ---
 
-## Default
+## Minimal
 
 ::code-group
 

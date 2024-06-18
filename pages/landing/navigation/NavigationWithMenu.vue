@@ -17,7 +17,7 @@
               </div>
             </div>
             <div class="flex items-center gap-2">
-              <h1 class="text-primary text-xl">Your Brand</h1>
+              <h1 class="text-primary text-xl">Acme</h1>
             </div>
           </a>
         </div>
@@ -25,7 +25,7 @@
           <NavigationMenu class="hidden lg:block">
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger class="bg-card text-base">
+                <NavigationMenuTrigger class="bg-card">
                   Features
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -57,7 +57,7 @@
                     :key="label"
                     as-child
                     variant="ghost"
-                    class="justify-start text-base"
+                    class="justify-start"
                   >
                     <a :href="href">
                       {{ label }}
@@ -71,21 +71,8 @@
         <div
           class="flex flex-1 items-center justify-end gap-2 sm:gap-2 md:justify-end"
         >
-          <Button
-            variant="ghost"
-            size="icon"
-            @click="navigateTo('https://x.com/robert_shaw_x')"
-          >
-            <ri:twitter-x-line class="h-[1.2rem] w-[1.2rem]" />
-          </Button>
-          <Button
-            variant="ghost"
-            size="icon"
-            @click="navigateTo('https://github.com/xiaoluoboding')"
-          >
-            <ri:github-fill class="h-6 w-6" />
-          </Button>
-          <ToggleDarkmode />
+          <Button size="sm" variant="ghost"> Sign in </Button>
+          <Button size="sm"> Sign up </Button>
         </div>
       </div>
     </header>
@@ -126,7 +113,7 @@ const featureList: FeatureProps[] = [
   {
     title: 'Integrations',
     description:
-      'Effortlessly manage and prioritize your tasks using GenAI`s intuitive interface, keeping your workload organized.'
+      'Effortlessly manage and prioritize your tasks using Stunning UI`s intuitive interface, keeping your workload organized.'
   }
 ]
 

@@ -5,7 +5,7 @@ description: The FAQ section on a landing page provides answers to common questi
 category: faq, cta, accordion
 ---
 
-## Center Layout
+## Minimal
 
 ::code-group
 

@@ -12,6 +12,7 @@ declare module 'vue' {
     'Lucide:arrowUpRight': typeof import('~icons/lucide/arrow-up-right')['default']
     'Lucide:check': typeof import('~icons/lucide/check')['default']
     'Lucide:copy': typeof import('~icons/lucide/copy')['default']
+    'Lucide:star': typeof import('~icons/lucide/star')['default']
     'Ph:bookOpenTextDuotone': typeof import('~icons/ph/book-open-text-duotone')['default']
     'Ph:notebookDuotone': typeof import('~icons/ph/notebook-duotone')['default']
     'Ph:rocketLaunchDuotone': typeof import('~icons/ph/rocket-launch-duotone')['default']

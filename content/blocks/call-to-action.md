@@ -5,7 +5,7 @@ description: A button or link that encourages visitors to take a specific action
 category: cta, button, link
 ---
 
-## Double Column Layout
+## Minimal
 
 ::code-group
 

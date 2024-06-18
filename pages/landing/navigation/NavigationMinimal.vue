@@ -17,7 +17,7 @@
               </div>
             </div>
             <div class="flex items-center gap-2">
-              <h1 class="text-primary text-xl">Your Brand</h1>
+              <h1 class="text-primary text-xl">Acme</h1>
             </div>
           </a>
         </div>
@@ -30,7 +30,8 @@
           <div
             class="flex flex-1 items-center justify-end gap-2 sm:gap-2 md:justify-end"
           >
-            <Button size="sm"> Sign in </Button>
+            <Button size="sm" variant="ghost"> Sign in </Button>
+            <Button size="sm"> Sign up </Button>
           </div>
         </div>
       </div>

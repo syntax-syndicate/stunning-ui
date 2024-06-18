@@ -27,7 +27,7 @@ category: wireframe, line, divider
       <p
         class="mx-auto mt-4 text-left leading-relaxed text-muted-foreground md:max-w-2xl md:text-center lg:mt-8"
       >
-        Kaldorei is a platform that helps you build your business.
+        Stunning UI is a platform that helps you build your business.
       </p>
     </div>
 
@@ -46,7 +46,7 @@ category: wireframe, line, divider
       <p
         class="mx-auto mt-4 text-left leading-relaxed text-muted-foreground md:max-w-2xl md:text-center lg:mt-8"
       >
-        Don't just take our word for it. Read what others say about Kaldorei.
+        Don't just take our word for it. Read what others say about Stunning UI.
       </p>
     </div>
 

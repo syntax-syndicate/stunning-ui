@@ -5,12 +5,12 @@ description: The bottom section of a webpage that typically contains additional 
 category: footer, link, contact, about us
 ---
 
-## Default
+## Minimal
 
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/footer"></Playground>
+<Playground url="/landing/footer" aspect="5/2"></Playground>
 ::
 
 ```vue [Code]

@@ -19,12 +19,12 @@ category: navigation, link, header
 
 ::
 
-## Stylish UI
+## With Menu
 
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/navigation" aspect="5/1"></Playground>
+<Playground url="/landing/navigation/NavigationWithMenu" aspect="5/2"></Playground>
 ::
 
 ```vue [Code]
@@ -33,12 +33,12 @@ category: navigation, link, header
 
 ::
 
-## With Menu
+## Stylish UI
 
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/navigation/NavigationWithMenu" aspect="5/2"></Playground>
+<Playground url="/landing/navigation" aspect="5/1"></Playground>
 ::
 
 ```vue [Code]

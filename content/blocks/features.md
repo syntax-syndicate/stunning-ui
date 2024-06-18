@@ -5,12 +5,12 @@ description: A section highlighting the key benefits, characteristics, or functi
 category: features, product
 ---
 
-## Default
+## Minimal
 
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/features" aspect="1/1"></Playground>
+<Playground url="/landing/features" aspect="4/3"></Playground>
 ::
 
 ```vue [Code]
@@ -24,7 +24,7 @@ category: features, product
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/features/FeatureCardGrid" aspect="1/1"></Playground>
+<Playground url="/landing/features/FeatureCardGrid" aspect="4/3"></Playground>
 ::
 
 ```vue [Code]
