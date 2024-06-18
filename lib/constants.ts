@@ -304,6 +304,11 @@ export const blockList = [
         name: 'Bookmark Card',
         path: '/blocks/bookmark-card',
         status: 'upcoming'
+      },
+      {
+        name: 'Minimal Template',
+        path: '/blocks/minimal-template',
+        status: 'upcoming'
       }
     ]
   }
