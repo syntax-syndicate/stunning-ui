@@ -36,7 +36,7 @@
           :key="title"
           :class="
             cn(
-              'min-w-[240px] rounded-2xl',
+              'min-w-80 rounded-2xl',
               popular &&
                 `drop-shadow-xl shadow-black/10 dark:shadow-white/10 border-[1.5px] border-emerald-500 after:bg-radial-card`
             )

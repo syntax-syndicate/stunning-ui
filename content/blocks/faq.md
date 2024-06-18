@@ -10,7 +10,7 @@ category: faq, cta, accordion
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/faq"></Playground>
+<Playground url="/landing/faq" aspect="5/2"></Playground>
 ::
 
 ```vue [Code]
@@ -67,7 +67,7 @@ import { FAQList } from '~/lib/constants'
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/faq/FAQCross"></Playground>
+<Playground url="/landing/faq/FAQCross" aspect="5/2"></Playground>
 ::
 
 ```vue [Code]
@@ -124,7 +124,7 @@ import { FAQList } from '~/lib/constants'
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/faq/FAQDoubleColumnLayout"></Playground>
+<Playground url="/landing/faq/FAQDoubleColumnLayout" aspect="5/2"></Playground>
 ::
 
 ```vue [Code]

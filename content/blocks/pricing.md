@@ -10,7 +10,7 @@ category: pricing, card
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/pricing" aspect="1/1"></Playground>
+<Playground url="/landing/pricing" aspect="4/3"></Playground>
 ::
 
 ```vue [Code]
@@ -24,7 +24,7 @@ category: pricing, card
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/pricing/PricingWifiGrid" aspect="1/1"></Playground>
+<Playground url="/landing/pricing/PricingWifiGrid" aspect="4/3"></Playground>
 ::
 
 ```vue [Code]

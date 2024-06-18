@@ -251,13 +251,13 @@ export const blockList = [
         status: 'building'
       },
       {
-        name: 'Hero',
-        path: '/blocks/hero',
-        status: 'upcoming'
-      },
-      {
         name: 'Callout',
         path: '/blocks/callout',
+        status: 'building'
+      },
+      {
+        name: 'Hero',
+        path: '/blocks/hero',
         status: 'building'
       },
       {
@@ -298,16 +298,6 @@ export const blockList = [
       {
         name: 'Footer',
         path: '/blocks/footer',
-        status: 'upcoming'
-      }
-    ]
-  },
-  {
-    category: 'Portfolio',
-    components: [
-      {
-        name: 'Link',
-        path: '/blocks/link',
         status: 'upcoming'
       },
       {

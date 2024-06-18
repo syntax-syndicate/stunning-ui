@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout name="playground" class="bg-dots">
-    <section class="container py-24 sm:py-32">
+    <section class="container max-w-screen-lg py-24 sm:py-32">
       <h2
         class="text-5xl font-semibold text-primary text-center mb-4 tracking-wider"
       >

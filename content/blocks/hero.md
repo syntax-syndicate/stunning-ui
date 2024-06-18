@@ -5,12 +5,26 @@ description: The main, prominent section of a webpage, typically at the top, fea
 category: hero, link, cta, headline
 ---
 
-## Default
+## Minimal
 
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/hero"></Playground>
+<Playground url="/landing/hero" aspect="1/1"></Playground>
+::
+
+```vue [Code]
+
+```
+
+::
+
+## Slogan in Left
+
+::code-group
+
+::div{label="Preview"}
+<Playground url="/landing/hero/HeroSloganInLeft"></Playground>
 ::
 
 ```vue [Code]

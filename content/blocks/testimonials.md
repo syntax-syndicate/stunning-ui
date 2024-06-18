@@ -10,7 +10,7 @@ category: testimonials, card, reviews
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/testimonials" aspect="5/1"></Playground>
+<Playground url="/landing/testimonials" aspect="4/3"></Playground>
 ::
 
 ```vue [Code]
