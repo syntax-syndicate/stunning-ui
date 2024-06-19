@@ -1,5 +1,5 @@
 <template>
-  <section class="container py-24 sm:py-32">
+  <section class="container max-w-screen-lg py-24 sm:py-32">
     <div class="text-left md:text-center mb-8">
       <span class="font-mono text-sm tracking-tight text-neon">
         Testimonials

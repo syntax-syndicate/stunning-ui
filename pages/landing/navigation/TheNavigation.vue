@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex h-16 items-center mx-auto bg-background/75 backdrop-blur fixed w-full top-10 z-50 border-b dark:border-neutral-800"
+    class="flex h-16 items-center mx-auto bg-background/60 backdrop-blur fixed w-full top-10 z-50 border-b dark:border-neutral-800"
   >
     <div class="container max-w-screen-2xl flex justify-between">
       <div class="mr-4 hidden md:flex">

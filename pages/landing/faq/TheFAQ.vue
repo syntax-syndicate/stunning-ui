@@ -1,5 +1,5 @@
 <template>
-  <section class="container md:w-[700px] py-24 sm:py-32">
+  <section class="container max-w-screen-lg py-24 sm:py-32">
     <div class="text-center mb-8">
       <h2
         class="text-3xl text-primary font-semibold text-center mb-2 tracking-wider"

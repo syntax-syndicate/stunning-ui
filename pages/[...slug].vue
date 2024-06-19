@@ -8,7 +8,11 @@
 const { path } = useRoute()
 
 const currentLayout = computed(() => {
-  return path.startsWith('/blocks') ? 'blocks' : 'components'
+  return path.startsWith('/blocks')
+    ? 'blocks'
+    : path.startsWith('/templates')
+    ? 'templates'
+    : 'components'
 })
 </script>
 
