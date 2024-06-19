@@ -1,7 +1,7 @@
 <template>
   <section class="container max-w-screen-lg py-24 sm:py-32">
     <LandingHeadlineBicolor
-      section="FAQ"
+      section="FAQs"
       title="Frequently Asked Questions"
       description="Everything you need to know."
     />

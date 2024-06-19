@@ -2,7 +2,7 @@
   <header
     class="flex h-16 items-center mx-auto bg-background/60 backdrop-blur fixed w-full top-10 z-50 border-b dark:border-neutral-800"
   >
-    <div class="container max-w-screen-2xl flex justify-between">
+    <div class="container max-w-screen-xl flex justify-between">
       <div class="mr-4 hidden md:flex">
         <a
           class="flex items-center justify-center space-x-3 text-lg font-semibold py-6 text-center text-neutral-600 dark:text-gray-100 selection:bg-emerald-500 mr-10"
@@ -29,8 +29,8 @@
         <div
           class="flex flex-1 items-center justify-end gap-2 sm:gap-2 md:justify-end"
         >
-          <Button size="sm" variant="ghost"> Sign in </Button>
-          <Button size="sm"> Sign up </Button>
+          <Button variant="ghost"> Sign in </Button>
+          <Button variant="brand"> Get started free </Button>
         </div>
       </div>
     </div>

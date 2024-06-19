@@ -13,7 +13,7 @@
         <p>to track your progress and motivate your efforts.</p>
       </h3>
       <div class="flex mt-8 sm:flex-shrink-0 sm:mt-0 gap-4">
-        <Button @click="navigateTo('/')"> Get started </Button>
+        <Button variant="brand" @click="navigateTo('/')"> Get started </Button>
         <Button variant="outline" @click="navigateTo('/')"> Learn more </Button>
       </div>
     </div>
