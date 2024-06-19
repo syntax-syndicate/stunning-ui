@@ -18,7 +18,7 @@
       <GlowyCardWrapper class="grid grid-cols-3 gap-4">
         <GlowyCard class="rounded-lg">
           <div class="rounded p-6 lg:p-8 flex flex-col gap-2">
-            <ri:magic-line class="w-8 h-8" />
+            <Icon name="ri:magic-line" class="w-8 h-8" />
 
             <h1 class="font-medium text-xl">Easy to use</h1>
 
@@ -29,7 +29,7 @@
         </GlowyCard>
         <GlowyCard class="rounded-lg">
           <div class="rounded p-6 lg:p-8 flex flex-col gap-2">
-            <ri:check-line class="w-8 h-8" />
+            <Icon name="ri:check-line" class="w-8 h-8" />
 
             <h1 class="font-medium text-xl">Reliable</h1>
 
@@ -40,7 +40,7 @@
         </GlowyCard>
         <GlowyCard class="rounded-lg">
           <div class="rounded p-6 lg:p-8 flex flex-col gap-2">
-            <ri:lock-2-line class="w-8 h-8" />
+            <Icon name="ri:lock-2-line" class="w-8 h-8" />
 
             <h1 class="font-medium text-xl">Secure</h1>
 
@@ -51,7 +51,7 @@
         </GlowyCard>
         <GlowyCard class="rounded-lg">
           <div class="rounded p-6 lg:p-8 flex flex-col gap-2">
-            <ri:rocket-2-line class="w-8 h-8" />
+            <Icon name="ri:rocket-2-line" class="w-8 h-8" />
 
             <h1 class="font-medium text-xl">Fast</h1>
 
@@ -62,7 +62,7 @@
         </GlowyCard>
         <GlowyCard class="rounded-lg">
           <div class="rounded p-6 lg:p-8 flex flex-col gap-2">
-            <ri:money-dollar-circle-line class="w-8 h-8" />
+            <Icon name="ri:money-dollar-circle-line" class="w-8 h-8" />
 
             <h1 class="font-medium text-xl">Affordable</h1>
 
@@ -73,7 +73,7 @@
         </GlowyCard>
         <GlowyCard class="rounded-lg">
           <div class="rounded p-6 lg:p-8 flex flex-col gap-2">
-            <ri:bar-chart-2-line class="w-8 h-8" />
+            <Icon name="ri:bar-chart-2-line" class="w-8 h-8" />
 
             <h1 class="font-medium text-xl">Scalable</h1>
 

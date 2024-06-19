@@ -8,8 +8,8 @@
           gradientColor="from-sky-400 via-rose-400 to-lime-400"
         >
           ✨ 2.0 Beta is live
-
-          <ri:arrow-right-line
+          <Icon
+            name="ri:arrow-right-line"
             class="w-4 h-4 ml-2 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5"
           />
         </GradientBorderButton>

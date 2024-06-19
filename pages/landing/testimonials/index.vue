@@ -34,11 +34,26 @@
             <Card class="bg-muted/50 dark:bg-card">
               <CardContent class="pt-6 pb-0">
                 <div class="flex gap-1 pb-6">
-                  <lucide:star class="size-4 fill-brand-500 text-brand-500" />
-                  <lucide:star class="size-4 fill-brand-500 text-brand-500" />
-                  <lucide:star class="size-4 fill-brand-500 text-brand-500" />
-                  <lucide:star class="size-4 fill-brand-500 text-brand-500" />
-                  <lucide:star class="size-4 fill-brand-500 text-brand-500" />
+                  <Icon
+                    name="lucide:star"
+                    class="size-4 fill-brand-500 text-brand-500"
+                  />
+                  <Icon
+                    name="lucide:star"
+                    class="size-4 fill-brand-500 text-brand-500"
+                  />
+                  <Icon
+                    name="lucide:star"
+                    class="size-4 fill-brand-500 text-brand-500"
+                  />
+                  <Icon
+                    name="lucide:star"
+                    class="size-4 fill-brand-500 text-brand-500"
+                  />
+                  <Icon
+                    name="lucide:star"
+                    class="size-4 fill-brand-500 text-brand-500"
+                  />
                 </div>
 
                 "{{ review.body }}"

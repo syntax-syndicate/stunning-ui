@@ -24,11 +24,6 @@
           <Input id="email" type="email" placeholder="Email" />
           <Button :variant="isDark ? '' : 'secondary'"> Join Waitlist </Button>
         </div>
-        <!-- <div class="grid grid-cols-3 gap-8 text-white">
-          <simple-icons:x class="w-6 h-6" />
-          <simple-icons:github class="w-6 h-6" />
-          <simple-icons:producthunt class="w-6 h-6" />
-        </div> -->
       </div>
     </div>
 

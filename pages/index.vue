@@ -24,11 +24,11 @@
 
       <div class="stacks grid grid-cols-5 gap-8 mt-8">
         <div class="flex items-center gap-2 text-muted-foreground">
-          <simple-icons:nuxtdotjs class="w-8 h-8" />
+          <Icon name="simple-icons:nuxtdotjs" class="w-8 h-8" />
           <!-- <span>Nuxt 3</span> -->
         </div>
         <div class="flex items-center gap-2 text-muted-foreground">
-          <simple-icons:vuedotjs class="w-8 h-8" />
+          <Icon name="simple-icons:vuedotjs" class="w-8 h-8" />
           <!-- <span>Vue 3</span> -->
         </div>
         <div class="flex items-center gap-2 text-muted-foreground">
@@ -63,11 +63,11 @@
           <!-- <span>Shadcn Vue</span> -->
         </div>
         <div class="flex items-center gap-2 text-muted-foreground">
-          <simple-icons:tailwindcss class="w-8 h-8" />
+          <Icon name="simple-icons:tailwindcss" class="w-8 h-8" />
           <!-- <span>TailwindCSS</span> -->
         </div>
         <div class="flex items-center gap-2 text-muted-foreground">
-          <simple-icons:greensock class="w-8 h-8" />
+          <Icon name="simple-icons:greensock" class="w-8 h-8" />
           <!-- <span>GSAP</span> -->
         </div>
       </div>

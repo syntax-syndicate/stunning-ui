@@ -1,7 +1,7 @@
 <template>
   <section class="container max-w-screen-lg py-24 sm:py-32">
     <div
-      class="bg-neutral-50/90 dark:bg-neutral-900/90 border border-neutral-800 rounded-xl max-w-screen-lg px-4 py-12 mx-auto sm:py-20 sm:px-24 sm:flex sm:flex-col sm:items-center sm:justify-center sm:gap-8"
+      class="bg-neutral-50/90 dark:bg-neutral-900/90 border dark:border-neutral-800 rounded-xl max-w-screen-lg px-4 py-12 mx-auto sm:py-20 sm:px-24 sm:flex sm:flex-col sm:items-center sm:justify-center sm:gap-8"
     >
       <h2
         class="text-4xl font-extrabold tracking-tight text-primary text-center leading-9 sm:text-5xl sm:leading-10"
@@ -13,8 +13,8 @@
         <p>to track your progress and motivate your efforts.</p>
       </h3>
       <div class="flex mt-8 sm:flex-shrink-0 sm:mt-0 gap-4">
-        <Button variant="brand" @click="navigateTo('/')"> Get started </Button>
-        <Button @click="navigateTo('/')"> Learn more </Button>
+        <Button @click="navigateTo('/')"> Get started </Button>
+        <Button variant="outline" @click="navigateTo('/')"> Learn more </Button>
       </div>
     </div>
   </section>

@@ -15,7 +15,7 @@
             <div
               class="transition-all ease-in-out will-change-auto group-hover:translate-x-1"
             >
-              <ri:arrow-right-line class="h-6 w-6" />
+              <Icon name="ri:arrow-right-line" class="h-6 w-6" />
             </div>
           </div>
           <div class="text-[#f2f2f2]/80 sm:text-xs md:text-sm lg:text-base">

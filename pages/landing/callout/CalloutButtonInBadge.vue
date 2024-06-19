@@ -11,7 +11,8 @@
           Join 3K+ members
           <Button size="xs" class="rounded-full" variant="brand">
             Join Waitlist
-            <ri:arrow-right-line
+            <Icon
+              name="ri:arrow-right-line"
               class="w-4 h-4 ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5"
             />
           </Button>

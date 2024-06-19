@@ -18,7 +18,7 @@ category: cards, hover, features
       <div class="grid grid-cols-12 gap-4">
         <ProgressiveGradientBorder class="col-span-8">
           <div class="rounded p-6 lg:p-8 flex flex-col gap-2">
-            <ri:magic-line class="w-8 h-8" />
+            <Icon name="ri:magic-line" class="w-8 h-8" />
 
             <h1 class="font-medium text-2xl">Hover me</h1>
 
@@ -29,7 +29,7 @@ category: cards, hover, features
         </ProgressiveGradientBorder>
         <ProgressiveGradientBorder class="col-span-4">
           <div class="rounded p-6 lg:p-8 flex flex-col gap-2">
-            <ri:stack-line class="w-8 h-8" />
+            <Icon name="ri:stack-line" class="w-8 h-8" />
 
             <h1 class="font-medium text-2xl">Hover me</h1>
 
@@ -48,7 +48,7 @@ category: cards, hover, features
           }"
         >
           <div class="rounded p-6 lg:p-8 flex flex-col gap-2">
-            <ri:cake-2-line class="w-8 h-8" />
+            <Icon name="ri:cake-2-line" class="w-8 h-8" />
 
             <h1 class="font-medium text-2xl">Hover me</h1>
 
@@ -66,7 +66,7 @@ category: cards, hover, features
           }"
         >
           <div class="rounded p-6 lg:p-8 flex flex-col gap-2">
-            <ri:vip-crown-line class="w-8 h-8" />
+            <Icon name="ri:vip-crown-line" class="w-8 h-8" />
 
             <h1 class="font-medium text-2xl">Hover me</h1>
 
@@ -196,7 +196,7 @@ const className = cn(
 <template>
   <ProgressiveGradientBorder>
     <div class="rounded p-4 flex flex-col gap-2">
-      <ri:magic-line class="w-8 h-8" />
+      <Icon name="ri:magic-line" class="w-8 h-8" />
 
       <h1 class="font-medium text-2xl">Hover me</h1>
 
@@ -220,7 +220,7 @@ const className = cn(
     }"
   >
     <div class="rounded p-4 flex flex-col gap-2">
-      <ri:cake-2-line class="w-8 h-8" />
+      <Icon name="ri:cake-2-line" class="w-8 h-8" />
 
       <h1 class="font-medium text-2xl">Hover me</h1>
 

@@ -19,7 +19,8 @@
                   <div
                     class="rounded-md p-1 inline-flex ring-inset ring-1 bg-neutral-50/50 dark:bg-neutral-800/50 ring-neutral-300 dark:ring-neutral-700 group-hover:dark:bg-emerald-800/50 group-hover:ring-emerald-300 group-hover:dark:ring-emerald-600"
                   >
-                    <ph:rocket-launch-duotone
+                    <Icon
+                      name="ph:rocket-launch-duotone"
                       class="w-5 h-5 text-emerald-500"
                     />
                   </div>
@@ -34,7 +35,10 @@
                   <div
                     class="rounded-md p-1 inline-flex ring-inset ring-1 bg-neutral-50/50 dark:bg-neutral-800/50 ring-neutral-300 dark:ring-neutral-700 group-hover:dark:bg-emerald-800/50 group-hover:ring-emerald-300 group-hover:dark:ring-emerald-600"
                   >
-                    <ph:notebook-duotone class="w-5 h-5 text-emerald-500" />
+                    <Icon
+                      name="ph:notebook-duotone"
+                      class="w-5 h-5 text-emerald-500"
+                    />
                   </div>
                   <span class="group-hover:text-emerald-500">
                     Installation</span
@@ -101,7 +105,8 @@
                   href="https://twitter.com/robert_shaw_x"
                 >
                   <span class="sr-only">Follow me on X</span>
-                  <ri:twitter-x-line
+                  <Icon
+                    name="ri:twitter-x-line"
                     class="h-5 w-5 text-neutral-500 transition group-hover:text-neutral-900 dark:group-hover:text-neutral-300"
                   />
                 </NuxtLink>
@@ -111,7 +116,8 @@
                   href="https://github.com/xiaoluoboding"
                 >
                   <span class="sr-only">Follow me on GitHub</span>
-                  <ri:github-line
+                  <Icon
+                    name="ri:github-line"
                     class="h-5 w-5 text-neutral-500 transition group-hover:text-neutral-900 dark:group-hover:text-neutral-300"
                   />
                 </NuxtLink>
@@ -121,7 +127,7 @@
                   href="https://twitter.com/robert_shaw_x"
                 >
                   <span class="sr-only">Join the discord</span>
-                  <ri:discord-line
+                  <Icon name="ri:discord-line"
                     class="h-5 w-5 text-neutral-500 transition group-hover:text-neutral-900 dark:group-hover:text-neutral-300"
                   />
                 </NuxtLink> -->

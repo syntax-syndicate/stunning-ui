@@ -266,6 +266,11 @@ export const blockList = [
         status: 'building'
       },
       {
+        name: 'Headline',
+        path: '/blocks/headline',
+        status: 'building'
+      },
+      {
         name: 'Logo Cloud',
         path: '/blocks/logo-cloud',
         status: 'building'

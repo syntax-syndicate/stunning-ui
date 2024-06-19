@@ -5,7 +5,7 @@
     </ClientOnly>
 
     <aside class="flex justify-center p-5 relative border-b bg-background">
-      <nav class="relative flex gap-4">
+      <nav class="relative flex gap-4 flex-wrap">
         <template v-for="group in blockList">
           <Badge
             size="lg"
@@ -53,7 +53,8 @@
                   href="https://twitter.com/robert_shaw_x"
                 >
                   <span class="sr-only">Follow me on X</span>
-                  <ri:twitter-x-line
+                  <Icon
+                    name="ri:twitter-x-line"
                     class="h-5 w-5 text-neutral-500 transition group-hover:text-neutral-900 dark:group-hover:text-neutral-300"
                   />
                 </NuxtLink>
@@ -63,7 +64,8 @@
                   href="https://github.com/xiaoluoboding"
                 >
                   <span class="sr-only">Follow me on GitHub</span>
-                  <ri:github-line
+                  <Icon
+                    name="ri:github-line"
                     class="h-5 w-5 text-neutral-500 transition group-hover:text-neutral-900 dark:group-hover:text-neutral-300"
                   />
                 </NuxtLink>
@@ -73,7 +75,7 @@
                   href="https://twitter.com/robert_shaw_x"
                 >
                   <span class="sr-only">Join the discord</span>
-                  <ri:discord-line
+                  <Icon name="ri:discord-line"
                     class="h-5 w-5 text-neutral-500 transition group-hover:text-neutral-900 dark:group-hover:text-neutral-300"
                   />
                 </NuxtLink> -->

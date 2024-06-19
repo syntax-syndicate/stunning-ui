@@ -22,7 +22,7 @@ category: banner, button, link, cta
       </div>
       <div>
         <Button size="xs" class="gap-2">
-          <ri:sparkling-2-line />
+          <Icon name="ri:sparkling-2-line" />
           <span>Getting Started</span>
         </Button>
       </div>
@@ -56,7 +56,7 @@ import Banner from '@/components/blocks/banner/Banner.vue'
       </div>
       <div>
         <Button size="xs" class="gap-2">
-          <ri:sparkling-2-line />
+          <Icon name="ri:sparkling-2-line" />
           <span>Getting Started</span>
         </Button>
       </div>
@@ -98,7 +98,7 @@ import Banner from '@/components/blocks/banner/Banner.vue'
       </div>
       <div>
         <Button size="xs" class="gap-2">
-          <ri:sparkling-2-line />
+          <Icon name="ri:sparkling-2-line" />
           <span>Getting Started</span>
         </Button>
       </div>
@@ -141,7 +141,7 @@ import Banner from '@/components/blocks/banner/Banner.vue'
       </div>
       <div>
         <Button size="xs" class="gap-2">
-          <ri:sparkling-2-line />
+          <Icon name="ri:sparkling-2-line" />
           <span>Getting Started</span>
         </Button>
       </div>
@@ -176,7 +176,7 @@ import Banner from '@/components/blocks/banner/Banner.vue'
       </div>
       <div>
         <Button size="xs" class="gap-2">
-          <ri:sparkling-2-line />
+          <Icon name="ri:sparkling-2-line" />
           <span>Getting Started</span>
         </Button>
       </div>

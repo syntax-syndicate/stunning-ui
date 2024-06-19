@@ -6,7 +6,7 @@
       </div>
       <div>
         <Button size="xs" class="gap-2">
-          <ri:sparkling-2-line />
+          <Icon name="ri:sparkling-2-line" />
           <span>Getting Started</span>
         </Button>
       </div>

@@ -27,9 +27,7 @@
     "nuxt-icon": "^0.6.10",
     "sass": "^1.77.2",
     "shadcn-nuxt": "^0.10.4",
-    "typescript": "^5.4.5",
-    "unplugin-icons": "^0.17.4",
-    "unplugin-vue-components": "^0.25.2"
+    "typescript": "^5.4.5"
   },
   "dependencies": {
     "@radix-icons/vue": "^1.0.0",

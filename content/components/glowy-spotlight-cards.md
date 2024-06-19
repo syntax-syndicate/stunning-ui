@@ -17,7 +17,7 @@ category: cards, glowy, features
     <GlowyCardWrapper class="grid grid-cols-12 gap-4">
       <GlowyCard class="col-span-8 rounded-lg">
         <div class="rounded p-6 lg:p-8 flex flex-col gap-2">
-          <ri:magic-line class="w-8 h-8" />
+          <Icon name="ri:magic-line" class="w-8 h-8" />
 
           <h1 class="font-medium text-2xl">Hover me</h1>
 
@@ -28,7 +28,7 @@ category: cards, glowy, features
       </GlowyCard>
       <GlowyCard class="col-span-4 rounded-lg">
         <div class="rounded p-6 lg:p-8 flex flex-col gap-2">
-          <ri:stack-line class="w-8 h-8" />
+          <Icon name="ri:stack-line" class="w-8 h-8" />
 
           <h1 class="font-medium text-2xl">Hover me</h1>
 
@@ -39,7 +39,7 @@ category: cards, glowy, features
       </GlowyCard>
       <GlowyCard class="col-span-4 rounded-lg">
         <div class="rounded p-6 lg:p-8 flex flex-col gap-2">
-          <ri:cake-2-line class="w-8 h-8" />
+          <Icon name="ri:cake-2-line" class="w-8 h-8" />
 
           <h1 class="font-medium text-2xl">Hover me</h1>
 
@@ -50,7 +50,7 @@ category: cards, glowy, features
       </GlowyCard>
       <GlowyCard class="col-span-8">
         <div class="rounded p-6 lg:p-8 flex flex-col gap-2">
-          <ri:vip-crown-line class="w-8 h-8" />
+          <Icon name="ri:vip-crown-line" class="w-8 h-8" />
 
           <h1 class="font-medium text-2xl">Hover me</h1>
 

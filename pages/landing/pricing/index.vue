@@ -56,7 +56,7 @@
                 :key="benefit"
                 class="flex items-center gap-2 text-sm dark:text-muted-foreground"
               >
-                <lucide:check class="text-brand-500" />
+                <Icon name="lucide:check" class="text-brand-500" />
                 {{ benefit }}
               </span>
             </div>

@@ -1,7 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { defineNuxtConfig } from 'nuxt/config'
-import ViteComponents from 'unplugin-vue-components/vite'
-import IconsResolver from 'unplugin-icons/resolver'
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -15,7 +13,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@pinia/nuxt',
-    'unplugin-icons/nuxt',
     'shadcn-nuxt',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
@@ -52,17 +49,5 @@ export default defineNuxtConfig({
   },
   build: {
     transpile: ['vue-sonner']
-  },
-  vite: {
-    plugins: [
-      ViteComponents({
-        resolvers: [
-          IconsResolver({
-            componentPrefix: ''
-          })
-        ],
-        dts: true
-      })
-    ]
   }
 })

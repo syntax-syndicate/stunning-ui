@@ -1,15 +1,10 @@
 <template>
   <section class="container max-w-screen-lg py-24 sm:py-32">
-    <div class="text-center mb-8">
-      <h2
-        class="text-3xl text-primary font-semibold text-center mb-2 tracking-wider"
-      >
-        Frequently Asked Questions
-      </h2>
-      <p class="text-lg text-muted-foreground text-center mb-2 tracking-wider">
-        Everything you need to know.
-      </p>
-    </div>
+    <LandingHeadlineBicolor
+      section="FAQ"
+      title="Frequently Asked Questions"
+      description="Everything you need to know."
+    />
 
     <Accordion type="single" collapsible class="AccordionRoot">
       <AccordionItem

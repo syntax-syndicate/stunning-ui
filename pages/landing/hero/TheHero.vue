@@ -10,7 +10,8 @@
           class="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400"
         >
           ✨ Stunning UI 1.0 Beta
-          <ri:arrow-right-line
+          <Icon
+            name="ri:arrow-right-line"
             class="w-4 h-4 ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5"
           />
         </ShimmerText>
@@ -32,7 +33,8 @@
         </Button>
         <Button variant="outline" class="group">
           Getting Started
-          <ri:arrow-right-line
+          <Icon
+            name="ri:arrow-right-line"
             class="w-4 h-4 ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5"
           />
         </Button>

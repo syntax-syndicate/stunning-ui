@@ -1,12 +1,14 @@
 <template>
   <span ref="checkIconRef">
     <Transition name="fade" mode="out-in">
-      <lucide:copy
+      <Icon
+        name="lucide:copy"
         v-if="copied === false"
         class="self-center cursor-pointer text-muted-foreground hover:text-primary"
         @click="copyCode"
       />
-      <lucide:check
+      <Icon
+        name="lucide:check"
         v-else
         class="self-center cursor-pointer text-muted-foreground hover:text-primary"
       />

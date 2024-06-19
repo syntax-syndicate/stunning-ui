@@ -15,7 +15,7 @@ category: card, feature, overview, hover
 <template>
   <SpotlightCard>
     <div class="rounded p-6 lg:p-8 flex flex-col gap-2">
-      <ri:vip-crown-line class="w-8 h-8" />
+      <Icon name="ri:vip-crown-line" class="w-8 h-8" />
 
       <h1 class="font-medium text-2xl">Hover me</h1>
 

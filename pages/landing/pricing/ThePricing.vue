@@ -1,17 +1,12 @@
 <template>
   <section class="container max-w-screen-lg py-24 sm:py-32">
-    <h2
-      class="text-5xl font-semibold text-primary text-center mb-4 tracking-wider"
-    >
-      Pricing
-    </h2>
+    <LandingHeadlineBicolor
+      section="Pricing"
+      title="Get unlimitted access"
+      description="Free forever. Upgrade for unlimited tasks, better security, and exclusive features."
+    />
 
-    <h2 class="text-base text-center mb-16">
-      <p>Free forever. Upgrade for unlimited tasks,</p>
-      <p>better security, and exclusive features.</p>
-    </h2>
-
-    <div class="grid grid-cols-3 gap-8 lg:gap-4">
+    <div class="grid grid-cols-3 gap-8 lg:gap-4 py-8">
       <Card
         v-for="{
           title,
@@ -55,7 +50,7 @@
               :key="benefit"
               class="flex items-center gap-2 text-sm dark:text-muted-foreground"
             >
-              <lucide:check class="text-brand-500" />
+              <Icon name="lucide:check" class="text-brand-500" />
               {{ benefit }}
             </span>
           </div>

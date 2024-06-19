@@ -27,7 +27,7 @@
                 class="h-full bg-gradient-to-br from-emerald-700 to-emerald-300 border-2 border-emerald-600 rounded-2xl flex"
               >
                 <div class="w-1/2 p-16 flex gap-2 justify-center flex-col">
-                  <ri:magic-line class="w-8 h-8" />
+                  <Icon name="ri:magic-line" class="w-8 h-8" />
 
                   <h1 class="font-medium text-2xl">Section 1</h1>
 
@@ -76,7 +76,7 @@
                   </div>
                 </div>
                 <div class="w-1/2 p-16 flex gap-2 justify-center flex-col">
-                  <ri:stack-line class="w-8 h-8" />
+                  <Icon name="ri:stack-line" class="w-8 h-8" />
 
                   <h1 class="font-medium text-2xl">Section 2</h1>
 
@@ -93,7 +93,7 @@
                 class="h-full bg-gradient-to-br from-amber-700 to-amber-300 border border-amber-600 rounded-2xl flex"
               >
                 <div class="w-1/2 p-16 flex gap-2 justify-center flex-col">
-                  <ri:database-2-line class="w-8 h-8" />
+                  <Icon name="ri:database-2-line" class="w-8 h-8" />
 
                   <h1 class="font-medium text-2xl">Section 3</h1>
 
@@ -142,7 +142,7 @@
                   </div>
                 </div>
                 <div class="w-1/2 p-16 flex gap-2 justify-center flex-col">
-                  <ri:edit-2-line class="w-8 h-8" />
+                  <Icon name="ri:edit-2-line" class="w-8 h-8" />
 
                   <h1 class="font-medium text-2xl">Section 4</h1>
 
@@ -159,7 +159,7 @@
                 class="h-full bg-gradient-to-br from-fuchsia-700 to-fuchsia-300 border border-fuchsia-600 rounded-2xl flex"
               >
                 <div class="w-1/2 p-16 flex gap-2 justify-center flex-col">
-                  <ri:search-line class="w-8 h-8" />
+                  <Icon name="ri:search-line" class="w-8 h-8" />
 
                   <h1 class="font-medium text-2xl">Section 5</h1>
 

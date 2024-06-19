@@ -1,21 +1,15 @@
 <template>
   <section class="container max-w-screen-lg py-24 sm:py-32">
-    <div class="text-left md:text-center mb-8">
-      <span class="font-mono text-sm tracking-tight text-neon">
-        Testimonials
-      </span>
-      <h2
-        class="mt-4 text-left font-display text-2xl font-light leading-[1.125] text-muted-foreground md:text-center md:text-4xl lg:text-5xl"
-      >
-        Trusted by the experts, <br />
+    <LandingHeadlineBicolor
+      section="Testimonials"
+      description="Don't just take our word for it. Read what others say about Stunning UI."
+    >
+      <template #title>
+        <span class="text-muted-foreground">Trusted by the experts,</span>
+        <br />
         <span class="text-foreground">used by the leaders</span>
-      </h2>
-      <p
-        class="mx-auto mt-4 text-left leading-relaxed text-muted-foreground md:max-w-2xl md:text-center lg:mt-8"
-      >
-        Don't just take our word for it. Read what others say about Stunning UI.
-      </p>
-    </div>
+      </template>
+    </LandingHeadlineBicolor>
 
     <Carousel
       :opts="{
@@ -32,11 +26,26 @@
           <Card class="bg-muted/50 dark:bg-card">
             <CardContent class="pt-6 pb-0">
               <div class="flex gap-1 pb-6">
-                <lucide:star class="size-4 fill-brand-500 text-brand-500" />
-                <lucide:star class="size-4 fill-brand-500 text-brand-500" />
-                <lucide:star class="size-4 fill-brand-500 text-brand-500" />
-                <lucide:star class="size-4 fill-brand-500 text-brand-500" />
-                <lucide:star class="size-4 fill-brand-500 text-brand-500" />
+                <Icon
+                  name="lucide:star"
+                  class="size-4 fill-brand-500 text-brand-500"
+                />
+                <Icon
+                  name="lucide:star"
+                  class="size-4 fill-brand-500 text-brand-500"
+                />
+                <Icon
+                  name="lucide:star"
+                  class="size-4 fill-brand-500 text-brand-500"
+                />
+                <Icon
+                  name="lucide:star"
+                  class="size-4 fill-brand-500 text-brand-500"
+                />
+                <Icon
+                  name="lucide:star"
+                  class="size-4 fill-brand-500 text-brand-500"
+                />
               </div>
 
               "{{ review.body }}"

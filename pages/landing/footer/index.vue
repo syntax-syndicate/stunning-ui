@@ -194,14 +194,14 @@
                 size="icon"
                 @click="navigateTo('https://x.com/robert_shaw_x')"
               >
-                <ri:twitter-x-line class="h-[1.2rem] w-[1.2rem]" />
+                <Icon name="ri:twitter-x-line" class="h-[1.2rem] w-[1.2rem]" />
               </Button>
               <Button
                 variant="ghost"
                 size="icon"
                 @click="navigateTo('https://github.com/xiaoluoboding')"
               >
-                <ri:github-fill class="h-6 w-6" />
+                <Icon name="ri:github-fill" class="h-6 w-6" />
               </Button>
               <ToggleDarkmode />
             </div>
