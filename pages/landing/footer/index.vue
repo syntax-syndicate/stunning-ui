@@ -3,10 +3,10 @@
     <div class="h-3/5"></div>
     <footer class="relative flex-1 bg-background">
       <div class="border-t border-neutral-200 dark:border-neutral-800">
-        <div class="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl py-8 lg:py-16">
-          <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+        <div class="mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-xl py-8 lg:py-16">
+          <div class="lg:grid lg:grid-cols-3 lg:gap-8">
             <div
-              class="flex flex-col lg:grid grid-flow-col auto-cols-fr gap-8 xl:col-span-2"
+              class="flex flex-col lg:grid grid-flow-col auto-cols-fr gap-8 lg:col-span-2"
             >
               <div>
                 <h3
@@ -144,7 +144,7 @@
                 </ul>
               </div>
             </div>
-            <div class="mt-10 xl:mt-0">
+            <div class="mt-10 lg:mt-0">
               <form>
                 <div class="">
                   <div class="">

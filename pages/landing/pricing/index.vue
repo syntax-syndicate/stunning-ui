@@ -21,7 +21,7 @@
         </Tabs>
       </div>
 
-      <div class="grid grid-cols-3 gap-8 lg:gap-4 mt-16">
+      <div class="grid grid-cols-3 gap-8 lg:gap-4 mt-16 mx-16">
         <Card
           v-for="{
             title,
@@ -36,7 +36,7 @@
             cn(
               popular
                 ? `drop-shadow-xl shadow-black/10 dark:shadow-white/10 border-[1.5px] border-emerald-500 scale-[1.1] after:bg-radial-card`
-                : '-mx-2'
+                : '-mx-2 min-w-60'
             )
           "
         >

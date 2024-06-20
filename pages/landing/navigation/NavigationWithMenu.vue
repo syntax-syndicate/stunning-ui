@@ -32,18 +32,23 @@
                   <div class="w-80 gap-5 p-4">
                     <ul class="flex flex-col gap-2">
                       <li
-                        v-for="{ title, description } in featureList"
+                        v-for="{ icon, title, description } in featureList"
                         :key="title"
-                        class="rounded-md p-3 text-sm hover:bg-muted"
+                        class="rounded-md p-3 text-sm hover:bg-muted flex items-start gap-4"
                       >
-                        <p
-                          class="mb-1 font-semibold leading-none text-foreground"
-                        >
-                          {{ title }}
-                        </p>
-                        <p class="line-clamp-2 text-muted-foreground">
-                          {{ description }}
-                        </p>
+                        <div>
+                          <Icon :name="icon" class="size-6" />
+                        </div>
+                        <div>
+                          <p
+                            class="mb-1 font-semibold leading-none text-foreground"
+                          >
+                            {{ title }}
+                          </p>
+                          <p class="line-clamp-2 text-muted-foreground">
+                            {{ description }}
+                          </p>
+                        </div>
                       </li>
                     </ul>
                   </div>
@@ -95,22 +100,26 @@ interface RouteProps {
 }
 
 interface FeatureProps {
+  icon: string
   title: string
   description: string
 }
 
 const featureList: FeatureProps[] = [
   {
+    icon: 'lucide:target',
     title: 'Task',
     description:
       'Celebrate the joy of accomplishment with an app designed to track your progress, motivate your efforts, and celebrate your successes.'
   },
   {
+    icon: 'lucide:layers',
     title: 'Dashboard',
     description:
       'Gain valuable insights into your productivity with detailed reports that help you understand your habits.'
   },
   {
+    icon: 'lucide:blocks',
     title: 'Integrations',
     description:
       'Effortlessly manage and prioritize your tasks using Stunning UI`s intuitive interface, keeping your workload organized.'

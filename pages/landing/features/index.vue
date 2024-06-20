@@ -3,16 +3,20 @@
     <section
       class="relative mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl gap-16 lg:gap-20 flex flex-col py-20"
     >
-      <div class="text-center flex flex-col items-center">
-        <Badge variant="brand">Overview</Badge>
+      <div class="text-left md:text-center mb-8">
+        <span class="font-mono text-sm tracking-tight text-neon">
+          Overview
+        </span>
         <h2
-          class="my-6 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl lg:text-5xl"
+          class="mt-4 text-left font-display text-2xl font-light leading-[1.125] md:text-center md:text-4xl lg:text-5xl"
         >
           Why choose our service?
         </h2>
-        <div class="text-lg/8 text-gray-600 dark:text-gray-300 line-clamp-2">
+        <p
+          class="mx-auto mt-4 text-left leading-relaxed text-muted-foreground md:max-w-2xl md:text-center lg:mt-8 line-clamp-2"
+        >
           {{ paragraphPlaceholder }}
-        </div>
+        </p>
       </div>
       <div class="grid grid-cols-3 gap-4">
         <div class="rounded p-6 lg:p-8 flex flex-col gap-x-2 gap-y-3">

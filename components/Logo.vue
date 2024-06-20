@@ -3,11 +3,11 @@
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 200 200"
-    width="128"
-    height="128"
-    class="coolshapes-vue star-1"
+    width="400"
+    height="400"
+    class="coolshapes star-1"
   >
-    <g clipPath="url(#cs_clip_1_star-1)">
+    <g clip-path="url(#cs_clip_1_star-1)">
       <mask
         id="cs_mask_1_star-1"
         style="mask-type: alpha"
@@ -18,11 +18,11 @@
         maskUnits="userSpaceOnUse"
       >
         <path
-          fill="#fff"
           fill-rule="evenodd"
-          d="M200 100C200 44.772 155.228 0 100 0S0 44.772 0 100s44.772 100 100 100 100-44.772 100-100zm-85.203-14.798c8.22 8.22 20.701 9.967 45.664 13.462L170 100l-9.539 1.335c-24.963 3.495-37.444 5.242-45.664 13.462-8.219 8.22-9.967 20.701-13.462 45.664L100 170l-1.335-9.539c-3.495-24.963-5.243-37.444-13.462-45.664-8.22-8.22-20.701-9.967-45.664-13.462L30 100l9.539-1.336c24.963-3.495 37.444-5.242 45.664-13.462 8.22-8.22 9.967-20.7 13.462-45.663L100 30l1.335 9.538c3.495 24.963 5.243 37.445 13.462 45.664z"
           clip-rule="evenodd"
-        ></path>
+          d="M64 0H199V135H190.196V67.5C190.196 35.0833 163.917 8.80435 131.5 8.80435C99.0833 8.80435 72.8044 35.0832 72.8044 67.5V135H64V0ZM136 65L136 200L1 200L1.00001 65L9.80436 65L9.80436 132.5C9.80435 164.917 36.0833 191.196 68.5 191.196C100.917 191.196 127.196 164.917 127.196 132.5V65H136Z"
+          fill="#fff"
+        />
       </mask>
       <g mask="url(#cs_mask_1_star-1)">
         <path fill="#fff" d="M200 0H0v200h200V0z"></path>
@@ -45,6 +45,7 @@
         </g>
       </g>
     </g>
+    <!-- blur gradient -->
     <defs>
       <filter
         id="filter0_f_748_4325"
@@ -70,6 +71,7 @@
         <path fill="#fff" d="M0 0H200V200H0z"></path>
       </clipPath>
     </defs>
+    <!-- noise -->
     <g style="mix-blend-mode: overlay" mask="url(#cs_mask_1_star-1)">
       <path
         fill="gray"
