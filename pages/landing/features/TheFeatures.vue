@@ -6,7 +6,7 @@
       <LandingHeadlineBicolor
         section="Overview"
         title="Why choose our service?"
-        description="Don't just take our word for it. Read what others say about Stunning UI."
+        description="Stunning UI Pro is awesome premium library. Build better, faster with Stunning UI."
       />
       <div class="grid grid-cols-3 gap-4">
         <div class="rounded p-6 lg:p-8 flex flex-col gap-x-2 gap-y-3">

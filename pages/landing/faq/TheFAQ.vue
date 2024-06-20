@@ -1,5 +1,5 @@
 <template>
-  <section class="container max-w-screen-lg py-24 sm:py-32">
+  <section class="container max-w-screen-md py-24 sm:py-32">
     <LandingHeadlineBicolor
       section="FAQs"
       title="Frequently Asked Questions"

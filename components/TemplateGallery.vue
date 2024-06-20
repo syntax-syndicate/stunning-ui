@@ -17,8 +17,8 @@
         </div>
 
         <div class="relative px-4 pb-2 pt-4 line-clamp-2 text-neon-p">
-          <h1 class="font-medium text-lg">Minimal Gallery</h1>
-          built on top of Vue.js/Shadcn-Vue
+          <h1 class="font-medium text-lg">Minimal Template</h1>
+          Simple, minimal SaaS website
         </div>
       </GlowyCard>
     </GlowyCardWrapper>

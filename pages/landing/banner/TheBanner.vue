@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed w-full top-0 overflow-hidden z-10">
+  <div class="fixed h-10 bg-background w-full top-0 overflow-hidden z-50">
     <Banner class="bg-emerald-400 dark:bg-emerald-500">
       <div>
         Stunning UI beta 1.0 is here. Create stunning website that stand out!

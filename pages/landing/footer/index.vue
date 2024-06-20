@@ -146,7 +146,7 @@
             </div>
             <div class="mt-10 xl:mt-0">
               <form>
-                <div class="" data-n-ids='{"nXkde5j5GJc-0":"nXkde5j5GJc-0"}'>
+                <div class="">
                   <div class="">
                     <div
                       class="flex content-center items-center justify-between text-sm"
@@ -212,9 +212,26 @@
           <div
             class="flex items-center justify-center lg:justify-start lg:flex-1 gap-x-1.5 mt-3 lg:mt-0 lg:order-1"
           >
-            <p class="text-neutral-500 dark:text-neutral-400 text-sm">
-              Copyright © {{ new Date().getFullYear() }}. All rights reserved.
-            </p>
+            <div class="mr-4 hidden md:flex items-center">
+              <a
+                class="flex items-center justify-center space-x-3 text-lg font-semibold text-center text-neutral-600 dark:text-gray-100 selection:bg-emerald-500 mr-10"
+                href="/"
+              >
+                <div
+                  class="relative h-8 w-8 md:h-6 md:w-6 bg-background text-white flex items-center justify-center rounded-md text-sm antialiased"
+                >
+                  <div class="text-sm text-emerald-500 relative z-20">
+                    <Logo class="w-6 h-6" />
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <h1 class="text-primary text-xl">Acme</h1>
+                </div>
+              </a>
+              <p class="text-neutral-500 dark:text-neutral-400 text-sm">
+                Copyright © {{ new Date().getFullYear() }}. All rights reserved.
+              </p>
+            </div>
           </div>
         </div>
       </div>

@@ -323,7 +323,7 @@ export const reviews = [
   {
     name: 'Matt',
     username: '@Matt',
-    body: "I've never seen anything like this before. It's stunning. I love it.",
+    body: "I've never seen anything like this before. It's stunning.",
     img: 'https://avatar.vercel.sh/Matt'
   },
   {

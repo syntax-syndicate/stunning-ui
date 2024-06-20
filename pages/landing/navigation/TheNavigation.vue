@@ -29,8 +29,8 @@
         <div
           class="flex flex-1 items-center justify-end gap-2 sm:gap-2 md:justify-end"
         >
-          <Button variant="ghost"> Sign in </Button>
-          <Button variant="brand"> Get started free </Button>
+          <Button size="sm" variant="ghost"> Sign in </Button>
+          <Button size="sm" variant="brand"> Get started free </Button>
         </div>
       </div>
     </div>
