@@ -1,7 +1,9 @@
 <template>
-  <footer class="mx-auto w-full space-y-10 pb-16">
+  <footer
+    class="w-full space-y-10 pb-16 border-t border-neutral-900/5 dark:border-white/5"
+  >
     <div
-      class="flex flex-col items-center justify-between gap-5 border-t border-neutral-900/5 pt-8 sm:flex-row dark:border-white/5"
+      class="container max-w-screen-2xl flex flex-col items-center justify-between gap-5 pt-8 sm:flex-row"
     >
       <p class="text-xs text-neutral-600 dark:text-neutral-500">
         Building in public by

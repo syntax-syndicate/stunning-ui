@@ -1,6 +1,6 @@
 {
   "name": "stunning.dev",
-  "description": "Create stunning websites that are visually appealing",
+  "description": "Create stunning websites that are stand out",
   "private": false,
   "scripts": {
     "dev": "nuxt dev --port 6636",
@@ -23,6 +23,7 @@
     "@types/canvas-confetti": "^1.6.4",
     "@types/lodash-es": "^4.17.12",
     "@vueuse/nuxt": "^10.9.0",
+    "defu": "^6.1.4",
     "nuxt": "^3.11.2",
     "nuxt-icon": "^0.6.10",
     "sass": "^1.77.2",

@@ -30,7 +30,7 @@ category: faq, cta, accordion
         </p>
       </div>
 
-      <Accordion type="single" collapsible class="AccordionRoot">
+      <Accordion type="single" collapsible>
         <AccordionItem
           v-for="{ question, answer, value } in FAQList"
           :key="value"
@@ -87,7 +87,7 @@ import { FAQList } from '~/lib/constants'
         </p>
       </div>
 
-      <Accordion type="single" collapsible class="AccordionRoot">
+      <Accordion type="single" collapsible>
         <AccordionItem
           v-for="{ question, answer, value } in FAQList"
           :key="value"
@@ -119,7 +119,7 @@ import { FAQList } from '~/lib/constants'
 
 ::
 
-## Double Column Layout
+## Left Aligned
 
 ::code-group
 
@@ -144,7 +144,7 @@ import { FAQList } from '~/lib/constants'
           </p>
         </div>
 
-        <Accordion type="single" collapsible class="AccordionRoot">
+        <Accordion type="single" collapsible>
           <AccordionItem
             v-for="{ question, answer, value } in FAQList"
             :key="value"

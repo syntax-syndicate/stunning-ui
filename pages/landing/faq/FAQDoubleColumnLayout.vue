@@ -14,7 +14,7 @@
           </p>
         </div>
 
-        <Accordion type="single" collapsible class="AccordionRoot">
+        <Accordion type="single" collapsible>
           <AccordionItem
             v-for="{ question, answer, value } in FAQList"
             :key="value"

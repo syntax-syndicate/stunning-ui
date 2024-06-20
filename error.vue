@@ -3,7 +3,7 @@
     <div class="flex justify-center items-center h-full">
       <div class="mx-auto flex max-w-sm flex-col items-center text-center">
         <p
-          class="rounded-full bg-blue-50 p-3 text-sm font-medium dark:bg-neutral-800"
+          class="rounded-full bg-neutral-100 p-3 text-sm font-medium dark:bg-neutral-800"
         >
           <Icon name="ri:alarm-warning-line" class="h-6 w-6" />
         </p>

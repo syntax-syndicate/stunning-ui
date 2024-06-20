@@ -27,15 +27,23 @@
 
     <main class="container max-w-screen-2xl py-12 mx-auto sm:rounded">
       <div class="flex flex-col lg:grid lg:grid-cols-12 lg:gap-8">
-        <div class="cols-span-12 lg:col-span-12 w-full">
-          <main class="w-full prose prose-neutral dark:prose-invert pb-16">
-            <PageHeader />
-            <slot />
-          </main>
-          <SiteFooter />
-        </div>
+        <main
+          class="cols-span-8 lg:col-span-9 w-full prose prose-neutral dark:prose-invert pb-16"
+        >
+          <PageHeader />
+          <slot />
+        </main>
+        <aside
+          v-if="config.toc.enable"
+          class="hidden text-sm lg:block cols-span-4 lg:col-span-3 w-full"
+        >
+          <div class="sticky top-[90px] h-[calc(100vh-3.5rem)] overflow-hidden">
+            <LayoutToc :is-small="false" />
+          </div>
+        </aside>
       </div>
     </main>
+    <SiteFooter />
   </div>
 </template>
 
@@ -44,10 +52,8 @@ import { blockList } from '~/lib/constants'
 import PageHeader from '~/components/content/PageHeader.vue'
 
 const { isDark } = useDarkmode()
-
+const config = useConfig()
 const route = useRoute()
-
-console.log(route.path)
 </script>
 
 <style scoped>
