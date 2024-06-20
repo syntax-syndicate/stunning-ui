@@ -1,6 +1,6 @@
 <template>
   <section class="container max-w-screen-lg py-24 sm:py-32">
-    <LandingHeadlineBicolor
+    <LandingHeadline
       section="Testimonials"
       description="Don't just take our word for it. Read what others say about Stunning UI."
     >
@@ -9,7 +9,7 @@
         <br />
         <span class="text-foreground">used by the leaders</span>
       </template>
-    </LandingHeadlineBicolor>
+    </LandingHeadline>
 
     <Carousel
       :opts="{

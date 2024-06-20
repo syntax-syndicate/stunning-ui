@@ -1,9 +1,9 @@
 <template>
   <NuxtLayout
     name="playground"
-    class="container max-w-screen-md flex items-center justify-center"
+    class="container max-w-screen-md flex items-center justify-center bg-dots"
   >
-    <LandingHeadlineBicolor
+    <LandingHeadline
       section="Testimonials"
       description="Don't just take our word for it. Read what others say about Stunning UI."
     >
@@ -12,7 +12,7 @@
         <br />
         <span class="text-foreground">used by the leaders</span>
       </template>
-    </LandingHeadlineBicolor>
+    </LandingHeadline>
   </NuxtLayout>
 </template>
 

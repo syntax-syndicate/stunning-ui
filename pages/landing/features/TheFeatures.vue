@@ -3,7 +3,7 @@
     <div
       class="relative mx-auto px-4 sm:px-6 lg:px-8 gap-16 lg:gap-20 flex flex-col"
     >
-      <LandingHeadlineBicolor
+      <LandingHeadline
         section="Overview"
         title="Why choose our service?"
         description="Stunning UI Pro is awesome premium library. Build better, faster with Stunning UI."

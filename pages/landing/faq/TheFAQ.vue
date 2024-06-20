@@ -1,6 +1,6 @@
 <template>
   <section class="container max-w-screen-md py-24 sm:py-32">
-    <LandingHeadlineBicolor
+    <LandingHeadline
       section="FAQs"
       title="Frequently Asked Questions"
       description="Everything you need to know."

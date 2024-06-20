@@ -1,30 +1,52 @@
 <template>
-  <div class="text-center flex flex-col items-center">
-    <Badge>{{ section }}</Badge>
+  <div class="text-left mb-8" :class="alignClass">
+    <template v-if="$slots.section">
+      <slot name="section" />
+    </template>
+    <template v-else>
+      <span v-if="section" class="font-mono text-sm tracking-tight text-neon">
+        {{ section }}
+      </span>
+    </template>
     <h2
-      class="my-6 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl lg:text-5xl"
+      class="mt-4 text-left font-display text-2xl font-light leading-[1.125] md:text-4xl lg:text-5xl"
+      :class="alignClass"
     >
-      {{ title }}
+      <slot name="title" v-if="$slots.title" />
+      <span v-else>{{ title }}</span>
     </h2>
-    <div class="text-lg/8 text-gray-600 dark:text-gray-300 line-clamp-2">
+    <p
+      class="mx-auto mt-4 text-left leading-relaxed text-muted-foreground md:max-w-2xl lg:mt-8"
+      :class="alignClass"
+      v-if="description"
+    >
       {{ description }}
-    </div>
+    </p>
+    <slot />
   </div>
 </template>
 
 <script lang="ts" setup>
-withDefaults(
+const props = withDefaults(
   defineProps<{
-    section: string
-    title: string
-    description: string
+    align: 'left' | 'center' | 'right'
+    section?: string
+    title?: string
+    description?: string
   }>(),
   {
+    align: 'center',
     section: '',
     title: '',
     description: ''
   }
 )
+
+const alignClass = computed(() => {
+  if (props.align === 'left') return 'md:text-left'
+  if (props.align === 'right') return 'md:text-right'
+  return 'md:text-center'
+})
 </script>
 
 <style scoped></style>

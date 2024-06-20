@@ -7,7 +7,11 @@
       section="Overview"
       title="Why choose our service?"
       description="Stunning UI Pro is awesome premium library. Build better, faster with Stunning UI."
-    />
+    >
+      <template #section>
+        <Badge>Overview</Badge>
+      </template>
+    </LandingHeadline>
   </NuxtLayout>
 </template>
 

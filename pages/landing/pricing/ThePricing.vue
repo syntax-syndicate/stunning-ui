@@ -1,6 +1,6 @@
 <template>
   <section class="container max-w-screen-lg py-24 sm:py-32">
-    <LandingHeadlineBicolor
+    <LandingHeadline
       section="Pricing"
       title="Get unlimitted access"
       description="Free forever. Upgrade for unlimited tasks, better security, and exclusive features."

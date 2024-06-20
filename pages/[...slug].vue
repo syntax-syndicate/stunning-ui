@@ -14,6 +14,17 @@ const currentLayout = computed(() => {
     ? 'templates'
     : 'components'
 })
+
+const { data: page } = await useAsyncData(path, () =>
+  queryContent(path).findOne()
+)
+if (!page.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Page not found',
+    fatal: true
+  })
+}
 </script>
 
 <style scoped></style>
