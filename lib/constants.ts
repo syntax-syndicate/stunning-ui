@@ -405,3 +405,65 @@ One of the drawback of packaging the components in an npm package is that the st
     value: 'item-4'
   }
 ]
+
+interface PlanProps {
+  title: string
+  popular: boolean
+  price: number
+  description: string
+  buttonText: string
+  benefitList: string[]
+}
+
+export const YEARLY_DISCOUNT = 0.8
+
+export const plans: PlanProps[] = [
+  {
+    title: 'Free',
+    popular: false,
+    price: 0,
+    description: 'Perfect for individuals.',
+    buttonText: 'Get started for free',
+    benefitList: [
+      '1 team member',
+      '1000 tasks and projects',
+      '1GB storage',
+      'Integrations',
+      'Basic support'
+    ]
+  },
+  {
+    title: 'Premium',
+    popular: true,
+    price: 49,
+    description: 'Ideal for small teams.',
+    buttonText: 'Get starterd',
+    benefitList: [
+      'Up to 5 team member',
+      'Unlimited tasks and projects',
+      '8GB storage',
+      'Integrations',
+      'Priority support',
+      'Advanced analytics',
+      'Export capabilities'
+    ]
+  },
+  {
+    title: 'Enterprise',
+    popular: false,
+    price: 149,
+    description: 'Designed for large organizations.',
+    buttonText: 'Contact US',
+    benefitList: [
+      'Unlimited team members',
+      'Unlimited tasks and projects',
+      '50GB storage',
+      'Integrations',
+      'Priority support',
+      'Advanced analytics',
+      'Export capabilities',
+      'API access',
+      'Advanced security features'
+    ]
+  }
+]

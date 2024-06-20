@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-neutral-950 w-full h-screen">
+  <div class="bg-background w-full h-screen">
     <ClientOnly>
       <SiteHeader />
     </ClientOnly>

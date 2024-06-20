@@ -1,18 +1,27 @@
 <template>
   <NuxtLayout name="playground" class="bg-dots">
     <section class="container max-w-screen-lg py-24 sm:py-32">
-      <h2
-        class="text-5xl font-semibold text-primary text-center mb-4 tracking-wider"
+      <LandingHeadline
+        section="Pricing"
+        description="Free forever. Upgrade for unlimited tasks, better security, and exclusive features."
       >
-        Pricing
-      </h2>
+        <template #title>
+          <span class="text-muted-foreground">Simple, transparent pricing</span>
+          <br />
+          <span class="text-foreground">for everyone</span>
+        </template>
+      </LandingHeadline>
 
-      <h2 class="text-base text-center mb-16">
-        <p>Free forever. Upgrade for unlimited tasks,</p>
-        <p>better security, and exclusive features.</p>
-      </h2>
+      <div class="w-full flex justify-center">
+        <Tabs default-value="yearly" v-model="planType">
+          <TabsList>
+            <TabsTrigger value="yearly"> Yearly Billing </TabsTrigger>
+            <TabsTrigger value="monthly"> Montly Billing </TabsTrigger>
+          </TabsList>
+        </Tabs>
+      </div>
 
-      <div class="grid grid-cols-3 gap-8 lg:gap-4">
+      <div class="grid grid-cols-3 gap-8 lg:gap-4 mt-16">
         <Card
           v-for="{
             title,
@@ -44,7 +53,13 @@
             <CardDescription class="pb-4">{{ description }}</CardDescription>
 
             <div>
-              <span class="text-3xl font-bold">${{ price }}</span>
+              <span class="text-3xl font-bold"
+                >${{
+                  planType === 'yearly'
+                    ? (price * YEARLY_DISCOUNT).toFixed(0).toString()
+                    : price
+                }}</span
+              >
               <span class="text-muted-foreground"> /month</span>
             </div>
           </CardHeader>
@@ -52,7 +67,7 @@
           <CardContent class="flex">
             <div class="space-y-4">
               <span
-                v-for="benefit in benefitList"
+                v-for="benefit in benefitList.slice(0, 5)"
                 :key="benefit"
                 class="flex items-center gap-2 text-sm dark:text-muted-foreground"
               >
@@ -84,60 +99,9 @@ import {
   CardHeader,
   CardTitle
 } from '@/components/ui/card'
+import { plans, YEARLY_DISCOUNT } from '@/lib/constants'
 
-interface PlanProps {
-  title: string
-  popular: boolean
-  price: number
-  description: string
-  buttonText: string
-  benefitList: string[]
-}
-
-const plans: PlanProps[] = [
-  {
-    title: 'Free',
-    popular: false,
-    price: 0,
-    description: 'Perfect for individuals.',
-    buttonText: 'Get started for free',
-    benefitList: [
-      '1 team member',
-      '1000 tasks and projects',
-      '1GB storage',
-      'Integrations',
-      'Basic support'
-    ]
-  },
-  {
-    title: 'Premium',
-    popular: true,
-    price: 49,
-    description: 'Ideal for small teams.',
-    buttonText: 'Get starterd',
-    benefitList: [
-      'Up to 5 team member',
-      'Unlimited tasks and projects',
-      '8GB storage',
-      'Integrations',
-      'Priority support'
-    ]
-  },
-  {
-    title: 'Enterprise',
-    popular: false,
-    price: 129,
-    description: 'Designed for large organizations.',
-    buttonText: 'Contact US',
-    benefitList: [
-      'Unlimited team members',
-      'Unlimited tasks and projects',
-      '50GB storage',
-      'Integrations',
-      'Priority support'
-    ]
-  }
-]
+const planType = ref('yearly')
 </script>
 
 <style></style>

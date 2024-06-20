@@ -3,26 +3,28 @@
     <section
       class="container flex flex-col justify-center items-center py-24 sm:py-32"
     >
-      <div>
-        <Badge variant="brand" class="tracking-tight font-light">
-          Pricing
-        </Badge>
-      </div>
-      <h2
-        class="text-4xl font-semibold text-primary text-center my-4 tracking-wider"
+      <LandingHeadline
+        section="Pricing"
+        description="Free forever. Upgrade for unlimited tasks, better security, and exclusive features."
       >
-        Simple, transparent pricing
-        <br />
-        <span class="text-white/50">for everyone</span>
-      </h2>
+        <template #title>
+          <span class="text-muted-foreground">Simple, transparent pricing</span>
+          <br />
+          <span class="text-foreground">for everyone</span>
+        </template>
+      </LandingHeadline>
 
-      <h2 class="text-base text-center mb-16">
-        <p>Free forever. Upgrade for unlimited tasks,</p>
-        <p>better security, and exclusive features.</p>
-      </h2>
+      <div class="w-full flex justify-center">
+        <Tabs default-value="yearly" v-model="planType">
+          <TabsList>
+            <TabsTrigger value="yearly"> Yearly Billing </TabsTrigger>
+            <TabsTrigger value="monthly"> Montly Billing </TabsTrigger>
+          </TabsList>
+        </Tabs>
+      </div>
 
       <div
-        class="relative flex flex-none flex-wrap justify-center items-end gap-8 lg:gap-4 h-min w-full"
+        class="relative flex flex-none flex-wrap justify-center items-end gap-8 lg:gap-4 h-min w-full mt-16"
       >
         <Card
           v-for="{
@@ -55,7 +57,13 @@
             <CardDescription class="pb-4">{{ description }}</CardDescription>
 
             <div>
-              <span class="text-3xl font-bold">${{ price }}</span>
+              <span class="text-3xl font-bold"
+                >${{
+                  planType === 'yearly'
+                    ? (price * YEARLY_DISCOUNT).toFixed(0).toString()
+                    : price
+                }}</span
+              >
               <span class="text-muted-foreground"> /month</span>
             </div>
           </CardHeader>
@@ -95,66 +103,9 @@ import {
   CardHeader,
   CardTitle
 } from '@/components/ui/card'
+import { plans, YEARLY_DISCOUNT } from '@/lib/constants'
 
-interface PlanProps {
-  title: string
-  popular: boolean
-  price: number
-  description: string
-  buttonText: string
-  benefitList: string[]
-}
-
-const plans: PlanProps[] = [
-  {
-    title: 'Free',
-    popular: false,
-    price: 0,
-    description: 'Perfect for individuals.',
-    buttonText: 'Get started for free',
-    benefitList: [
-      '1 team member',
-      '1000 tasks and projects',
-      '1GB storage',
-      'Integrations',
-      'Basic support'
-    ]
-  },
-  {
-    title: 'Premium',
-    popular: true,
-    price: 49,
-    description: 'Ideal for small teams.',
-    buttonText: 'Get starterd',
-    benefitList: [
-      'Up to 5 team member',
-      'Unlimited tasks and projects',
-      '8GB storage',
-      'Integrations',
-      'Priority support',
-      'Advanced analytics',
-      'Export capabilities'
-    ]
-  },
-  {
-    title: 'Enterprise',
-    popular: false,
-    price: 129,
-    description: 'Designed for large organizations.',
-    buttonText: 'Contact US',
-    benefitList: [
-      'Unlimited team members',
-      'Unlimited tasks and projects',
-      '50GB storage',
-      'Integrations',
-      'Priority support',
-      'Advanced analytics',
-      'Export capabilities',
-      'API access',
-      'Advanced security features'
-    ]
-  }
-]
+const planType = ref('yearly')
 </script>
 
 <style></style>
