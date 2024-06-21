@@ -34,7 +34,7 @@
         >
           <span class="sr-only">Follow me on GitHub</span>
           <Icon
-            name="ri:github-line"
+            name="ri:github-fill"
             class="h-5 w-5 text-neutral-500 transition group-hover:text-neutral-900 dark:group-hover:text-neutral-300"
           />
         </NuxtLink>

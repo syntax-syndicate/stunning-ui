@@ -66,6 +66,5 @@ defineProps<{ isSmall: boolean }>()
 
 const { toc } = useContent()
 const { title, links } = useConfig().value.toc
-console.log(links)
 const isOpen = ref(false)
 </script>

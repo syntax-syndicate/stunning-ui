@@ -28,14 +28,16 @@
     <main class="container max-w-screen-2xl py-12 mx-auto sm:rounded">
       <div class="flex flex-col lg:grid lg:grid-cols-12 lg:gap-8">
         <main
-          class="cols-span-8 lg:col-span-9 w-full prose prose-neutral dark:prose-invert pb-16"
+          class="cols-span-12 w-full prose prose-neutral dark:prose-invert pb-16"
+          :class="isBlockHome ? 'lg:col-span-12' : 'lg:col-span-9'"
         >
           <PageHeader />
           <slot />
         </main>
         <aside
-          v-if="config.toc.enable"
-          class="hidden text-sm lg:block cols-span-4 lg:col-span-3 w-full"
+          v-if="config.toc.enable && !isBlockHome"
+          class="hidden text-sm lg:block w-full"
+          :class="isBlockHome ? 'lg:col-span-0' : 'lg:col-span-3'"
         >
           <div class="sticky top-[90px] h-[calc(100vh-3.5rem)] overflow-hidden">
             <LayoutToc :is-small="false" />
@@ -54,6 +56,11 @@ import PageHeader from '~/components/content/PageHeader.vue'
 const { isDark } = useDarkmode()
 const config = useConfig()
 const route = useRoute()
+console.log(route.path)
+
+const isBlockHome = computed(() => {
+  return route.path === '/blocks'
+})
 </script>
 
 <style scoped>
