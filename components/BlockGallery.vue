@@ -2,7 +2,7 @@
   <main class="w-full h-full">
     <template v-for="group in blockList">
       <h2>{{ group.category }}</h2>
-      <GlowyCardWrapper class="grid grid-cols-2 gap-4" :size="320">
+      <GlowyCardWrapper class="grid grid-cols-3 gap-4" :size="240">
         <GlowyCard
           class="rounded-lg p-6 lg:p-4 flex flex-col gap-2"
           v-for="item in group.components"

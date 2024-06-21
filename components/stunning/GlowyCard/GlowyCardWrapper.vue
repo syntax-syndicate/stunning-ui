@@ -58,7 +58,7 @@ watch(
   () => hue,
   () => {
     nextTick(() => {
-      glowCardWrapper.value?.style.setProperty('--hue', hue.toString())
+      glowCardWrapper.value?.style.setProperty('--hue', hue.value.toString())
     })
   },
   {
@@ -70,7 +70,7 @@ watch(
   () => size,
   () => {
     nextTick(() => {
-      glowCardWrapper.value?.style.setProperty('--size', size.toString())
+      glowCardWrapper.value?.style.setProperty('--size', size.value.toString())
     })
   },
   {
@@ -82,7 +82,10 @@ watch(
   () => border,
   () => {
     nextTick(() => {
-      glowCardWrapper.value?.style.setProperty('--border', border.toString())
+      glowCardWrapper.value?.style.setProperty(
+        '--border',
+        border.value.toString()
+      )
     })
   },
   {
@@ -94,7 +97,10 @@ watch(
   () => radius,
   () => {
     nextTick(() => {
-      glowCardWrapper.value?.style.setProperty('--radius', radius.toString())
+      glowCardWrapper.value?.style.setProperty(
+        '--radius',
+        radius.value.toString()
+      )
     })
   },
   {

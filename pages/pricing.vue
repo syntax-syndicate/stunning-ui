@@ -182,7 +182,7 @@ interface FAQItem {
 
 const FAQList: FAQItem[] = [
   {
-    question: 'What is Stunning UI Pro',
+    question: 'What is Stunning UI Pro?',
     answer: `Stunning UI is a collection of interactive Tailwind CSS components, blocks, templates built
       for Vue.js/React, help your build stunning websites fast.`,
     value: 'item-1'
