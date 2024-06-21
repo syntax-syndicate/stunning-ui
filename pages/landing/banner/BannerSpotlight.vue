@@ -1,6 +1,6 @@
 <template>
   <main class="w-screen h-screen bg-dots">
-    <Banner
+    <LandingBanner
       :class="
         cn(
           'px-paddings relative z-40 overflow-hidden leading-none transition-colors duration-200 dark:bg-neutral-950 dark:hover:bg-gray-new-8 bg-[#F5FBFD] hover:bg-[#f1fcff]',
@@ -18,13 +18,13 @@
           <span>Getting Started</span>
         </Button>
       </div>
-    </Banner>
+    </LandingBanner>
   </main>
 </template>
 
 <script lang="ts" setup>
 import { cn } from '~/lib/utils'
-import Banner from '@/components/blocks/banner/Banner.vue'
+import Banner from '~/components/landing/Banner.vue'
 </script>
 
 <style scoped></style>

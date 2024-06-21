@@ -1,6 +1,6 @@
 <template>
   <main class="w-screen h-screen bg-dots">
-    <Banner class="relative bg-neutral-50 dark:bg-neutral-950">
+    <LandingBanner class="relative bg-neutral-50 dark:bg-neutral-950">
       <Marquee
         pauseOnHover
         :repeat="40"
@@ -16,13 +16,11 @@
       <div
         class="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"
       ></div>
-    </Banner>
+    </LandingBanner>
   </main>
 </template>
 
 <script lang="ts" setup>
-import Banner from '@/components/blocks/banner/Banner.vue'
-
 const texts = [
   '50% off all plans',
   '・',

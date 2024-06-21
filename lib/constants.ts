@@ -311,8 +311,8 @@ export const blockList = [
         status: 'upcoming'
       },
       {
-        name: 'Minimal Template',
-        path: '/templates/minimal-template',
+        name: 'Minimal',
+        path: '/templates/minimal',
         status: 'upcoming'
       }
     ]

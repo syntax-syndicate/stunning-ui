@@ -16,7 +16,7 @@ category: banner, button, link, cta
 ```vue [Code]
 <template>
   <main class="w-full h-full">
-    <Banner class="bg-emerald-300 dark:bg-emerald-500">
+    <LandingBanner class="bg-emerald-300 dark:bg-emerald-500">
       <div>
         Stunning UI 1.0 is here. Create stunning website that stand out!
       </div>
@@ -50,7 +50,7 @@ import Banner from '@/components/blocks/banner/Banner.vue'
 ```vue [Code]
 <template>
   <main class="w-full h-full">
-    <Banner class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
+    <LandingBanner class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
       <div>
         Stunning UI 1.0 is here. Create stunning website that stand out!
       </div>
@@ -84,7 +84,7 @@ import Banner from '@/components/blocks/banner/Banner.vue'
 ```vue [Code]
 <template>
   <main class="w-screen h-screen bg-dots">
-    <Banner
+    <LandingBanner
       :class="
         cn(
           'dark:bg-neutral-950 bg-neutral-50 border-b border-neutral-100/50 dark:border-neutral-900/90',
@@ -127,7 +127,7 @@ import Banner from '@/components/blocks/banner/Banner.vue'
 ```vue [Code]
 <template>
   <main class="w-screen h-screen bg-dots">
-    <Banner
+    <LandingBanner
       :class="
         cn(
           'px-paddings relative z-40 overflow-hidden leading-none transition-colors duration-200 dark:bg-neutral-950 dark:hover:bg-gray-new-8 bg-[#F5FBFD] hover:bg-[#f1fcff]',
@@ -170,7 +170,7 @@ import Banner from '@/components/blocks/banner/Banner.vue'
 ```vue [Code]
 <template>
   <main class="w-full h-full">
-    <Banner class="bg-emerald-300 dark:bg-emerald-500">
+    <LandingBanner class="bg-emerald-300 dark:bg-emerald-500">
       <div>
         Stunning UI 1.0 is here. Create stunning website that stand out!
       </div>

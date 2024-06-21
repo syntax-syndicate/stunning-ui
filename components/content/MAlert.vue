@@ -4,13 +4,13 @@
     :class="[variantTypeClass[type], to && 'cursor-pointer hover:bg-muted/50']"
     @click="handleClickAlert"
   >
-    <Iconify v-if="icon && title" :name="icon" size="16" />
+    <Icon v-if="icon && title" :name="icon" size="16" />
     <AlertTitle v-if="title" class="font-semibold">
       {{ title }}
     </AlertTitle>
     <AlertDescription>
       <div class="flex flex-row space-x-2">
-        <Iconify
+        <Icon
           v-if="icon && !title"
           :name="icon"
           size="16"
@@ -20,7 +20,7 @@
           <slot />
         </span>
       </div>
-      <Iconify
+      <Icon
         name="lucide:arrow-up-right"
         v-if="to"
         class="absolute right-4 top-4"
@@ -30,8 +30,6 @@
 </template>
 
 <script setup lang="ts">
-import Iconify from '../Iconify.vue'
-
 const props = withDefaults(
   defineProps<{
     title?: string

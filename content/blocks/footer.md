@@ -10,7 +10,21 @@ category: footer, link, contact, about us
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/footer" aspect="5/2"></Playground>
+<Playground url="/landing/footer" aspect="5/1"></Playground>
+::
+
+```vue [Code]
+
+```
+
+::
+
+## Links + Subscribe
+
+::code-group
+
+::div{label="Preview"}
+<Playground url="/landing/footer/FooterWithSub" aspect="16/9"></Playground>
 ::
 
 ```vue [Code]

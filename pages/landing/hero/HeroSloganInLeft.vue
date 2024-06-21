@@ -43,7 +43,7 @@
       </div>
       <div class="max-w-screen-xl scale-110">
         <div
-          class="relative mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl gap-16 sm:gap-y-24 flex flex-col"
+          class="relative mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-xl gap-16 sm:gap-y-24 flex flex-col"
         >
           <div
             class="bg-gray-900/5 dark:bg-white/5 ring-1 ring-inset ring-gray-900/10 dark:ring-white/10 rounded-xl lg:-m-4 p-4 z-10"

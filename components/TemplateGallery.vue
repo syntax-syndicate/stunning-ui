@@ -4,7 +4,7 @@
     <GlowyCardWrapper class="grid grid-cols-3 gap-4" :size="320">
       <GlowyCard
         class="rounded-lg p-6 lg:p-4 flex flex-col gap-2"
-        @click="navigateTo('/templates/minimal-template')"
+        @click="navigateTo('/templates/minimal')"
       >
         <div
           class="bg-gray-900/5 dark:bg-white/5 ring-1 ring-inset ring-gray-900/10 dark:ring-white/10 rounded-lg p-3"

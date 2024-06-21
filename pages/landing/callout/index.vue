@@ -2,7 +2,7 @@
   <NuxtLayout name="playground">
     <main class="w-full h-full flex flex-col justify-center items-center px-8">
       <div
-        class="group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
+        class="group rounded-full border border-black/5 bg-neutral-100 text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
       >
         <Badge variant="secondary" class="rounded-full flex px-2 gap-2">
           😻 Stunning UI is on Product Hunt today

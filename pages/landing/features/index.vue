@@ -1,7 +1,7 @@
 <template>
   <NuxtLayout name="playground" class="bg-dots">
     <section
-      class="relative mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl gap-16 lg:gap-20 flex flex-col py-20"
+      class="relative mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-xl gap-16 lg:gap-20 flex flex-col py-20"
     >
       <div class="text-left md:text-center mb-8">
         <span class="font-mono text-sm tracking-tight text-neon">

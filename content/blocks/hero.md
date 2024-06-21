@@ -19,7 +19,7 @@ category: hero, link, cta, headline
 
 ::
 
-## Slogan in Left
+## Slogan left aligned
 
 ::code-group
 
