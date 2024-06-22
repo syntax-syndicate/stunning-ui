@@ -127,6 +127,11 @@ export const componentList = [
         status: 'finished'
       },
       {
+        name: 'Skewed Marquee',
+        path: '/components/skewed-marquee',
+        status: 'finished'
+      },
+      {
         name: 'Spotlight Card',
         path: '/components/spotlight-card',
         status: 'finished'

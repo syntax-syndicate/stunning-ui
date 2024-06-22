@@ -13,7 +13,7 @@
           description="Create stunning websites using stunning blocks, Save hours & money!"
         />
         <GlowyCardWrapper
-          class="grid grid-cols-3 gap-4 h-full mt-8"
+          class="grid grid-cols-3 gap-4 h-full mt-16"
           :size="320"
         >
           <GlowyCard
@@ -30,7 +30,7 @@
           >
             <div class="relative h-full px-4 pb-2 pt-4 text-neon-p">
               <div class="pb-2 flex items-center justify-between">
-                <span>
+                <span class="font-semibold">
                   {{ title }}
                 </span>
                 <Badge variant="brand" class="font-light" v-if="popular"
@@ -128,7 +128,7 @@ const plans: PlanProps[] = [
     benefitList: [
       '1 developer',
       '50+ blocks (300 expected)',
-      '2 Premium templates （5 expected）',
+      '2 Pro templates (5 expected)',
       'Commercial License Only',
       'Lifetime access/updates',
       'Use for unlimited projects',
@@ -146,7 +146,7 @@ const plans: PlanProps[] = [
     benefitList: [
       'Up to 10 team member',
       '50+ blocks (300 expected)',
-      '2 Premium templates （5 expected）',
+      '2 Pro templates (5 expected)',
       'Commercial License Only',
       'Lifetime access/updates',
       'Use for unlimited projects',
@@ -164,7 +164,7 @@ const plans: PlanProps[] = [
     benefitList: [
       'Up to 25 team member',
       '50+ blocks (300 expected)',
-      '2 Premium templates （5 expected）',
+      '2 Pro templates (5 expected)',
       'Commercial License Only',
       'Lifetime access/updates',
       'Use for unlimited projects',
