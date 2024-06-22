@@ -1,13 +1,13 @@
 <template>
   <main class="w-screen h-screen flex items-center justify-center">
+    <div class="absolute flex h-full w-full items-center justify-center">
+      <p
+        className="z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-black dark:text-white"
+      >
+        Meteor Grid
+      </p>
+    </div>
     <div class="relative w-[961px] h-[481px]">
-      <div class="absolute flex h-full w-full items-center justify-center">
-        <p
-          className="z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-black dark:text-white"
-        >
-          Meteor Grid
-        </p>
-      </div>
       <MeteorGrid>
         <Meteor
           class="left-[60px]"

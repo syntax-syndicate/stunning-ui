@@ -3,7 +3,7 @@
     <div
       class="relative flex h-full w-full overflow-hidden rounded-lg bg-background md:dark:shadow-xl"
     >
-      <SkewedMarquee>
+      <SkewedWrapper>
         <template #content>
           <div class="grid grid-cols-1 gap-2">
             <Marquee pauseOnHover :repeat="4" class="[--duration:10s]">
@@ -86,13 +86,13 @@
             </Marquee>
           </div>
         </template>
-      </SkewedMarquee>
+      </SkewedWrapper>
     </div>
   </NuxtLayout>
 </template>
 
 <script lang="ts" setup>
-import SkewedMarquee from '@/components/stunning/SkewedMarquee.vue'
+import SkewedWrapper from '~/components/stunning/SkewedWrapper.vue'
 import Marquee from '@/components/stunning/Marquee.vue'
 import { reviews } from '~/lib/constants'
 

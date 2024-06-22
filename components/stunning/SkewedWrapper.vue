@@ -3,10 +3,10 @@
     class="[--rotate:1] relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg bg-background"
   >
     <div
-      class="skewed-marquee-wrapper w-full [container-type:inline-size] [transform-style:preserve-3d]"
+      class="skewed-view-wrapper w-full [container-type:inline-size] [transform-style:preserve-3d]"
     >
       <div
-        class="skewed-marquee [transform-style:preserve-3d] h-full w-full transform-gpu"
+        class="skewed-view [transform-style:preserve-3d] h-full w-full transform-gpu"
       >
         <slot name="content" />
       </div>
@@ -30,7 +30,7 @@
 <script lang="ts" setup></script>
 
 <style scoped>
-.skewed-marquee {
+.skewed-view {
   /*	3D translation */
   transform: rotateX(calc(var(--rotate, 0) * 20deg))
     rotateZ(calc(var(--rotate, 0) * -20deg))

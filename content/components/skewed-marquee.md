@@ -123,24 +123,27 @@ const secondRow = reviews.slice(reviews.length / 2)
 
 ### Prerequisites
 
-This component is a wrapper of `Marquee` component, make the content skewed.
+This skewed marquee component consists of two components:
 
-### Copy the source code
+- [SkewedWrapper] - Allow the content to be skewed.
+- [Marquee](/components/marquee) - Allow the content to scroll infinitely.
 
-`/components/stunning/SkewedMarquee.vue`
+### Copy the source code, `SkewedWrapper`
+
+`/components/stunning/SkewedWrapper.vue`
 
 ::CodeCollapse
 
-```vue
+```vue [Code]
 <template>
   <div
     class="[--rotate:1] relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg bg-background"
   >
     <div
-      class="skewed-marquee-wrapper w-full [container-type:inline-size] [transform-style:preserve-3d]"
+      class="skewed-view-wrapper w-full [container-type:inline-size] [transform-style:preserve-3d]"
     >
       <div
-        class="skewed-marquee [transform-style:preserve-3d] h-full w-full transform-gpu"
+        class="skewed-view [transform-style:preserve-3d] h-full w-full transform-gpu"
       >
         <slot name="content" />
       </div>
@@ -164,7 +167,7 @@ This component is a wrapper of `Marquee` component, make the content skewed.
 <script lang="ts" setup></script>
 
 <style scoped>
-.skewed-marquee {
+.skewed-view {
   /*	3D translation */
   transform: rotateX(calc(var(--rotate, 0) * 20deg)) rotateZ(
       calc(var(--rotate, 0) * -20deg)
@@ -175,6 +178,10 @@ This component is a wrapper of `Marquee` component, make the content skewed.
 ```
 
 ::
+
+### Copy the source code, `Marquee`
+
+learn how to install [Marquee](/components/marquee) component
 
 ::
 
@@ -277,10 +284,16 @@ const secondRow = reviews.slice(reviews.length / 2)
 
 ## Props
 
+### SkewedWrapper
+
 | Prop       | Type   | Description                                       | Default |
 | :--------- | :----- | :------------------------------------------------ | :------ |
 | `--rotate` | Number | CSS Variable, control the angle of skewed element | 1       |
 
+### Marquee
+
+learn the props of [Marquee](/components/marquee#props) props
+
 ## Inspiration
 
-- [https://midday.ai/](https://midday.ai/)
+- [https://codepen.io/jh3y/pen/RwdPvvz](https://codepen.io/jh3y/pen/RwdPvvz)
