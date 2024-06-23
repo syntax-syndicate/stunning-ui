@@ -33,9 +33,9 @@
                 <span class="font-semibold">
                   {{ title }}
                 </span>
-                <Badge variant="brand" class="font-light" v-if="popular"
-                  >Most Popular</Badge
-                >
+                <Badge variant="brand" class="font-light" v-if="popular">
+                  Most Popular
+                </Badge>
               </div>
 
               <div class="pb-4">{{ description }}</div>

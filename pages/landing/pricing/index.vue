@@ -16,7 +16,7 @@
         <Tabs default-value="yearly" v-model="planType">
           <TabsList>
             <TabsTrigger value="yearly"> Yearly Billing </TabsTrigger>
-            <TabsTrigger value="monthly"> Montly Billing </TabsTrigger>
+            <TabsTrigger value="monthly"> Monthly Billing </TabsTrigger>
           </TabsList>
         </Tabs>
       </div>

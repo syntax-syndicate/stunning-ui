@@ -6,7 +6,16 @@
       description="Free forever. Upgrade for unlimited tasks, better security, and exclusive features."
     />
 
-    <div class="grid grid-cols-3 gap-8 lg:gap-4 py-8">
+    <div class="w-full flex justify-center">
+      <Tabs default-value="yearly" v-model="planType">
+        <TabsList>
+          <TabsTrigger value="yearly"> Yearly Billing </TabsTrigger>
+          <TabsTrigger value="monthly"> Monthly Billing </TabsTrigger>
+        </TabsList>
+      </Tabs>
+    </div>
+
+    <div class="grid grid-cols-3 gap-8 lg:gap-4 py-8 mt-16">
       <Card
         v-for="{
           title,
@@ -38,7 +47,13 @@
           <CardDescription class="pb-4">{{ description }}</CardDescription>
 
           <div>
-            <span class="text-3xl font-bold">${{ price }}</span>
+            <span class="text-3xl font-bold"
+              >${{
+                planType === 'yearly'
+                  ? (price * YEARLY_DISCOUNT).toFixed(0).toString()
+                  : price
+              }}</span
+            >
             <span class="text-muted-foreground"> /month</span>
           </div>
         </CardHeader>
@@ -68,6 +83,8 @@
 
 <script setup lang="ts">
 import { cn } from '~/lib/utils'
+import { YEARLY_DISCOUNT } from '@/lib/constants'
+
 import {
   Card,
   CardContent,
@@ -85,6 +102,8 @@ interface PlanProps {
   buttonText: string
   benefitList: string[]
 }
+
+const planType = ref('yearly')
 
 const plans: PlanProps[] = [
   {
