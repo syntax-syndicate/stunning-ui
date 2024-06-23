@@ -1,6 +1,10 @@
 <template>
-  <div class="sui-morphing-gradient">
-    <svg xmlns="http://www.w3.org/2000/svg">
+  <div
+    class="sui-morphing-gradient h-screen w-screen relative overflow-hidden top-0 left-0"
+    ref="gradientWrapper"
+    :style="wrapperStyle"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
       <defs>
         <filter id="point">
           <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
@@ -14,7 +18,9 @@
         </filter>
       </defs>
     </svg>
-    <div class="gradients-container">
+    <div
+      class="gradients-container w-full h-full [filter:_url(#point)_blur(40px)]"
+    >
       <div class="g1"></div>
       <div class="g2"></div>
       <div class="g3"></div>
@@ -29,16 +35,66 @@
 import { useMouse } from '@vueuse/core'
 import { ref, watch } from 'vue'
 
+const props = withDefaults(
+  defineProps<{
+    firstColor: string
+    secondColor: string
+    thirdColor: string
+    fourthColor: string
+    fifthColor: string
+    interactiveColor: string
+    interactive: boolean
+    size: string
+    mixBlendMode: string
+  }>(),
+  {
+    firstColor: '18, 113, 255',
+    secondColor: '221, 74, 255',
+    thirdColor: '100, 220, 255',
+    fourthColor: '200, 50, 50',
+    fifthColor: '180, 180, 50',
+    interactiveColor: '140, 100, 255',
+    interactive: true,
+    size: '80%',
+    mixBlendMode: 'hard-light'
+  }
+)
+
 const interactiveRef = ref<HTMLDivElement>()
 const { x, y } = useMouse()
 const currentPos = ref({ x: 0, y: 0 })
+const gradientWrapper = ref<HTMLDivElement | null>(null)
+
+const {
+  firstColor,
+  secondColor,
+  thirdColor,
+  fourthColor,
+  fifthColor,
+  interactiveColor,
+  interactive,
+  size,
+  mixBlendMode
+} = toRefs(props)
+
+const wrapperStyle = computed(() => {
+  return {
+    '--color1': firstColor.value,
+    '--color2': secondColor.value,
+    '--color3': thirdColor.value,
+    '--color4': fourthColor.value,
+    '--color5': fifthColor.value,
+    '--color-interactive': interactiveColor.value,
+    '--circle-size': size.value,
+    '--blending': mixBlendMode.value
+  }
+})
 
 watch(
   () => [x.value, y.value],
   () => {
-    if (!interactiveRef.value) {
-      return
-    }
+    if (!interactive.value) return
+    if (!interactiveRef.value) return
     currentPos.value.x =
       currentPos.value.x + (x.value - currentPos.value.x) / 20
     currentPos.value.y =
@@ -54,14 +110,12 @@ watch(
 )
 </script>
 
-<style lang="scss">
+<style scoped>
 .sui-morphing-gradient {
   --space: ;
   @supports (background: linear-gradient(in oklab, #000, #fff)) {
     --space: in oklab;
   }
-  --color-bg1: rgb(108, 0, 162);
-  --color-bg2: rgb(0, 17, 82);
   --color1: 18, 113, 255;
   --color2: 221, 74, 255;
   --color3: 100, 220, 255;
@@ -109,23 +163,6 @@ watch(
 }
 
 .sui-morphing-gradient {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-
-  svg {
-    display: none;
-  }
-
-  .gradients-container {
-    filter: url(#point) blur(40px);
-    width: 100%;
-    height: 100%;
-  }
-
   .g1 {
     position: absolute;
     background: radial-gradient(
