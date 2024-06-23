@@ -1,14 +1,14 @@
 <template>
-  <div class="god-ray relative flex h-screen w-screen">
-    <div class="jumbo"></div>
+  <div class="sui-god-ray relative flex h-screen w-screen">
+    <div class="ray absolute inset-x-0 inset-y-0 opacity-50"></div>
   </div>
 </template>
 
 <script lang="ts" setup></script>
 
 <style scoped>
-.god-ray {
-  --sui-ray-bg: #ffffff;
+.sui-god-ray {
+  --sui-ray-bg: rgba(255, 255, 255, 0.92);
   --stripes: repeating-linear-gradient(
     100deg,
     var(--sui-ray-bg) 0%,
@@ -37,7 +37,7 @@
   transition: background-color 0.3s;
 }
 
-@keyframes jumbo {
+@keyframes ray {
   from {
     background-position: 50% 50%, 50% 50%;
   }
@@ -47,38 +47,32 @@
   }
 }
 
-.jumbo {
+.ray {
   background-image: var(--stripes), var(--rainbow);
   background-size: 300%, 200%;
   background-position: 50% 50%, 50% 50%;
   filter: blur(10px) invert(100%);
   mask-image: radial-gradient(ellipse at 100% 0%, black 40%, transparent 70%);
   pointer-events: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0.5;
 }
 
-.jumbo::after {
+.ray::after {
   content: '';
   position: absolute;
   inset: 0;
   background-image: var(--stripes), var(--rainbow);
   background-size: 200%, 100%;
-  animation: jumbo 60s linear infinite;
+  animation: ray 60s linear infinite;
   background-attachment: fixed;
   mix-blend-mode: difference;
 }
 
-.dark .god-ray {
-  --sui-ray-bg: rgba(0, 0, 0, 1);
+.dark .sui-god-ray {
+  --sui-ray-bg: rgba(0, 0, 0, 0.92);
 }
 
-.dark .jumbo,
-.dark .jumbo::after {
+.dark .ray,
+.dark .ray::after {
   background-image: var(--stripes), var(--aurora);
   filter: blur(12px) invert(10%);
 }
