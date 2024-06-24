@@ -31,7 +31,9 @@
           </Button>
         </CollapsibleTrigger>
       </div>
-      <div class="absolute right-6 top-6">
+      <div
+        class="absolute right-6 top-6 w-6 h-6 flex items-center justify-center"
+      >
         <CopyButton
           v-if="$slots.default?.()[0]?.props?.code"
           :code="$slots.default?.()[0]?.props?.code"

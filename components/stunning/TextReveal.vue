@@ -3,12 +3,8 @@
     ref="textRef"
     class="max-w-[60rem] min-h-[100vh] items-center flex justify-center text-5xl"
   >
-    <p class="font-semibold">
-      <template v-for="(word, index) in words" :key="index">
-        <span class="opacity-30 sui-text-reveal">
-          {{ `${word} ` }}
-        </span>
-      </template>
+    <p :class="textClass" ref="textTarget">
+      {{ text }}
     </p>
   </div>
 </template>
@@ -16,36 +12,61 @@
 <script lang="ts" setup>
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+import Splitting from 'splitting'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const props = defineProps({
-  text: {
-    type: String,
-    required: true
+const props = withDefaults(
+  defineProps<{
+    text: string
+    textClass: string
+    splittingBy: 'words' | 'chars'
+  }>(),
+  {
+    text: '',
+    textClass: '',
+    hightClass: '',
+    splittingBy: 'words'
   }
-})
+)
+
+const { splittingBy } = toRefs(props)
 
 const textRef = ref(null)
+const textTarget = ref(null)
 const revealText = ref()
-const words = props.text.split(' ')
 
 onMounted(() => {
+  const results = Splitting({
+    target: textTarget.value!,
+    by: splittingBy.value
+  })
   revealText.value = ScrollTrigger.create({
     trigger: textRef.value,
     start: 'top top'
   })
 
-  gsap.to('.sui-text-reveal', {
-    opacity: 1,
-    stagger: 1,
-    scrollTrigger: {
-      pin: true,
-      scrub: true,
-      trigger: textRef.value,
-      start: 'top',
-      end: 'center'
-    }
+  results.forEach((target) => {
+    let animateTarget =
+      splittingBy.value === 'words' ? target.words : target.chars
+
+    gsap.set(animateTarget!, {
+      opacity: 0.3
+    })
+    gsap.to(animateTarget!, {
+      backgroundPositionX: 0,
+      ease: 'none',
+      opacity: 1,
+      stagger: 1,
+      scrollTrigger: {
+        trigger: textRef.value,
+        // markers: true,
+        pin: true,
+        scrub: true,
+        start: 'top',
+        end: 'center'
+      }
+    })
   })
 })
 

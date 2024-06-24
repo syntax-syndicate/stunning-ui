@@ -14,7 +14,11 @@
         <Icon name="ri:arrow-down-line" />
       </Button>
     </div>
-    <TextReveal :text="paragraphPlaceholder" textClass="font-semibold" />
+    <TextReveal
+      :text="paragraphPlaceholder"
+      textClass="font-semibold"
+      splitting-by="chars"
+    />
     <div class="h-screen w-full"></div>
   </main>
 </template>

@@ -148,25 +148,53 @@ const handleScroll = () => {
 
 This component requires the package [@vueuse/core](https://vueuse.org/).
 
-```bash
-pnpm i @vueuse/core
-# or
-bun i @vueuse/core
+::code-group
+
+```bash [npm]
+npm install @vueuse/core
 ```
+
+```bash [pnpm]
+pnpm install @vueuse/core
+```
+
+```bash [bun]
+bun install @vueuse/core
+```
+
+```bash [yarn]
+yarn install @vueuse/core
+```
+
+::
 
 ### Copy the composables (Optional)
 
 This hook allows for smooth scrolling and requires the installation of two packages: [GSAP](https://gsap.com), [lenis](https://lenis.darkroom.engineering/):
 
-```bash
-pnpm install gsap lenis
-# or
-bun i gsap lenis
+::code-group
+
+```bash [npm]
+npm install gsap lenis
 ```
+
+```bash [pnpm]
+pnpm install gsap lenis
+```
+
+```bash [bun]
+bun install gsap lenis
+```
+
+```bash [yarn]
+yarn install gsap lenis
+```
+
+::
 
 `/composables/useSmoothScroll.ts`
 
-::CodeWrapper
+::CodeCollapse
 
 ```ts [Code]
 import gsap from 'gsap'
@@ -193,6 +221,8 @@ const useSmoothScroll = () => {
 
 export { useSmoothScroll }
 ```
+
+::
 
 ### Copy the source code
 
@@ -223,8 +253,6 @@ useSmoothScroll()
 
 <style scoped></style>
 ```
-
-::
 
 ::
 

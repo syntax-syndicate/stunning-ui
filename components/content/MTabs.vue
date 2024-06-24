@@ -10,11 +10,11 @@
         :key="`${i}${label(slot.props)}`"
         :value="label(slot.props)"
       >
-        <!-- <Icon
+        <Icon
           v-if="icon(slot?.props)"
           :name="icon(slot?.props)!"
           class="self-center mr-1.5"
-        /> -->
+        />
         {{ label(slot.props) }}
       </TabsTrigger>
     </TabsList>
@@ -43,11 +43,11 @@
             :class="[activeTabIndex === i && 'bg-muted text-primary']"
             @mousedown.left="activeTabIndex = i"
           >
-            <!-- <Icon
+            <Icon
               v-if="icon(slot?.props)"
               :name="icon(slot?.props)!"
               class="self-center mr-1.5"
-            /> -->
+            />
             {{ label(slot.props) }}
           </div>
         </div>
@@ -95,14 +95,14 @@ withDefaults(
 
 const activeTabIndex = ref(0)
 
-// const iconMap = new Map(Object.entries(useConfig().value.main.codeIcon))
-// function icon(props: any) {
-//   return (
-//     props?.icon ||
-//     iconMap.get(props?.filename?.toLowerCase()) ||
-//     iconMap.get(props?.language)
-//   )
-// }
+const iconMap = new Map(Object.entries(useConfig().value.main.codeIcon))
+function icon(props: any) {
+  return (
+    props?.icon ||
+    iconMap.get(props?.filename?.toLowerCase()) ||
+    iconMap.get(props?.language)
+  )
+}
 
 function label(props: any) {
   return props?.label || props?.filename
