@@ -59,7 +59,6 @@ bun i typed.js
 ::CodeCollapse
 
 ```vue
-<!-- /components/TypedText.vue -->
 <template>
   <span class="sui-typed-text" ref="typedElement" v-bind="$attrs"></span>
 </template>

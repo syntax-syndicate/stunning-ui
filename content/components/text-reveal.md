@@ -56,7 +56,6 @@ bun i gsap
 ::CodeCollapse
 
 ```vue
-<!-- /components/TextReveal.vue -->
 <template>
   <div
     ref="textRef"

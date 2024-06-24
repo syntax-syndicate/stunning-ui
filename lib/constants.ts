@@ -180,6 +180,11 @@ export const componentList = [
         name: 'Glass Border',
         path: '/components/glass-border-button',
         status: 'finished'
+      },
+      {
+        name: 'Magnetic Effect',
+        path: '/components/magnetic-effect-button',
+        status: 'finished'
       }
     ]
   },

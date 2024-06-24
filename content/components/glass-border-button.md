@@ -1,7 +1,7 @@
 ---
 navigation.title: Glass Border Button
 title: Glass Border Button
-description: Typically used to display dynamic text changes in the Hero Section.
+description: Glowy Glass Border Button with star particles effect.
 category: cta, button
 ---
 
