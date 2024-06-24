@@ -4,7 +4,7 @@
       className="w-full h-screen pb-16 flex flex-col items-center justify-between"
     >
       <span class="text-neon-wb text-2xl text-white/30">
-        Scroll-driven Section Reveal
+        Scroll-driven Blurry Text Reveal
       </span>
       <Button
         size="icon"
@@ -26,7 +26,6 @@
       <div>Feature 2</div>
       <BlurryTextReveal class="text-4xl" :text="paragraphPlaceholder" />
     </section>
-    <div ref="screenBottom" class="my-12 h-screen"></div>
   </main>
 </template>
 
@@ -42,10 +41,8 @@ const text2 =
 
 useSmoothScroll()
 
-const screenBottom = ref<HTMLDivElement | null>(null)
-
 const handleScroll = () => {
-  screenBottom.value?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  window.scrollTo({ top: document.body.scrollHeight / 4, behavior: 'smooth' })
 }
 </script>
 

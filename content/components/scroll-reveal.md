@@ -14,22 +14,27 @@ category: scroll, features
 ```vue [Code]
 <template>
   <div class="min-h-screen w-screen py-12">
-    <div className="h-screen pb-4 flex justify-center w-full">
+    <div
+      className="w-full h-screen pb-16 flex flex-col items-center justify-between"
+    >
       <span class="text-neon-wb text-2xl text-white/30">
         Scroll-driven Section Reveal
       </span>
+      <Button
+        size="icon"
+        class="rounded-full animate-bounce"
+        @click="handleScroll"
+      >
+        <Icon name="ri:arrow-down-line" />
+      </Button>
     </div>
 
     <ScrollReveal
-      v-slot="{ isActive }"
-      :offset="200"
+      v-slot="{ isVisible }"
       class="max-w-screen-md flex flex-col mx-auto"
-      :style="{
-        '--duration': '500ms'
-      }"
     >
       <div
-        :class="{ 'translate-y-8 opacity-0': !isActive }"
+        :class="{ 'translate-y-8 opacity-0': !isVisible }"
         class="flex justify-center transition-[transform,opacity] [transition-delay:100ms] duration-500"
       >
         <div class="rounded-full font-mono text-sm tracking-tight text-neon">
@@ -38,14 +43,14 @@ category: scroll, features
       </div>
 
       <h2
-        :class="{ 'translate-y-8 opacity-0': !isActive }"
+        :class="{ 'translate-y-8 opacity-0': !isVisible }"
         class="mt-4 text-left font-display text-2xl font-light leading-[1.125] md:text-3xl lg:text-4xl transition-[transform,opacity] [transition-delay:100ms] duration-500"
       >
         Why choose our service?
       </h2>
 
       <h3
-        :class="{ 'translate-y-8 opacity-0': !isActive }"
+        :class="{ 'translate-y-8 opacity-0': !isVisible }"
         class="mx-auto mt-4 text-center leading-relaxed text-muted-foreground md:max-w-2xl lg:mt-8 transition-[transform,opacity] [transition-delay:100ms] duration-500"
       >
         Stunning UI Pro is awesome premium library.
@@ -58,66 +63,62 @@ category: scroll, features
       >
         <div class="grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-2 md:gap-y-8">
           <div
-            :style="{ '--delay': `${250}ms` }"
             :class="{
-              'translate-y-8 opacity-0': !isActive,
-              'delay-[var(--delay)]': isActive
+              'translate-y-8 opacity-0': !isVisible,
+              'delay-[var(--delay)]': isVisible
             }"
-            class="rounded-2xl border border-white/10 bg-white/5 px-6 py-8 transition-[transform,opacity] [transition-delay:250ms] duration-500"
+            class="space-y-3 rounded-2xl border border-white/10 bg-white/5 px-6 py-8 transition-[transform,opacity] [transition-delay:250ms] duration-500"
           >
             <Icon name="ri:magic-line" class="w-8 h-8" />
 
             <h1 class="font-medium text-2xl">Hover me</h1>
 
-            <p class="line-clamp-4 text-neon-p text-lg">
+            <p class="line-clamp-2 text-neon-p text-lg">
               {{ paragraphPlaceholder }}
             </p>
           </div>
           <div
-            :style="{ '--delay': `${500}ms` }"
             :class="{
-              'translate-y-8 opacity-0': !isActive,
-              'delay-[var(--delay)]': isActive
+              'translate-y-8 opacity-0': !isVisible,
+              'delay-[var(--delay)]': isVisible
             }"
-            class="rounded-2xl border border-white/10 bg-white/5 px-6 py-8 transition-[transform,opacity] [transition-delay:500ms] duration-500"
+            class="space-y-3 rounded-2xl border border-white/10 bg-white/5 px-6 py-8 transition-[transform,opacity] [transition-delay:500ms] duration-500"
           >
             <Icon name="ri:magic-line" class="w-8 h-8" />
 
             <h1 class="font-medium text-2xl">Hover me</h1>
 
-            <p class="line-clamp-4 text-neon-p text-lg">
+            <p class="line-clamp-2 text-neon-p text-lg">
               {{ paragraphPlaceholder }}
             </p>
           </div>
           <div
-            :style="{ '--delay': `${750}ms` }"
             :class="{
-              'translate-y-8 opacity-0': !isActive,
-              'delay-[var(--delay)]': isActive
+              'translate-y-8 opacity-0': !isVisible,
+              'delay-[var(--delay)]': isVisible
             }"
-            class="rounded-2xl border border-white/10 bg-white/5 px-6 py-8 transition-[transform,opacity] [transition-delay:750ms] duration-500"
+            class="space-y-3 rounded-2xl border border-white/10 bg-white/5 px-6 py-8 transition-[transform,opacity] [transition-delay:750ms] duration-500"
           >
             <Icon name="ri:magic-line" class="w-8 h-8" />
 
             <h1 class="font-medium text-2xl">Hover me</h1>
 
-            <p class="line-clamp-4 text-neon-p text-lg">
+            <p class="line-clamp-2 text-neon-p text-lg">
               {{ paragraphPlaceholder }}
             </p>
           </div>
           <div
-            :style="{ '--delay': `${1000}ms` }"
             :class="{
-              'translate-y-8 opacity-0': !isActive,
-              'delay-[var(--delay)]': isActive
+              'translate-y-8 opacity-0': !isVisible,
+              'delay-[var(--delay)]': isVisible
             }"
-            class="rounded-2xl border border-white/10 bg-white/5 px-6 py-8 transition-[transform,opacity] [transition-delay:1000ms] duration-500"
+            class="space-y-3 rounded-2xl border border-white/10 bg-white/5 px-6 py-8 transition-[transform,opacity] [transition-delay:1000ms] duration-500"
           >
             <Icon name="ri:magic-line" class="w-8 h-8" />
 
             <h1 class="font-medium text-2xl">Hover me</h1>
 
-            <p class="line-clamp-4 text-neon-p text-lg">
+            <p class="line-clamp-2 text-neon-p text-lg">
               {{ paragraphPlaceholder }}
             </p>
           </div>
@@ -127,9 +128,13 @@ category: scroll, features
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import ScrollReveal from '@/components/stunning/ScrollReveal.vue'
 import { paragraphPlaceholder } from '~/lib/constants'
+
+const handleScroll = () => {
+  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
+}
 </script>
 ```
 
@@ -141,41 +146,34 @@ import { paragraphPlaceholder } from '~/lib/constants'
 
 ### Prerequisites
 
-This component requires the package [GSAP](https://gsap.com/).
+This component requires the package [@vueuse/core](https://vueuse.org/).
 
 ```bash
-pnpm i gsap
+pnpm i @vueuse/core
 # or
-bun i gsap
+bun i @vueuse/core
 ```
 
-### Copy the source code
+### Copy the composables (Optional)
 
-`/components/stunning/TextReveal.vue`
+This hook allows for smooth scrolling and requires the installation of two packages: [GSAP](https://gsap.com), [lenis](https://lenis.darkroom.engineering/):
 
-::CodeCollapse
+```bash
+pnpm install gsap lenis
+# or
+bun i gsap lenis
+```
 
-```vue
-<template>
-  <div
-    ref="scrollRef"
-    class="max-w-screen-lg min-h-[100vh] items-center flex justify-center relative"
-  >
-    <slot :isActive="targetIsVisible" ref="contentRef" />
-  </div>
-</template>
+`/composables/useSmoothScroll.ts`
 
-<script lang="ts" setup>
+::CodeWrapper
+
+```ts [Code]
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import Lenis from 'lenis'
-import { useElementVisibility } from '@vueuse/core'
 
-const scrollRef = ref(null)
-
-const targetIsVisible = useElementVisibility(scrollRef)
-
-onMounted(() => {
+const useSmoothScroll = () => {
   gsap.registerPlugin(ScrollTrigger)
 
   const lenis = new Lenis()
@@ -191,44 +189,52 @@ onMounted(() => {
   })
 
   gsap.ticker.lagSmoothing(0)
-})
+}
 
-onUnmounted(() => {})
+export { useSmoothScroll }
+```
+
+### Copy the source code
+
+`/components/stunning/ScrollReveal.vue`
+
+::CodeCollapse
+
+```vue [Code]
+<template>
+  <div
+    ref="scrollRef"
+    class="max-w-screen-lg min-h-[100vh] items-center flex justify-center relative"
+  >
+    <slot :isVisible="targetIsVisible" ref="contentRef" />
+  </div>
+</template>
+
+<script lang="ts" setup>
+import { useElementVisibility } from '@vueuse/core'
+import { useSmoothScroll } from '@/composables/useSmoothScroll'
+
+const scrollRef = ref(null)
+
+const targetIsVisible = useElementVisibility(scrollRef)
+
+useSmoothScroll()
 </script>
 
-<style scoped>
-html.lenis,
-html.lenis body {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-scrolling iframe {
-  pointer-events: none;
-}
-</style>
+<style scoped></style>
 ```
 
 ::
 
 ::
 
-## Props
+::
 
-| Prop | Type   | Description                      | Default |
-| :--- | :----- | :------------------------------- | :------ |
-| text | String | the text to do the animation for | ""      |
+## Slots
+
+| Prop    | Type      | Description                             | Default |
+| :------ | :-------- | :-------------------------------------- | :------ |
+| default | Component | The element will reveal when you scroll | null    |
 
 ## Inspiration
 

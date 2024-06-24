@@ -16,15 +16,11 @@
     </div>
 
     <ScrollReveal
-      v-slot="{ isActive }"
-      :offset="200"
+      v-slot="{ isVisible }"
       class="max-w-screen-md flex flex-col mx-auto"
-      :style="{
-        '--duration': '500ms'
-      }"
     >
       <div
-        :class="{ 'translate-y-8 opacity-0': !isActive }"
+        :class="{ 'translate-y-8 opacity-0': !isVisible }"
         class="flex justify-center transition-[transform,opacity] [transition-delay:100ms] duration-500"
       >
         <div class="rounded-full font-mono text-sm tracking-tight text-neon">
@@ -33,14 +29,14 @@
       </div>
 
       <h2
-        :class="{ 'translate-y-8 opacity-0': !isActive }"
+        :class="{ 'translate-y-8 opacity-0': !isVisible }"
         class="mt-4 text-left font-display text-2xl font-light leading-[1.125] md:text-3xl lg:text-4xl transition-[transform,opacity] [transition-delay:100ms] duration-500"
       >
         Why choose our service?
       </h2>
 
       <h3
-        :class="{ 'translate-y-8 opacity-0': !isActive }"
+        :class="{ 'translate-y-8 opacity-0': !isVisible }"
         class="mx-auto mt-4 text-center leading-relaxed text-muted-foreground md:max-w-2xl lg:mt-8 transition-[transform,opacity] [transition-delay:100ms] duration-500"
       >
         Stunning UI Pro is awesome premium library.
@@ -53,10 +49,9 @@
       >
         <div class="grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-2 md:gap-y-8">
           <div
-            :style="{ '--delay': `${250}ms` }"
             :class="{
-              'translate-y-8 opacity-0': !isActive,
-              'delay-[var(--delay)]': isActive
+              'translate-y-8 opacity-0': !isVisible,
+              'delay-[var(--delay)]': isVisible
             }"
             class="space-y-3 rounded-2xl border border-white/10 bg-white/5 px-6 py-8 transition-[transform,opacity] [transition-delay:250ms] duration-500"
           >
@@ -64,15 +59,14 @@
 
             <h1 class="font-medium text-2xl">Hover me</h1>
 
-            <p class="line-clamp-4 text-neon-p text-lg">
+            <p class="line-clamp-2 text-neon-p text-lg">
               {{ paragraphPlaceholder }}
             </p>
           </div>
           <div
-            :style="{ '--delay': `${500}ms` }"
             :class="{
-              'translate-y-8 opacity-0': !isActive,
-              'delay-[var(--delay)]': isActive
+              'translate-y-8 opacity-0': !isVisible,
+              'delay-[var(--delay)]': isVisible
             }"
             class="space-y-3 rounded-2xl border border-white/10 bg-white/5 px-6 py-8 transition-[transform,opacity] [transition-delay:500ms] duration-500"
           >
@@ -80,15 +74,14 @@
 
             <h1 class="font-medium text-2xl">Hover me</h1>
 
-            <p class="line-clamp-4 text-neon-p text-lg">
+            <p class="line-clamp-2 text-neon-p text-lg">
               {{ paragraphPlaceholder }}
             </p>
           </div>
           <div
-            :style="{ '--delay': `${750}ms` }"
             :class="{
-              'translate-y-8 opacity-0': !isActive,
-              'delay-[var(--delay)]': isActive
+              'translate-y-8 opacity-0': !isVisible,
+              'delay-[var(--delay)]': isVisible
             }"
             class="space-y-3 rounded-2xl border border-white/10 bg-white/5 px-6 py-8 transition-[transform,opacity] [transition-delay:750ms] duration-500"
           >
@@ -96,15 +89,14 @@
 
             <h1 class="font-medium text-2xl">Hover me</h1>
 
-            <p class="line-clamp-4 text-neon-p text-lg">
+            <p class="line-clamp-2 text-neon-p text-lg">
               {{ paragraphPlaceholder }}
             </p>
           </div>
           <div
-            :style="{ '--delay': `${1000}ms` }"
             :class="{
-              'translate-y-8 opacity-0': !isActive,
-              'delay-[var(--delay)]': isActive
+              'translate-y-8 opacity-0': !isVisible,
+              'delay-[var(--delay)]': isVisible
             }"
             class="space-y-3 rounded-2xl border border-white/10 bg-white/5 px-6 py-8 transition-[transform,opacity] [transition-delay:1000ms] duration-500"
           >
@@ -112,15 +104,13 @@
 
             <h1 class="font-medium text-2xl">Hover me</h1>
 
-            <p class="line-clamp-4 text-neon-p text-lg">
+            <p class="line-clamp-2 text-neon-p text-lg">
               {{ paragraphPlaceholder }}
             </p>
           </div>
         </div>
       </div>
     </ScrollReveal>
-
-    <div ref="screenBottom" class="my-12"></div>
   </div>
 </template>
 
@@ -128,9 +118,7 @@
 import ScrollReveal from '@/components/stunning/ScrollReveal.vue'
 import { paragraphPlaceholder } from '~/lib/constants'
 
-const screenBottom = ref<HTMLDivElement | null>(null)
-
 const handleScroll = () => {
-  screenBottom.value?.scrollIntoView({ behavior: 'smooth', block: 'end' })
+  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
 }
 </script>

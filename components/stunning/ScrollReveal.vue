@@ -3,7 +3,7 @@
     ref="scrollRef"
     class="max-w-screen-lg min-h-[100vh] items-center flex justify-center relative"
   >
-    <slot :isActive="targetIsVisible" ref="contentRef" />
+    <slot :isVisible="targetIsVisible" ref="contentRef" />
   </div>
 </template>
 
@@ -18,25 +18,4 @@ const targetIsVisible = useElementVisibility(scrollRef)
 useSmoothScroll()
 </script>
 
-<style scoped>
-html.lenis,
-html.lenis body {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-scrolling iframe {
-  pointer-events: none;
-}
-</style>
+<style scoped></style>

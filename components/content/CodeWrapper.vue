@@ -3,15 +3,14 @@
     <div
       :class="
         cn(
-          '[&_pre]:my-0 [&_pre]:max-h-[640px] [&_pre]:pb-[100px]',
-          !isOpened ? '[&_pre]:overflow-hidden' : '[&_pre]:overflow-auto]'
+          '[&_pre]:my-0 [&_pre]:max-h-[640px] [&_pre]:pb-[100px] [&_pre]:overflow-hidden'
         )
       "
     >
       <slot />
     </div>
     <div
-      class="absolute right-6"
+      class="absolute right-6 w-6 h-6 flex items-center justify-center"
       :class="newLines > 1 ? 'top-6' : 'top-1/2 -translate-y-1/2'"
     >
       <CopyButton

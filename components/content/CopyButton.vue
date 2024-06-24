@@ -1,5 +1,5 @@
 <template>
-  <span ref="checkIconRef">
+  <div ref="checkIconRef">
     <Transition name="fade" mode="out-in">
       <Icon
         name="lucide:copy"
@@ -13,7 +13,7 @@
         class="self-center cursor-pointer text-muted-foreground hover:text-primary"
       />
     </Transition>
-  </span>
+  </div>
 </template>
 
 <script setup lang="ts">
