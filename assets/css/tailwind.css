@@ -83,7 +83,7 @@
   }
 
   .flex-between {
-    @apply flex justify-between;
+    @apply flex items-center justify-between;
   }
 
   .text-neon {
@@ -91,7 +91,7 @@
   }
 
   .text-neon-wb {
-    @apply text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-700;
+    @apply text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 to-neutral-500 dark:from-white dark:to-neutral-700;
   }
 
   .text-neon-p {

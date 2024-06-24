@@ -13,36 +13,49 @@ category: scroll, headline, features
 
 ```vue [Code]
 <template>
-  <NuxtLayout name="playground">
-    <main class="w-full my-16 flex flex-col px-8 py-16 h-[400vh]">
-      <section className="w-full h-screen mx-auto text-center">
-        <span class="inline-block text-neon-wb text-2xl text-white/30">
-          Scroll-driven Blurry Text Reveal
-        </span>
-      </section>
-      <section
-        class="max-w-[60rem] min-h-[100vh] flex items-center justify-center flex-col gap-32"
+  <main class="w-screen px-24 py-12 h-[400vh]">
+    <div
+      className="w-full h-screen pb-16 flex flex-col items-center justify-between"
+    >
+      <span class="text-neon-wb text-2xl text-white/30">
+        Scroll-driven Section Reveal
+      </span>
+      <Button
+        size="icon"
+        class="rounded-full animate-bounce"
+        @click="handleScroll"
       >
-        <div>Feature 1</div>
-        <BlurryTextReveal :text="text1" />
-      </section>
-      <section
-        class="max-w-[60rem] min-h-[100vh] flex items-center justify-center flex-col gap-16"
-      >
-        <div>Feature 2</div>
-        <BlurryTextReveal :text="text2" />
-      </section>
-    </main>
-  </NuxtLayout>
+        <Icon name="ri:arrow-down-line" />
+      </Button>
+    </div>
+    <section
+      class="max-w-[60rem] min-h-[100vh] flex items-center justify-center flex-col gap-32"
+    >
+      <div>Feature 1</div>
+      <BlurryTextReveal class="text-4xl" :text="paragraphPlaceholder" />
+    </section>
+    <section
+      class="max-w-[60rem] min-h-[100vh] flex items-center justify-center flex-col gap-16"
+    >
+      <div>Feature 2</div>
+      <BlurryTextReveal class="text-4xl" :text="paragraphPlaceholder" />
+    </section>
+    <div ref="screenBottom" class="my-12 h-screen"></div>
+  </main>
 </template>
 
 <script lang="ts" setup>
 import BlurryTextReveal from '@/components/stunning/BlurryTextReveal.vue'
+import { useSmoothScroll } from '@/composables/useSmoothScroll'
+import { paragraphPlaceholder } from '@/lib/constants'
 
-const text1 =
-  'Stunning UI is Designed for Developers、Designers、Creators、Indie Hackers'
-const text2 =
-  'Stunning UI lets you easily copy and paste code into your projects, enabling you to create an impressive website quickly.'
+useSmoothScroll()
+
+const screenBottom = ref<HTMLDivElement | null>(null)
+
+const handleScroll = () => {
+  screenBottom.value?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
 </script>
 
 <style scoped></style>
@@ -72,28 +85,7 @@ bun i gsap
 
 ```vue [Code]
 <template>
-  <div
-    ref="textRef"
-    class="max-w-[60rem] min-h-[100vh] items-center flex justify-center"
-    :class="clasName"
-  >
-    <p class="font-semibold">
-      <template v-for="(word, index) in words" :key="index">
-        <span class="opacity-30 sui-text-reveal">
-          {{ `${word} ` }}
-        </span>
-      </template>
-    </p>
-  </div>
-</template>
-
-<script lang="ts" setup>
-<template>
-  <div
-    ref="textRef"
-    class="max-w-[60rem] min-h-[100vh] items-center flex justify-center"
-    :class="clasName"
-  >
+  <div ref="textRef" class="flex justify-center items-center">
     <p class="font-semibold sui-blurry-text" ref="blurryText">
       {{ text }}
     </p>
@@ -102,16 +94,12 @@ bun i gsap
 
 <script lang="ts" setup>
 import gsap from 'gsap'
-import TextSplitter from '@/lib/TextSplitter'
+import TextSplitter from '~/lib/TextSplitter'
 
 defineProps({
   text: {
     type: String,
     required: true
-  },
-  clasName: {
-    type: String,
-    default: 'text-5xl'
   }
 })
 
@@ -149,6 +137,10 @@ onMounted(() => {
   if (blurryText.value) {
     scroll(blurryText.value)
   }
+})
+
+onUnmounted(() => {
+  // revealText.value.kill()
 })
 </script>
 

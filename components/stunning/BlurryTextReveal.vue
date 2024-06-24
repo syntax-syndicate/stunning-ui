@@ -1,5 +1,5 @@
 <template>
-  <div ref="textRef" class="flex justify-center items-center" :class="clasName">
+  <div ref="textRef" class="flex justify-center items-center">
     <p class="font-semibold sui-blurry-text" ref="blurryText">
       {{ text }}
     </p>
@@ -14,10 +14,6 @@ defineProps({
   text: {
     type: String,
     required: true
-  },
-  clasName: {
-    type: String,
-    default: 'text-5xl'
   }
 })
 

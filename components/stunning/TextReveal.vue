@@ -1,8 +1,7 @@
 <template>
   <div
     ref="textRef"
-    class="max-w-[60rem] min-h-[100vh] items-center flex justify-center"
-    :class="clasName"
+    class="max-w-[60rem] min-h-[100vh] items-center flex justify-center text-5xl"
   >
     <p class="font-semibold">
       <template v-for="(word, index) in words" :key="index">
@@ -24,10 +23,6 @@ const props = defineProps({
   text: {
     type: String,
     required: true
-  },
-  clasName: {
-    type: String,
-    default: 'text-5xl'
   }
 })
 

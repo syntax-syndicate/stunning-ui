@@ -1,5 +1,9 @@
 <template>
-  <main class="sui-glow-card-wrapper" ref="glowCardWrapper">
+  <main
+    class="sui-glow-card-wrapper"
+    ref="glowCardWrapper"
+    :style="wrapperStyle"
+  >
     <slot />
   </main>
 </template>
@@ -23,6 +27,15 @@ const props = withDefaults(
 const { hue, size, border, radius } = toRefs(props)
 
 const glowCardWrapper = ref<HTMLElement | null>(null)
+
+const wrapperStyle = computed(() => {
+  return {
+    '--hue': hue.value.toString(),
+    '--size': size.value.toString(),
+    '--border': border.value.toString(),
+    '--radius': radius.value.toString()
+  }
+})
 
 const syncPointer = ({ x, y }: { x: number; y: number }) => {
   if (glowCardWrapper.value) {
@@ -54,64 +67,7 @@ const initialVariables = () => {
   }
 }
 
-watch(
-  () => hue,
-  () => {
-    nextTick(() => {
-      glowCardWrapper.value?.style.setProperty('--hue', hue.value.toString())
-    })
-  },
-  {
-    deep: true,
-    immediate: true
-  }
-)
-watch(
-  () => size,
-  () => {
-    nextTick(() => {
-      glowCardWrapper.value?.style.setProperty('--size', size.value.toString())
-    })
-  },
-  {
-    deep: true,
-    immediate: true
-  }
-)
-watch(
-  () => border,
-  () => {
-    nextTick(() => {
-      glowCardWrapper.value?.style.setProperty(
-        '--border',
-        border.value.toString()
-      )
-    })
-  },
-  {
-    deep: true,
-    immediate: true
-  }
-)
-watch(
-  () => radius,
-  () => {
-    nextTick(() => {
-      glowCardWrapper.value?.style.setProperty(
-        '--radius',
-        radius.value.toString()
-      )
-    })
-  },
-  {
-    deep: true,
-    immediate: true
-  }
-)
-
-onMounted(() => {
-  initialVariables()
-})
+onMounted(initialVariables)
 </script>
 
 <style scoped>

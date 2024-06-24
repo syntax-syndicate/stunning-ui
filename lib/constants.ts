@@ -202,6 +202,11 @@ export const componentList = [
         status: 'finished'
       },
       {
+        name: 'Scroll Reveal',
+        path: '/components/scroll-reveal',
+        status: 'finished'
+      },
+      {
         name: 'Skewed Reveal',
         path: '/components/skewed-reveal',
         status: 'upcoming'
