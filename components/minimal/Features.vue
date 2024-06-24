@@ -1,5 +1,5 @@
 <template>
-  <section class="container max-w-screen-lg py-24 sm:py-32">
+  <section class="container max-w-screen-xl py-24 sm:py-32">
     <div
       class="relative mx-auto px-4 sm:px-6 lg:px-8 gap-16 lg:gap-20 flex flex-col"
     >
@@ -8,9 +8,18 @@
         title="Why choose our service?"
         description="Stunning UI Pro is awesome premium library. Build better, faster with Stunning UI."
       />
-      <div class="grid grid-cols-3 gap-4">
+      <div class="relative grid grid-cols-3 gap-4">
+        <div
+          class="absolute inset-x-12 top-1/2 -translate-y-1/2 h-px bg-gradient-to-r from-transparent dark:via-white/20 via-neutral-950/30 to-transparent"
+        />
+        <div
+          class="absolute left-1/3 top-1/2 -translate-y-1/2 w-px h-[110%] bg-gradient-to-b from-transparent dark:via-white/20 via-neutral-950/30 to-transparent"
+        />
+        <div
+          class="absolute left-2/3 top-1/2 -translate-y-1/2 w-px h-[110%] bg-gradient-to-b from-transparent dark:via-white/20 via-neutral-950/30 to-transparent"
+        />
         <div class="rounded p-6 lg:p-8 flex flex-col gap-x-2 gap-y-3">
-          <Icon name="ri:magic-line" class="w-8 h-8" />
+          <Icon name="ri:magic-line" class="w-8 h-8 text-emerald-500" />
 
           <h1 class="font-medium text-xl">Easy to use</h1>
 
@@ -30,7 +39,7 @@
           </a>
         </div>
         <div class="rounded p-6 lg:p-8 flex flex-col gap-x-2 gap-y-3">
-          <Icon name="ri:check-line" class="w-8 h-8" />
+          <Icon name="ri:check-line" class="w-8 h-8 text-emerald-500" />
 
           <h1 class="font-medium text-xl">Reliable</h1>
 
@@ -50,7 +59,7 @@
           </a>
         </div>
         <div class="rounded p-6 lg:p-8 flex flex-col gap-x-2 gap-y-3">
-          <Icon name="ri:lock-2-line" class="w-8 h-8" />
+          <Icon name="ri:lock-2-line" class="w-8 h-8 text-emerald-500" />
 
           <h1 class="font-medium text-xl">Secure</h1>
 
@@ -70,7 +79,7 @@
           </a>
         </div>
         <div class="rounded p-6 lg:p-8 flex flex-col gap-x-2 gap-y-3">
-          <Icon name="ri:rocket-2-line" class="w-8 h-8" />
+          <Icon name="ri:rocket-2-line" class="w-8 h-8 text-emerald-500" />
 
           <h1 class="font-medium text-xl">Fast</h1>
 
@@ -90,7 +99,10 @@
           </a>
         </div>
         <div class="rounded p-6 lg:p-8 flex flex-col gap-x-2 gap-y-3">
-          <Icon name="ri:money-dollar-circle-line" class="w-8 h-8" />
+          <Icon
+            name="ri:money-dollar-circle-line"
+            class="w-8 h-8 text-emerald-500"
+          />
 
           <h1 class="font-medium text-xl">Affordable</h1>
 
@@ -110,7 +122,7 @@
           </a>
         </div>
         <div class="rounded p-6 lg:p-8 flex flex-col gap-x-2 gap-y-3">
-          <Icon name="ri:bar-chart-2-line" class="w-8 h-8" />
+          <Icon name="ri:bar-chart-2-line" class="w-8 h-8 text-emerald-500" />
 
           <h1 class="font-medium text-xl">Scalable</h1>
 
@@ -135,9 +147,6 @@
 </template>
 
 <script lang="ts" setup>
-import GlowyCardWrapper from '~/components/stunning/GlowyCard/GlowyCardWrapper.vue'
-import GlowyCard from '~/components/stunning/GlowyCard/GlowyCard.vue'
-import GlowyDivider from '~/components/stunning/GlowyDivider.vue'
 import { paragraphPlaceholder } from '~/lib/constants'
 </script>
 

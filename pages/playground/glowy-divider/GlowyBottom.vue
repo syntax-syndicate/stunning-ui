@@ -6,7 +6,7 @@
       </span>
     </div>
 
-    <GlowyDivider direction="top" class="lg:px-24" />
+    <GlowyDivider direction="bottom" class="lg:px-24" />
 
     <div class="flex flex-col md:items-center">
       <span class="font-mono text-sm tracking-tight text-neon">

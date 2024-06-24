@@ -1,5 +1,6 @@
 <template>
   <div class="relative w-full py-24">
+    <!-- the glowy light -->
     <div
       class="absolute left-0 h-full w-full"
       :class="
@@ -14,8 +15,9 @@
     <div
       class="absolute inset-x-12 top-1/2 -translate-y-1/2 h-px bg-gradient-to-r from-transparent dark:via-white/30 via-neutral-950/30 to-transparent"
     />
+    <!-- the buckle in middle-->
     <div
-      class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-neutral-950 p-1.5"
+      class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-neutral-950 p-1.5"
       v-if="showBuckle"
     >
       <div class="h-1.5 w-8 rounded-lg bg-neutral-950/90 dark:bg-white"></div>
