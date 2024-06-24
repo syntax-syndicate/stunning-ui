@@ -3,7 +3,7 @@
     ref="textRef"
     class="max-w-[60rem] min-h-[100vh] items-center flex justify-center text-5xl"
   >
-    <p :class="textClass" ref="textTarget">
+    <p class="transform-gpu" :class="textClass" ref="textTarget">
       {{ text }}
     </p>
   </div>
@@ -12,62 +12,74 @@
 <script lang="ts" setup>
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
-import Splitting from 'splitting'
+import TextSplitter from '~/lib/TextSplitter'
 
 gsap.registerPlugin(ScrollTrigger)
 
 const props = withDefaults(
   defineProps<{
     text: string
-    textClass: string
-    splittingBy: 'words' | 'chars'
+    textClass?: string
+    fromVars?: Record<string, any>
+    toVars?: Record<string, any>
+    splittingBy?: 'words' | 'chars'
   }>(),
   {
     text: '',
     textClass: '',
-    hightClass: '',
+    fromVars: () => ({}),
+    toVars: () => ({}),
     splittingBy: 'words'
   }
 )
 
-const { splittingBy } = toRefs(props)
+const { splittingBy, fromVars, toVars } = toRefs(props)
 
 const textRef = ref(null)
 const textTarget = ref(null)
 const revealText = ref()
 
 onMounted(() => {
-  const results = Splitting({
-    target: textTarget.value!,
-    by: splittingBy.value
-  })
-  revealText.value = ScrollTrigger.create({
-    trigger: textRef.value,
-    start: 'top top'
-  })
+  const scroll = (e: HTMLParagraphElement) => {
+    const splitter = new TextSplitter(e, {
+      resizeCallback: () => scroll(e),
+      splitTypeTypes: splittingBy.value
+    })
 
-  results.forEach((target) => {
+    revealText.value = ScrollTrigger.create({
+      trigger: textRef.value,
+      start: 'top top'
+    })
+
     let animateTarget =
-      splittingBy.value === 'words' ? target.words : target.chars
+      splittingBy.value === 'words' ? splitter.getWords() : splitter.getChars()
 
-    gsap.set(animateTarget!, {
-      opacity: 0.3
-    })
-    gsap.to(animateTarget!, {
-      backgroundPositionX: 0,
-      ease: 'none',
-      opacity: 1,
-      stagger: 1,
-      scrollTrigger: {
-        trigger: textRef.value,
-        // markers: true,
-        pin: true,
-        scrub: true,
-        start: 'top',
-        end: 'center'
+    gsap.fromTo(
+      animateTarget,
+      {
+        opacity: 0.3,
+        ...fromVars.value
+      },
+      {
+        backgroundPositionX: 0,
+        ease: 'none',
+        opacity: 1,
+        stagger: 0.5,
+        scrollTrigger: {
+          trigger: textRef.value,
+          // markers: true,
+          pin: true,
+          scrub: true,
+          start: 'top',
+          end: 'center'
+        },
+        ...toVars.value
       }
-    })
-  })
+    )
+  }
+  if (textTarget.value) {
+    scroll(textTarget.value)
+  }
 })
 
 onUnmounted(() => {

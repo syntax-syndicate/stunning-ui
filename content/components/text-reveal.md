@@ -2,7 +2,7 @@
 navigation.title: Text Reveal
 title: Text Reveal
 description: Scroll-driven text reveal, a text appearance effect activates as you scroll through the content.
-category: scroll, features
+category: scroll, features, typography
 ---
 
 ::code-group
@@ -137,21 +137,110 @@ onUnmounted(() => {
 
 ```vue [Code]
 <template>
-  <main class="w-full my-16 flex flex-col px-8 py-16 h-[200vh]">
-    <div className="pb-4 flex justify-center w-full">
+  <main class="w-screen px-24 py-12 h-[300vh]">
+    <div
+      className="w-full h-screen pb-16 flex flex-col items-center justify-between"
+    >
       <span class="text-neon-wb text-2xl text-white/30">
         Scroll-driven Text Reveal
       </span>
+      <Button
+        size="icon"
+        class="rounded-full animate-bounce"
+        @click="handleScroll"
+      >
+        <Icon name="ri:arrow-down-line" />
+      </Button>
     </div>
-    <TextReveal :text="text" />
+    <TextReveal
+      :text="paragraphPlaceholder"
+      textClass="font-semibold"
+      splitting-by="chars"
+    />
+    <div class="h-screen w-full"></div>
   </main>
 </template>
 
 <script lang="ts" setup>
 import TextReveal from '@/components/stunning/TextReveal.vue'
+import { useSmoothScroll } from '@/composables/useSmoothScroll'
+import { paragraphPlaceholder } from '~/lib/constants'
 
 const text =
   'Stunning UI is Designed for Developers、Designers、Creators、Indie Hackers'
+
+useSmoothScroll()
+
+const handleScroll = () => {
+  window.scrollTo({ top: document.body.scrollHeight / 3, behavior: 'smooth' })
+}
+</script>
+
+<style scoped></style>
+```
+
+::
+
+### Animate with custom parameters
+
+You can customize the animation's initial and final states using the `fromVars` and `toVars`, align with `gsap.fromTo()`
+
+::CodeGroup
+
+::div{label="Preview"}
+<Playground url="/playground/text-reveal/TextRevealCustomTween"></Playground>
+::
+
+```vue [Code]
+<template>
+  <main class="w-screen px-24 py-12 h-[300vh]">
+    <div
+      className="w-full h-screen pb-16 flex flex-col items-center justify-between"
+    >
+      <span class="text-neon-wb text-2xl text-white/30">
+        Scroll-driven Text Reveal
+      </span>
+      <Button
+        size="icon"
+        class="rounded-full animate-bounce"
+        @click="handleScroll"
+      >
+        <Icon name="ri:arrow-down-line" />
+      </Button>
+    </div>
+    <TextReveal
+      :text="paragraphPlaceholder"
+      textClass="font-semibold"
+      splitting-by="chars"
+      :fromVars="{
+        skewX: -20,
+        willChange: 'filter, transform',
+        color: 'rgba(255, 255, 255, .5)'
+      }"
+      :toVars="{
+        skewX: 0,
+        stagger: 0.04,
+        ease: 'sine',
+        color: '#4fa'
+      }"
+    />
+    <div class="h-screen w-full"></div>
+  </main>
+</template>
+
+<script lang="ts" setup>
+import TextReveal from '@/components/stunning/TextReveal.vue'
+import { useSmoothScroll } from '@/composables/useSmoothScroll'
+import { paragraphPlaceholder } from '~/lib/constants'
+
+const text =
+  'Stunning UI is Designed for Developers、Designers、Creators、Indie Hackers'
+
+useSmoothScroll()
+
+const handleScroll = () => {
+  window.scrollTo({ top: document.body.scrollHeight / 3, behavior: 'smooth' })
+}
 </script>
 
 <style scoped></style>
@@ -161,9 +250,12 @@ const text =
 
 ## Props
 
-| Prop | Type   | Description                      | Default |
-| :--- | :----- | :------------------------------- | :------ |
-| text | String | the text to do the animation for | ""      |
+| Prop      | Type   | Description                                                                                                                                      | Default |
+| :-------- | :----- | :----------------------------------------------------------------------------------------------------------------------------------------------- | :------ |
+| text      | String | the text to do the animation for                                                                                                                 | ""      |
+| textClass | String | the text class                                                                                                                                   | ""      |
+| fromVars  | String | An object containing the initial (starting) property/value pairs. [API Reference](<https://gsap.com/docs/v3/GSAP/gsap.fromTo()/#parameters>)     | {}      |
+| toVars    | String | An object containing the destination properties/values to animate to. [API Reference](<https://gsap.com/docs/v3/GSAP/gsap.fromTo()/#parameters>) | {}      |
 
 ## Inspiration
 
