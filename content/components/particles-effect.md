@@ -33,7 +33,7 @@ category: background, hero, cta
 </template>
 
 <script setup>
-import ParticlesEffect from '@/components/stunning/ParticlesEffect.vue'
+import ParticlesEffect from '@/components/stunning/ParticlesEffect/Slim.vue'
 </script>
 ```
 
@@ -331,7 +331,7 @@ import { Button } from '@/components/ui/button'
 
 const { isDark } = useDarkmode()
 
-import ParticlesEffect from '@/components/stunning/ParticlesEffect.vue'
+import ParticlesEffect from '@/components/stunning/ParticlesEffect/Slim.vue'
 </script>
 ```
 

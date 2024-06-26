@@ -43,7 +43,7 @@ category: background, hero
 
 <script lang="ts" setup>
 import TyndallEffect from '@/components/stunning/TyndallEffect.vue'
-import ParticlesEffect from '@/components/stunning/ParticlesEffect.vue'
+import ParticlesEffect from '@/components/stunning/ParticlesEffect/Slim.vue'
 </script>
 
 <style scoped></style>
@@ -255,7 +255,7 @@ bun i @vueuse/motion
 
 <script lang="ts" setup>
 import TyndallEffect from '@/components/stunning/TyndallEffect.vue'
-import ParticlesEffect from '@/components/stunning/ParticlesEffect.vue'
+import ParticlesEffect from '@/components/stunning/ParticlesEffect/Slim.vue'
 </script>
 
 <style scoped></style>

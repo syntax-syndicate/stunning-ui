@@ -55,5 +55,5 @@ import { Button } from '@/components/ui/button'
 
 const { isDark } = useDarkmode()
 
-import ParticlesEffect from '@/components/stunning/ParticlesEffect.vue'
+import ParticlesEffect from '@/components/stunning/ParticlesEffect/Slim.vue'
 </script>

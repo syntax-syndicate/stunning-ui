@@ -26,7 +26,7 @@
 
 <script lang="ts" setup>
 import LightBar from '@/components/stunning/LightBar.vue'
-import ParticlesEffect from '@/components/stunning/ParticlesEffect.vue'
+import ParticlesEffect from '@/components/stunning/ParticlesEffect/Slim.vue'
 </script>
 
 <style scoped></style>
