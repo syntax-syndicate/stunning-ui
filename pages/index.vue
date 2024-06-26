@@ -6,7 +6,7 @@
     <main class="container mx-auto max-w-screen-2xl flex-center flex-col mt-40">
       <h1
         class="text-6xl font-semibold text-center"
-        :class="isDark ? 'text-neon-p' : 'text-neon'"
+        :class="isDark ? 'text-neon-wb' : 'text-neon'"
       >
         <p>Create Stunning Websites</p>
         <p>That Stand Out</p>

@@ -4,12 +4,14 @@
       <SiteHeader />
     </ClientOnly>
 
-    <aside class="flex justify-center p-5 relative border-b bg-background">
-      <nav class="relative flex gap-4 flex-wrap">
+    <aside
+      class="flex justify-center p-5 border-b bg-background/75 backdrop-blur sticky top-16 z-50"
+    >
+      <nav class="relative container max-w-screen-2xl flex gap-4 flex-wrap">
         <template v-for="group in blockList">
           <Badge
             size="lg"
-            :variant="isDark ? 'secondary' : 'outline'"
+            :variant="isDark ? 'secondary' : 'default'"
             v-for="item in group.components"
           >
             <NuxtLink
@@ -39,7 +41,7 @@
           class="hidden text-sm lg:block w-full"
           :class="isBlockHome ? 'lg:col-span-0' : 'lg:col-span-3'"
         >
-          <div class="sticky top-[90px] h-[calc(100vh-3.5rem)] overflow-hidden">
+          <div class="sticky top-36 h-[calc(100vh-3.5rem)] overflow-hidden">
             <LayoutToc :is-small="false" />
           </div>
         </aside>

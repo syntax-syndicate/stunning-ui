@@ -93,10 +93,6 @@
   .text-neon-wb {
     @apply text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 to-neutral-500 dark:from-white dark:to-neutral-700;
   }
-
-  .text-neon-p {
-    @apply text-transparent bg-clip-text bg-gradient-to-b from-neutral-200 via-60% via-neutral-400 to-neutral-600;
-  }
 }
 
 @layer utilities {
@@ -124,6 +120,7 @@
   .bg-radial-card {
     @apply z-[3] content-[''] absolute w-full h-full pointer-events-none shadow-[0_-20px_64px_-24px_#e2e8ff1f_inset] bg-[radial-gradient(120.05%_100%_at_50%_0%,rgba(122,235,255,0)_60%,rgba(122,235,255,0.08)_100%)] rounded-[inherit] left-0 top-0;
   }
+
   .step {
     counter-increment: step;
   }

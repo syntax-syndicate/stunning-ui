@@ -59,7 +59,7 @@
 
             <h1 class="font-medium text-2xl">Hover me</h1>
 
-            <p class="line-clamp-2 text-neon-p text-lg">
+            <p class="line-clamp-2 text-neon-wb text-lg">
               {{ paragraphPlaceholder }}
             </p>
           </div>
@@ -74,7 +74,7 @@
 
             <h1 class="font-medium text-2xl">Hover me</h1>
 
-            <p class="line-clamp-2 text-neon-p text-lg">
+            <p class="line-clamp-2 text-neon-wb text-lg">
               {{ paragraphPlaceholder }}
             </p>
           </div>
@@ -89,7 +89,7 @@
 
             <h1 class="font-medium text-2xl">Hover me</h1>
 
-            <p class="line-clamp-2 text-neon-p text-lg">
+            <p class="line-clamp-2 text-neon-wb text-lg">
               {{ paragraphPlaceholder }}
             </p>
           </div>
@@ -104,7 +104,7 @@
 
             <h1 class="font-medium text-2xl">Hover me</h1>
 
-            <p class="line-clamp-2 text-neon-p text-lg">
+            <p class="line-clamp-2 text-neon-wb text-lg">
               {{ paragraphPlaceholder }}
             </p>
           </div>

@@ -1,7 +1,7 @@
 ---
 navigation.title: Testimonials
 title: Testimonials
-description: A section featuring quotes or reviews from customers or clients, used to build trust and showcase positive experiences.
+description: A section using customer quotes or reviews to build trust and highlight positive experiences.
 category: testimonials, card, reviews
 ---
 

@@ -21,14 +21,14 @@
 
 .sui-glow-card {
   position: relative;
-  border-radius: calc(var(--radius) * 1px);
+  border-radius: calc(var(--card-radius) * 1px);
   backdrop-filter: blur(calc(var(--cardblur, 5) * 1px));
 }
 
 /* Glow specific styles, if set the --hue a constant, it's a constant glow */
 /*  --hue: calc(var(--base) + (var(--xp, 0) * var(--spread, 0))); */
 [data-glow] {
-  --border-size: calc(var(--border, 2) * 1px);
+  --border-size: calc(var(--card-border, 2) * 1px);
   --spotlight-size: calc(var(--size, 150) * 1px);
   background-image: radial-gradient(
     var(--spotlight-size) var(--spotlight-size) at calc(var(--x, 0) * 1px)
@@ -56,7 +56,7 @@
   position: absolute;
   inset: calc(var(--border-size) * -1);
   border: var(--border-size) solid transparent;
-  border-radius: calc(var(--radius) * 1px);
+  border-radius: calc(var(--card-radius) * 1px);
   background-attachment: fixed;
   background-size: calc(100% + (2 * var(--border-size)))
     calc(100% + (2 * var(--border-size)));
@@ -99,7 +99,7 @@
   opacity: var(--outer, 1);
 }
 [data-glow] > [data-glow] {
-  border-radius: calc(var(--radius) * 1px);
+  border-radius: calc(var(--card-radius) * 1px);
   border-width: calc(var(--border-size) * 20);
   filter: blur(calc(var(--border-size) * 10));
   background: none;
@@ -113,7 +113,7 @@
   border: none;
 }
 [data-glow] :is(a, button) {
-  border-radius: calc(var(--radius) * 1px);
+  border-radius: calc(var(--card-radius) * 1px);
   border: var(--border-size) solid transparent;
 }
 [data-glow] :is(a, button) [data-glow] {

@@ -1,7 +1,7 @@
 ---
 navigation.title: Headline
 title: Headline
-description: A prominent area at the top, featuring a bold and compelling headline that immediately communicates the main message or value proposition to capture the visitor’s attention.
+description: A prominent top area with a bold headline that captures the visitor’s attention by communicating the main message or value proposition.
 category: features, headline
 ---
 

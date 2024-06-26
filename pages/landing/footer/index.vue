@@ -9,7 +9,7 @@
             class="flex items-center justify-center lg:justify-start lg:flex-1 gap-x-1.5 lg:mt-0 lg:order-1"
           >
             <a
-              class="flex items-center justify-center space-x-3 text-lg font-semibold text-center text-neutral-600 dark:text-gray-100 selection:bg-emerald-500 mr-10"
+              class="flex items-center justify-center space-x-3 text-lg font-semibold text-center text-neutral-600 dark:text-neutral-100 selection:bg-emerald-500 mr-10"
               href="/"
             >
               <div

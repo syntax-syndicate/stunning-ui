@@ -27,7 +27,7 @@
         <Marquee pauseOnHover :repeat="4" class="[--duration:20s]">
           <template v-for="item in firstRow">
             <figure
-              class="relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4 border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05] dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
+              class="relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4 border-neutral-950/[.1] bg-neutral-950/[.01] hover:bg-neutral-950/[.05] dark:border-neutral-50/[.1] dark:bg-neutral-50/[.10] dark:hover:bg-neutral-50/[.15]"
             >
               <div class="flex flex-row items-center gap-2">
                 <img
@@ -53,7 +53,7 @@
         <Marquee reverse pauseOnHover :repeat="4" class="[--duration:20s]">
           <template v-for="item in secondRow">
             <figure
-              class="relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4 border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05] dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
+              class="relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4 border-neutral-950/[.1] bg-neutral-950/[.01] hover:bg-neutral-950/[.05] dark:border-neutral-50/[.1] dark:bg-neutral-50/[.10] dark:hover:bg-neutral-50/[.15]"
             >
               <div class="flex flex-row items-center gap-2">
                 <img

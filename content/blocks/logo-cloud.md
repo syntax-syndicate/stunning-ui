@@ -1,7 +1,7 @@
 ---
 navigation.title: Logo Cloud
 title: Logo Cloud
-description: A collection of logos from companies or partners, usually displayed to build credibility and show affiliations or endorsements.
+description: Logos from companies or partners are displayed to build credibility and show affiliations or endorsements.
 category: logo
 ---
 

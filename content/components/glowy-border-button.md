@@ -67,7 +67,7 @@ bun i colord
     class="sm:flex-row sm:gap-8 lg:gap-10 flex flex-col items-center justify-center gap-6"
   >
     <button
-      class="group relative z-[1] bg-transparent text-gray-100 hover:text-gray-100 hover:no-underline"
+      class="group relative z-[1] bg-transparent text-neutral-100 hover:text-neutral-100 hover:no-underline"
     >
       <div
         class="absolute -left-[1.5px] -top-[1.5px] z-[-1] h-[calc(100%+2.5px)] w-[calc(100%+2.5px)] overflow-hidden rounded-lg"

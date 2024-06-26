@@ -7,7 +7,7 @@ category: button, gsap
 
 ::code-group
 
-::div{label="Preview"}
+::div{label="Preview" icon="ri:eye-line"}
 <Playground url="/playground/magnetic-effect-button" aspect="5/1"></Playground>
 ::
 

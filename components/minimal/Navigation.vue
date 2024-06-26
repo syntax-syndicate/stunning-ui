@@ -5,7 +5,7 @@
     <div class="container max-w-screen-xl flex justify-between">
       <div class="mr-4 hidden md:flex">
         <a
-          class="flex items-center justify-center space-x-3 text-lg font-semibold py-6 text-center text-neutral-600 dark:text-gray-100 selection:bg-emerald-500 mr-10"
+          class="flex items-center justify-center space-x-3 text-lg font-semibold py-6 text-center text-neutral-600 dark:text-neutral-100 selection:bg-emerald-500 mr-10"
           href="/"
         >
           <div

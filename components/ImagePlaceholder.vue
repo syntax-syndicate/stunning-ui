@@ -1,6 +1,6 @@
 <template>
   <svg
-    class="absolute inset-0 h-full w-full stroke-gray-900/10 dark:stroke-white/10"
+    class="absolute inset-0 h-full w-full stroke-neutral-900/10 dark:stroke-white/10"
     fill="none"
   >
     <defs>

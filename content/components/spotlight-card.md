@@ -19,7 +19,7 @@ category: card, feature, overview, hover
 
       <h1 class="font-medium text-2xl">Hover me</h1>
 
-      <p class="line-clamp-4 text-neon-p">
+      <p class="line-clamp-4 text-neon-wb">
         {{ paragraphPlaceholder }}
       </p>
     </div>

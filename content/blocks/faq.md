@@ -1,7 +1,7 @@
 ---
 navigation.title: FAQ
 title: FAQ
-description: The FAQ section on a landing page provides answers to common questions to help visitors quickly find important information and resolve their queries.
+description: The FAQ section on a landing page answers common questions to quickly provide important information and resolve visitor queries.
 category: faq, cta, accordion
 ---
 
@@ -10,7 +10,7 @@ category: faq, cta, accordion
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/faq" aspect="5/2"></Playground>
+<Playground url="/landing/faq" aspect="5/3"></Playground>
 ::
 
 ```vue [Code]
@@ -67,7 +67,7 @@ import { FAQList } from '~/lib/constants'
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/faq/FAQCross" aspect="5/2"></Playground>
+<Playground url="/landing/faq/FAQCross" aspect="5/3"></Playground>
 ::
 
 ```vue [Code]
@@ -124,7 +124,7 @@ import { FAQList } from '~/lib/constants'
 ::code-group
 
 ::div{label="Preview"}
-<Playground url="/landing/faq/FAQDoubleColumnLayout" aspect="5/2"></Playground>
+<Playground url="/landing/faq/FAQDoubleColumnLayout" aspect="5/3"></Playground>
 ::
 
 ```vue [Code]

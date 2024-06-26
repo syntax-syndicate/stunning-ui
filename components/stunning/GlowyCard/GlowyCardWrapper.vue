@@ -32,8 +32,8 @@ const wrapperStyle = computed(() => {
   return {
     '--hue': hue.value.toString(),
     '--size': size.value.toString(),
-    '--border': border.value.toString(),
-    '--radius': radius.value.toString()
+    '--card-border': border.value.toString(),
+    '--card-radius': radius.value.toString()
   }
 })
 
@@ -73,8 +73,8 @@ onMounted(initialVariables)
 <style scoped>
 .sui-glow-card-wrapper {
   --backdrop: hsl(0 0% 60% / 0.12);
-  --radius: 12;
-  --border: 2;
+  --card-radius: 12;
+  --card-border: 2;
   --backup-border: var(--backdrop);
   --size: 200;
   --hue: 120;

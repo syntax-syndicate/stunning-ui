@@ -19,12 +19,14 @@
       textClass="font-semibold"
       splitting-by="chars"
       :fromVars="{
-        skewX: -20,
+        translateY: '10px',
+        scaleY: 1.5,
         willChange: 'filter, transform',
-        color: 'rgba(255, 255, 255, .5)'
+        color: 'transparent'
       }"
       :toVars="{
-        skewX: 0,
+        translateY: '0px',
+        scaleY: 1,
         stagger: 0.04,
         ease: 'sine',
         color: '#4fa'

@@ -9,8 +9,8 @@
       <section class="container max-w-screen-lg py-24 sm:py-32">
         <LandingHeadline
           section="Pricing"
-          title="Get lifetime access"
-          description="Create stunning websites using stunning blocks, Save hours & money!"
+          title="One-time Purchase, Lifetime Access"
+          description="Get lifetime access to our Stunning UI component library, along with any future updates, for a one-time price. Create beautiful websites with our intuitive blocks."
         />
         <GlowyCardWrapper
           class="grid grid-cols-3 gap-4 h-full mt-16"
@@ -19,6 +19,7 @@
           <GlowyCard
             class="rounded-lg p-6 lg:p-4 flex flex-col gap-2"
             v-for="{
+              icon,
               title,
               popular,
               price,
@@ -28,9 +29,12 @@
               benefitList
             } in plans"
           >
-            <div class="relative h-full px-4 pb-2 pt-4 text-neon-p">
+            <div class="relative h-full px-4 pb-2 pt-4 text-neon-wb">
+              <div class="pb-2">
+                <Icon :name="icon" class="text-brand-500 w-6 h-6" />
+              </div>
               <div class="pb-2 flex items-center justify-between">
-                <span class="font-semibold">
+                <span class="font-semibold text-lg">
                   {{ title }}
                 </span>
                 <Badge variant="brand" class="font-light" v-if="popular">
@@ -38,7 +42,7 @@
                 </Badge>
               </div>
 
-              <div class="pb-4">{{ description }}</div>
+              <div class="pt-2 pb-6 text-sm">{{ description }}</div>
 
               <div>
                 <span class="text-3xl font-bold">${{ price }}</span>
@@ -48,7 +52,7 @@
               </div>
 
               <div class="my-8">
-                <Button :variant="popular ? 'brand' : 'default'" class="w-full">
+                <Button :variant="'brand'" class="w-full">
                   {{ buttonText }}
                 </Button>
               </div>
@@ -108,6 +112,7 @@ import {
 } from '@/components/ui/accordion'
 
 interface PlanProps {
+  icon: string
   title: string
   popular: boolean
   price: number
@@ -119,16 +124,17 @@ interface PlanProps {
 
 const plans: PlanProps[] = [
   {
+    icon: 'ri:user-line',
     title: 'Pro',
     popular: false,
     price: 49,
     originalPrice: 129,
-    description: 'Perfect for individuals.',
+    description: 'Includes 1 license, Perfect for individuals.',
     buttonText: 'Get lifetime Access',
     benefitList: [
-      '1 developer',
+      '1 user license',
       '50+ blocks (300 expected)',
-      '2 Pro templates (5 expected)',
+      'Access to all blocks/templates',
       'Commercial License Only',
       'Lifetime access/updates',
       'Use for unlimited projects',
@@ -137,16 +143,18 @@ const plans: PlanProps[] = [
     ]
   },
   {
+    icon: 'ri:team-line',
     title: 'Pro Teams',
     popular: true,
-    price: 299,
-    originalPrice: 499,
-    description: 'Ideal for small teams, startups.',
+    price: 199,
+    originalPrice: 299,
+    description:
+      'Includes up to 5 licenses, Ideal for small teams, startups and agencies.',
     buttonText: 'Get lifetime Access',
     benefitList: [
-      'Up to 10 team member',
+      '5 user license',
       '50+ blocks (300 expected)',
-      '2 Pro templates (5 expected)',
+      'Access to all blocks/templates',
       'Commercial License Only',
       'Lifetime access/updates',
       'Use for unlimited projects',
@@ -155,16 +163,18 @@ const plans: PlanProps[] = [
     ]
   },
   {
+    icon: 'ri:building-line',
     title: 'Pro Enterprise',
     popular: false,
-    price: 799,
-    originalPrice: 1199,
-    description: 'Designed for large organizations.',
-    buttonText: 'Contact US',
+    price: 699,
+    originalPrice: 999,
+    description:
+      'Includes up to 25 licenses, suited for large organizations and companies.',
+    buttonText: 'Get lifetime Access',
     benefitList: [
       'Up to 25 team member',
       '50+ blocks (300 expected)',
-      '2 Pro templates (5 expected)',
+      'Access to all blocks/templates',
       'Commercial License Only',
       'Lifetime access/updates',
       'Use for unlimited projects',

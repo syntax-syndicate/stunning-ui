@@ -1,7 +1,7 @@
 ---
 navigation.title: Footer
 title: Footer
-description: The bottom section of a webpage that typically contains additional navigation links, contact information, legal notices, and other secondary content.
+description: The bottom section of a webpage typically contains navigation links, contact info, legal notices.
 category: footer, link, contact, about us
 ---
 
