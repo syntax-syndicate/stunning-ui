@@ -5,22 +5,22 @@
     <div
       class="streak"
       v-motion
-      :initial="{ opacity: 0, rotate: '64deg', scale: 0.5 }"
-      :enter="{ opacity: 0.8, rotate: '64deg', scale: 1 }"
+      :initial="{ opacity: 0, rotate: '38deg', scale: 0.5 }"
+      :enter="{ opacity: 0.8, rotate: '38deg', scale: 1 }"
       :duration="2000"
     />
     <div
       class="streak"
       v-motion
-      :initial="{ opacity: 0, rotate: '48deg', scale: 0.5 }"
-      :enter="{ opacity: 0.24, rotate: '48deg', scale: 1 }"
+      :initial="{ opacity: 0, rotate: '30deg', scale: 0.5 }"
+      :enter="{ opacity: 1, rotate: '30deg', scale: 1 }"
       :duration="2000"
     />
     <div
       class="streak"
       v-motion
-      :initial="{ opacity: 0, rotate: '36deg', scale: 0.5 }"
-      :enter="{ opacity: 0.64, rotate: '36deg', scale: 1 }"
+      :initial="{ opacity: 0, rotate: '22deg', scale: 0.5 }"
+      :enter="{ opacity: 1, rotate: '22deg', scale: 1 }"
       :duration="2000"
     />
     <div class="overlay"></div>
@@ -47,7 +47,6 @@
     var(--sui-tyndall-effect-bg-third-color) 72%,
     var(--sui-tyndall-effect-bg-fourth-color) 100%
   );
-  width: 105%;
 }
 
 .sui-tyndall-effect .overlay {
@@ -81,7 +80,7 @@
     180deg,
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 0.5) 35%,
-    rgba(0, 0, 0, 0.50052) 64%,
+    rgba(0, 0, 0, 0.5) 64%,
     rgba(0, 0, 0, 0) 100%
   );
   mix-blend-mode: overlay;
@@ -92,21 +91,23 @@
 }
 
 .sui-tyndall-effect .streak:nth-child(1) {
-  height: 180px;
-  left: -416px;
-  top: 256px;
+  height: 228px;
+  left: -16vw;
+  top: 21vw;
   opacity: 0.8;
+  width: 150%;
 }
 .sui-tyndall-effect .streak:nth-child(2) {
-  opacity: 0.24;
-  height: 120px;
-  left: -164px;
-  top: 440px;
+  height: 100px;
+  left: -12vw;
+  top: 17vw;
+  width: 150%;
 }
 .sui-tyndall-effect .streak:nth-child(3) {
-  height: 160px;
-  left: -200px;
-  top: 200px;
+  height: 200px;
+  left: -10vw;
+  top: 10vw;
+  width: 150%;
 }
 
 .sui-tyndall-effect .particles-effect {
