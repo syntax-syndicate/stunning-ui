@@ -47,7 +47,7 @@
 <script lang="ts" setup>
 import { colord } from 'colord'
 import { cn } from '~/lib/utils'
-import ParticlesStarEffect from '@/components/stunning/ParticlesStarEffect.vue'
+import ParticlesStarEffect from '@/components/stunning/ParticlesEffect/Star.vue'
 
 const props = withDefaults(
   defineProps<{

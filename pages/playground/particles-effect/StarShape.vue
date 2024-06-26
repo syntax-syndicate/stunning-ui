@@ -3,7 +3,7 @@
     <div
       class="relative z-0 h-screen w-screen overflow-hidden [mask-image:radial-gradient(50%_50%,white,transparent)]"
     >
-      <ParticlesEffect
+      <ParticlesStarEffect
         :density="1200"
         class="absolute inset-x-0 bottom-0 h-full w-full [mask-image:radial-gradient(50%_50%,white,transparent_85%)]"
       />
@@ -12,5 +12,5 @@
 </template>
 
 <script setup>
-import ParticlesEffect from '@/components/stunning/ParticlesEffect/Slim.vue'
+import ParticlesStarEffect from '@/components/stunning/ParticlesEffect/Star.vue'
 </script>

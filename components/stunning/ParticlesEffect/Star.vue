@@ -8,61 +8,42 @@ import {
   type Container,
   type ISourceOptions
 } from '@tsparticles/engine'
-import { loadSlim } from '@tsparticles/slim'
+import { loadStarsPreset } from '@tsparticles/preset-stars'
+import { loadStarShape } from '@tsparticles/shape-star'
 import { onMounted, onUnmounted } from 'vue'
 
 let container: Container | undefined = undefined
 
-const props = defineProps({
-  id: {
-    type: String,
-    default: () => `sparkles-${Math.round(Math.random() * 9999)}`
-  },
-  size: {
-    type: Number,
-    default: 1
-  },
-  minSize: {
-    type: Number,
-    default: 0.4
-  },
-  density: {
-    type: Number,
-    default: 800
-  },
-  speed: {
-    type: Number,
-    default: 1
-  },
-  minSpeed: {
-    type: Number,
-    required: false
-  },
-  minOpacity: {
-    type: Number,
-    default: 1
-  },
-  opacity: {
-    type: Number,
-    default: 1
-  },
-  opacitySpeed: {
-    type: Number,
-    default: 3
-  },
-  color: {
-    type: String,
-    default: '#FFFFFF'
-  },
-  background: {
-    type: String,
-    default: 'transparent'
-  },
-  options: {
-    type: Object,
-    required: false
+const props = withDefaults(
+  defineProps<{
+    id: string
+    size: number
+    minSize: number
+    density: number
+    speed: number
+    minSpeed: number
+    opacity: number
+    minOpacity: number
+    color: string
+    background: string
+    opacitySpeed: number
+    options: ISourceOptions
+  }>(),
+  {
+    id: () => `sparkles-${Math.round(Math.random() * 9999)}`,
+    size: 1.5,
+    minSize: 0.4,
+    density: 1000,
+    speed: 1,
+    minSpeed: 0,
+    opacity: 1,
+    minOpacity: 0.1,
+    color: '#FFFFFF',
+    background: 'transparent',
+    opacitySpeed: 3,
+    options: () => ({})
   }
-})
+)
 
 const defaultOptions: ISourceOptions = {
   background: {
@@ -107,9 +88,13 @@ const defaultOptions: ISourceOptions = {
         min: props.minSize || props.size / 2.5,
         max: props.size
       }
+    },
+    shape: {
+      type: 'star'
     }
   },
-  detectRetina: true
+  detectRetina: true,
+  preset: 'stars'
 }
 
 const loadParticles = async () => {
@@ -117,11 +102,15 @@ const loadParticles = async () => {
 }
 
 onMounted(async () => {
-  await loadSlim(tsParticles)
+  await loadStarsPreset(tsParticles)
+  await loadStarShape(tsParticles)
+
+  const customOptions = props.options
 
   container = await tsParticles.load({
     id: props.id,
-    options: props.options || defaultOptions
+    options:
+      Object.keys(customOptions).length > 0 ? customOptions : defaultOptions
   })
 })
 
