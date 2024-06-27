@@ -7,7 +7,7 @@
         <Badge>New Version 1.0</Badge>
 
         <h1
-          class="mt-8 bg-gradient-to-br from-sky-200/90 via-sky-50 to-white bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-6xl"
+          class="mt-8 bg-gradient-to-br from-stone-200/90 via-stone-50 to-white bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-6xl"
         >
           Stunning UI is a better way <br />
           to build websites
