@@ -114,7 +114,7 @@ export const componentList = [
       {
         name: 'Dock',
         path: '/components/dock',
-        status: 'upcoming'
+        status: 'finished'
       },
       {
         name: 'Cursor Effect',
