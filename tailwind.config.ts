@@ -122,6 +122,10 @@ module.exports = {
           '30%, 60%': {
             'background-position': 'calc(100% + var(--shimmer-width)) 0'
           }
+        },
+        'bg-position': {
+          '0%': { backgroundPosition: '0% 50%' },
+          '100%': { backgroundPosition: '100% 50%' }
         }
       },
       animation: {
@@ -134,7 +138,8 @@ module.exports = {
         torch: 'torch 5s linear infinite',
         falldown: 'falldown 3s infinite',
         risingstar: 'risingstar 1000s linear infinite',
-        shimmer: 'shimmer 8s infinite'
+        shimmer: 'shimmer 8s infinite',
+        'bg-position': 'bg-position 3s infinite alternate'
       }
     }
   },

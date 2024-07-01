@@ -3,8 +3,14 @@
     <h2>Landing Page</h2>
     <div class="grid grid-cols-3 gap-4">
       <AnimatedGradientBorder
-        class="group/card rounded-lg flex flex-col gap-2"
-        @click="navigateTo('/templates/minimal')"
+        class="group/card rounded-lg flex flex-col gap-2 cursor-pointer"
+        @click="
+          navigateTo('/templates/minimal', {
+            open: {
+              target: '_blank'
+            }
+          })
+        "
       >
         <img
           :src="TemplateMinimal"

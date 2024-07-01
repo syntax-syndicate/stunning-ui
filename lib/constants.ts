@@ -204,6 +204,21 @@ export const componentList = [
     ]
   },
   {
+    category: 'List Animations',
+    components: [
+      {
+        name: 'Avatar List',
+        path: '/components/avatar-list',
+        status: 'finished'
+      },
+      {
+        name: 'List Scroll Effect',
+        path: '/components/list-scroll-effect',
+        status: 'upcoming'
+      }
+    ]
+  },
+  {
     category: 'Scroll-driven Animations',
     components: [
       {
