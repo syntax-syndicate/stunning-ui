@@ -152,11 +152,6 @@ export const componentList = [
         status: 'finished'
       },
       {
-        name: 'Glowy Spotlight Cards',
-        path: '/components/glowy-spotlight-cards',
-        status: 'finished'
-      },
-      {
         name: 'Progressive Gradient Border',
         path: '/components/progressive-gradient-border',
         status: 'finished'
@@ -165,12 +160,23 @@ export const componentList = [
         name: 'Animated Gradient Border',
         path: '/components/animated-gradient-border',
         status: 'finished'
+      },
+      {
+        name: 'Flip Card',
+        path: '/components/flip-card',
+        status: 'upcoming'
       }
     ]
   },
   {
     category: 'Bento Grid',
     components: [
+      {
+        name: 'Glowy Spotlight Cards',
+        path: '/components/glowy-spotlight-cards',
+        status: 'finished'
+      },
+
       {
         name: 'Smart Layout',
         path: '/components/smart-layout',
