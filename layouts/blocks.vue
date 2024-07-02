@@ -47,13 +47,14 @@
         </aside>
       </div>
     </main>
-    <SiteFooter />
+    <PageFooter />
   </div>
 </template>
 
 <script setup lang="ts">
 import { blockList } from '~/lib/constants'
 import PageHeader from '~/components/content/PageHeader.vue'
+import PageFooter from '~/components/content/PageFooter.vue'
 
 const { isDark } = useDarkmode()
 const config = useConfig()

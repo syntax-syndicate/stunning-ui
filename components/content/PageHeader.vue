@@ -1,7 +1,7 @@
 <template>
   <header class="mb-8 gap-16">
     <div class="header-text">
-      <h1 class="mb-4">{{ page.title }}</h1>
+      <h1 class="mb-4">{{ page.navigation.title }}</h1>
       <span class="text-muted-foreground">{{ page.description }}</span>
       <div class="font-semibold my-4 space-x-2" v-if="categoryList.length > 1">
         <Badge v-for="item in categoryList" :key="item" variant="secondary">

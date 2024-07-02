@@ -11,7 +11,7 @@
             <PageHeader />
             <slot />
           </main>
-          <SiteFooter />
+          <PageFooter />
         </div>
       </div>
     </main>
@@ -20,6 +20,7 @@
 
 <script setup lang="ts">
 import PageHeader from '~/components/content/PageHeader.vue'
+import PageFooter from '~/components/content/PageFooter.vue'
 </script>
 
 <style scoped>

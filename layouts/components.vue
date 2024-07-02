@@ -84,7 +84,7 @@
             <PageHeader />
             <slot />
           </main>
-          <SiteFooter />
+          <PageFooter />
         </div>
       </div>
     </main>
@@ -95,6 +95,7 @@
 import { Separator } from '@/components/ui/separator'
 import { componentList } from '~/lib/constants'
 import PageHeader from '~/components/content/PageHeader.vue'
+import PageFooter from '~/components/content/PageFooter.vue'
 
 const route = useRoute()
 

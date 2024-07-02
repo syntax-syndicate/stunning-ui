@@ -1,5 +1,5 @@
 ---
-navigation.title: Stunning UI | Banner
+navigation.title: Banner
 title: Stunning UI | Banner
 description: A banner on a landing page is a prominent section that captures attention with key information and a call to action to engage visitors.
 category: banner, button, link, cta
