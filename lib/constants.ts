@@ -206,6 +206,11 @@ export const componentList = [
         name: 'Magnetic Effect',
         path: '/components/magnetic-effect-button',
         status: 'finished'
+      },
+      {
+        name: 'Neon Effect',
+        path: '/components/neon-effect-button',
+        status: 'upcoming'
       }
     ]
   },

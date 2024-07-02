@@ -1,11 +1,8 @@
 <template>
   <main class="w-full h-full bg-black">
     <TyndallEffect
-      first-color="rgb(0, 183, 250)"
-      second-color="rgb(0, 40, 128)"
-      third-color="rgba(0, 53, 97, 0.72)"
-      fourth-color="rgb(0, 0, 0)"
-      streak-color="rgb(0, 255, 255)"
+      streak-color="#8ff"
+      class="min-h-screen bg-gradient-to-br from-blue-800/50 to-sky-200/20"
     >
       <div
         class="absolute top-48 left-1/2 -translate-x-1/2 transform w-full flex flex-col items-center px-5"

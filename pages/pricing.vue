@@ -128,11 +128,12 @@ const plans: PlanProps[] = [
     title: 'Pro',
     popular: false,
     price: 49,
-    originalPrice: 129,
+    originalPrice: 99,
     description: 'Includes 1 license, Perfect for individuals.',
     buttonText: 'Get lifetime Access',
     benefitList: [
       '1 user license',
+      '30+ components (100 expected)',
       '50+ blocks (300 expected)',
       'Access to all blocks/templates',
       'Commercial License Only',
@@ -153,6 +154,7 @@ const plans: PlanProps[] = [
     buttonText: 'Get lifetime Access',
     benefitList: [
       '5 user license',
+      '30+ components (100 expected)',
       '50+ blocks (300 expected)',
       'Access to all blocks/templates',
       'Commercial License Only',
@@ -173,6 +175,7 @@ const plans: PlanProps[] = [
     buttonText: 'Get lifetime Access',
     benefitList: [
       'Up to 25 team member',
+      '30+ components (100 expected)',
       '50+ blocks (300 expected)',
       'Access to all blocks/templates',
       'Commercial License Only',

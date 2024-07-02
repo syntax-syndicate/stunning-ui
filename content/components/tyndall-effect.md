@@ -14,7 +14,9 @@ category: background, hero
 ```vue [Code]
 <template>
   <main class="w-full h-full bg-black">
-    <TyndallEffect>
+    <TyndallEffect
+      class=" min-h-screen bg-gradient-to-br from-black/50 to-white/30"
+    >
       <div
         class="absolute top-48 left-1/2 -translate-x-1/2 transform w-full flex flex-col items-center px-5"
       >
@@ -116,30 +118,17 @@ bun i @vueuse/motion
 <script lang="ts" setup>
 const props = withDefaults(
   defineProps<{
-    firstColor: string
-    secondColor: string
-    thirdColor: string
-    fourthColor: string
     streakColor: string
   }>(),
   {
-    firstColor: 'rgba(48, 48, 48, 1)',
-    secondColor: 'rgba(36, 36, 36, 1)',
-    thirdColor: 'rgba(12, 12, 12, .72)',
-    fourthColor: 'rgb(0, 0, 0)',
     streakColor: 'rgb(255, 255, 255)'
   }
 )
 
-const { firstColor, secondColor, thirdColor, fourthColor, streakColor } =
-  toRefs(props)
+const { streakColor } = toRefs(props)
 
 const wrapperStyle = computed(() => {
   return {
-    '--bg-first-color': firstColor.value,
-    '--bg-second-color': secondColor.value,
-    '--bg-third-color': thirdColor.value,
-    '--bg-fourth-color': fourthColor.value,
     '--streak-color': streakColor.value
   }
 })
@@ -147,18 +136,7 @@ const wrapperStyle = computed(() => {
 
 <style scoped>
 .sui-tyndall-effect {
-  --bg-first-color: rgb(0, 183, 250);
-  --bg-second-color: rgb(0, 40, 128);
-  --bg-third-color: rgba(0, 53, 97, 0.72);
-  --bg-fourth-color: rgb(0, 0, 0);
   --streak-color: rgb(0, 225, 255);
-  background: radial-gradient(
-    102% 64% at 1% 48%,
-    var(--bg-first-color) 0%,
-    var(--bg-second-color) 54%,
-    var(--bg-third-color) 72%,
-    var(--bg-fourth-color) 100%
-  );
 }
 
 .sui-tyndall-effect .overlay {
@@ -216,11 +194,8 @@ const wrapperStyle = computed(() => {
 <template>
   <main class="w-full h-full bg-black">
     <TyndallEffect
-      first-color="rgb(0, 183, 250)"
-      second-color="rgb(0, 40, 128)"
-      third-color="rgba(0, 53, 97, 0.72)"
-      fourth-color="rgb(0, 0, 0)"
-      streak-color="rgb(0, 255, 255)"
+      streak-color="#8ff"
+      class=" min-h-screen bg-gradient-to-br from-blue-800/50 to-sky-200/20"
     >
       <div
         class="absolute top-48 left-1/2 -translate-x-1/2 transform w-full flex flex-col items-center px-5"
@@ -260,13 +235,9 @@ import ParticlesEffect from '@/components/stunning/ParticlesEffect/Slim.vue'
 
 ## Props
 
-| Prop        | Type   | Description                                                                | Default                 |
-| :---------- | :----- | :------------------------------------------------------------------------- | :---------------------- |
-| firstColor  | string | The first color used in the radical background, specified as an RGB value  | `rgba(48, 48, 48, 1)`   |
-| secondColor | string | The second color used in the radical background, specified as an RGB value | `rgba(36, 36, 36, 1)`   |
-| thirdColor  | string | The third color used in the radical background, specified as an RGB value  | `rgba(12, 12, 12, .72)` |
-| fourthColor | string | The fourth color used in the radical background, specified as an RGB value | `rgb(0, 0, 0)`          |
-| streakColor | string | The color used in the streak light, specified as an RGB value              | `rgb(255, 255, 255)`    |
+| Prop        | Type   | Description                                                   | Default              |
+| :---------- | :----- | :------------------------------------------------------------ | :------------------- |
+| streakColor | string | The color used in the streak light, specified as an RGB value | `rgb(255, 255, 255)` |
 
 ## Inspiration
 
