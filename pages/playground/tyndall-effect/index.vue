@@ -1,7 +1,7 @@
 <template>
   <main class="w-full h-full bg-black/90">
     <TyndallEffect
-      class="min-h-screen bg-gradient-to-br from-black/50 to-white/30"
+      class="min-h-screen bg-gradient-to-br from-black/50 to-white/10"
     >
       <div
         class="absolute top-48 left-1/2 -translate-x-1/2 transform w-full flex flex-col items-center px-5"

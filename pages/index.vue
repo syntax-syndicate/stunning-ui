@@ -10,7 +10,7 @@
       "
     >
       <div>
-        Stunning UI beta is here. Create stunning website that stand out!
+        Stunning UI Beta is here. Create stunning website that stand out!
       </div>
       <div>
         <Button size="xs" class="gap-2">
@@ -32,7 +32,7 @@
           <ShimmerText
             class="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400"
           >
-            ✨ Stunning UI Version 1.0
+            ✨ Stunning UI Beta
             <Icon
               name="ri:arrow-right-line"
               class="w-4 h-4 ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5"

@@ -14,14 +14,14 @@
       class="streak mix-blend-difference flex-none overflow-hidden pointer-events-none absolute w-[200%] lg:w-[150%] h-12 lg:h-24 left-[-60vw] top-[40vw] lg:left-[-32vw] lg:top-[24vw] xl:left-[-12vw] xl:top-[17vw]"
       v-motion
       :initial="{ opacity: 0, rotate: '32deg', scaleY: 0.5 }"
-      :enter="{ opacity: 0.48, rotate: '32deg', scaleY: 1 }"
+      :enter="{ opacity: 0.36, rotate: '32deg', scaleY: 1 }"
       :duration="2000"
     />
     <div
       class="streak mix-blend-difference flex-none overflow-hidden pointer-events-none absolute w-[200%] lg:w-[150%] h-20 lg:h-48 left-[-32vw] top-[32vw] lg:left-[-12vw] lg:top-[16vw] xl:left-[-10vw] xl:top-[10vw]"
       v-motion
       :initial="{ opacity: 0, rotate: '24deg', scaleY: 0.5 }"
-      :enter="{ opacity: 0.64, rotate: '24deg', scaleY: 1 }"
+      :enter="{ opacity: 0.4, rotate: '24deg', scaleY: 1 }"
       :duration="2000"
     />
     <div
