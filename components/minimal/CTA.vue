@@ -12,7 +12,9 @@
         <p>Celebrate the joy of accomplishment with an app designed</p>
         <p>to track your progress and motivate your efforts.</p>
       </h3>
-      <div class="flex mt-8 sm:flex-shrink-0 sm:mt-0 gap-4">
+      <div
+        class="flex mt-8 justify-center sm:justify-start sm:flex-shrink-0 sm:mt-0 gap-4"
+      >
         <Button variant="brand" @click="navigateTo('/')"> Get started </Button>
         <Button variant="outline" @click="navigateTo('/')"> Learn more </Button>
       </div>

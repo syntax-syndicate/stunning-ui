@@ -1,7 +1,7 @@
 <template>
-  <section class="container py-24 sm:py-24 max-w-screen-xl">
+  <section class="container py-24 sm:py-24 px-4 sm:px-8 max-w-screen-xl">
     <div
-      class="relative pt-24 sm:pt-32 flex flex-col justify-center items-center px-8 gap-8"
+      class="relative pt-24 sm:pt-32 flex flex-col justify-center items-center px-4 sm:px-8 gap-8"
     >
       <div
         class="group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"

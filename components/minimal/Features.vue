@@ -8,17 +8,17 @@
         title="Why choose our service?"
         description="Stunning UI Pro is awesome premium library. Build better, faster with Stunning UI."
       />
-      <div class="relative grid grid-cols-3 gap-4">
+      <div class="relative grid grid-cols-1 sm:grid-cols-3 gap-4">
         <div
-          class="absolute inset-x-12 top-1/2 -translate-y-1/2 h-px bg-gradient-to-r from-transparent dark:via-white/20 via-neutral-950/30 to-transparent"
+          class="absolute hidden sm:block inset-x-12 top-1/2 -translate-y-1/2 h-px bg-gradient-to-r from-transparent dark:via-white/20 via-neutral-950/30 to-transparent"
         />
         <div
-          class="absolute left-1/3 top-1/2 -translate-y-1/2 w-px h-[110%] bg-gradient-to-b from-transparent dark:via-white/20 via-neutral-950/30 to-transparent"
+          class="absolute hidden sm:block left-1/3 top-1/2 -translate-y-1/2 w-px h-[110%] bg-gradient-to-b from-transparent dark:via-white/20 via-neutral-950/30 to-transparent"
         />
         <div
-          class="absolute left-2/3 top-1/2 -translate-y-1/2 w-px h-[110%] bg-gradient-to-b from-transparent dark:via-white/20 via-neutral-950/30 to-transparent"
+          class="absolute hidden sm:block left-2/3 top-1/2 -translate-y-1/2 w-px h-[110%] bg-gradient-to-b from-transparent dark:via-white/20 via-neutral-950/30 to-transparent"
         />
-        <div class="rounded p-6 lg:p-8 flex flex-col gap-x-2 gap-y-3">
+        <div class="rounded p-2 sm:p-6 lg:p-8 flex flex-col gap-x-2 gap-y-3">
           <Icon name="ri:magic-line" class="w-8 h-8 text-emerald-500" />
 
           <h1 class="font-medium text-xl">Easy to use</h1>
@@ -38,7 +38,7 @@
             />
           </a>
         </div>
-        <div class="rounded p-6 lg:p-8 flex flex-col gap-x-2 gap-y-3">
+        <div class="rounded p-2 sm:p-6 lg:p-8 flex flex-col gap-x-2 gap-y-3">
           <Icon name="ri:check-line" class="w-8 h-8 text-emerald-500" />
 
           <h1 class="font-medium text-xl">Reliable</h1>
@@ -58,7 +58,7 @@
             />
           </a>
         </div>
-        <div class="rounded p-6 lg:p-8 flex flex-col gap-x-2 gap-y-3">
+        <div class="rounded p-2 sm:p-6 lg:p-8 flex flex-col gap-x-2 gap-y-3">
           <Icon name="ri:lock-2-line" class="w-8 h-8 text-emerald-500" />
 
           <h1 class="font-medium text-xl">Secure</h1>
@@ -78,7 +78,7 @@
             />
           </a>
         </div>
-        <div class="rounded p-6 lg:p-8 flex flex-col gap-x-2 gap-y-3">
+        <div class="rounded p-2 sm:p-6 lg:p-8 flex flex-col gap-x-2 gap-y-3">
           <Icon name="ri:rocket-2-line" class="w-8 h-8 text-emerald-500" />
 
           <h1 class="font-medium text-xl">Fast</h1>
@@ -98,7 +98,7 @@
             />
           </a>
         </div>
-        <div class="rounded p-6 lg:p-8 flex flex-col gap-x-2 gap-y-3">
+        <div class="rounded p-2 sm:p-6 lg:p-8 flex flex-col gap-x-2 gap-y-3">
           <Icon
             name="ri:money-dollar-circle-line"
             class="w-8 h-8 text-emerald-500"
@@ -121,7 +121,7 @@
             />
           </a>
         </div>
-        <div class="rounded p-6 lg:p-8 flex flex-col gap-x-2 gap-y-3">
+        <div class="rounded p-2 sm:p-6 lg:p-8 flex flex-col gap-x-2 gap-y-3">
           <Icon name="ri:bar-chart-2-line" class="w-8 h-8 text-emerald-500" />
 
           <h1 class="font-medium text-xl">Scalable</h1>

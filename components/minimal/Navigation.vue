@@ -1,9 +1,9 @@
 <template>
   <header
-    class="flex h-16 items-center mx-auto bg-background/60 backdrop-blur fixed w-full top-10 z-50 border-b dark:border-neutral-800"
+    class="flex h-16 items-center mx-auto bg-background/60 backdrop-blur fixed w-full top-0 sm:top-10 z-50 border-b dark:border-neutral-800"
   >
-    <div class="container max-w-screen-xl flex justify-between">
-      <div class="mr-4 hidden md:flex">
+    <div class="container max-w-screen-xl flex justify-between px-4 sm:px-8">
+      <div class="mr-4">
         <a
           class="flex items-center justify-center space-x-3 text-lg font-semibold py-6 text-center text-neutral-600 dark:text-neutral-100 selection:bg-emerald-500 mr-10"
           href="/"
@@ -21,7 +21,7 @@
         </a>
       </div>
       <div class="flex items-center gap-4">
-        <nav class="flex items-center space-x-2 text-sm font-medium xl:flex">
+        <nav class="items-center space-x-2 text-sm font-medium hidden xl:flex">
           <Button variant="link" @click="navigateTo('/')"> Features </Button>
           <Button variant="link" @click="navigateTo('/')"> Pricing </Button>
           <Button variant="link" @click="navigateTo('/')"> FAQ </Button>

@@ -15,7 +15,7 @@
       </Tabs>
     </div>
 
-    <div class="grid grid-cols-3 gap-8 lg:gap-4 py-8 mt-16">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-4 py-8 mt-16">
       <Card
         v-for="{
           title,
