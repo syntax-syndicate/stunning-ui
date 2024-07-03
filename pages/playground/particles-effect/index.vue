@@ -1,5 +1,14 @@
 <template>
-  <div class="h-screen w-screen overflow-hidden bg-black">
+  <div class="relative h-screen w-screen overflow-hidden bg-black">
+    <div
+      class="h-screen w-screen absolute left-0 top-0 flex items-center justify-center"
+    >
+      <p
+        className="whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-black dark:text-white"
+      >
+        Particles Effect
+      </p>
+    </div>
     <div
       class="relative z-0 h-screen w-screen overflow-hidden [mask-image:radial-gradient(50%_50%,white,transparent)]"
     >

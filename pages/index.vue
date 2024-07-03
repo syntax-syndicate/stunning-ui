@@ -59,9 +59,16 @@
             </div>
           </div>
 
-          <div class="relative pt-2 text-neon-wb">
-            <h1 class="font-medium text-lg mb-1">{{ item.name }}</h1>
-            <span class="line-clamp-3 text-sm">{{ item.desc }}</span>
+          <div class="flex items-center gap-4">
+            <div
+              class="rounded-md p-2 inline-flex ring-inset ring-1 bg-neutral-50/50 dark:bg-neutral-800/50 ring-neutral-300 dark:ring-neutral-700 group-hover:dark:bg-emerald-800/50 group-hover:ring-emerald-300 group-hover:dark:ring-emerald-600"
+            >
+              <Icon :name="item.icon" class="size-8 text-emerald-500" />
+            </div>
+            <div class="relative text-neon-wb flex-1">
+              <h1 class="font-medium text-lg mb-1">{{ item.name }}</h1>
+              <span class="line-clamp-3 text-sm">{{ item.desc }}</span>
+            </div>
           </div>
         </GlowyCard>
       </GlowyCardWrapper>
@@ -85,25 +92,28 @@ import GlowyCard from '~/components/stunning/GlowyCard/GlowyCard.vue'
 
 import { paragraphPlaceholder } from '~/lib/constants'
 
-useSmoothScroll()
+// useSmoothScroll()
 
 const featureList = [
   {
     name: 'Components Library',
     desc: '30+ free open-source components that you can copy and paste into your next project.',
     path: '/blocks/banner',
+    icon: 'lucide:box',
     status: 'finished'
   },
   {
     name: 'Blocks Library',
     desc: 'Segmented and customizable blocks for creating various types of website pages.',
     path: '/blocks/navigation',
+    icon: 'lucide:blocks',
     status: 'finished'
   },
   {
     name: 'Production-ready Templates',
     desc: 'Pre-made, ready to use templates for startups and small businesses.',
     path: '/blocks/callout',
+    icon: 'lucide:layout-template',
     status: 'finished'
   }
 ]

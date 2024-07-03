@@ -1,7 +1,7 @@
 ---
 navigation.title: Tyndall Effect
 title: Tyndall Effect
-description: Tyndall effect is light scattering by particles, used in the hero as a background
+description: Tyndall effect is light scattering by particles, used in the hero as a background.
 category: background, hero
 ---
 

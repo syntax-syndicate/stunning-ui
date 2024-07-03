@@ -1,7 +1,7 @@
 ---
 navigation.title: Particles Effect
 title: Particles Effect
-description: Animated floating particles component.
+description: This animated floating particles component can be used as a background or to set the mood.
 category: background, hero, cta
 ---
 

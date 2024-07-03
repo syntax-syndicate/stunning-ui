@@ -1,7 +1,7 @@
 ---
 navigation.title: Rising Stars
 title: Rising Stars
-description: A rising star shines especially bright in the night, this component can be used as a background, letting stars fill your page.
+description: A rising star shines brightly at night, serving as an excellent background, with stars filling your page.
 category: background, hero
 ---
 

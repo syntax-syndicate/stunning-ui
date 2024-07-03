@@ -1,7 +1,7 @@
 ---
 navigation.title: God Ray
 title: God Ray
-description: Aurora-like light beam effect
+description: Aurora-like light beam effect.
 category: background, hero
 ---
 

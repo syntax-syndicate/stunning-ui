@@ -3,7 +3,7 @@
     <template v-for="group in componentList">
       <h2>{{ group.category }}</h2>
       <GlowyCardWrapper
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4"
         :size="240"
       >
         <GlowyCard
@@ -11,8 +11,15 @@
           v-for="item in group.components"
           :href="item.path"
         >
+          <template v-if="item.image">
+            <img
+              :src="item.image"
+              class="my-0 rounded-lg group-hover/card:scale-[1.02] transition-all duration-200"
+            />
+          </template>
           <div
             class="bg-neutral-900/5 dark:bg-white/5 ring-1 ring-inset ring-neutral-900/10 dark:ring-white/10 rounded-lg p-3"
+            v-else
           >
             <div
               class="aspect-video rounded-lg relative overflow-hidden border border-dashed border-neutral-900/10 dark:border-white/10"
@@ -21,9 +28,9 @@
             </div>
           </div>
 
-          <div class="relative px-4 pb-2 pt-4 line-clamp-2 text-neon-wb">
-            <h1 class="font-medium text-lg">{{ item.name }}</h1>
-            {{ item.desc }}
+          <div class="relative pt-2 text-neon-wb">
+            <h1 class="font-medium text-lg mb-1">{{ item.name }}</h1>
+            <span class="line-clamp-3 text-sm">{{ item.desc }}</span>
           </div>
         </GlowyCard>
       </GlowyCardWrapper>

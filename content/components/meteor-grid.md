@@ -1,7 +1,7 @@
 ---
 navigation.title: Meteor Grid
 title: Meteor Grid
-description: The meteor's vertical descent captures the user's attention
+description: The meteor's vertical/skewed descent captures attention.
 category: background, hero, bento grid, card
 ---
 

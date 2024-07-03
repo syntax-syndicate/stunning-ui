@@ -1,7 +1,7 @@
 ---
 navigation.title: Light Bar
 title: Light Bar
-description: Typically used to display dynamic text changes in the Hero Section.
+description: Replicate Monitor Light Bar Effect
 category: pricing, cta
 ---
 
