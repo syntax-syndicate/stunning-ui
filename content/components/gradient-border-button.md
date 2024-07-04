@@ -1,7 +1,7 @@
 ---
 navigation.title: Gradient Border Button
 title: Gradient Border Button
-description: Typically used to display dynamic text changes in the Hero Section.
+description: Gradient Color Border Button for CTA
 category: button, cta
 ---
 

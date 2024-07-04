@@ -16,15 +16,24 @@
               :src="item.image"
               class="my-0 rounded-lg group-hover/card:scale-[1.02] transition-all duration-200"
             />
+            <img
+              :src="CommingSoon"
+              class="my-0 rounded-lg group-hover/card:scale-[1.02] transition-all duration-200"
+            />
           </template>
           <div
-            class="bg-neutral-900/5 dark:bg-white/5 ring-1 ring-inset ring-neutral-900/10 dark:ring-white/10 rounded-lg p-3"
+            class="relative bg-neutral-900/5 dark:bg-white/5 ring-1 ring-inset ring-neutral-900/10 dark:ring-white/10 rounded-lg p-3"
             v-else
           >
             <div
               class="aspect-video rounded-lg relative overflow-hidden border border-dashed border-neutral-900/10 dark:border-white/10"
             >
               <ImagePlaceholder />
+              <div
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-pre-wrap text-center text-3xl font-medium tracking-tighter text-black dark:text-white"
+              >
+                Comming Soon
+              </div>
             </div>
           </div>
 

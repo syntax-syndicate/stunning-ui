@@ -1,7 +1,7 @@
 ---
 navigation.title: Glowy Border Button
 title: Glowy Border Button
-description: Typically used to display dynamic text changes in the Hero Section.
+description: Glowing Light Border Button for CTA
 category: button, cta
 ---
 

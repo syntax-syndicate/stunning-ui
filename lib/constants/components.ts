@@ -17,6 +17,18 @@ import SpotlightCard from '@/assets/gifs/spotlight-card.gif'
 import ProgressiveGradientBorder from '@/assets/gifs/progressive-gradient-border.gif'
 import AnimatedGradientBorder from '@/assets/gifs/animated-gradient-border.gif'
 import GlowySpotlightCards from '@/assets/gifs/glowy-spotlight-cards.gif'
+import TypedText from '@/assets/gifs/typed-text.gif'
+import AvatarList from '@/assets/gifs/avatar-list.gif'
+import GlowyBorderButton from '@/assets/gifs/glowy-border-button.gif'
+import GradientBorderButton from '@/assets/gifs/gradient-border-button.gif'
+import GlassBorderButton from '@/assets/gifs/glass-border-button.gif'
+import MagneticEffectButton from '@/assets/gifs/magnetic-effect-button.gif'
+import ScrollReveal from '@/assets/gifs/scroll-reveal.gif'
+import ShimmerText from '@/assets/gifs/shimmer-text.gif'
+import TorchTextReveal from '@/assets/gifs/torch-text-reveal.gif'
+import TextReveal from '@/assets/gifs/text-reveal.gif'
+import BlurryTextReveal from '@/assets/gifs/blurry-text-reveal.gif'
+import StickyStackBlocks from '@/assets/gifs/sticky-stack-block.gif'
 
 export const componentList = [
   {
@@ -217,21 +229,29 @@ export const componentList = [
     components: [
       {
         name: 'Glowy Border',
+        desc: 'Glowing Light Border Button for CTA',
+        image: GlowyBorderButton,
         path: '/components/glowy-border-button',
         status: 'finished'
       },
       {
         name: 'Gradient Border',
+        desc: 'Gradient Color Border Button for CTA',
+        image: GradientBorderButton,
         path: '/components/gradient-border-button',
         status: 'finished'
       },
       {
         name: 'Glass Border',
+        desc: 'Glowy Glass Border Button with star particles effect.',
+        image: GlassBorderButton,
         path: '/components/glass-border-button',
         status: 'finished'
       },
       {
         name: 'Magnetic Effect',
+        desc: 'When the mouse enters the button, there will be a simulated magnetic effect.',
+        image: MagneticEffectButton,
         path: '/components/magnetic-effect-button',
         status: 'finished'
       },
@@ -247,6 +267,8 @@ export const componentList = [
     components: [
       {
         name: 'Avatar List',
+        desc: 'A component that displays list of user`s avatar',
+        image: AvatarList,
         path: '/components/avatar-list',
         status: 'finished'
       },
@@ -262,21 +284,29 @@ export const componentList = [
     components: [
       {
         name: 'Text Reveal',
+        desc: 'Scroll-driven text reveal, a text appearance effect activates as you scroll through the content.',
+        image: TextReveal,
         path: '/components/text-reveal',
         status: 'finished'
       },
       {
         name: 'Blurry Text Reveal',
+        desc: 'Scroll-driven blurry text reveal, a text appearance effect activates as you scroll through the content.',
+        image: BlurryTextReveal,
         path: '/components/blurry-text-reveal',
         status: 'finished'
       },
       {
         name: 'Sticky Stack Block',
+        desc: 'Sticky stack blocks are commonly used as visually fixed elements to introduce key features on a website while scrolling.',
+        image: StickyStackBlocks,
         path: '/components/sticky-stack-blocks',
         status: 'finished'
       },
       {
         name: 'Scroll Reveal',
+        desc: 'Scroll-driven section reveal',
+        image: ScrollReveal,
         path: '/components/scroll-reveal',
         status: 'finished'
       },
@@ -292,16 +322,22 @@ export const componentList = [
     components: [
       {
         name: 'Typed Text',
+        desc: 'Typically used to display dynamic text changes in the Hero Section.',
+        image: TypedText,
         path: '/components/typed-text',
         status: 'finished'
       },
       {
         name: 'Shimmer Text',
+        desc: 'A light glare effect which pans across text making it appear as if it is shimmering.',
+        image: ShimmerText,
         path: '/components/shimmer-text',
         status: 'finished'
       },
       {
         name: 'Torch Text Reveal',
+        desc: 'Torch text reveal, a text effect to highlight the headline.',
+        image: TorchTextReveal,
         path: '/components/torch-text-reveal',
         status: 'finished'
       },
