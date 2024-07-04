@@ -10,6 +10,13 @@ import GridPattern from '@/assets/gifs/grid-pattern.png'
 import GlareLineFrame from '@/assets/gifs/glare-line-frame.gif'
 import GlowyDivider from '@/assets/gifs/glowy-divider.png'
 import LightBar from '@/assets/gifs/light-bar.gif'
+import Confetti from '@/assets/gifs/confetti.gif'
+import Marquee from '@/assets/gifs/marquee.gif'
+import SkewedMarquee from '@/assets/gifs/skewed-marquee.gif'
+import SpotlightCard from '@/assets/gifs/spotlight-card.gif'
+import ProgressiveGradientBorder from '@/assets/gifs/progressive-gradient-border.gif'
+import AnimatedGradientBorder from '@/assets/gifs/animated-gradient-border.gif'
+import GlowySpotlightCards from '@/assets/gifs/glowy-spotlight-cards.gif'
 
 export const componentList = [
   {
@@ -115,6 +122,8 @@ export const componentList = [
       },
       {
         name: 'Confetti',
+        desc: 'A celebratory animation used after successfully completing events like registration or payment.',
+        image: Confetti,
         path: '/components/confetti',
         status: 'finished'
       },
@@ -145,26 +154,36 @@ export const componentList = [
     components: [
       {
         name: 'Marquee',
+        desc: 'An infinite scrolling component that can be used to display text, images, or cards.',
+        image: Marquee,
         path: '/components/marquee',
         status: 'finished'
       },
       {
         name: 'Skewed Marquee',
+        desc: 'Infinite Marquee in 3D view, no repeated elements.',
+        image: SkewedMarquee,
         path: '/components/skewed-marquee',
         status: 'finished'
       },
       {
         name: 'Spotlight Card',
+        desc: 'A spotlight effect that follows the cursor and guides users` attention.',
+        image: SpotlightCard,
         path: '/components/spotlight-card',
         status: 'finished'
       },
       {
         name: 'Progressive Gradient Border',
+        desc: 'The glowing card effect is used to highlight feature cards on hover.',
+        image: ProgressiveGradientBorder,
         path: '/components/progressive-gradient-border',
         status: 'finished'
       },
       {
         name: 'Animated Gradient Border',
+        desc: 'The glowing card effect is typically used to highlight feature cards when they are hovered over.',
+        image: AnimatedGradientBorder,
         path: '/components/animated-gradient-border',
         status: 'finished'
       },
@@ -180,6 +199,8 @@ export const componentList = [
     components: [
       {
         name: 'Glowy Spotlight Cards',
+        desc: 'The glowing card effect is typically used to highlight feature cards when they are hovered over.',
+        image: GlowySpotlightCards,
         path: '/components/glowy-spotlight-cards',
         status: 'finished'
       },

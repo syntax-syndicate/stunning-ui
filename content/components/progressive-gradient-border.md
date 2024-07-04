@@ -1,7 +1,7 @@
 ---
 navigation.title: Progressive Gradient Border
 title: Progressive Gradient Border
-description: The glowing card effect is typically used to highlight feature cards when they are hovered over.
+description: The glowing card effect is used to highlight feature cards on hover.
 category: cards, hover, features
 ---
 

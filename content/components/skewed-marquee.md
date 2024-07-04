@@ -1,7 +1,7 @@
 ---
 navigation.title: Skewed Marquee
 title: Skewed Marquee
-description: Infinite Marquee in 3D view, no repeated elements
+description: Infinite Marquee in 3D view, no repeated elements.
 category: bento grid, card
 ---
 

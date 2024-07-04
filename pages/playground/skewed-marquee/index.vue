@@ -13,7 +13,7 @@
                 >
                   <div class="flex flex-row items-center gap-2">
                     <img
-                      class="rounded-full"
+                      class="rounded-full w-8 h-8 object-cover aspect-square"
                       width="32"
                       height="32"
                       alt=""
@@ -39,7 +39,7 @@
                 >
                   <div class="flex flex-row items-center gap-2">
                     <img
-                      class="rounded-full"
+                      class="rounded-full w-8 h-8 object-cover aspect-square"
                       width="32"
                       height="32"
                       alt=""
@@ -65,7 +65,7 @@
                 >
                   <div class="flex flex-row items-center gap-2">
                     <img
-                      class="rounded-full"
+                      class="rounded-full w-8 h-8 object-cover aspect-square"
                       width="32"
                       height="32"
                       alt=""

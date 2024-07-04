@@ -10,7 +10,7 @@
           />
           <div class="z-1 blur-lg" />
           <img
-            :src="item.image"
+            :src="item.img"
             :alt="item.name"
             :class="
               cn('rounded-full object-cover', sizeVariant[size] ?? sizes.md)

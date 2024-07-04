@@ -1,7 +1,7 @@
 ---
 navigation.title: Confetti
 title: Confetti
-description: Typically used as a celebratory animation effect after successfully completing an event, such as registration or payment.
+description: A celebratory animation used after successfully completing events like registration or payment.
 category: cta, mirco effect
 ---
 

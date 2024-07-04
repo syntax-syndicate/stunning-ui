@@ -13,38 +13,44 @@ export const reviews = [
   {
     name: 'Matt',
     username: '@Matt',
+    position: 'Software Engineer',
     body: "I've never seen anything like this before. It's stunning.",
-    img: 'https://avatar.vercel.sh/Matt'
+    img: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
   {
-    name: 'Justin',
-    username: '@Justin',
+    name: 'Jane',
+    username: '@Jane',
+    position: 'Product Manager',
     body: 'I create a stunning website in a matter of hours. I love it.',
-    img: 'https://avatar.vercel.sh/Justin'
+    img: 'https://images.unsplash.com/photo-1582610285985-a42d9193f2fd?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
   {
-    name: 'Sarah',
-    username: '@Sarah',
+    name: 'Jonas',
+    username: '@Jonas',
+    position: 'Frontend Developer',
     body: "It save my time. I'm speechless. This is amazing.",
-    img: 'https://avatar.vercel.sh/Sarah'
+    img: 'https://images.unsplash.com/photo-1530268729831-4b0b9e170218?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
   {
     name: 'Jude',
     username: '@jude',
+    position: 'Backend Developer',
     body: "It's a beast, absolutly loving it, exactly what I was looking for.",
-    img: 'https://avatar.vercel.sh/jude'
+    img: 'https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
   {
     name: 'Emma',
     username: '@Emma',
+    position: 'Data Scientist',
     body: 'Stunning UI has been an absolute game changer.',
-    img: 'https://avatar.vercel.sh/Emma'
+    img: 'https://images.unsplash.com/photo-1573496799515-eebbb63814f2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
   {
     name: 'Jamie',
     username: '@Jamie',
+    position: 'Backend Developer',
     body: 'I Gracefully exited. Thanks for the stunning components.',
-    img: 'https://avatar.vercel.sh/Jamie'
+    img: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   }
 ]
 
