@@ -83,10 +83,6 @@ import TemplateMinimal from '@/assets/images/template_minimal.webp'
 import GlowyCardWrapper from '~/components/stunning/GlowyCard/GlowyCardWrapper.vue'
 import GlowyCard from '~/components/stunning/GlowyCard/GlowyCard.vue'
 
-import { paragraphPlaceholder } from '~/lib/constants'
-
-// useSmoothScroll()
-
 const featureList = [
   {
     name: 'Components Library',
@@ -110,8 +106,6 @@ const featureList = [
     status: 'finished'
   }
 ]
-
-const { isDark } = useDarkmode()
 </script>
 
 <style></style>
