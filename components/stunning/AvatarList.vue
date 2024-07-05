@@ -13,7 +13,10 @@
             :src="item.img"
             :alt="item.name"
             :class="
-              cn('rounded-full object-cover', sizeVariant[size] ?? sizes.md)
+              cn(
+                'rounded-full object-cover',
+                sizeVariant[size] ?? sizeVariant.md
+              )
             "
           />
         </div>
@@ -31,13 +34,13 @@
 <script lang="ts" setup>
 import { cn } from '~/lib/utils'
 
-const props = withDefaults(
+withDefaults(
   defineProps<{
-    list: { image: string; name: string; position: string }[]
+    list: { img: string; name: string; position: string }[]
     size: 'sm' | 'md' | 'lg'
   }>(),
   {
-    list: [],
+    list: () => [],
     size: 'md'
   }
 )
@@ -49,4 +52,4 @@ const sizeVariant: Record<'sm' | 'md' | 'lg', string> = {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>

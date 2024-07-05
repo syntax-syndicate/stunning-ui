@@ -76,10 +76,13 @@ module.exports = {
           />
           <div class="z-1 blur-lg" />
           <img
-            :src="item.image"
+            :src="item.img"
             :alt="item.name"
             :class="
-              cn('rounded-full object-cover', sizeVariant[size] ?? sizes.md)
+              cn(
+                'rounded-full object-cover',
+                sizeVariant[size] ?? sizeVariant.md
+              )
             "
           />
         </div>
@@ -97,25 +100,29 @@ module.exports = {
 <script lang="ts" setup>
 import { cn } from '~/lib/utils'
 
-const props = withDefaults(
+withDefaults(
   defineProps<{
-    list: { image: string; name: string; position: string }[]
+    list: { img: string; name: string; position: string }[]
     size: 'sm' | 'md' | 'lg'
   }>(),
   {
-    list: [],
+    list: () => [],
     size: 'md'
   }
 )
 
 const sizeVariant: Record<'sm' | 'md' | 'lg', string> = {
-  lg: 'm-3 size-12',
+  lg: 'm-3 size-10',
   md: 'm-2 size-8',
   sm: 'm-1 size-6'
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>
+
+</script>
+
+<style scoped></style>
 ```
 
 ::

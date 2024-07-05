@@ -33,7 +33,7 @@
         Browse components
       </GlassBorderButton>
 
-      <div class="stacks grid grid-cols-6 gap-8 mt-24">
+      <div class="stacks grid grid-cols-3 sm:grid-cols-6 gap-8 mt-24">
         <template v-for="item in frameworkList">
           <div
             class="group relative flex items-center gap-2 text-muted-foreground"

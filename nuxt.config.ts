@@ -6,7 +6,8 @@ export default defineNuxtConfig({
   ssr: false,
   app: {
     head: {
-      title: 'Create stunning websites that are visually appealing',
+      title:
+        'Stunning UI is a collection of interactive Tailwind CSS components built for Vue.js/React.',
       link: [{ rel: 'icon', type: 'image/*', href: '/favicon.svg' }]
     }
   },

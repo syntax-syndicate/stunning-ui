@@ -38,18 +38,11 @@
           class="group/card rounded-lg p-4 lg:p-4 flex flex-col gap-2 cursor-pointer"
           :href="item.path"
         >
-          <template v-if="item.image">
-            <img
-              :src="item.image"
-              class="my-0 rounded-lg group-hover/card:scale-[1.02] transition-all duration-200"
-            />
-          </template>
-
-          <div class="bg-neutral-900/5 dark:bg-white/5 rounded-[8px]" v-else>
+          <div class="bg-neutral-900/5 dark:bg-white/5 rounded-[8px]">
             <div
               class="aspect-video rounded-[8px] relative overflow-hidden border-neutral-900/10 dark:border-white/10"
             >
-              <ImagePlaceholder v-if="index === 0" />
+              <SiteSkewedTemplates v-if="index === 0" />
               <SiteSkewedBlocks v-if="index === 1" />
               <img
                 v-if="index === 2"

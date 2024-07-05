@@ -51,9 +51,12 @@
           <div class="flex">
             <div class="space-y-4">
               <span
-                v-for="benefit in benefitList"
+                v-for="(benefit, index) in benefitList"
                 :key="benefit"
-                class="flex items-center gap-2 text-sm dark:text-muted-foreground"
+                class="flex items-center gap-2 text-sm"
+                :class="
+                  index === 0 ? 'text-neon' : 'dark:text-muted-foreground'
+                "
               >
                 <Icon name="lucide:check" class="text-brand-500" />
                 {{ benefit }}
@@ -98,6 +101,7 @@ const plans: PlanProps[] = [
     description: 'Includes 1 license, Perfect for individuals.',
     buttonText: 'Get lifetime Access',
     benefitList: [
+      'Vue Only',
       '1 user license',
       '30+ components (100 expected)',
       '50+ blocks (300 expected)',
@@ -111,15 +115,15 @@ const plans: PlanProps[] = [
   },
   {
     icon: 'ri:team-line',
-    title: 'Pro Teams',
+    title: 'Pro Plus',
     popular: true,
-    price: 199,
-    originalPrice: 299,
-    description:
-      'Includes up to 5 licenses, Ideal for small teams, startups and agencies.',
+    price: 69,
+    originalPrice: 139,
+    description: 'Includes 1 license, Perfect for individuals.',
     buttonText: 'Get lifetime Access',
     benefitList: [
-      '5 user license',
+      'Vue + React',
+      '1 user license',
       '30+ components (100 expected)',
       '50+ blocks (300 expected)',
       'Access to all blocks/templates',
@@ -132,15 +136,16 @@ const plans: PlanProps[] = [
   },
   {
     icon: 'ri:building-line',
-    title: 'Pro Enterprise',
+    title: 'Pro Teams',
     popular: false,
-    price: 699,
-    originalPrice: 999,
+    price: 249,
+    originalPrice: 349,
     description:
-      'Includes up to 25 licenses, suited for large organizations and companies.',
+      'Includes up to 5 licenses, Ideal for small teams, startups and agencies.',
     buttonText: 'Get lifetime Access',
     benefitList: [
-      'Up to 25 team member',
+      'Vue + React',
+      '5 user license',
       '30+ components (100 expected)',
       '50+ blocks (300 expected)',
       'Access to all blocks/templates',
@@ -151,6 +156,27 @@ const plans: PlanProps[] = [
       'Priority support'
     ]
   }
+  // {
+  //   icon: 'ri:building-line',
+  //   title: 'Pro Enterprise',
+  //   popular: false,
+  //   price: 699,
+  //   originalPrice: 999,
+  //   description:
+  //     'Includes up to 25 licenses, suited for large organizations and companies.',
+  //   buttonText: 'Get lifetime Access',
+  //   benefitList: [
+  //     'Up to 25 team member',
+  //     '30+ components (100 expected)',
+  //     '50+ blocks (300 expected)',
+  //     'Access to all blocks/templates',
+  //     'Commercial License Only',
+  //     'Lifetime access/updates',
+  //     'Use for unlimited projects',
+  //     'Request Components & blocks',
+  //     'Priority support'
+  //   ]
+  // }
 ]
 </script>
 
