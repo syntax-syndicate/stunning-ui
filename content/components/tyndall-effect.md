@@ -63,11 +63,25 @@ import GlassBorderButton from '@/components/stunning/GlassBorderButton.vue'
 
 This component requires the package [@vueuse/motion](https://motion.vueuse.org/).
 
-```bash
-pnpm i @vueuse/motion
-# or
-bun i @vueuse/motion
+::code-group
+
+```bash [npm]
+npm install @vueuse/motion
 ```
+
+```bash [pnpm]
+pnpm install @vueuse/motion
+```
+
+```bash [bun]
+bun install @vueuse/motion
+```
+
+```bash [yarn]
+yarn install @vueuse/motion
+```
+
+::
 
 ### Copy the source code
 

@@ -45,8 +45,28 @@ const handleClick = () => {
 This component need to install the package: [canvas-confetti](https://github.com/catdad/canvas-confetti)
 
 ```bash
-pnpm i -S canvas-confetti && pnpm i -D @types/canvas=confetti
+
 ```
+
+::code-group
+
+```bash [npm]
+npm install -S canvas-confetti && npm i -D @types/canvas=confetti
+```
+
+```bash [pnpm]
+pnpm install -S canvas-confetti && pnpm install -D @types/canvas=confetti
+```
+
+```bash [bun]
+bun install -S canvas-confetti && bun i -D @types/canvas=confetti
+```
+
+```bash [yarn]
+yarn install -S canvas-confetti && yarn i -D @types/canvas=confetti
+```
+
+::
 
 ### Copy the source code
 

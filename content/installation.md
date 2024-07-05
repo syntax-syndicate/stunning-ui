@@ -17,10 +17,22 @@ While Stunning UI Components seamlessly integrate with the shadcn ecosystem buil
 
 To get stared, ensure you have the following dependencies installed:
 
-::CodeWrapper
+::code-group
 
-```bash
-pnpm i -D tailwindcss clsx tailwind-merge
+```bash [npm]
+npm install tailwindcss clsx tailwind-merge
+```
+
+```bash [pnpm]
+pnpm install tailwindcss clsx tailwind-merge
+```
+
+```bash [bun]
+bun install tailwindcss clsx tailwind-merge
+```
+
+```bash [yarn]
+yarn install tailwindcss clsx tailwind-merge
 ```
 
 ::

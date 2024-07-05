@@ -46,11 +46,25 @@ import TypedText from '@/components/stunning/TypedText.vue'
 
 This component requires the package [typed.js](https://github.com/mattboldt/typed.js).
 
-```bash
-pnpm i typed.js
-# or
-bun i typed.js
+::code-group
+
+```bash [npm]
+npm install typed.js
 ```
+
+```bash [pnpm]
+pnpm install typed.js
+```
+
+```bash [bun]
+bun install typed.js
+```
+
+```bash [yarn]
+yarn install typed.js
+```
+
+::
 
 ### Copy the source code
 

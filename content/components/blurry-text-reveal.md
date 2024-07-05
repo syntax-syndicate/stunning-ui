@@ -71,11 +71,25 @@ const handleScroll = () => {
 
 This component requires the package [GSAP](https://gsap.com/).
 
-```bash
-pnpm i gsap
-# or
-bun i gsap
+::code-group
+
+```bash [npm]
+npm install gsap
 ```
+
+```bash [pnpm]
+pnpm install gsap
+```
+
+```bash [bun]
+bun install gsap
+```
+
+```bash [yarn]
+yarn install gsap
+```
+
+::
 
 ### Copy the source code
 

@@ -49,11 +49,25 @@ import GlowyBorderButton from '~/components/stunning/GlowyBorderButton.vue'
 
 This component requires the package [colord](https://github.com/omgovich/colord).
 
-```bash
-pnpm i colord
-# or
-bun i colord
+::code-group
+
+```bash [npm]
+npm install colord
 ```
+
+```bash [pnpm]
+pnpm install colord
+```
+
+```bash [bun]
+bun install colord
+```
+
+```bash [yarn]
+yarn install colord
+```
+
+::
 
 ### Copy the source code
 

@@ -16,13 +16,13 @@ category: testimonals
   <main
     class="w-screen h-screen flex flex-col justify-center items-center bg-dots"
   >
-    <AvatarList :list="reviews" />
+    <AvatarList :list="avatarList" />
   </main>
 </template>
 
 <script lang="ts" setup>
 import AvatarList from '~/components/stunning/AvatarList.vue'
-import { reviews } from '@/lib/constants'
+import { reviews as avatarList } from '@/lib/constants'
 </script>
 
 <style scoped></style>
@@ -136,7 +136,3 @@ const sizeVariant: Record<'sm' | 'md' | 'lg', string> = {
 | size     | string     | The avatar size can be 'sm', 'md', or 'lg'.                                    | 'md'    |
 | list     | Record\[\] | The Avatar List                                                                | `[]`    |
 | listItem | Object     | The Avatar List item meta, `{ image: string; name: string; position: string }` | `{}`    |
-
-## Inspiration
-
--

@@ -55,9 +55,25 @@ import GlassBorderButton from '@/components/stunning/GlassBorderButton.vue'
 
 This component need to install the package:
 
-```bash
-pnpm i -S @tsparticles/preset-stars @tsparticles/shape-star colord
+::code-group
+
+```bash [npm]
+npm install -S @tsparticles/preset-stars @tsparticles/shape-star colord
 ```
+
+```bash [pnpm]
+pnpm install -S @tsparticles/preset-stars @tsparticles/shape-star colord
+```
+
+```bash [bun]
+bun install -S @tsparticles/preset-stars @tsparticles/shape-star colord
+```
+
+```bash [yarn]
+yarn install -S @tsparticles/preset-stars @tsparticles/shape-star colord
+```
+
+::
 
 ### Copy the source code
 
