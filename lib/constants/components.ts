@@ -73,7 +73,7 @@ export const componentList = [
         desc: 'Tyndall effect is light scattering by particles, used in the hero as a background.',
         image: TyndallEffect,
         path: '/components/tyndall-effect',
-        status: 'finished'
+        status: 'new'
       },
       {
         name: 'God Ray',
@@ -142,7 +142,7 @@ export const componentList = [
       {
         name: 'Dock',
         path: '/components/dock',
-        status: 'finished'
+        status: 'upcoming'
       },
       {
         name: 'Cursor Effect',
@@ -202,7 +202,7 @@ export const componentList = [
       {
         name: 'Flip Card',
         path: '/components/flip-card',
-        status: 'upcoming'
+        status: 'new'
       }
     ]
   },
@@ -342,8 +342,8 @@ export const componentList = [
         status: 'finished'
       },
       {
-        name: 'Digital Animation',
-        path: '/components/digital-animation',
+        name: 'Digital Filpper',
+        path: '/components/digital-filpper',
         status: 'upcoming'
       },
       {

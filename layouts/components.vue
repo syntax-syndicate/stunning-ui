@@ -66,8 +66,15 @@
                     >
                       <span>{{ item.name }}</span>
                       <Badge
-                        v-if="item.status !== 'finished'"
+                        v-if="item.status === 'upcoming'"
                         class="ml-2 border-emerald-500/50 font-400 text-emerald-500"
+                        size="sm"
+                        variant="outline"
+                        >{{ item.status }}</Badge
+                      >
+                      <Badge
+                        v-if="item.status === 'new'"
+                        class="ml-2 bg-emerald-500 font-400 text-white"
                         size="sm"
                         variant="outline"
                         >{{ item.status }}</Badge

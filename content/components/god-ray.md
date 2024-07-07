@@ -132,4 +132,4 @@ import GodRay from '@/components/stunning/GodRay.vue'
 
 ## Inspiration
 
--
+- [mindpal](https://mindpal.space/)
