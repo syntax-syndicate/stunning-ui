@@ -7,9 +7,9 @@
         :size="240"
       >
         <GlowyCard
-          class="rounded-lg p-6 lg:p-4 flex flex-col gap-2"
+          class="rounded-lg p-6 lg:p-4 flex flex-col gap-2 cursor-pointer"
           v-for="item in group.components"
-          :href="item.path"
+          @click="navigateTo(item.path)"
         >
           <template v-if="item.image">
             <img

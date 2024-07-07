@@ -29,6 +29,7 @@ import TorchTextReveal from '@/assets/gifs/torch-text-reveal.gif'
 import TextReveal from '@/assets/gifs/text-reveal.gif'
 import BlurryTextReveal from '@/assets/gifs/blurry-text-reveal.gif'
 import StickyStackBlocks from '@/assets/gifs/sticky-stack-block.gif'
+import FlipCard from '@/assets/gifs/flip-card.gif'
 
 export const componentList = [
   {
@@ -201,6 +202,8 @@ export const componentList = [
       },
       {
         name: 'Flip Card',
+        desc: 'A dynamic flip card with smooth 180-degree animations along both the X and Y axes.',
+        image: FlipCard,
         path: '/components/flip-card',
         status: 'new'
       }
