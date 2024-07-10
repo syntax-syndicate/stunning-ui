@@ -12,7 +12,7 @@
             class="relative h-8 w-8 md:h-6 md:w-6 bg-background text-white flex items-center justify-center rounded-md text-sm antialiased"
           >
             <div class="text-sm text-emerald-500 relative z-20">
-              <SiteLogo class="w-6 h-6" />
+              <SiteLogo class="w-8 h-8" />
             </div>
           </div>
           <div class="flex items-center gap-2">

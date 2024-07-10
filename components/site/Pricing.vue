@@ -17,6 +17,7 @@
           originalPrice,
           description,
           buttonText,
+          buttonLink,
           benefitList
         } in plans"
       >
@@ -43,7 +44,15 @@
           </div>
 
           <div class="my-8">
-            <Button :variant="'brand'" class="w-full">
+            <Button
+              :variant="'brand'"
+              class="w-full"
+              @click="
+                navigateTo(buttonLink, {
+                  external: true
+                })
+              "
+            >
               {{ buttonText }}
             </Button>
           </div>
@@ -73,13 +82,6 @@
 import GlowyCardWrapper from '~/components/stunning/GlowyCard/GlowyCardWrapper.vue'
 import GlowyCard from '~/components/stunning/GlowyCard/GlowyCard.vue'
 
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion'
-
 interface PlanProps {
   icon: string
   title: string
@@ -88,6 +90,7 @@ interface PlanProps {
   originalPrice: number
   description: string
   buttonText: string
+  buttonLink: string
   benefitList: string[]
 }
 
@@ -100,6 +103,8 @@ const plans: PlanProps[] = [
     originalPrice: 99,
     description: 'Includes 1 license, Perfect for individuals.',
     buttonText: 'Get lifetime Access',
+    buttonLink:
+      'https://stunning-ui.lemonsqueezy.com/buy/b5da2b4c-e7b3-48e5-a18b-714c4e01f289',
     benefitList: [
       'Vue Only',
       '1 user license',
@@ -121,6 +126,7 @@ const plans: PlanProps[] = [
     originalPrice: 139,
     description: 'Includes 1 license, Perfect for individuals.',
     buttonText: 'Get lifetime Access',
+    buttonLink: '',
     benefitList: [
       'Vue + React',
       '1 user license',
@@ -143,6 +149,7 @@ const plans: PlanProps[] = [
     description:
       'Includes up to 5 licenses, Ideal for small teams, startups and agencies.',
     buttonText: 'Get lifetime Access',
+    buttonLink: '',
     benefitList: [
       'Vue + React',
       '5 user license',

@@ -4,7 +4,9 @@
   >
     <div class="flex flex-col justify-center items-center gap-8 z-10">
       <div class="w-full mx-auto flex justify-center">
-        <Badge :variant="isDark ? '' : 'secondary'">Follow us on X</Badge>
+        <Badge :variant="isDark ? 'default' : 'secondary'"
+          >Follow us on X</Badge
+        >
       </div>
 
       <div class="text-center text-5xl text-white">
@@ -35,7 +37,7 @@
     </div>
 
     <div
-      class="relative z-0 -mt-64 h-[400px] w-screen overflow-hidden [mask-image:radial-gradient(50%_50%,white,transparent)]"
+      class="relative z-0 -mt-64 h-[400px] w-[80vw] overflow-hidden [mask-image:radial-gradient(50%_50%,white,transparent)]"
     >
       <ParticlesEffect
         :density="1200"
@@ -57,8 +59,6 @@
 <script lang="ts" setup>
 import { useDarkmode } from '@/composables/useDarkmode'
 import { Badge } from '@/components/ui/badge'
-import { Input } from '@/components/ui/input'
-import { Button } from '@/components/ui/button'
 
 const { isDark } = useDarkmode()
 
