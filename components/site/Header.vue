@@ -32,7 +32,15 @@
         <Button variant="link" @click="navigateTo('/pricing')">
           Pricing
         </Button>
-        <Button variant="link" @click="navigateTo('/components')">
+        <Button
+          variant="link"
+          @click="
+            navigateTo('https://stunningui.featurebase.app/roadmap', {
+              external: true,
+              open: { target: '_blank' }
+            })
+          "
+        >
           Roadmap
         </Button>
       </nav>
@@ -42,14 +50,24 @@
         <Button
           variant="ghost"
           size="icon"
-          @click="navigateTo('https://x.com/robert_shaw_x')"
+          @click="
+            navigateTo('https://x.com/robert_shaw_x', {
+              external: true,
+              open: { target: '_blank' }
+            })
+          "
         >
           <Icon name="ri:twitter-x-line" class="h-[1.2rem] w-[1.2rem]" />
         </Button>
         <Button
           variant="ghost"
           size="icon"
-          @click="navigateTo('https://github.com/xiaoluoboding')"
+          @click="
+            navigateTo('https://github.com/xiaoluoboding', {
+              external: true,
+              open: { target: '_blank' }
+            })
+          "
         >
           <Icon name="ri:github-fill" class="h-6 w-6" />
         </Button>
