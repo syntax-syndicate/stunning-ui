@@ -9,9 +9,11 @@
         >
       </div>
 
-      <div class="text-center text-5xl text-white">
-        <p><span class="">Started building</span></p>
-        <p><span class="text-neon"> Stunning</span> websites</p>
+      <div class="text-center text-5xl">
+        <p class="text-foreground"><span>Started building</span></p>
+        <p class="text-foreground">
+          <span class="text-neon"> Stunning</span> websites
+        </p>
       </div>
 
       <div class="text-muted-foreground text-center">
@@ -47,10 +49,10 @@
         class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_center,#5eead42e,transparent_70%)]"
       />
       <div
-        class="absolute inset-x-0 -bottom-[254px] h-full w-full rounded-[100%] bg-gradient-to-b from-white to-black"
+        class="absolute inset-x-0 -bottom-[254px] h-full w-full rounded-[100%] bg-gradient-to-b from-neutral-300 to-white dark:from-white dark:to-black"
       />
       <div
-        class="absolute inset-x-0 -bottom-[256px] h-full w-full rounded-[100%] bg-neutral-950 shadow-[inset_0_2px_20px_#fff,0_-10px_50px_1px_#ffffff7d]"
+        class="absolute inset-x-0 -bottom-[256px] h-full w-full rounded-[100%] bg-neutral-200 dark:bg-neutral-950 shadow-[inset_0_2px_20px_#fff,0_-10px_50px_1px_#ffffff7d]"
       />
     </div>
   </section>

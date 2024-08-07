@@ -26,10 +26,12 @@
     />
     <div
       class="overlay-top h-56 flex-none absolute left-0 right-0 top-0 z-10 overflow-hidden pointer-events-none"
-    ></div>
+      v-if="showOverlay"
+    />
     <div
       class="overlay-bottom h-32 flex-none absolute left-0 right-0 bottom-0 z-10 overflow-hidden pointer-events-none"
-    ></div>
+      v-if="showOverlay"
+    />
     <div
       class="particles-effect flex-none h-screen absolute left-0 top-0 right-0"
       v-if="$slots.particles"
@@ -44,9 +46,11 @@
 const props = withDefaults(
   defineProps<{
     streakColor: string
+    showOverlay: boolean
   }>(),
   {
-    streakColor: 'rgb(255, 255, 255)'
+    streakColor: 'rgb(255, 255, 255)',
+    showOverlay: true
   }
 )
 

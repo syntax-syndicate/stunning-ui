@@ -1,5 +1,9 @@
 <template>
-  <TyndallEffect class="min-h-[80vh]">
+  <TyndallEffect
+    class="min-h-[80vh]"
+    :showOverlay="isDark"
+    :streak-color="isDark ? '#fff' : '#f4a'"
+  >
     <div
       class="absolute top-48 left-1/2 -translate-x-1/2 transform w-full flex flex-col items-center px-5"
     >
@@ -18,7 +22,7 @@
       </div>
 
       <h1
-        class="mt-8 bg-gradient-to-br from-stone-200/90 via-stone-50 to-white bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-6xl"
+        class="mt-8 bg-gradient-to-br from-neutral-900/90 via-neutral-700 to-neutral-500 dark:from-stone-200/90 dark:via-stone-50 dark:to-white bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-6xl"
       >
         Create Stunning Websites <br />
         That Stand Out
@@ -66,6 +70,10 @@ import TyndallEffect from '~/components/stunning/TyndallEffect.vue'
 import ParticlesEffect from '~/components/stunning/ParticlesEffect/Slim.vue'
 import GlassBorderButton from '~/components/stunning/GlassBorderButton.vue'
 import ShimmerText from '~/components/stunning/ShimmerText.vue'
+
+import { useDarkmode } from '@/composables/useDarkmode'
+
+const { isDark } = useDarkmode()
 
 const frameworkList = [
   {
