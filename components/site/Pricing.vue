@@ -119,14 +119,15 @@ const plans: PlanProps[] = [
     ]
   },
   {
-    icon: 'ri:team-line',
+    icon: 'ri:user-add-line',
     title: 'Pro Plus',
     popular: true,
     price: 69,
     originalPrice: 139,
     description: 'Includes 1 license, Perfect for individuals.',
     buttonText: 'Get lifetime Access',
-    buttonLink: '',
+    buttonLink:
+      'https://stunning-ui.lemonsqueezy.com/buy/723cde88-e82d-449e-888d-b61758d8ef3c',
     benefitList: [
       'Vue + React',
       '1 user license',
@@ -149,7 +150,8 @@ const plans: PlanProps[] = [
     description:
       'Includes up to 5 licenses, Ideal for small teams, startups and agencies.',
     buttonText: 'Get lifetime Access',
-    buttonLink: '',
+    buttonLink:
+      'https://stunning-ui.lemonsqueezy.com/buy/1caca411-c4e0-4717-a9c2-f4bb7cd943cd',
     benefitList: [
       'Vue + React',
       '5 user license',
