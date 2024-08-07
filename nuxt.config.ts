@@ -8,7 +8,22 @@ export default defineNuxtConfig({
     head: {
       title:
         'Stunning UI is a collection of interactive Tailwind CSS components built for Vue.js/React.',
-      link: [{ rel: 'icon', type: 'image/*', href: '/favicon.svg' }]
+      link: [{ rel: 'icon', type: 'image/*', href: '/favicon.svg' }],
+      script: [
+        // {
+        //   defer: true,
+        //   src: 'https://widget.senja.io/embed/frame.js'
+        // },
+        // {
+        //   defer: true,
+        //   src: 'https://cdn.paritydeals.com/banner.js'
+        // },
+        {
+          defer: true,
+          'data-domain': 'stunningui.design',
+          src: 'https://plausible.io/js/script.js'
+        }
+      ]
     }
   },
   modules: [
