@@ -9,6 +9,53 @@ export default defineNuxtConfig({
       title:
         'Stunning UI is a collection of interactive Tailwind CSS components built for Vue.js/React.',
       link: [{ rel: 'icon', type: 'image/*', href: '/favicon.svg' }],
+      meta: [
+        {
+          property: 'description',
+          content:
+            'Stunning UI is a collection of interactive Tailwind CSS components built for Vue.js/React.'
+        },
+        {
+          property: 'og:title',
+          content: 'Create Stunning Websites That Stand Out'
+        },
+        {
+          property: 'og:description',
+          content:
+            'Stunning UI is a collection of interactive Tailwind CSS components built for Vue.js/React.'
+        },
+        {
+          property: 'og:image',
+          content: 'https://stunningui.design/preview.png'
+        },
+        { property: 'og:url', content: 'https://stunningui.design' },
+        { property: 'og:site_name', content: 'One Tab Group' },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '900' },
+        {
+          property: 'og:logo',
+          content: 'https://stunningui.design/favicon.png'
+        },
+        {
+          property: 'og:image:alt',
+          content: 'Create Stunning Websites That Stand Out'
+        },
+        { property: 'twitter:site', content: 'One Tab Group' },
+        {
+          property: 'twitter:title',
+          content: 'Create Stunning Websites That Stand Out'
+        },
+        { property: 'twitter:card', content: 'summary_large_image' },
+        {
+          property: 'twitter:description',
+          content:
+            'Stunning UI is a collection of interactive Tailwind CSS components built for Vue.js/React.'
+        },
+        {
+          property: 'twitter:image:src',
+          content: 'https://stunningui.design/preview.png'
+        }
+      ],
       script: [
         // {
         //   defer: true,
