@@ -13,7 +13,7 @@
         Stunning UI Beta is here. Create stunning website that stand out!
       </div>
       <div>
-        <Button size="xs" class="gap-2">
+        <Button size="xs" class="gap-2" @click="navigateTo('/components')">
           <Icon name="ri:sparkling-2-line" />
           <span>Getting Started</span>
         </Button>
