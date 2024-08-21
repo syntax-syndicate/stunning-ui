@@ -45,11 +45,9 @@ import ParticlesEffect from '@/components/stunning/ParticlesEffect/Slim.vue'
 
 ### Prerequisites
 
-This component requires the package [typed.js](https://github.com/mattboldt/typed.js).
+This component requires the package [tsparticles](https://github.com/tsparticles/tsparticles).
 
-::
-
-:code-group
+::code-group
 
 ```bash [npm]
 npm install @tsparticles/engine @tsparticles/slim
