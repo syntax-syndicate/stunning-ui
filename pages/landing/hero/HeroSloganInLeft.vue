@@ -26,7 +26,7 @@
         </h1>
         <div class="text-lg tracking-tight text-muted-foreground">
           Stunning UI is a collection of interactive Tailwind CSS components
-          built for Vue.js/React.
+          built for Vue and Nuxt.
         </div>
         <div class="flex flex-wrap gap-x-6 gap-y-3 justify-center">
           <Button variant="brand" @click="navigateTo('/components')">

@@ -40,13 +40,13 @@ const FAQList: FAQItem[] = [
   {
     question: 'What is Stunning UI Pro?',
     answer: `Stunning UI is a collection of interactive Tailwind CSS components, blocks, templates built
-      for Vue.js/React, help your build stunning websites fast.`,
+      for Vue and Nuxt, help your build stunning websites fast.`,
     value: 'item-1'
   },
 
   {
     question: 'Which frameworks are supported?',
-    answer: `You can use any framework that supports React/Vue. Next.js, Astro, Remix, Gatsby, Nuxt.js etc.`,
+    answer: `You can use any framework that supports Vue, Nuxt etc.`,
     value: 'item-2'
   },
 

@@ -129,7 +129,7 @@ const plans: PlanProps[] = [
     buttonLink:
       'https://stunning-ui.lemonsqueezy.com/buy/723cde88-e82d-449e-888d-b61758d8ef3c',
     benefitList: [
-      'Vue + React',
+      'Vue + Nuxt',
       '1 user license',
       '30+ components (100 expected)',
       '50+ blocks (300 expected)',
@@ -153,7 +153,7 @@ const plans: PlanProps[] = [
     buttonLink:
       'https://stunning-ui.lemonsqueezy.com/buy/1caca411-c4e0-4717-a9c2-f4bb7cd943cd',
     benefitList: [
-      'Vue + React',
+      'Vue + Nuxt',
       '5 user license',
       '30+ components (100 expected)',
       '50+ blocks (300 expected)',

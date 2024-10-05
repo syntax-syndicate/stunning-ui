@@ -29,9 +29,9 @@
         <Button variant="link" @click="navigateTo('/templates')">
           Templates
         </Button>
-        <Button variant="link" @click="navigateTo('/pricing')">
+        <!-- <Button variant="link" @click="navigateTo('/pricing')">
           Pricing
-        </Button>
+        </Button> -->
         <Button
           variant="link"
           @click="

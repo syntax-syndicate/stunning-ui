@@ -7,13 +7,13 @@ export default defineNuxtConfig({
   app: {
     head: {
       title:
-        'Stunning UI is a collection of interactive Tailwind CSS components built for Vue.js/React.',
+        'Stunning UI is a collection of interactive Tailwind CSS components built for Vue and Nuxt.',
       link: [{ rel: 'icon', type: 'image/*', href: '/favicon.svg' }],
       meta: [
         {
           property: 'description',
           content:
-            'Stunning UI is a collection of interactive Tailwind CSS components built for Vue.js/React.'
+            'Stunning UI is a collection of interactive Tailwind CSS components built for Vue and Nuxt.'
         },
         {
           property: 'og:title',
@@ -22,7 +22,7 @@ export default defineNuxtConfig({
         {
           property: 'og:description',
           content:
-            'Stunning UI is a collection of interactive Tailwind CSS components built for Vue.js/React.'
+            'Stunning UI is a collection of interactive Tailwind CSS components built for Vue and Nuxt.'
         },
         {
           property: 'og:image',
@@ -49,7 +49,7 @@ export default defineNuxtConfig({
         {
           property: 'twitter:description',
           content:
-            'Stunning UI is a collection of interactive Tailwind CSS components built for Vue.js/React.'
+            'Stunning UI is a collection of interactive Tailwind CSS components built for Vue and Nuxt.'
         },
         {
           property: 'twitter:image:src',

@@ -30,7 +30,7 @@
 
       <p class="text-neutral-500 dark:text-neutral-400 text-xl mt-4">
         Stunning UI is a collection of interactive Tailwind CSS components built
-        for Vue.js/React.
+        for Vue and Nuxt.
       </p>
 
       <GlassBorderButton class="z-10 mt-12" @click="navigateTo('/components')">

@@ -90,8 +90,7 @@ One of the drawback of packaging the components in an npm package is that the st
   },
   {
     question: 'Which frameworks are supported?',
-    answer:
-      'You can use any framework that supports React/Vue. Next.js, Astro, Remix, Gatsby, Nuxt.js etc.',
+    answer: 'You can use any framework that supports Vue, Nuxt etc.',
     value: 'item-3'
   },
   {
