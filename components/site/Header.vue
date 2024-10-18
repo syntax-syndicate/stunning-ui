@@ -47,6 +47,8 @@
       <div
         class="flex flex-1 items-center justify-end gap-2 sm:gap-2 md:justify-end"
       >
+        <ToggleDarkmode />
+
         <Button
           variant="ghost"
           size="icon"
@@ -71,7 +73,6 @@
         >
           <Icon name="ri:github-fill" class="h-6 w-6" />
         </Button>
-        <ToggleDarkmode />
       </div>
     </div>
   </header>

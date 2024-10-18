@@ -29,6 +29,7 @@ import {
   AccordionItem,
   AccordionTrigger
 } from '@/components/ui/accordion'
+import { FAQList as defaultFAQList } from '@/lib/constants/landing'
 
 interface FAQItem {
   question: string
@@ -38,38 +39,19 @@ interface FAQItem {
 
 const FAQList: FAQItem[] = [
   {
-    question: 'What is Stunning UI Pro?',
+    question: 'What is Stunning UI?',
     answer: `Stunning UI is a collection of interactive Tailwind CSS components, blocks, templates built
       for Vue and Nuxt, help your build stunning websites fast.`,
-    value: 'item-1'
+    value: 'item-0.1'
   },
 
   {
     question: 'Which frameworks are supported?',
-    answer: `You can use any framework that supports Vue, Nuxt etc.`,
-    value: 'item-2'
+    answer: `You can use any framework that supports Vue, Nuxt.`,
+    value: 'item-0.2'
   },
 
-  {
-    question: 'Is this a one time payment or a subscription？',
-    answer:
-      'This is a one time payment. Pay once to get access to the entire pro blocks/templates + get lifetime updates',
-    value: 'item-3'
-  },
-
-  {
-    question: 'How do I access after purchasing？',
-    answer: `After purchasing, you will be redirected to a page where you will be
-askea to sign up with your license key. After which, you will be able to
-access everything on the site.`,
-    value: 'item-4'
-  },
-
-  {
-    question: 'Do you offer refunds?',
-    answer: `Due to the nature of digital products, we do not offer refunds. If you have any questions, please contact us at support@stunning.dev`,
-    value: 'item-5'
-  }
+  ...defaultFAQList
 ]
 </script>
 

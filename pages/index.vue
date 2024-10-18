@@ -23,6 +23,9 @@
       <SiteHeader />
     </ClientOnly>
     <SiteHero />
+
+    <StunningGlowyDivider />
+
     <section class="container max-w-screen-2xl py-24 sm:py-32 mt-[-120px]">
       <LandingHeadline
         section="Features"
@@ -43,7 +46,11 @@
               class="aspect-video rounded-[8px] relative overflow-hidden border-neutral-900/10 dark:border-white/10"
             >
               <SiteSkewedTemplates v-if="index === 0" />
-              <SiteSkewedBlocks v-if="index === 1" />
+              <img
+                v-if="index === 1"
+                :src="BlocksFeatures"
+                class="my-0 rounded-lg group-hover/card:scale-[1.02] transition-all duration-200"
+              />
               <img
                 v-if="index === 2"
                 :src="TemplateMinimal"
@@ -67,9 +74,9 @@
       </GlowyCardWrapper>
     </section>
 
-    <!-- <StunningGlowyDivider /> -->
-    <!-- <SiteFAQ /> -->
     <StunningGlowyDivider />
+    <SiteFAQ />
+    <StunningGlowyDivider direction="top" />
     <SiteCTA />
     <SiteFooter />
   </div>
@@ -80,6 +87,7 @@ import { cn } from '~/lib/utils'
 import { Button } from '~/components/ui/button'
 
 import TemplateMinimal from '@/assets/images/template_minimal.webp'
+import BlocksFeatures from '@/assets/images/blocks_features.webp'
 import GlowyCardWrapper from '~/components/stunning/GlowyCard/GlowyCardWrapper.vue'
 import GlowyCard from '~/components/stunning/GlowyCard/GlowyCard.vue'
 
