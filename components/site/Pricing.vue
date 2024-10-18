@@ -104,7 +104,7 @@ const plans: PlanProps[] = [
     description: 'Includes 1 license, Perfect for individuals.',
     buttonText: 'Get lifetime Access',
     buttonLink:
-      'https://stunning-ui.lemonsqueezy.com/buy/b5da2b4c-e7b3-48e5-a18b-714c4e01f289',
+      '',
     benefitList: [
       'Vue Only',
       '1 user license',
@@ -127,7 +127,7 @@ const plans: PlanProps[] = [
     description: 'Includes 1 license, Perfect for individuals.',
     buttonText: 'Get lifetime Access',
     buttonLink:
-      'https://stunning-ui.lemonsqueezy.com/buy/723cde88-e82d-449e-888d-b61758d8ef3c',
+      '',
     benefitList: [
       'Vue + Nuxt',
       '1 user license',
@@ -151,7 +151,7 @@ const plans: PlanProps[] = [
       'Includes up to 5 licenses, Ideal for small teams, startups and agencies.',
     buttonText: 'Get lifetime Access',
     buttonLink:
-      'https://stunning-ui.lemonsqueezy.com/buy/1caca411-c4e0-4717-a9c2-f4bb7cd943cd',
+      '',
     benefitList: [
       'Vue + Nuxt',
       '5 user license',
@@ -165,27 +165,6 @@ const plans: PlanProps[] = [
       'Priority support'
     ]
   }
-  // {
-  //   icon: 'ri:building-line',
-  //   title: 'Pro Enterprise',
-  //   popular: false,
-  //   price: 699,
-  //   originalPrice: 999,
-  //   description:
-  //     'Includes up to 25 licenses, suited for large organizations and companies.',
-  //   buttonText: 'Get lifetime Access',
-  //   benefitList: [
-  //     'Up to 25 team member',
-  //     '30+ components (100 expected)',
-  //     '50+ blocks (300 expected)',
-  //     'Access to all blocks/templates',
-  //     'Commercial License Only',
-  //     'Lifetime access/updates',
-  //     'Use for unlimited projects',
-  //     'Request Components & blocks',
-  //     'Priority support'
-  //   ]
-  // }
 ]
 </script>
 
