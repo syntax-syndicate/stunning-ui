@@ -1,37 +1,16 @@
-# Nuxt 3 Starter
+# Stunning UI
 
-> 💚 A Better Nuxt 3 starter template
+> Create Stunning Websites That Stand Out. Stunning UI is a collection of interactive Tailwind CSS components built for Vue and Nuxt.
 
 ## Preview
 
-<div>
-  <a href="https://stackblitz.com/github/nuxtbase/nuxt3-starter" rel="nofollow" target="_blank"><img src="https://camo.githubusercontent.com/bf5c9492905b6d3b558552de2c848c7cce2e0a0f0ff922967115543de9441522/68747470733a2f2f646576656c6f7065722e737461636b626c69747a2e636f6d2f696d672f6f70656e5f696e5f737461636b626c69747a2e737667" alt="" data-canonical-src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" style="max-width: 100%;"></a>
-</div>
+![](./public/preview.png)
 
 ## Features
 
-- 🤹 [unplugin-icons](https://github.com/antfu/unplugin-icons) - Use icons from any iconsets
-- 🍍 [@pinia/nuxt](https://pinia.esm.dev/ssr/nuxt.html) - Using Pinia with Nuxt.js 3
-- 🛠️ [@vueuse/nuxt3](https://vueuse.org/nuxt/readme.html#vueuse-nuxt) - This is an add-on of VueUse, which provides better Nuxt integration auto-import capabilities.
-
-## Use the Template
-
-### GitHub Template
-
-[create a repo from this template on GitHub](https://github.com/xiaoluoboding/nuxt3-starter/generate)
-
-### Clone to local
-
-```bash
-$> npx nuxi init -t nuxtbase/nuxt3-starter my-nuxt3-app
-$> 🎉  Another rad Nuxt project just made! Next steps:
-$>
-$>    📁  `cd my-nuxt3-app`
-$>
-$>    💿  Install dependencies with `npm install` or `yarn install`
-$>
-$>    🚀  Start development server with `npm run dev` or `yarn dev`
-```
+- Components - 30+ free open-source components that you can copy and paste into your next project.
+- Blocks - Segmented and customizable blocks for creating various types of website pages.
+- Templates - Pre-made, ready to use templates for startups and small businesses.
 
 ## Setup
 
@@ -40,15 +19,15 @@ $>    🚀  Start development server with `npm run dev` or `yarn dev`
 Make sure to install the dependencies
 
 ```bash
-yarn install
+pnpm install
 ```
 
 ### Development
 
-Start the development server on http://localhost:3088
+Start the development server on http://localhost:6636
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 ### Production
@@ -56,14 +35,18 @@ yarn dev
 Build the application for production:
 
 ```bash
-yarn build
+pnpm build
 ```
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
+## Tech Stack
 
-## Related Template
-
-- [vue3-starter](https://github.com/xiaoluoboding/vue3-starter) - 🖖 A Better Vue 3 Starter Template，generate by `create-vue`.
+- GSAP - For animations
+- Vue 3 - For the framework
+- Nuxt 3 - For the framework
+- Tailwind CSS - For the styles
+- Shadcn Vue - For the UI
+- VueUse - For the utilities
+- Vite - For the build
 
 ## License
 
