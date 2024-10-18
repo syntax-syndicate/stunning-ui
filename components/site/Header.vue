@@ -59,7 +59,7 @@
         >
           <Icon name="ri:twitter-x-line" class="h-[1.2rem] w-[1.2rem]" />
         </Button>
-        <!-- <Button
+        <Button
           variant="ghost"
           size="icon"
           @click="
@@ -70,7 +70,7 @@
           "
         >
           <Icon name="ri:github-fill" class="h-6 w-6" />
-        </Button> -->
+        </Button>
         <ToggleDarkmode />
       </div>
     </div>

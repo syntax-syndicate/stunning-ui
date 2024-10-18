@@ -9,13 +9,10 @@
 
 <script lang="ts" setup>
 import { useElementVisibility } from '@vueuse/core'
-import { useSmoothScroll } from '@/composables/useSmoothScroll'
 
 const scrollRef = ref(null)
 
 const targetIsVisible = useElementVisibility(scrollRef)
-
-useSmoothScroll()
 </script>
 
 <style scoped></style>

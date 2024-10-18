@@ -25,13 +25,10 @@
 
 <script lang="ts" setup>
 import TextReveal from '@/components/stunning/TextReveal.vue'
-import { useSmoothScroll } from '@/composables/useSmoothScroll'
 import { paragraphPlaceholder } from '~/lib/constants'
 
 const text =
   'Stunning UI is Designed for Developers、Designers、Creators、Indie Hackers'
-
-useSmoothScroll()
 
 const handleScroll = () => {
   window.scrollTo({ top: document.body.scrollHeight / 3, behavior: 'smooth' })

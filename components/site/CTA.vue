@@ -32,7 +32,7 @@
           class="max-w-sm mx-auto flex justify-center items-center gap-2 mb-12"
         >
           <GlassBorderButton @click="navigateTo('/components')">
-            Get Pro Access
+            Get Started
           </GlassBorderButton>
         </div>
       </div>

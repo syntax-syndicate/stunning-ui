@@ -67,8 +67,8 @@
       </GlowyCardWrapper>
     </section>
 
-    <StunningGlowyDivider />
-    <SiteFAQ />
+    <!-- <StunningGlowyDivider /> -->
+    <!-- <SiteFAQ /> -->
     <StunningGlowyDivider />
     <SiteCTA />
     <SiteFooter />
