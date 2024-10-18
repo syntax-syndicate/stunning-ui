@@ -45,12 +45,18 @@
             <div
               class="aspect-video rounded-[8px] relative overflow-hidden border-neutral-900/10 dark:border-white/10"
             >
-              <SiteSkewedTemplates v-if="index === 0" />
               <img
+                v-if="index === 0"
+                :src="LightBar"
+                class="my-0 rounded-lg group-hover/card:scale-[1.02] transition-all duration-200"
+              />
+
+              <SiteSkewedBlocks
                 v-if="index === 1"
                 :src="BlocksFeatures"
                 class="my-0 rounded-lg group-hover/card:scale-[1.02] transition-all duration-200"
               />
+
               <img
                 v-if="index === 2"
                 :src="TemplateMinimal"
@@ -87,6 +93,7 @@ import { cn } from '~/lib/utils'
 import { Button } from '~/components/ui/button'
 
 import TemplateMinimal from '@/assets/images/template_minimal.webp'
+import LightBar from '@/assets/gifs/light-bar.gif'
 import BlocksFeatures from '@/assets/images/blocks_features.webp'
 import GlowyCardWrapper from '~/components/stunning/GlowyCard/GlowyCardWrapper.vue'
 import GlowyCard from '~/components/stunning/GlowyCard/GlowyCard.vue'
