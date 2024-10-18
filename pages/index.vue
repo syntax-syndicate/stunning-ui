@@ -3,7 +3,7 @@
     <LandingBanner
       :class="
         cn(
-          'px-paddings relative z-40 overflow-hidden leading-none transition-colors duration-200 dark:bg-neutral-950 dark:hover:bg-neutral-new-8 bg-[#F5FBFD] hover:bg-[#f1fcff]',
+          'hidden lg:blockpx-paddings relative z-40 overflow-hidden leading-none transition-colors duration-200 dark:bg-neutral-950 dark:hover:bg-neutral-new-8 bg-[#F5FBFD] hover:bg-[#f1fcff]',
           'before:content-normal before:absolute before:inset-x-0 before:bottom-0 before:z-10 before:block before:h-px before:w-full before:mix-blend-overlay before:dark:bg-white',
           'after:content-normal after:absolute after:left-1/2 after:top-1/2 after:-z-10 after:h-[188px] after:w-[60px] after:origin-center after:-translate-y-[43%] after:translate-x-[-290px] after:rotate-[226deg] after:rounded-[100%] after:bg-gradient-to-r after:from-white after:via-white/50 after:to-white/80 after:mix-blend-plus-lighter after:blur-2xl after:dark:opacity-100 after:sm:left-[40%] after:sm:translate-x-0 after:opacity-70'
         )
