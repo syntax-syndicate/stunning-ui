@@ -30,7 +30,7 @@
         <NuxtLink
           target="_blank"
           class="group underline"
-          href="https://github.com/xiaoluoboding"
+          href="https://github.com/xiaoluoboding/stunning-ui"
         >
           <span class="sr-only">Follow me on GitHub</span>
           <Icon

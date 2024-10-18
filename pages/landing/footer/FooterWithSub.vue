@@ -198,7 +198,7 @@
               <Button
                 variant="ghost"
                 size="icon"
-                @click="navigateTo('https://github.com/xiaoluoboding')"
+                @click="navigateTo('https://github.com/xiaoluoboding/stunning-ui')"
               >
                 <Icon name="ri:github-fill" class="h-6 w-6" />
               </Button>

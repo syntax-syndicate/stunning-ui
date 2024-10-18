@@ -65,7 +65,7 @@
           variant="ghost"
           size="icon"
           @click="
-            navigateTo('https://github.com/xiaoluoboding', {
+            navigateTo('https://github.com/xiaoluoboding/stunning-ui', {
               external: true,
               open: { target: '_blank' }
             })

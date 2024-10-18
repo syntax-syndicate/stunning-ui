@@ -3,7 +3,7 @@ export default defineAppConfig({
     site: {
       title: 'Stunning UI',
       description: 'Create stunning websites that are stand out',
-      url: 'http://ui.stunning.dev',
+      url: 'http://stunningui.design',
       ogImage: '/preview.png'
     },
     theme: {
@@ -69,13 +69,13 @@ export default defineAppConfig({
         {
           title: 'Star on GitHub',
           icon: 'lucide:star',
-          to: 'https://github.com/xiaoluoboding/stunning.dev',
+          to: 'https://github.com/xiaoluoboding/stunning-ui',
           target: '_blank'
         },
         {
           title: 'Create Issues',
           icon: 'lucide:circle-dot',
-          to: 'https://github.com/xiaoluoboding/stunning.dev/issues',
+          to: 'https://github.com/xiaoluoboding/stunning-ui/issues',
           target: '_blank'
         }
       ]

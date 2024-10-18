@@ -51,7 +51,7 @@
                 class="my-0 rounded-lg group-hover/card:scale-[1.02] transition-all duration-200"
               />
 
-              <SiteSkewedBlocks
+              <img
                 v-if="index === 1"
                 :src="BlocksFeatures"
                 class="my-0 rounded-lg group-hover/card:scale-[1.02] transition-all duration-200"
