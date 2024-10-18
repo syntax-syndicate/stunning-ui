@@ -1,6 +1,7 @@
 {
   "name": "stunning-ui",
   "description": "Create stunning websites that are stand out",
+  "version": "0.1.0",
   "private": false,
   "scripts": {
     "dev": "nuxt dev --port 6636",
@@ -10,7 +11,8 @@
     "postinstall": "nuxt prepare",
     "serve": "esno .output/server/index.mjs",
     "p:ish": "pnpm install --shamefully-hoist",
-    "p:up": "pnpm up"
+    "p:up": "pnpm up",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "devDependencies": {
     "@iconify/json": "^2.2.213",
