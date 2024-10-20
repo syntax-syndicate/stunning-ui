@@ -351,8 +351,9 @@ export const componentList = [
       },
       {
         name: 'Streaming Text',
+        desc: 'Streaming text, perplexing text appearance effect.',
         path: '/components/streaming-text',
-        status: 'Streaming text, perplexing text appearance effect.'
+        status: 'finished'
       }
     ]
   }
