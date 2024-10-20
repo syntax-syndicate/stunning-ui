@@ -32,11 +32,14 @@
 <script lang="ts" setup>
 import BlurryTextReveal from '@/components/stunning/BlurryTextReveal.vue'
 import { paragraphPlaceholder } from '@/lib/constants'
+import { useSmoothScroll } from '@/composables/useSmoothScroll'
 
 const text1 =
   'Stunning UI is Designed for Developers、Designers、Creators、Indie Hackers'
 const text2 =
   'Stunning UI lets you easily copy and paste code into your projects, enabling you to create an impressive website quickly.'
+
+useSmoothScroll()
 
 const handleScroll = () => {
   window.scrollTo({ top: document.body.scrollHeight / 4, behavior: 'smooth' })
