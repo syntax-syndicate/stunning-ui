@@ -1,7 +1,7 @@
 <template>
   <main class="w-full h-full">
     <h2>Landing Page</h2>
-    <div class="grid grid-cols-3 gap-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
       <AnimatedGradientBorder
         class="group/card rounded-lg flex flex-col gap-2 cursor-pointer"
         @click="
