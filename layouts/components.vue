@@ -64,7 +64,7 @@
                           ? 'text-emerald-500 font-semibold border-emerald-500'
                           : 'text-muted-foreground border-border',
                         item.status === 'upcoming'
-                          ? 'text-gray-400 cursor-not-allowed pointer-events-none'
+                          ? 'text-neutral-400 cursor-not-allowed pointer-events-none'
                           : ''
                       ]"
                     >
