@@ -56,13 +56,17 @@
                   <div class="flex flex-col text-sm">
                     <NuxtLink
                       v-for="item in group.components"
-                      :href="item.path"
+                      :href="item.status === 'upcoming' ? undefined : item.path"
+                      :disabled="item.status === 'upcoming'"
                       class="border-l pl-4 py-1 hover:text-emerald-600 dark:hover:text-emerald-300"
-                      :class="
+                      :class="[
                         route.path === item.path
                           ? 'text-emerald-500 font-semibold border-emerald-500'
-                          : 'text-muted-foreground border-border'
-                      "
+                          : 'text-muted-foreground border-border',
+                        item.status === 'upcoming'
+                          ? 'text-gray-400 cursor-not-allowed pointer-events-none'
+                          : ''
+                      ]"
                     >
                       <span>{{ item.name }}</span>
                       <Badge
