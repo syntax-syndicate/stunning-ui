@@ -89,10 +89,7 @@ yarn install gsap
 
 <script lang="ts" setup>
 import gsap from 'gsap'
-import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import TextSplitter from '~/lib/TextSplitter'
-
-gsap.registerPlugin(ScrollTrigger)
 
 const props = withDefaults(
   defineProps<{
