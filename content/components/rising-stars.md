@@ -67,9 +67,7 @@ module.exports = {
 
 ### Copy the source code
 
-Setup the grid pattern background, background size `60px`
-
-`/components/stunning/ParallaxStars.vue`
+`/components/stunning/RisingStars.vue`
 
 ::CodeCollapse
 

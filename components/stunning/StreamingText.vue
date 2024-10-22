@@ -1,7 +1,7 @@
 <template>
   <div
     ref="textRef"
-    class="max-w-[60rem] min-h-[100vh] items-center flex justify-center text-lg"
+    class="max-w-[60rem] min-h-[100vh] items-center flex justify-center"
   >
     <p class="transform-gpu" :class="textClass" ref="textTarget">
       {{ text }}
@@ -38,6 +38,7 @@ const revealText = ref()
 
 onMounted(() => {
   const streaming = (e: HTMLParagraphElement) => {
+    // Split the text by words or chars
     const splitter = new TextSplitter(e, {
       resizeCallback: () => streaming(e),
       splitTypeTypes: splittingBy.value
@@ -46,6 +47,7 @@ onMounted(() => {
     let animateTarget =
       splittingBy.value === 'words' ? splitter.getWords() : splitter.getChars()
 
+    // Add animation for streaming text
     gsap.fromTo(
       animateTarget,
       {
