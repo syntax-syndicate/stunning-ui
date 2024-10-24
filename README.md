@@ -48,6 +48,10 @@ pnpm build
 - VueUse - For the utilities
 - Vite - For the build
 
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) and please follow our [Code of Conduct](./CODE_OF_CONDUCT.md).
+
 ## License
 
 MIT [@xiaoluoboding](https://github.com/xiaoluoboding)
