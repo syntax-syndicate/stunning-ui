@@ -63,9 +63,9 @@ export default defineNuxtConfig({
         //   src: 'https://plausible.io/js/script.js'
         // },
         {
-          defer: true,
-          'data-website-id': '3df01945-7b34-4451-9d05-fa8f058ce25b',
-          src: 'https://analytics.techstack.tools/script.js'
+          src: 'https://analytics.ahrefs.com/analytics.js',
+          'data-key': 'qSqtlu7jCVHxEHLGIkPtGQ',
+          defer: true
         }
       ]
     }
