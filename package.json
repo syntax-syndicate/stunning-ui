@@ -10,6 +10,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "serve": "esno .output/server/index.mjs",
+    "start": "node .output/server/index.mjs",
     "p:ish": "pnpm install --shamefully-hoist",
     "p:up": "pnpm up",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
